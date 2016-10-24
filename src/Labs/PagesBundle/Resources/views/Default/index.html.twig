@@ -1,0 +1,14 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+
+    <div>
+        <ul>
+            <li><a href="{{ path('page_one') }}">{{ 'Cliquez pour voir le rendu 1' }}</a></li>
+            <li><a href="{{ path('page_two') }}">{{ 'Cliquez pour voir le rendu 2' }}</a></li>
+            <li><a href="{{ path('page_three') }}">{{ 'Cliquez pour voir le rendu 3' }}</a></li>
+            <li><a href="{{ path('page_forth') }}">{{ 'Cliquez pour voir le rendu 4' }}</a></li>
+        </ul>
+    </div>
+
+{% endblock %}

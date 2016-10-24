@@ -1,0 +1,4 @@
+services:
+#    labs_pages.example:
+#        class: Labs\PagesBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
