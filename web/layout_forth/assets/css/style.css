@@ -156,7 +156,7 @@ img {
 }
 
 .overlay {
-	background: rgba(0, 105, 92, 0.35); 
+	/*background: rgba(0, 105, 92, 0.35); */
 }
 .background-image {
 	background-position:50% 0;
@@ -1236,10 +1236,11 @@ nav.navbar-collapse,
 }
 .tp-banner{
 	width:100%;
+	min-height: 650px;
 	position:relative;
 }
 .top-banner-item {
-	padding:175px 0;
+	padding:260px 0;
 }
 .top-banner-title-1,
 .top-banner-title-2 {
