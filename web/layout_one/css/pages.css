@@ -1,0 +1,1031 @@
+@charset "UTF-8";
+/*
+// Table of content
+// -----------------------------------------------------------------------------
+// - 1. Homepage
+// - 2. About Page
+// - 3. Blog Page
+// - 4. Blog Detail Page
+// - 5. Project Page
+// - 6. Project Detail Page
+// - 7. What We Do Page
+// - 8. Contact Page
+*/
+/* -----------------------------------------------------------------------------
+// 1. Homepage
+// ----------------------------------------------------------------------------- */
+.homepage .section-headline {
+  margin-bottom: 40px;
+  text-align: center; }
+  .homepage .section-headline h3 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 700; }
+  .homepage .section-headline p {
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #f7c51e; }
+.homepage .hero-slider {
+  position: relative;
+  max-height: 700px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #000; }
+  .homepage .hero-slider .content {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .homepage .hero-slider h2 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: -6px;
+    font-size: 100px;
+    font-weight: 700;
+    color: #fff; }
+  .homepage .hero-slider .list {
+    margin-bottom: 20px; }
+    .homepage .hero-slider .list li {
+      display: inline-block;
+      color: #f7c51e;
+      font-family: "Roboto", Helvetica, Arial, sans-serif;
+      font-size: 30px;
+      font-weight: 700; }
+      .homepage .hero-slider .list li:after {
+        content: '·';
+        margin: 0 5px; }
+      .homepage .hero-slider .list li:last-child:after {
+        content: none; }
+  .homepage .hero-slider .btn {
+    font-size: 14px;
+    margin-right: 15px; }
+    .homepage .hero-slider .btn-light {
+      color: #181818; }
+      .homepage .hero-slider .btn-light:hover {
+        color: #f7c51e; }
+    .homepage .hero-slider .btn + .btn:hover {
+      border-color: #fff;
+      color: #fff; }
+  .homepage .hero-slider .owl-buttons .owl-prev,
+  .homepage .hero-slider .owl-buttons .owl-next {
+    position: absolute;
+    top: 40%;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    background-color: transparent;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    opacity: .3;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+    .homepage .hero-slider .owl-buttons .owl-prev i,
+    .homepage .hero-slider .owl-buttons .owl-next i {
+      font-size: 24px;
+      line-height: 50px; }
+    .homepage .hero-slider .owl-buttons .owl-prev:hover,
+    .homepage .hero-slider .owl-buttons .owl-next:hover {
+      opacity: 1; }
+  .homepage .hero-slider .owl-buttons .owl-prev {
+    left: 10%; }
+  .homepage .hero-slider .owl-buttons .owl-next {
+    right: 10%; }
+  @media (max-width: 992px) {
+    .homepage .hero-slider .owl-buttons {
+      display: none; } }
+@media (max-width: 768px) {
+  .homepage .hero-slider .content {
+    top: 50%; }
+  .homepage .hero-slider h2 {
+    font-size: 24px;
+    margin-bottom: 0;
+    letter-spacing: 0; }
+    .homepage .hero-slider h2 small {
+      font-size: 14px; }
+  .homepage .hero-slider .list li {
+    font-size: 16px; }
+  .homepage .hero-slider .btn {
+    font-size: 12px;
+    padding: 10px 15px; } }
+.homepage .welcome .section-headline h3 {
+  font-size: 36px; }
+.homepage .projects-section {
+  padding-top: 100px; }
+  .homepage .projects-section .section-headline {
+    text-align: left; }
+  .homepage .projects-section .item {
+    position: relative;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+    .homepage .projects-section .item .link {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      color: #181818;
+      background-color: #f7c51e; }
+    .homepage .projects-section .item .caption {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #222;
+      background-color: rgba(34, 34, 34, 0.85);
+      opacity: 0;
+      -webkit-transition: opacity 0.5s;
+      -moz-transition: opacity 0.5s;
+      -ms-transition: opacity 0.5s;
+      -o-transition: opacity 0.5s;
+      transition: opacity 0.5s; }
+      .homepage .projects-section .item .caption h3 {
+        font-size: 28px;
+        letter-spacing: 2px;
+        font-weight: 600;
+        color: #fff;
+        text-transform: uppercase; }
+      .homepage .projects-section .item .caption .align {
+        position: absolute;
+        bottom: 20px;
+        left: 20px; }
+    .homepage .projects-section .item:hover .caption {
+      opacity: 1; }
+  .homepage .projects-section .projects-filter {
+    margin-bottom: 30px;
+    text-align: right; }
+    .homepage .projects-section .projects-filter h5 {
+      text-transform: uppercase;
+      display: inline-block;
+      margin-right: 20px; }
+    .homepage .projects-section .projects-filter ul {
+      display: inline-block;
+      padding: 0; }
+    .homepage .projects-section .projects-filter li {
+      display: inline-block;
+      margin-right: 15px;
+      color: #9c9c9c; }
+      .homepage .projects-section .projects-filter li.active, .homepage .projects-section .projects-filter li.active:hover {
+        color: #181818;
+        cursor: auto; }
+      .homepage .projects-section .projects-filter li:hover {
+        cursor: pointer;
+        color: #4b4b4b; }
+.homepage .aboutus h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 0 20px 0; }
+.homepage .aboutus .aboutus-gallery {
+  margin-bottom: 30px;
+  text-align: center; }
+.homepage .aboutus .btn {
+  margin-top: 15px;
+  font-size: 12px; }
+.homepage .banner {
+  background: url(http://placehold.it/1895x700) center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center; }
+  .homepage .banner h2 {
+    margin-bottom: 30px;
+    color: #fff;
+    line-height: 36px;
+    font-weight: 600; }
+  .homepage .banner .btn {
+    color: #181818; }
+    .homepage .banner .btn:hover {
+      color: #f7c51e; }
+  @media (max-width: 992px) {
+    .homepage .banner h2 {
+      font-size: 24px;
+      line-height: 28px; } }
+.homepage .testimonials {
+  padding: 110px 0 110px 0;
+  background: url(http://placehold.it/1895x1100) center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .homepage .testimonials .owl-pagination {
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center; }
+    .homepage .testimonials .owl-pagination .owl-page {
+      display: inline-block; }
+      .homepage .testimonials .owl-pagination .owl-page span {
+        display: block;
+        width: 12px;
+        height: 12px;
+        margin: 5px 4px;
+        filter: Alpha(Opacity=50);
+        opacity: 0.5;
+        border: 1px solid #fff;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        background: transparent; }
+      .homepage .testimonials .owl-pagination .owl-page.active span {
+        filter: Alpha(Opacity=100);
+        opacity: 1;
+        border-color: #f7c51e;
+        background-color: #f7c51e; }
+.homepage .info h4 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600; }
+.homepage .info .imgbox .align {
+  padding: 10px 40px 35px 40px;
+  text-align: left; }
+.homepage .clients {
+  padding-bottom: 100px; }
+  .homepage .clients .client-img {
+    position: relative;
+    padding: 20px; }
+    .homepage .clients .client-img:hover .client-hover {
+      opacity: 1; }
+  .homepage .clients .client-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    padding: 20px;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+  .homepage .clients .owl-pagination {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center; }
+    .homepage .clients .owl-pagination .owl-page {
+      display: inline-block; }
+      .homepage .clients .owl-pagination .owl-page span {
+        display: block;
+        width: 12px;
+        height: 12px;
+        margin: 5px 4px;
+        filter: Alpha(Opacity=50);
+        opacity: 0.5;
+        border: 1px solid #c7c7c7;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        background: transparent; }
+      .homepage .clients .owl-pagination .owl-page.active span {
+        filter: Alpha(Opacity=100);
+        opacity: 1;
+        border-color: #f7c51e; }
+
+/* -----------------------------------------------------------------------------
+// 2. About Page
+// ----------------------------------------------------------------------------- */
+.about .section-headline {
+  margin-bottom: 40px;
+  text-align: center; }
+  .about .section-headline h3 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 700; }
+  .about .section-headline p {
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #f7c51e; }
+.about .hero-title {
+  background: url(http://placehold.it/1895x300) no-repeat center center; }
+.about .banner img {
+  float: left;
+  width: 49.5%;
+  margin-bottom: 5px; }
+  .about .banner img + img {
+    margin-left: 1%; }
+.about .banner h3 {
+  margin: 0  0 20px 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  color: #4b4b4b; }
+  .about .banner h3 + p {
+    margin-bottom: 40px; }
+@media (max-width: 992px) {
+  .about .banner img {
+    margin-bottom: 30px; } }
+.about .counters {
+  background: url(http://placehold.it/1895x1000) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .about .counters .progress-item {
+    text-align: center; }
+    .about .counters .progress-item strong {
+      font-family: "Roboto", Helvetica, Arial, sans-serif;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      left: 0;
+      color: #fff;
+      font-weight: normal;
+      font-size: 30px; }
+    .about .counters .progress-item h4 {
+      font-weight: 600;
+      font-size: 14px;
+      margin: 30px 0 25px 0;
+      text-transform: uppercase;
+      color: #fff; }
+      .about .counters .progress-item h4 + p {
+        padding: 0 15px;
+        color: #fff;
+        opacity: .5;
+        margin-bottom: 20px; }
+.about .skills h3 {
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+  font-weight: 600; }
+.about .skills h3 + p {
+  margin-bottom: 30px; }
+.about .skills .progress {
+  margin-bottom: 40px; }
+@media (max-width: 992px) {
+  .about .skills p + p {
+    margin-bottom: 50px; } }
+.about .clients {
+  padding-bottom: 100px; }
+  .about .clients .client-img {
+    position: relative;
+    padding: 20px; }
+    .about .clients .client-img:hover .client-hover {
+      opacity: 1; }
+  .about .clients .client-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    padding: 20px;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+  .about .clients .owl-pagination {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center; }
+    .about .clients .owl-pagination .owl-page {
+      display: inline-block; }
+      .about .clients .owl-pagination .owl-page span {
+        display: block;
+        width: 12px;
+        height: 12px;
+        margin: 5px 4px;
+        filter: Alpha(Opacity=50);
+        opacity: 0.5;
+        border: 1px solid #c7c7c7;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        background: transparent; }
+      .about .clients .owl-pagination .owl-page.active span {
+        filter: Alpha(Opacity=100);
+        opacity: 1;
+        border-color: #f7c51e; }
+
+/* -----------------------------------------------------------------------------
+// 3. Blog Page
+// ----------------------------------------------------------------------------- */
+.blog .section-headline {
+  margin-bottom: 40px;
+  text-align: center; }
+  .blog .section-headline h3 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 700; }
+  .blog .section-headline p {
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #f7c51e; }
+.blog .hero-title {
+  background: url(http://placehold.it/1895x300) no-repeat center center; }
+.blog .main .post {
+  margin-bottom: 50px; }
+  .blog .main .post h2 {
+    margin: 30px 0 5px 0;
+    font-weight: 600;
+    text-transform: uppercase; }
+    .blog .main .post h2 em {
+      font-style: normal;
+      color: #f7c51e; }
+    .blog .main .post h2 + p {
+      color: #c4c4c4;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 12px;
+      margin-bottom: 30px; }
+  .blog .main .post p + p {
+    margin-bottom: 40px; }
+  .blog .main .post .post-video {
+    position: relative; }
+    .blog .main .post .post-video .play-icon {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      width: 60px;
+      height: 60px;
+      background-color: #f7c51e;
+      background-color: rgba(247, 197, 30, 0.9);
+      text-align: center;
+      line-height: 60px;
+      color: #fff;
+      font-size: 18px;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); }
+  .blog .main .post .post-blockquote {
+    padding: 40px;
+    font-weight: 600;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    background-color: #f7c51e;
+    color: #181818;
+    font-style: italic; }
+    .blog .main .post .post-blockquote p {
+      font-size: 18px;
+      line-height: 34px;
+      letter-spacing: 2px; }
+.blog aside .widget {
+  margin-bottom: 30px; }
+  .blog aside .widget:before, .blog aside .widget:after {
+    content: " ";
+    display: table; }
+  .blog aside .widget:after {
+    clear: both; }
+  .blog aside .widget h3 {
+    margin: 0 0 30px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600; }
+  .blog aside .widget .recent-post {
+    padding: 10px;
+    background-color: #f9f9f9; }
+    .blog aside .widget .recent-post:before, .blog aside .widget .recent-post:after {
+      content: " ";
+      display: table; }
+    .blog aside .widget .recent-post:after {
+      clear: both; }
+    .blog aside .widget .recent-post img {
+      width: 20%;
+      float: left;
+      overflow: hidden; }
+    .blog aside .widget .recent-post h5 {
+      padding: 0 10px;
+      color: #9c9c9c;
+      line-height: 16px;
+      margin-left: 22%; }
+    .blog aside .widget .recent-post.light {
+      background-color: #fff; }
+  .blog aside .widget .list li:before {
+    color: #9c9c9c;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+  .blog aside .widget .list li:hover:before {
+    color: #f7c51e; }
+  .blog aside .widget .list a {
+    color: #9c9c9c; }
+    .blog aside .widget .list a:hover {
+      color: #181818;
+      text-decoration: none; }
+  .blog aside .widget.projects li {
+    float: left;
+    width: 23%;
+    margin: 0 1% 5px 1%; }
+  .blog aside .widget .tweet {
+    margin-bottom: 20px; }
+    .blog aside .widget .tweet .tweet-icon {
+      display: block;
+      float: left;
+      width: 35px;
+      height: 35px;
+      font-size: 16px;
+      border-radius: 100%;
+      background-color: #181818;
+      color: #fff;
+      text-align: center;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+      .blog aside .widget .tweet .tweet-icon i {
+        line-height: 35px; }
+    .blog aside .widget .tweet:hover .tweet-icon {
+      background-color: #f7c51e;
+      color: #181818; }
+    .blog aside .widget .tweet p {
+      margin-left: 50px; }
+      .blog aside .widget .tweet p em {
+        display: block;
+        margin-top: 5px;
+        font-size: 11px;
+        text-transform: uppercase;
+        font-style: normal; }
+  .blog aside .widget .form-control {
+    text-transform: none; }
+
+/* -----------------------------------------------------------------------------
+// 4. Blog Detail Page
+// ----------------------------------------------------------------------------- */
+.blog-detail .section-headline {
+  margin-bottom: 40px;
+  text-align: center; }
+  .blog-detail .section-headline h3 {
+    font-size: 28px;
+    letter-spacing: 3px;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 700; }
+  .blog-detail .section-headline p {
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #f7c51e; }
+.blog-detail .hero-title {
+  background: url(http://placehold.it/1895x300) no-repeat center center; }
+.blog-detail .main .post {
+  margin-bottom: 50px; }
+  .blog-detail .main .post h2 {
+    margin: 30px 0 5px 0;
+    font-weight: 600;
+    text-transform: uppercase; }
+    .blog-detail .main .post h2 em {
+      font-style: normal;
+      color: #f7c51e; }
+    .blog-detail .main .post h2 + p {
+      color: #c4c4c4;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 12px;
+      margin-bottom: 30px; }
+  .blog-detail .main .post p + p {
+    margin-bottom: 30px; }
+  .blog-detail .main .post .tags {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f1f1f1; }
+    .blog-detail .main .post .tags strong {
+      display: inline-block;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-right: 5px; }
+.blog-detail .main .post-comments {
+  margin-top: 50px; }
+  .blog-detail .main .post-comments h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 0 10px 0; }
+  .blog-detail .main .post-comments .comment {
+    position: relative;
+    padding: 30px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #f2f2f2; }
+    .blog-detail .main .post-comments .comment:before, .blog-detail .main .post-comments .comment:after {
+      content: " ";
+      display: table; }
+    .blog-detail .main .post-comments .comment:after {
+      clear: both; }
+    .blog-detail .main .post-comments .comment-avatar {
+      width: 8%;
+      float: left;
+      overflow: hidden; }
+      .blog-detail .main .post-comments .comment-avatar img {
+        margin: 0; }
+    .blog-detail .main .post-comments .comment .align {
+      float: left;
+      margin-left: 3%;
+      width: 89%; }
+    .blog-detail .main .post-comments .comment h5 {
+      display: inline-block;
+      margin: 0 10px 20px 0;
+      text-transform: uppercase;
+      font-weight: 700; }
+    .blog-detail .main .post-comments .comment .date {
+      font-size: 12px;
+      text-transform: uppercase;
+      font-family: "Roboto", Helvetica, Arial, sans-serif; }
+    .blog-detail .main .post-comments .comment .reply {
+      position: absolute;
+      top: 30px;
+      right: 0;
+      font-size: 12px;
+      text-transform: uppercase;
+      display: inline-block;
+      font-weight: 500;
+      font-family: "Roboto", Helvetica, Arial, sans-serif;
+      color: #f7c51e; }
+.blog-detail .main .comment-form {
+  margin-top: 50px; }
+  .blog-detail .main .comment-form h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 40px 0; }
+  .blog-detail .main .comment-form .form-control {
+    background-color: #f9f9f9;
+    text-transform: none; }
+  .blog-detail .main .comment-form .btn {
+    color: #4b4b4b;
+    font-weight: 600; }
+.blog-detail aside .widget {
+  margin-bottom: 30px; }
+  .blog-detail aside .widget:before, .blog-detail aside .widget:after {
+    content: " ";
+    display: table; }
+  .blog-detail aside .widget:after {
+    clear: both; }
+  .blog-detail aside .widget h3 {
+    margin: 0 0 30px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600; }
+  .blog-detail aside .widget .recent-post {
+    padding: 10px;
+    background-color: #f9f9f9; }
+    .blog-detail aside .widget .recent-post:before, .blog-detail aside .widget .recent-post:after {
+      content: " ";
+      display: table; }
+    .blog-detail aside .widget .recent-post:after {
+      clear: both; }
+    .blog-detail aside .widget .recent-post img {
+      width: 20%;
+      float: left;
+      overflow: hidden; }
+    .blog-detail aside .widget .recent-post h5 {
+      padding: 0 10px;
+      color: #9c9c9c;
+      line-height: 16px;
+      margin-left: 22%; }
+    .blog-detail aside .widget .recent-post.light {
+      background-color: #fff; }
+  .blog-detail aside .widget .list li:before {
+    color: #9c9c9c;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+  .blog-detail aside .widget .list li:hover:before {
+    color: #f7c51e; }
+  .blog-detail aside .widget .list a {
+    color: #9c9c9c; }
+    .blog-detail aside .widget .list a:hover {
+      color: #181818;
+      text-decoration: none; }
+  .blog-detail aside .widget.projects li {
+    float: left;
+    width: 23%;
+    margin: 0 1% 5px 1%; }
+  .blog-detail aside .widget .tweet {
+    margin-bottom: 20px; }
+    .blog-detail aside .widget .tweet .tweet-icon {
+      display: block;
+      float: left;
+      width: 35px;
+      height: 35px;
+      font-size: 16px;
+      border-radius: 100%;
+      background-color: #181818;
+      color: #fff;
+      text-align: center;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+      .blog-detail aside .widget .tweet .tweet-icon i {
+        line-height: 35px; }
+    .blog-detail aside .widget .tweet:hover .tweet-icon {
+      background-color: #f7c51e;
+      color: #181818; }
+    .blog-detail aside .widget .tweet p {
+      margin-left: 50px; }
+      .blog-detail aside .widget .tweet p em {
+        display: block;
+        margin-top: 5px;
+        font-size: 11px;
+        text-transform: uppercase;
+        font-style: normal; }
+  .blog-detail aside .widget .form-control {
+    text-transform: none; }
+
+/* -----------------------------------------------------------------------------
+// 5. Project Page
+// ----------------------------------------------------------------------------- */
+.projects .section-headline {
+  margin-bottom: 40px;
+  text-align: center; }
+  .projects .section-headline h3 {
+    font-size: 28px;
+    letter-spacing: 3px;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 700; }
+  .projects .section-headline p {
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #f7c51e; }
+.projects .hero-title {
+  background: url(http://placehold.it/1895x300) no-repeat center center; }
+.projects .projects-wrapper .section-headline {
+  text-align: left; }
+.projects .projects-wrapper .item {
+  position: relative;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
+  .projects .projects-wrapper .item .link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #181818;
+    background-color: #f7c51e; }
+  .projects .projects-wrapper .item .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    background-color: rgba(34, 34, 34, 0.85);
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+    .projects .projects-wrapper .item .caption h3 {
+      font-size: 28px;
+      letter-spacing: 2px;
+      font-weight: 600;
+      color: #fff;
+      text-transform: uppercase; }
+    .projects .projects-wrapper .item .caption .align {
+      position: absolute;
+      bottom: 20px;
+      left: 20px; }
+  .projects .projects-wrapper .item:hover .caption {
+    opacity: 1; }
+.projects .projects-wrapper .projects-filter-wrapper {
+  padding: 50px 0; }
+  .projects .projects-wrapper .projects-filter-wrapper .section-headline,
+  .projects .projects-wrapper .projects-filter-wrapper ul,
+  .projects .projects-wrapper .projects-filter-wrapper h3 {
+    margin: 0; }
+  .projects .projects-wrapper .projects-filter-wrapper h3 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px; }
+.projects .projects-wrapper .projects-filter {
+  text-align: right; }
+  .projects .projects-wrapper .projects-filter h5 {
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 20px; }
+  .projects .projects-wrapper .projects-filter ul {
+    display: inline-block;
+    padding: 0; }
+  .projects .projects-wrapper .projects-filter li {
+    display: inline-block;
+    margin-right: 15px;
+    color: #9c9c9c; }
+    .projects .projects-wrapper .projects-filter li.active, .projects .projects-wrapper .projects-filter li.active:hover {
+      color: #181818;
+      cursor: auto; }
+    .projects .projects-wrapper .projects-filter li:hover {
+      cursor: pointer;
+      color: #4b4b4b; }
+.projects .projects-wrapper.col5 .item {
+  width: 20%;
+  float: left; }
+@media (max-width: 992px) {
+  .projects .projects-wrapper.col5 .item {
+    width: 50%; } }
+@media (max-width: 768px) {
+  .projects .projects-wrapper.col5 .item {
+    width: 100%; } }
+
+/* -----------------------------------------------------------------------------
+// 6. Project Detail Page
+// ----------------------------------------------------------------------------- */
+.project-detail .section-headline {
+  margin-bottom: 40px;
+  text-align: center; }
+  .project-detail .section-headline h3 {
+    font-size: 28px;
+    letter-spacing: 3px;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 700; }
+  .project-detail .section-headline p {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    margin-bottom: 0; }
+.project-detail .hero-title {
+  background: url(http://placehold.it/1895x300) no-repeat center center; }
+.project-detail .project-gallery img {
+  margin-bottom: 30px; }
+.project-detail .project-info {
+  margin-top: 30px; }
+  .project-detail .project-info aside {
+    padding: 40px 30px 20px 30px;
+    background-color: #f9f9f9; }
+    .project-detail .project-info aside li {
+      margin-bottom: 20px; }
+    .project-detail .project-info aside i {
+      position: relative;
+      bottom: -3px;
+      margin-right: 20px;
+      font-size: 20px; }
+    .project-detail .project-info aside em {
+      color: #181818;
+      font-style: normal; }
+  .project-detail .project-info h3 {
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    color: #4b4b4b; }
+    .project-detail .project-info h3 + p {
+      margin-bottom: 40px; }
+  @media (max-width: 992px) {
+    .project-detail .project-info aside {
+      margin-bottom: 30px; } }
+.project-detail .pagination {
+  display: block;
+  margin: 100px 15px 0 15px;
+  padding: 30px 0 0 0;
+  border-top: 1px solid #f1f1f1;
+  border-radius: 0;
+  font-size: 18px; }
+  .project-detail .pagination a {
+    color: #e5e5e5; }
+    .project-detail .pagination a:hover {
+      color: #c5c5c5; }
+  .project-detail .pagination .arrow {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #e5e5e5; }
+    .project-detail .pagination .arrow:hover {
+      border-color: #c5c5c5; }
+
+/* -----------------------------------------------------------------------------
+// 7. What We Do Page
+// ----------------------------------------------------------------------------- */
+.work .section-headline {
+  margin-bottom: 40px;
+  text-align: center; }
+  .work .section-headline h3 {
+    font-size: 28px;
+    letter-spacing: 3px;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 700; }
+  .work .section-headline p {
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #f7c51e; }
+.work .hero-title {
+  background: url(http://placehold.it/1895x300) center center; }
+.work .main aside li {
+  margin-bottom: 1px; }
+  .work .main aside li.active a {
+    color: #4b4b4b;
+    background-color: #f7c51e; }
+.work .main aside a {
+  display: block;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  background-color: #4b4b4b;
+  letter-spacing: 1px; }
+  .work .main aside a:hover {
+    text-decoration: none;
+    background-color: #5c5c5c; }
+.work .main .post {
+  margin-bottom: 50px; }
+  .work .main .post img {
+    margin-bottom: 15px; }
+  .work .main .post h4 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #4b4b4b; }
+    .work .main .post h4 + p {
+      margin-bottom: 20px; }
+  .work .main .post a {
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #f7c51e; }
+
+/* -----------------------------------------------------------------------------
+// 8. Contact Page
+// ----------------------------------------------------------------------------- */
+.contact-page .contact-map {
+  background: url(http://placehold.it/1895x400) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 400px; }
+.contact-page h2 {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 600; }
+.contact-page .contact p {
+  margin-bottom: 30px; }
+.contact-page .contact .form-control {
+  text-transform: none; }
+.contact-page .contact .btn {
+  font-weight: 600; }
+.contact-page .contact-info {
+  padding: 40px 40px 20px 40px;
+  background-color: #f9f9f9; }
+  .contact-page .contact-info h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px; }
+    .contact-page .contact-info h4 + p {
+      margin-bottom: 30px; }
+
+/*# sourceMappingURL=pages.css.map */

@@ -1,0 +1,172 @@
+/*
+// Table of content
+// -----------------------------------------------------------------------------
+// - 1. Header
+// - 2. Footer
+// - 3. Hero Title
+*/
+/* -----------------------------------------------------------------------------
+// 1. Header 
+// ----------------------------------------------------------------------------- */
+header {
+  position: relative; }
+
+.header-top {
+  padding: 20px 0 10px 0;
+  background-color: #181818; }
+  .header-top:before, .header-top:after {
+    content: " ";
+    display: table; }
+  .header-top:after {
+    clear: both; }
+  .header-top .logo {
+    float: left;
+    margin-top: 3px; }
+  .header-top .meta {
+    float: right; }
+    .header-top .meta a {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 700;
+      margin-left: 20px; }
+      .header-top .meta a i {
+        display: inline-block;
+        color: #f7c51e;
+        margin-right: 5px; }
+      .header-top .meta a:hover {
+        text-decoration: none; }
+    .header-top .meta .btn {
+      color: #181818;
+      font-size: 12px; }
+  @media (max-width: 768px) {
+    .header-top {
+      display: none; } }
+
+/* -----------------------------------------------------------------------------
+// 2. Footer
+// ----------------------------------------------------------------------------- */
+footer {
+  padding: 100px 0 0 0;
+  background-color: #181818; }
+
+.footer-col {
+  color: #717171; }
+  .footer-col:before, .footer-col:after {
+    content: " ";
+    display: table; }
+  .footer-col:after {
+    clear: both; }
+  .footer-col h5 {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #fff;
+    font-family: "Roboto", Helvetica, Arial, sans-serif; }
+  .footer-col .list a {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    color: #717171; }
+  .footer-col .list li:before {
+    color: #717171; }
+  .footer-col .list li:hover:before {
+    color: #f7c51e; }
+  .footer-col .list li:hover a {
+    color: #fff;
+    text-decoration: none; }
+  .footer-col p,
+  .footer-col li,
+  .footer-col a {
+    color: #717171; }
+  .footer-col.about h5 + p {
+    margin-bottom: 20px; }
+  .footer-col.about i {
+    display: inline-block;
+    color: #f7c51e;
+    margin-right: 10px; }
+  .footer-col.links {
+    padding-left: 40px; }
+  @media (max-width: 992px) {
+    .footer-col.links {
+      padding-left: 0; } }
+  .footer-col.projects li {
+    float: left;
+    width: 23%;
+    margin: 0 1% 5px 1%; }
+  .footer-col.form .form-control {
+    margin-bottom: 10px;
+    background-color: #242424;
+    text-transform: none;
+    color: #fff; }
+  .footer-col.form .btn {
+    color: #181818;
+    font-weight: 700; }
+    .footer-col.form .btn:hover {
+      color: #f7c51e; }
+  .footer-col .social {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #242424; }
+    .footer-col .social:before, .footer-col .social:after {
+      content: " ";
+      display: table; }
+    .footer-col .social:after {
+      clear: both; }
+    .footer-col .social li {
+      float: left;
+      margin-right: 15px; }
+    .footer-col .social a {
+      font-size: 16px;
+      color: #3c3c3c;
+      -webkit-transition: color 0.5s;
+      -moz-transition: color 0.5s;
+      -ms-transition: color 0.5s;
+      -o-transition: color 0.5s;
+      transition: color 0.5s; }
+      .footer-col .social a:hover {
+        color: #f7c51e; }
+
+@media (max-width: 992px) {
+  .footer-col {
+    margin-bottom: 50px; } }
+.footer-copyright {
+  margin-top: 100px;
+  padding: 40px 0 20px 0;
+  background-color: #131313;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #717171;
+  font-weight: 600;
+  font-size: 12px; }
+  .footer-copyright .list {
+    padding: 0;
+    margin: 0; }
+    .footer-copyright .list li {
+      display: inline-block;
+      margin-right: 40px; }
+    .footer-copyright .list a {
+      color: #717171;
+      font-size: 12px;
+      font-family: "Roboto", Helvetica, Arial, sans-serif;
+      font-weight: 600; }
+      .footer-copyright .list a:hover {
+        color: #fff;
+        text-decoration: none; }
+
+/* -----------------------------------------------------------------------------
+// 3. Hero Title 
+// ----------------------------------------------------------------------------- */
+.hero-title {
+  padding: 130px 0;
+  text-align: center; }
+  .hero-title h2 {
+    margin: 0;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+
+/*# sourceMappingURL=layout.css.map */

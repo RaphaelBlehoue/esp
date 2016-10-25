@@ -1,1 +1,678 @@
-Hello World!
+{% extends 'LabsPagesBundle::layout_one.html.twig' %}
+{% block title %}{{ 'Accueil' }}{% endblock %}
+{% block  body %}
+    <!-- SECTION 2 -->
+    <section class="welcome space">
+        <div class="container">
+            <div class="row">
+                <div class="section-headline">
+                    <p>Helping Shape The World</p>
+                    <h3>Welcome To Deliver</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet eas malesuada leo. Vestibulum eros magna volutpat at facilisis cursus, tempus etex Vestibulum pellentesque et dolor sit amet lacinia. Pellentesque eu enim nec nibh convallis suscipit. In libero dolor fermentum quis sodales ac fermentum in augue. Morbi interdum dignissim metus dignissim gravida. </p>
+                </div>
+                <div class="col-md-6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet eas malesuada leo. Vestibulum eros magna volutpat at facilisis cursus, tempus etex Vestibulum pellentesque et dolor sit amet lacinia. Pellentesque eu enim nec nibh convallis suscipit. In libero dolor fermentum quis sodales ac fermentum in augue. Morbi interdum dignissim metus dignissim gravida. </p>
+                </div>
+            </div>
+
+            <div class="row space-top">
+                <div class="col-md-4">
+                    <div class="imgbox style4">
+                        <div class="img">
+                            <img src="http://placehold.it/1895x1000" alt="About the image">
+                        </div>
+
+                        <div class="align">
+                            <h3>Design and build</h3>
+                            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="imgbox style4">
+                        <div class="img">
+                            <img src="http://placehold.it/1895x1000" alt="About the image">
+                        </div>
+
+                        <div class="align">
+                            <h3>Planning and Renovation</h3>
+                            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="imgbox style4">
+                        <div class="img">
+                            <img src="http://placehold.it/1895x1000" alt="About the image">
+                        </div>
+
+                        <div class="align">
+                            <h3>Tiling and painting</h3>
+                            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // SECTION 2 -->
+
+    <!-- SECTION 3 - Projects -->
+    <section class="projects-section space-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="section-headline">
+                        <h3>Our Projects</h3>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="projects-filter">
+                        <ul>
+                            <li data-rel="all" class="filter active">All</li>
+                            <li data-rel="build" class="filter">Buildings</li>
+                            <li data-rel="inte" class="filter">Interior Design</li>
+                            <li data-rel="plum" class="filter">Plumbing</li>
+                            <li data-rel="til" class="filter">Tiling</li>
+                            <li data-rel="reno" class="filter">Renovation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="owl-carousel full-gallery-slider">
+
+                    <div class="item" data-filter="inte">
+                        <img src="http://placehold.it/600x600" alt="About the image" >
+
+                        <div class="caption">
+                            <a href="#" class="link"><i class="fa fa-share"></i></a>
+
+                            <div class="align">
+                                <h3>Building<br>Renovation</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" data-filter="build">
+                        <img src="http://placehold.it/600x600" alt="About the image" >
+
+                        <div class="caption">
+                            <a href="#" class="link"><i class="fa fa-share"></i></a>
+
+                            <div class="align">
+                                <h3>Building<br>Renovation</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" data-filter="plum">
+                        <img src="http://placehold.it/600x600" alt="About the image" >
+
+                        <div class="caption">
+                            <a href="#" class="link"><i class="fa fa-share"></i></a>
+
+                            <div class="align">
+                                <h3>Building<br>Renovation</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" data-filter="reno">
+                        <img src="http://placehold.it/600x600" alt="About the image" >
+
+                        <div class="caption">
+                            <a href="#" class="link"><i class="fa fa-share"></i></a>
+
+                            <div class="align">
+                                <h3>Building<br>Renovation</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" data-filter="inte">
+                        <img src="http://placehold.it/600x600" alt="About the image" >
+
+                        <div class="caption">
+                            <a href="#" class="link"><i class="fa fa-share"></i></a>
+
+                            <div class="align">
+                                <h3>Building<br>Renovation</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" data-filter="til">
+                        <img src="http://placehold.it/600x600" alt="About the image" >
+
+                        <div class="caption">
+                            <a href="#" class="link"><i class="fa fa-share"></i></a>
+
+                            <div class="align">
+                                <h3>Building<br>Renovation</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" data-filter="inte">
+                        <img src="http://placehold.it/600x600" alt="About the image" >
+
+                        <div class="caption">
+                            <a href="#" class="link"><i class="fa fa-share"></i></a>
+
+                            <div class="align">
+                                <h3>Building<br>Renovation</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" data-filter="build">
+                        <img src="http://placehold.it/600x600" alt="About the image" >
+
+                        <div class="caption">
+                            <a href="#" class="link"><i class="fa fa-share"></i></a>
+
+                            <div class="align">
+                                <h3>Building<br>Renovation</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // SECTION 3 -->
+
+    <!-- SECTION 4 - ABOUT US -->
+    <section class="aboutus space">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="section-headline">
+                        <h3>Why Choose Deliver</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 space-mb">
+                    <div class="aboutus-gallery">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="http://placehold.it/300x300" alt="About the image">
+                            </div>
+
+                            <div class="col-md-4">
+                                <img src="http://placehold.it/300x300" alt="About the image">
+                            </div>
+
+                            <div class="col-md-4">
+                                <img src="http://placehold.it/300x300" alt="About the image">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Who We Are</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda blanditiis corporis unde eaque! Quibusdam perspiciatis, autem itaque animi deleniti eum! Illo non aperiam, et nulla voluptate facere? Tempore quam, error?</p>
+                    <a href="#" class="btn btn-default btn-dark">Purchase</a>
+                    <a href="#" class="btn btn-default btn-colored">Learn More</a>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="panel-group style2" id="accordion2" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title clearfix">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                        We Are Passionate
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">
+                                    All Layouts can be use for Toggles and Accordions, We have created 4 different unique styles for you.
+
+                                    <ul class="list list-check">
+                                        <li>Fusce imperdiet mollis quam</li>
+                                        <li>Suspendisse porttitor sit</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Honest and Dependable
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">
+                                    All Layouts can be use for Toggles and Accordions, We have created 4 different unique styles for you.
+
+                                    <ul class="list list-check">
+                                        <li>Fusce imperdiet mollis quam</li>
+                                        <li>Suspendisse porttitor sit</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingSix">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        We Are Always Improving
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                <div class="panel-body">
+                                    All Layouts can be use for Toggles and Accordions, We have created 4 different unique styles for you.
+
+                                    <ul class="list list-check">
+                                        <li>Fusce imperdiet mollis quam</li>
+                                        <li>Suspendisse porttitor sit</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingSeven">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                        We Provide Best Services
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                                <div class="panel-body">
+                                    All Layouts can be use for Toggles and Accordions, We have created 4 different unique styles for you.
+
+                                    <ul class="list list-check">
+                                        <li>Fusce imperdiet mollis quam</li>
+                                        <li>Suspendisse porttitor sit</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // SECTION 4 -->
+
+    <!-- SECTION 5 - BANNER -->
+    <section class="banner space">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2>Looking for an practical and affordable<br>solution for your next project?</h2>
+                    <a href="#" class="btn btn-default btn-colored">Get A Free Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // SECTION 5 -->
+
+    <!-- SECTION 6 - TEAM -->
+    <section class="space">
+        <div class="container">
+            <div class="row">
+                <div class="section-headline">
+                    <h3>Meet The Team</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <article class="person style3">
+                        <div class="person-img">
+                            <img src="http://placehold.it/600x700" alt="Person's Name">
+                        </div>
+
+                        <div class="person-caption">
+                            <h4>Jessica Marvin</h4>
+                            <p>Construction Manager</p>
+                            <p>
+                                Lorem ipsum dolor sit am consectetur adipiscin am ornare sem sit.
+                            </p>
+                        </div>
+
+                        <ul class="person-social">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="col-md-4">
+                    <article class="person style3">
+                        <div class="person-img">
+                            <img src="http://placehold.it/600x700" alt="Person's Name">
+                        </div>
+
+                        <div class="person-caption">
+                            <h4>Mike Harward</h4>
+                            <p>Construction Manager</p>
+                            <p>
+                                Lorem ipsum dolor sit am consectetur adipiscin am ornare sem sit.
+                            </p>
+                        </div>
+
+                        <ul class="person-social">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="col-md-4">
+                    <article class="person style3">
+                        <div class="person-img">
+                            <img src="http://placehold.it/600x700" alt="Person's Name">
+                        </div>
+
+                        <div class="person-caption">
+                            <h4>Alicia alex</h4>
+                            <p>Construction Manager</p>
+                            <p>
+                                Lorem ipsum dolor sit am consectetur adipiscin am ornare sem sit.
+                            </p>
+                        </div>
+
+                        <ul class="person-social">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // SECTION 6 -->
+
+    <!-- SECTION 7 - TESTIMONIALS -->
+    <div class="testimonials space">
+        <div class="container">
+            <div class="row">
+
+                <div class="owl-carousel testimonials-slider">
+
+                    <!-- SLIDE -->
+                    <div>
+                        <div class="testimonial style3">
+                            <p>“ Look famous. Be legendary. Appear complex. Act easy. Radiate presence. Travel light. Seem a dream. Prove real. ”</p>
+                            <h4>Zawia</h4>
+                        </div>
+                    </div>
+
+                    <!-- SLIDE -->
+                    <div>
+                        <div class="testimonial style3">
+                            <p>“ Look famous. Be legendary. Appear complex. Act easy. Radiate presence. Travel light. Seem a dream. Prove real. ”</p>
+                            <h4>Zawia</h4>
+                        </div>
+                    </div>
+
+                    <!-- SLIDE -->
+                    <div>
+                        <div class="testimonial style3">
+                            <p>“ Look famous. Be legendary. Appear complex. Act easy. Radiate presence. Travel light. Seem a dream. Prove real. ”</p>
+                            <h4>Zawia</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // SECTION 7 -->
+
+    <!-- SECTION 8 - INFO -->
+    <section class="info space">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 space-mb">
+                    <h4>What We Do</h4>
+                    <div class="space-dark clearfix">
+                        <ul class="nav nav-tabs style3">
+                            <li role="presentation" class="active">
+                                <a href="#tab-7" role="tab" data-toggle="tab">
+                                    <span>Construction</span>
+                                </a>
+                            </li>
+
+                            <li role="presentation">
+                                <a href="#tab-8" role="tab" data-toggle="tab">
+                                    <span>Renovation</span>
+                                </a>
+                            </li>
+
+                            <li role="presentation">
+                                <a href="#tab-9" role="tab" data-toggle="tab">
+                                    <span>Consulting</span>
+                                </a>
+                            </li>
+
+                            <li role="presentation">
+                                <a href="#tab-10" role="tab" data-toggle="tab">
+                                    <span>Contractor</span>
+                                </a>
+                            </li>
+
+                            <li role="presentation">
+                                <a href="#tab-11" role="tab" data-toggle="tab">
+                                    <span>Architecture</span>
+                                </a>
+                            </li>
+
+                            <li role="presentation">
+                                <a href="#tab-12" role="tab" data-toggle="tab">
+                                    <span>Planning</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content style3">
+                            <div class="tab-pane fade active in" id="tab-7">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitestibulum sit amet malesuada leo. Vestibulum eros magna volutpat acilisis cursus, tempus et ex. Vestibulum pellentesque et dolor sit amet lacinia. Pellentesque eu enim nec nibh convallis suscipit. Inlibero dolor, fermentum quis sodales ac, fermentum in augue. Morbi interdum nulla nunc eu dolor.</p>
+                                <ul class="list list-check">
+                                    <li>24/7 Free Consulation</li>
+                                    <li>Fast &amp; Best Service Providers</li>
+                                    <li>Modern Construction Designs</li>
+                                    <li>Skilled Workers</li>
+                                </ul>
+                            </div><!-- // .tab-pane .fade -->
+
+                            <div class="tab-pane fade" id="tab-8">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitestibulum sit amet malesuada leo. Vestibulum eros magna volutpat acilisis cursus, tempus et ex. Vestibulum pellentesque et dolor sit amet lacinia. Pellentesque eu enim nec nibh convallis suscipit. Inlibero dolor, fermentum quis sodales ac, fermentum in augue. Morbi interdum nulla nunc eu dolor.</p>
+                                <ul class="list list-check">
+                                    <li>24/7 Free Consulation</li>
+                                    <li>Fast &amp; Best Service Providers</li>
+                                    <li>Modern Construction Designs</li>
+                                    <li>Skilled Workers</li>
+                                </ul>
+                            </div><!-- // .tab-pane .fade -->
+
+                            <div class="tab-pane fade" id="tab-9">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitestibulum sit amet malesuada leo. Vestibulum eros magna volutpat acilisis cursus, tempus et ex. Vestibulum pellentesque et dolor sit amet lacinia. Pellentesque eu enim nec nibh convallis suscipit. Inlibero dolor, fermentum quis sodales ac, fermentum in augue. Morbi interdum nulla nunc eu dolor.</p>
+                                <ul class="list list-check">
+                                    <li>24/7 Free Consulation</li>
+                                    <li>Fast &amp; Best Service Providers</li>
+                                    <li>Modern Construction Designs</li>
+                                    <li>Skilled Workers</li>
+                                </ul>
+                            </div><!-- // .tab-pane .fade -->
+
+                            <div class="tab-pane fade" id="tab-10">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitestibulum sit amet malesuada leo. Vestibulum eros magna volutpat acilisis cursus, tempus et ex. Vestibulum pellentesque et dolor sit amet lacinia. Pellentesque eu enim nec nibh convallis suscipit. Inlibero dolor, fermentum quis sodales ac, fermentum in augue. Morbi interdum nulla nunc eu dolor.</p>
+                                <ul class="list list-check">
+                                    <li>24/7 Free Consulation</li>
+                                    <li>Fast &amp; Best Service Providers</li>
+                                    <li>Modern Construction Designs</li>
+                                    <li>Skilled Workers</li>
+                                </ul>
+                            </div><!-- // .tab-pane .fade -->
+
+                            <div class="tab-pane fade" id="tab-11">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitestibulum sit amet malesuada leo. Vestibulum eros magna volutpat acilisis cursus, tempus et ex. Vestibulum pellentesque et dolor sit amet lacinia. Pellentesque eu enim nec nibh convallis suscipit. Inlibero dolor, fermentum quis sodales ac, fermentum in augue. Morbi interdum nulla nunc eu dolor.</p>
+                                <ul class="list list-check">
+                                    <li>24/7 Free Consulation</li>
+                                    <li>Fast &amp; Best Service Providers</li>
+                                    <li>Modern Construction Designs</li>
+                                    <li>Skilled Workers</li>
+                                </ul>
+                            </div><!-- // .tab-pane .fade -->
+
+                            <div class="tab-pane fade" id="tab-12">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitestibulum sit amet malesuada leo. Vestibulum eros magna volutpat acilisis cursus, tempus et ex. Vestibulum pellentesque et dolor sit amet lacinia. Pellentesque eu enim nec nibh convallis suscipit. Inlibero dolor, fermentum quis sodales ac, fermentum in augue. Morbi interdum nulla nunc eu dolor.</p>
+                                <ul class="list list-check">
+                                    <li>24/7 Free Consulation</li>
+                                    <li>Fast &amp; Best Service Providers</li>
+                                    <li>Modern Construction Designs</li>
+                                    <li>Skilled Workers</li>
+                                </ul>
+                            </div><!-- // .tab-pane .fade -->
+
+                        </div><!-- // .tab-content -->
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h4>About Us</h4>
+                    <div class="imgbox style3">
+                        <div class="img">
+                            <img src="http://placehold.it/960x500" alt="About the image">
+                        </div>
+
+                        <div class="align">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit cursus massa at urnaaculis estie aliquamellus vitae ultr ndmentum leo massa mollis estiegittis miristumed nulla sed fringilla vitae elit cursus massa at urnaaculis estie.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // SECTION 8 -->
+
+    <!-- SECTION 9 - CLIENTS -->
+    <section class="clients">
+        <h2 class="hidden">Clients</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="owl-carousel clients-slider">
+
+                        <!-- SLIDE -->
+                        <div>
+                            <div class="client-img">
+                                <img src="http://placehold.it/300x150" alt="About the image">
+
+                                <div class="client-hover">
+                                    <img src="http://placehold.it/300x150" alt="About the image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SLIDE -->
+                        <div>
+                            <div class="client-img">
+                                <img src="http://placehold.it/300x150" alt="About the image">
+
+                                <div class="client-hover">
+                                    <img src="http://placehold.it/300x150" alt="About the image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SLIDE -->
+                        <div>
+                            <div class="client-img">
+                                <img src="http://placehold.it/300x150" alt="About the image">
+
+                                <div class="client-hover">
+                                    <img src="http://placehold.it/300x150" alt="About the image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SLIDE -->
+                        <div>
+                            <div class="client-img">
+                                <img src="http://placehold.it/300x150" alt="About the image">
+
+                                <div class="client-hover">
+                                    <img src="http://placehold.it/300x150" alt="About the image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SLIDE -->
+                        <div>
+                            <div class="client-img">
+                                <img src="http://placehold.it/300x150" alt="About the image">
+
+                                <div class="client-hover">
+                                    <img src="http://placehold.it/300x150" alt="About the image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SLIDE -->
+                        <div>
+                            <div class="client-img">
+                                <img src="http://placehold.it/300x150" alt="About the image">
+
+                                <div class="client-hover">
+                                    <img src="http://placehold.it/300x150" alt="About the image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SLIDE -->
+                        <div>
+                            <div class="client-img">
+                                <img src="http://placehold.it/300x150" alt="About the image">
+
+                                <div class="client-hover">
+                                    <img src="http://placehold.it/300x150" alt="About the image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SLIDE -->
+                        <div>
+                            <div class="client-img">
+                                <img src="http://placehold.it/300x150" alt="About the image">
+
+                                <div class="client-hover">
+                                    <img src="http://placehold.it/300x150" alt="About the image">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // SECTION 9 -->
+{% endblock %}
