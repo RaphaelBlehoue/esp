@@ -1,63 +1,49 @@
+
+<!-- Header -->
 <header>
-
-    <!-- TOP HEADER -->
-    <div class="header-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="logo">
-                        <img alt="Deliver's Logo" src="img/logo.png">
-                    </div>
-
-                    <div class="meta">
-                        <a href="#"><i class="fa fa-phone"></i>1800 200 300</a>
-                        <a href="#" class="btn btn-default btn-colored">Get A Quote</a>
-                    </div>
-                </div>
+    <!-- Top Bar -->
+    <div class="container">
+        <div class="top-bar">
+            <div class="open-time">
+                <p><i class="ion-ios-clock-outline"></i> {{ 'Forum pour le financement des entreprises' }}</p>
+            </div>
+            <div class="call">
+                <p><i class="ion-headphone"></i> (+225) 03 01 03 01</p>
             </div>
         </div>
     </div>
 
-    <!-- NAVBR -->
-    <nav class="navbar navbar-default">
-        <div class="container">
+    <!-- Logo -->
+    <div class="container">
+        <div class="logo"> <a href="#."><img src="{{ asset('layout_three/images/logo_top.png') }}" alt=""></a> </div>
 
-            <!-- NAVBAR BRAND AND HAMBURGER ICON -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-                <a class="navbar-brand visible-xs" href="#">
-                    <img alt="Deliver's Logo" src="img/logo.png">
-                </a>
-            </div>
-
-            <!-- NAVBAR LINKS -->
-            <div class="collapse navbar-collapse navbar-left" id="navbar">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="homepage.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="what-we-do.html">What We Do</a> </li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="navbar-social visible-lg">
-                <ul>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                    <li><a href="#"><i class="fa fa-tumblr-square"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        <!-- Nav -->
+        <nav>
+            <ul id="ownmenu" class="ownmenu">
+                <li class="active"><a href="">{{ 'Accueil'|upper }}</a></li>
+                <li><a href="">{{ 'Présentation' }}</a>
+                    <ul class="dropdown">
+                        <li><a href="">{{ 'l\'initiative'|upper }}</a></li>
+                        <li><a href=""> {{ 'les organisateurs'|upper }} </a></li>
+                        <li><a href=""> {{ 'sponsors - partenaires'|upper }} </a></li>
+                    </ul>
+                </li>
+                <li><a href="">{{ 'Le forum'|upper }}</a>
+                    <ul class="dropdown">
+                        <li><a href="">{{ 'les participants'|upper }}</a></li>
+                        <li><a href=""> {{ 'les engagements'|upper }} </a></li>
+                        <li><a href=""> {{ 'Les Données pour la croissance'|upper }} </a></li>
+                    </ul>
+                </li>
+                <li><a href=""> {{ 'médias'|upper }} </a>
+                    <ul class="dropdown">
+                        <li><a href="">{{ 'communiquez de presse'|upper }}</a></li>
+                        <li><a href=""> {{ 'galerie photos'|upper }} </a></li>
+                    </ul>
+                </li>
+                <li><a href=""> {{ 'contacts' }}</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
+<!-- Header End -->

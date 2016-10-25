@@ -5,14 +5,14 @@
         <div class="container">
             <div class="row">
                 <div class="info col-sm-4">
-                    <i class="fa fa-envelope"></i><a href="#">info@memorials.com</a>
+                    <i class="fa fa-envelope"></i><a href="#">info@exemple.com</a>
                 </div><!-- /.info -->
 
                 <div class="col-sm-8 top-right text-right">
-                    <div class="lang-select">
+                    <!--<div class="lang-select">
                         <select class="cs-select cs-skin-border">
-                            <option value="" disabled selected>English</option>
-                            <option value="french">French</option>
+                            <option value="" disabled selected>French</option>
+                            <option value="french">English</option>
                             <option value="spanish">Spanish</option>
                             <option value="arabic">Arabic</option>
                         </select>
@@ -46,13 +46,13 @@
         <div class="container">
             <div class="logo pull-left">
                 <a class="navbar-brand" href="./">
-                    <img src="images/logo2.png" alt="Memorial Logo">
+                    <img src="{{ asset('layout_three/images/logo_top.png') }}" alt="lafinancesengage Logo">
                 </a><!-- /.navbar-brand -->
             </div><!-- /.logo -->
 
             <div class="middle-quote pull-left">
                 <blockquote class="quote">
-                    A ceremony of a dead person held with the burial or cremation in connection.
+                   {{ 'Forum pour le financement des entreprises' }} <br/> <strong> Lieu : Siège social de la banque africaine de développement (BAD).</strong>
                 </blockquote>
             </div><!-- /.middle-quote -->
 
@@ -60,14 +60,14 @@
                 <div class="street media">
                     <div class="media-left"><i class="fa fa-map-marker"></i> </div>
                     <div class="media-body">
-                        <span> Sydney</span> 121 St, VLC 300 AUS
+                        <span> Cocody Vallon</span> Abidjan, Côte d'ivoire
                     </div>
                 </div>
 
                 <div class="cell media">
                     <div class="media-left"><i class="fa fa-phone"></i> </div>
                     <div class="media-body">
-                        Call us <span>+61 3415 9078</span>
+                        Contact: <span>+(225) 03010301</span>
                     </div>
                 </div>
             </div><!-- /.middle-right -->
@@ -96,38 +96,32 @@
                 <nav class="collapse navbar-collapse">
                     <!-- Main navigation -->
                     <ul id="mainNavigation" class="main-mav nav navbar-nav">
-                        <li class="menu-item-has-children current-menu-item"><a href="index.html">Home</a>
+                        <li class="current-menu-item"><a href="index.html">{{ 'Accueil' }}</a></li><!-- /.menu-item-has-children -->
+                        <li class="menu-item-has-children">
+                            <a href="#">{{ 'Presentation' }}</a>
                             <ul class="sub-menu">
-                                <li><a href="index.html">Home V1</a></li>
-                                <li><a href="index2.html">Home V2</a></li>
+                                <li><a href="">{{ 'l\'initiative'|upper }}</a></li>
+                                <li><a href=""> {{ 'les organisateurs'|upper }} </a></li>
+                                <li><a href=""> {{ 'sponsors - partenaires'|upper }} </a></li>
                             </ul><!-- /.sub-menu -->
                         </li><!-- /.menu-item-has-children -->
                         <li class="menu-item-has-children">
-                            <a href="#">Pages</a>
+                            <a href="#">{{ 'Le forum' }}</a>
                             <ul class="sub-menu">
-                                <li><a href="404.html">404</a></li>
-                                <li><a href="faq.html">Faq</a></li>
-                                <li><a href="team.html">Team</a></li>
-                                <li><a href="pricing.html">Pricing</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="locations.html">Locations</a></li>
-                                <li><a href="shortcode.html">Shortcode Page</a></li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">3rd Level Menu</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="#">Demo Link 1</a></li>
-                                        <li><a href="#">Demo Link 2</a></li>
-                                        <li><a href="#">Demo Link 3</a></li>
-                                    </ul><!-- /.sub-menu -->
-                                </li><!-- /.menu-item-has-children -->
+                                <li><a href="">{{ 'les participants'|upper }}</a></li>
+                                <li><a href=""> {{ 'les engagements'|upper }} </a></li>
+                                <li><a href="">  </a></li>
                             </ul><!-- /.sub-menu -->
                         </li><!-- /.menu-item-has-children -->
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="funeral.html">Funeral</a></li>
-                        <li><a href="cemetery.html">Cemetery</a></li>
-                        <li><a href="cremation.html">Cremation</a></li>
-                        <li><a href="obituaries.html">Obituaries</a></li>
-                        <li><a class="btn donate-btn" href="#">Donate</a></li>
+                        <li><a href="">{{ 'Les Donnée pour la croissance'|upper }}</a></li>
+                        <li class="menu-item-has-children">
+                            <a href="#">{{ 'médias' }}</a>
+                            <ul class="sub-menu">
+                                <li><a href="">{{ 'communiquez de presse'|upper }}</a></li>
+                                <li><a href=""> {{ 'galerie photos'|upper }} </a></li>
+                            </ul><!-- /.sub-menu -->
+                        </li><!-- /.menu-item-has-children -->
+                        <li><a href="">{{ 'contact' }}</a></li>
                     </ul> <!-- /#mainNavigation -->
                 </nav> <!-- /.navbar-collapse  -->
             </div> <!-- /.container -->

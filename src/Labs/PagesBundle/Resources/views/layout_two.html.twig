@@ -1,135 +1,46 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><html class=""><!--<![endif]-->
+<!doctype html>
+<html class="no-js" lang="">
 <head>
     <meta charset="utf-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="description" content="">
-    <meta name="author" content="">
-
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>{{ 'La finance s\'engage' }} | {% block title %}{% endblock %}</title>
-
-    <!-- Standard Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('favicon/favicon.ico') }}" />
-
-    <!-- For iPhone 4 Retina display: -->
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('favicon/apple-icon-114x114.png') }}">
-
-    <!-- For iPad: -->
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('favicon/apple-icon-72x72.png') }}">
-
-    <!-- For iPhone: -->
-    <link rel="apple-touch-icon-precomposed" href="{{ asset('favicon/apple-icon-57x57.png') }}">
-
-    <!-- Library - Loader CSS -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('layout_two/libraries/loader/loaders.min.css') }}">
-
-    <!-- Library - Google Font Familys -->
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Philosopher:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
-    <!-- Library - Bootstrap v3.3.5 -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('layout_two/libraries/bootstrap/bootstrap.min.css') }}">
-
-    <!-- Font Icons -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('layout_two/libraries/fonts/font-awesome.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('layout_two/libraries/fonts/elegant-icons.css') }}">
-
-    <!-- Library - OWL Carousel V.2.0 beta -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('layout_two/libraries/owl-carousel/owl.carousel.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('layout_two/libraries/owl-carousel/owl.theme.css') }}">
-
-    <!-- Library - Animate CSS -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('layout_two/libraries/animate/animate.min.css') }}">
-
-    <!-- Library - Magnific Popup -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('layout_two/libraries/magnific-popup/magnific-popup.css') }}">
-
-    <!-- Custom - Common CSS -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('layout_two/css/plugins.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('layout_two/css/navigation-menu.css') }}">
-
-    <!--[if IE]>
-    <link rel="stylesheet" type="text/css" href="{{ asset('layout_two/css/all-ie-only.css') }}" />
-    <![endif]-->
-
-    <!-- Custom - Theme CSS -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('layout_two/css/style.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('layout_two/css/shortcodes.css') }}">
-
-    {% block stylesheets %}{% endblock %}
-
-    <!--[if lt IE 9]>
-    <script src="{{ asset('layout_two/js/html5/respond.min.js') }}"></script>
-    <![endif]-->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="{{ asset('layout_two/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('layout_two/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('layout_two/css/owl.carousel.css') }}">
+    <link rel="stylesheet" href="{{ asset('layout_two/css/owl.theme.css') }}">
+    <link rel="stylesheet" href="{{ asset('layout_two/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('layout_two/css/normalize.css') }}">
+    <link rel="stylesheet" href="{{ asset('layout_two/css/main.css') }}">
+    <link rel="stylesheet" href="{{ asset('layout_two/css/responsive.css') }}">
+    <script src="{{ asset('layout_two/js/modernizr-2.8.3.min.js') }}"></script>
 </head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 
-<body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
-<!-- Loader -->
-<div id="site-loader" class="load-complete">
-    <div class="loader">
-        <div class="loader-inner ball-clip-rotate">
-            <div></div>
-        </div>
-    </div>
-</div><!-- Loader /- -->
-
-<a id="top"></a>
-<!-- Main Container -->
-<div class="main-container">
-    <!-- Header -->
-    {% include 'LabsPagesBundle:includes/layout_two:header.html.twig' %}
-
-    <!-- Banner Section -->
-    {% include 'LabsPagesBundle:includes/layout_two:slide.html.twig' %}
-
-    {% block body %}
-
-    {% endblock %}
+<!-- Add your site or application content here -->
 
 
-    {% include 'LabsPagesBundle:includes/layout_two:footer.html.twig' %}
-</div><!-- Main Container -->
+{% include 'LabsPagesBundle:includes/layout_two:header.html.twig' %}
+{% include 'LabsPagesBundle:includes/layout_two:slide.html.twig' %}
 
-<!-- JQuery v1.11.3 -->
-<script src="{{ asset('layout_two/js/jquery.min.js') }}"></script>
+{% block body %}{% endblock %}
 
-<!-- Library - Modernizer -->
-<script src="{{ asset('layout_two/libraries/modernizr/modernizr.js') }}"></script>
+{% include 'LabsPagesBundle:includes/layout_two:footer.html.twig' %}
 
-<!-- Library - Bootstrap v3.3.5 -->
-<script src="{{ asset('layout_two/libraries/bootstrap/bootstrap.min.js') }}"></script><!-- Bootstrap JS File v3.3.5 -->
-
-<!-- jQuery Easing v1.3 -->
-<script src="{{ asset('layout_two/js/jquery.easing.min.js') }}"></script>
-
-<!-- Library - jQuery.appear -->
-<script src="{{ asset('layout_two/libraries/appear/jquery.appear.js') }}"></script>
-
-<!-- Library - OWL Carousel V.2.0 beta -->
-<script src="{{ asset('layout_two/') }}libraries/owl-carousel/owl.carousel.min.js"></script>
-
-<!-- jQuery For Number Counter -->
-<script src="{{ asset('layout_two/libraries/number/jquery.animateNumber.min.js') }}"></script>
-
-<!-- Library - Isotope Portfolio Filter -->
-<script src="{{ asset('layout_two/libraries/isotope/isotope.pkgd.min.js') }}"></script>
-
-<!-- Library - Magnific Popup - v1.0.0 -->
-<script src="{{ asset('layout_two/libraries/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
-
-
-<!-- Library - Theme JS -->
-<script src="{{ asset('layout_two/js/functions.js') }}"></script>
-{% block javascripts %}{% endblock %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.3.min.js"><\/script>')</script>
+<script src="{{ asset('layout_two/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('layout_two/js/owl.carousel.js') }}"></script>
+<script src="{{ asset('layout_two/js/jquery.countdown.min.js') }}"></script>
+<script src="{{ asset('layout_two/js/jquery.mixitup.js') }}"></script>
+<script src="{{ asset('layout_two/js/Chart.min.js') }}"></script>
+<script src="{{ asset('layout_two/js/custom-chart.js') }}"></script>
+<script src="{{ asset('layout_two/js/main.js') }}"></script>
 </body>
 </html>

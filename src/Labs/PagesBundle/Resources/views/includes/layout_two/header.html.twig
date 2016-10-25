@@ -1,77 +1,103 @@
-<header class="header-main">
-    <!-- Top Header -->
-    <div class="top-header container-fluid no-padding">
-        <!-- Container -->
+<header>
+    <div class="top-bar gray-f5f5-bg">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <p>We believe every interaction with our patients is an opportunity!</p>
+                <div class="col-md-9">
+                    <!--<ul class="list-inline top-nav">
+                        <li><a href="#" class="text-uppercase">About</a>|</li>
+                        <li><a href="#" class="text-uppercase">Service</a>|</li>
+                        <li><a href="#" class="text-uppercase">Offers</a>|</li>
+                        <li><a href="#" class="text-uppercase">Faq</a>|</li>
+                        <li><a href="#" class="text-uppercase">My account</a></li>
+                    </ul>-->
                 </div>
-                <div class="col-md-6 text-right">
-                    <ul>
-                        <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" title="Google+"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#" title="Tumblr"><i class="fa fa-tumblr"></i></a></li>
-                    </ul>
-                    <a href="#" title="Book Appointment"><span>+</span>Book Appointment</a>
-                </div>
-            </div>
-        </div><!-- container /- -->
-    </div><!-- Top Header /- -->
-    <!-- Logo Block -->
-    <div class="middle-header container-fluid no-padding">
-        <!-- Container -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 logo-block pull-left">
-                    <a href="#" title="Logo"><img src="images/logo.png" alt="Logo" /></a>
-                </div>
-                <div class="col-md-9 text-right pull-right">
-                    <div class="location">
-                        <h3><img src="images/location-ic.png" alt="Location" /> Our Location</h3>
-                        <p>E44 - Web Corner, Melbourne - 18</p>
-                    </div>
-                    <div class="phone">
-                        <h3><img src="images/phone-ic.png" alt="phone" /> (+1)800 433 633</h3>
-                        <p>Call Us Now- 24/7 Customer Support</p>
-                    </div>
-                </div>
-            </div>
-        </div><!-- Container -->
-    </div><!-- Logo Block /- -->
-    <!-- Navigation -->
-    <nav class="navbar ow-navigation">
-        <div class="container">
-            <div class="row">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="team.html">Our Team</a></li>
-                        <li><a href="departments.html">departments</a></li>
-                        <li><a href="gallery.html">Gallery </a></li>
-                        <li class="dropdown">
-                            <a href="blog.html" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-                            <i class="ddl-switch fa fa-angle-down"></i>
-                            <ul class="dropdown-menu">
-                                <li><a href="blog-post.html">Blog Post</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact-us.html">Contact</a></li>
-                    </ul>
+                <div class="col-md-3 top-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google-plus"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-search"></a>
                 </div>
             </div>
         </div>
-    </nav>
+    </div>
+    <div class="container">
+        <div class="row row-eq-height">
+            <div class="col-md-5 text-center logo">
+                <img class="img-responsive" src="{{ asset('layout_two/img/logo-top.png') }}" alt="">
+            </div>
+            <div class="col-md-7">
+                <div class="top-contact-details">
+                    <div class="row mt-20">
+                        <div class="col-md-4">
+                            <div class="clearfix border-r">
+                                <img class="img-responsive pull-left t-contact-img" src="{{ asset('layout_two/img/call.png') }}" alt="">
+                                <div class="t-contact-info ubuntu pull-left">
+                                    <span class="fz-14 gray-999">Applelez nous au :</span>
+                                    <span class="fz-13">+ 124 45 78 678 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="clearfix border-r">
+                                <img class="img-responsive pull-left t-contact-img" src="{{ asset('layout_two/img/email.png') }}" alt="">
+                                <div class="t-contact-info ubuntu pull-left">
+                                    <span class="fz-14 gray-999">Email us</span>
+                                    <span class="fz-13">info@mail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="martel text-uppercase" href="#">{{ 'participer' }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-nav mt-20">
+        <div class="container">
+            <div class="col-md-offset-5 col-md-7">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse no-margin no-padding">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="">{{ 'Accueil'|upper }}</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ 'Présentation' }} <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">{{ 'l\'initiative'|upper }}</a></li>
+                                    <li><a href=""> {{ 'les organisateurs'|upper }} </a></li>
+                                    <li><a href=""> {{ 'sponsors - partenaires'|upper }} </a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ 'Le forum'|upper }}  <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">{{ 'les participants'|upper }}</a></li>
+                                    <li><a href=""> {{ 'les engagements'|upper }} </a></li>
+                                    <li><a href=""> {{ 'Les Données pour la croissance'|upper }} </a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ 'médias'|upper }}  <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">{{ 'communiquez de presse'|upper }}</a></li>
+                                    <li><a href=""> {{ 'galerie photos'|upper }} </a></li>
+                                </ul>
+                            </li>
+                            <li><a class="green-nav" href="">{{ 'contact' }}</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </nav>
+            </div>
+        </div>
+    </div>
 </header>

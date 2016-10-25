@@ -2,16 +2,395 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5361487-e47d-4cfc-99ae-051457e332c8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_one/header.html.twig" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_one/css/base.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_one/css/base.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_one/css/components.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_one/css/components.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_one/css/fonts/linea-basic-10.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_one/css/fonts/linea-basic-10.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_one/css/fonts/linea-basic-10.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_one/css/fonts/linea-basic-10.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_one/css/fonts/linea-ecommerce-10.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_one/css/fonts/linea-ecommerce-10.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_one/css/fonts/linea-ecommerce-10.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_one/css/fonts/linea-ecommerce-10.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_one/css/layout.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_one/css/layout.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_one/css/pages.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_one/css/pages.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_one/css/vendor.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_one/css/vendor.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_one/js/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_one/js/vendor/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_one/js/vendor/circle-progress.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_one/js/vendor/jquery-1.11.3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_one/js/vendor/jquery.magnific-popup.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_one/js/vendor/modernizr-2.8.3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_one/js/vendor/owl.carousel.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/css/navigation-menu.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/css/plugins.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/css/shortcodes.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/fonts/montserrat-light.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/fonts/montserrat-light.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/fonts/montserrat-light.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/fonts/montserrat-light.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/fonts/montserrat-light.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/fonts/montserrat-semibold.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/fonts/montserrat-semibold.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/fonts/montserrat-semibold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/fonts/montserrat-semibold.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/fonts/montserrat-semibold.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/apple-touch-icon-114x114-precomposed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/apple-touch-icon-57x57-precomposed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/apple-touch-icon-72x72-precomposed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/appointment/appointment.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/author/author.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/blog/banner-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/blog/blog-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/blog/blog-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/blog/blog-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/blog/blog-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/blog/blog-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/blog/blog-thumb-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/blog/blog-thumb-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/blog/blog-thumb-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/blog/blog-thumb-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/blog/home-blog-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/blog/home-blog-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/blog/home-blog-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/blog/section-seprator.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/brands/brand-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/brands/brand-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/brands/brand-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/brands/brand-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/brands/brand-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/brands/brand-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/callout/callout.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/comment/comment-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/comment/comment-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/comment/comment-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/counter/counter-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/counter/counter-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/counter/counter-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/counter/counter-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/counter/counter.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/error.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/addto-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/addto-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/addto-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/addto-cart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/addtocart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/admin-ic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/blog-like.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/calander.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/camp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/care.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/cart-ic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/comment.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/customer-support.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/dogfeek.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/dribbble-ic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/error.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/fb-ic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/ftr-customer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/ftr-dribbble.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/ftr-email.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/ftr-fb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/ftr-g+.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/ftr-link.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/ftr-ln.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/ftr-location.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/ftr-tumbler.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/ftr-tw.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/g+-ic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/home.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/in-ic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/insurance.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/intro-icon-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/intro-icon-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/intro-icon-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/like-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/location-ic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/medal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/nutrition.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/phone-ic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/product-remove.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/quotes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/separator-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/separator-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/separator-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/separator.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/seprator-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/share.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/tags.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/time-ic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/time.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/tumbler-ic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/tw-ic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/visa-master-card.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/icon/wishlist.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/intro/intro-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/intro/intro-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/intro/intro-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/intro/intro.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/marker.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/offer/offer-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/offer/offer-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/offer/offer.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/offer/pattern.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/pricing/price.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/product/product-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/product/product-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/services/services-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/services/services.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/Untitled-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/pets-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/pets-10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/pets-11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/pets-12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/pets-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/pets-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/pets-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/pets-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/pets-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/pets-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/pets-8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/pets-9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/seller-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/seller-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/seller-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/shop-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/shop-10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/shop-11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/shop-12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/shop-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/shop-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/shop-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/shop-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/shop-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/shop-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/shop-8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/shop-9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/shop/single-product.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/slider-image/slider-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/slider-image/slider-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/slider-image/slider-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/team/team-member-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/team/team-member-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/team/team-member-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/team/team-member-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/testimonial/avatar-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/testimonial/avatar-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/testimonial/avatar-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/testimonial/avatar-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/testimonial/testimonial.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/whatwedo/bag.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/whatwedo/bucket.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/whatwedo/cat.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/whatwedo/dog.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/whatwedo/medical.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/whatwedo/nutrition.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/why-choose/why-choose-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/widget/bullet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/widget/recent/recent-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/widget/recent/recent-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/images/widget/recent/recent-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/js/functions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/js/html5/respond.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/js/jquery.easing.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/libraries/animate/animate.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/libraries/appear/jquery.appear.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/libraries/bootstrap/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/libraries/bootstrap/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/libraries/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/libraries/fonts/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/libraries/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/libraries/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/libraries/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/libraries/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/libraries/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/libraries/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/libraries/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/libraries/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/libraries/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/libraries/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/libraries/loader/loaders.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/libraries/modernizr/modernizr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/libraries/number/jquery.animateNumber.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/libraries/owl-carousel/owl.carousel.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/libraries/owl-carousel/owl.carousel.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/libraries/owl-carousel/owl.theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/libraries/price-filter/jquery-ui.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_three/libraries/price-filter/jquery-ui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/css/all-ie-only.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/css/navigation-menu.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/css/plugins.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/css/shortcodes.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/fonts/montserrat-light.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/fonts/montserrat-light.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/fonts/montserrat-light.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/fonts/montserrat-light.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/fonts/montserrat-light.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/fonts/montserrat-semibold.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/fonts/montserrat-semibold.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/fonts/montserrat-semibold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/fonts/montserrat-semibold.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/fonts/montserrat-semibold.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/404.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/about-banner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/ambulance-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/ambulance.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/apple-touch-icon-114x114-precomposed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/apple-touch-icon-57x57-precomposed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/apple-touch-icon-72x72-precomposed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/appoinment-latter-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/appoinment-latter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/appoinment.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/author.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/banner-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/banner-main.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/blog-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/blog-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/blog-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/blog-banner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/blog-post-banner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/blood-test.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/call-out-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/cardiology.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/comment-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/comment-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/comment-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/contact-banner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/departments-banner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/departments-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/diagnostic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/doctor-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/doctor-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/doctor-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/dp-icon-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/dp-icon-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/dp-icon-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/error-banner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/ftr-email.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/ftr-location.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/ftr-phone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/gallery-banner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/happy-customer.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/header-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/heart-ic-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/heart-ic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/heart-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/heart-sm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/icon-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/icon-12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/icon-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/icon-22.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/icon-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/icon-32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/icon-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/icon-42.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/latest-news-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/latest-news-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/location-ic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/logo-ftr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/marker.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/neurology.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/nuclear-magnetic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/panel-img-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/phone-ic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/phone-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/phone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/plus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/portfolio-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/portfolio-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/portfolio-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/portfolio-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/portfolio-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/portfolio-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/portfolio-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/portfolio-8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/portfolio-9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/pulmonary.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/quote.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/recent-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/recent-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/recent-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/recent-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/section-seprator.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/services-banner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/team-banner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/testimonial-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/traumatology - Copy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/traumatology.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/what-we-do-best-block-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/what-we-do-best-block-title-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/what-we-do-best.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/who-we-are.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/images/x-ray.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/js/functions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/js/html5/respond.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/js/jquery.easing.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/animate/animate.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/appear/jquery.appear.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/bootstrap/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/bootstrap/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/fonts/ElegantIcons.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/fonts/ElegantIcons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/fonts/ElegantIcons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/fonts/ElegantIcons.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/fonts/elegant-icons.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/fonts/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/isotope/isotope.pkgd.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/loader/loaders.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/magnific-popup/jquery.magnific-popup.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/magnific-popup/magnific-popup.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/modernizr/modernizr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/number/jquery.animateNumber.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/owl-carousel/owl.carousel.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/owl-carousel/owl.carousel.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/libraries/owl-carousel/owl.theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/style.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/layout_three/images/favicon.ico" afterPath="$PROJECT_DIR$/web/layout_three/images/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/layout_three/images/logo.png" afterPath="$PROJECT_DIR$/web/layout_three/images/logo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/page_forth.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/page_forth.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/page_one.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/page_one.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/page_three.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/page_three.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/page_two.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/page_two.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout_forth.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout_forth.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_forth/footer.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_forth/footer.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_forth/header.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_forth/header.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_one/footer.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_one/footer.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_one/header.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_one/header.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_one/slide.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_one/slide.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_three/footer.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_three/footer.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_three/header.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_three/header.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_three/slide.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_three/slide.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_two/footer.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_two/footer.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_two/header.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_two/header.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_two/slide.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_two/slide.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout_one.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout_one.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout_three.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout_three.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout_two.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout_two.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/layout_forth/assets/css/style.css" afterPath="$PROJECT_DIR$/web/layout_forth/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/layout_three/css/style.css" afterPath="$PROJECT_DIR$/web/layout_three/css/style.css" />
     </list>
     <ignored path="lafinancesengage.dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,51 +412,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="layout_forth.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout_forth.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
-              <folding>
-                <element signature="e#1546#1599#0#Twig" expanded="true" />
-                <element signature="e#1672#1726#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_forth/footer.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-              <folding>
-                <element signature="n#footer#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="header.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_forth/header.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
-              <folding>
-                <element signature="n#header#0;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="1542">
+              <caret line="69" column="54" selection-start-line="69" selection-start-column="54" selection-end-line="69" selection-end-column="54" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slide.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_forth/slide.html.twig">
+      <file leaf-file-name="footer.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_forth/footer.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="n#section#0;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="138">
+              <caret line="6" column="109" selection-start-line="6" selection-start-column="109" selection-end-line="6" selection-end-column="109" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/layout_forth/assets/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="369">
+              <caret line="1087" column="21" selection-start-line="1087" selection-start-column="21" selection-end-line="1087" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,26 +456,31 @@
         <option value="$PROJECT_DIR$/web/app_dev.php" />
         <option value="$PROJECT_DIR$/web/app.php" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_one/slide.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_one/footer.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_forth/slide.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout_forth.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout_one.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/page_one.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_two/header.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_two/slide.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_two/footer.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout_two.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/page_two.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/page_three.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_three/header.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_three/slide.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/page_one.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/page_forth.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout_two.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_two/slide.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_three/footer.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout_three.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/page_forth.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_three/slide.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_two/header.html.twig" />
+        <option value="$PROJECT_DIR$/web/layout_two/css/main.css" />
+        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_two/footer.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_three/header.html.twig" />
+        <option value="$PROJECT_DIR$/web/layout_three/css/style.css" />
+        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_one/header.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_one/slide.html.twig" />
+        <option value="$PROJECT_DIR$/web/layout_one/css/style.css" />
+        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_one/footer.html.twig" />
+        <option value="$PROJECT_DIR$/web/layout_forth/assets/css/style.css" />
         <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_forth/header.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_forth/slide.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_forth/footer.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout_forth.html.twig" />
       </list>
     </option>
   </component>
@@ -199,6 +564,86 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout_forth" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lafinancesengage.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lafinancesengage.dev" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout_forth" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lafinancesengage.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lafinancesengage.dev" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout_forth" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lafinancesengage.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lafinancesengage.dev" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="var" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lafinancesengage.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lafinancesengage.dev" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -286,44 +731,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="includes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lafinancesengage.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lafinancesengage.dev" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Labs" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PagesBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="includes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout_one" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -390,66 +797,6 @@
               <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Default" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lafinancesengage.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lafinancesengage.dev" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Labs" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PagesBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lafinancesengage.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lafinancesengage.dev" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Labs" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PagesBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -496,15 +843,16 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_one" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/layout_one" />
+      <recent name="$PROJECT_DIR$/web/layout_three" />
+      <recent name="$PROJECT_DIR$/web/layout_two" />
       <recent name="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_forth" />
       <recent name="$PROJECT_DIR$/web/layout_forth" />
-      <recent name="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_three" />
-      <recent name="$PROJECT_DIR$/web/layout_three/css" />
-      <recent name="$PROJECT_DIR$/web/layout_three" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/layout_two" />
+      <recent name="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_one" />
     </key>
   </component>
   <component name="RunManager">
@@ -534,6 +882,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -568,21 +922,22 @@
       <option name="presentableId" value="Default" />
       <updated>1477329758066</updated>
       <workItem from="1477329763827" duration="379000" />
-      <workItem from="1477331593067" duration="10819000" />
+      <workItem from="1477331593067" duration="15785000" />
+      <workItem from="1477369029481" duration="11334000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11198000" />
+    <option name="totallyTimeSpent" value="27498000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="722" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16801292" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2180937" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="The R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="The R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -608,358 +963,28 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="47" column="11" selection-start-line="0" selection-start-column="0" selection-end-line="47" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#7#47#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/favicon.ico">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app_dev.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="14" column="88" selection-start-line="14" selection-start-column="88" selection-end-line="14" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-          <folding>
-            <element signature="e#47#104#0#PHP" expanded="true" />
-            <element signature="e#555#599#1#PHP" expanded="true" />
-            <element signature="e#798#842#1#PHP" expanded="true" />
-            <element signature="e#1048#1094#1#PHP" expanded="true" />
-            <element signature="e#1299#1345#1#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../illustation/template/deliver-construction_v10/Deliver Construction/HTML/homepage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="938" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/layout_two/css/plugins.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/page_one.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-          <folding>
-            <element signature="e#12#49#0#Twig" expanded="false" />
-            <element signature="e#146#3290#0#HTML" expanded="false" />
-            <element signature="e#3356#8430#0#HTML" expanded="false" />
-            <element signature="e#8496#15328#0#HTML" expanded="false" />
-            <element signature="e#15392#15811#0#HTML" expanded="false" />
-            <element signature="e#15873#19175#0#HTML" expanded="false" />
-            <element signature="e#19245#20581#0#HTML" expanded="false" />
-            <element signature="e#20643#28861#0#HTML" expanded="false" />
-            <element signature="e#28926#33095#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout_one.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
-          <folding>
-            <element signature="e#1863#1915#0#Twig" expanded="false" />
-            <element signature="e#1966#2017#0#Twig" expanded="false" />
-            <element signature="e#2070#2122#0#Twig" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_one/footer.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding>
-            <element signature="n#footer#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_one/slide.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="n#section#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_one/header.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
-          <folding>
-            <element signature="n#div#0;n#header#0;n#!!top" expanded="false" />
-            <element signature="n#nav#0;n#header#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/layout_two/images/x-ray.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/layout_two/images/ambulance-white.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/layout_two/images/about-banner.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/layout_two/images/404.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../illustation/template/maxi-health v10/HTML/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="60" selection-start-line="0" selection-start-column="0" selection-end-line="952" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/layout_two/libraries/loader/loaders.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/page_two.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="170" column="30" selection-start-line="170" selection-start-column="30" selection-end-line="170" selection-end-column="30" />
-          <folding>
-            <element signature="e#104#2201#0#HTML" expanded="false" />
-            <element signature="e#2261#8987#0#HTML" expanded="false" />
-            <element signature="e#9042#9708#0#HTML" expanded="false" />
-            <element signature="e#9763#15040#0#HTML" expanded="false" />
-            <element signature="e#15099#17683#0#HTML" expanded="false" />
-            <element signature="e#17743#27293#0#HTML" expanded="false" />
-            <element signature="e#27359#30349#0#HTML" expanded="false" />
-            <element signature="e#30407#33794#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/layout_two/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_two/slide.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_two/footer.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding>
-            <element signature="n#footer#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_two/header.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="76" column="9" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
-          <folding>
-            <element signature="n#header#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/layout_three/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/layout_three/css/plugins.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/layout_two/libraries/loader/loaders.min.css" />
+    <entry file="file://$PROJECT_DIR$/web/layout_three/css/plugins.css" />
     <entry file="file://$PROJECT_DIR$/../illustation/template/pet-care v10/HTML/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="50" selection-start-line="0" selection-start-column="0" selection-end-line="1061" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/page_three.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="721" column="0" selection-start-line="721" selection-start-column="0" selection-end-line="721" selection-end-column="0" />
-          <folding>
-            <element signature="e#12#51#0#Twig" expanded="true" />
-            <element signature="e#98#2924#0#HTML" expanded="false" />
-            <element signature="e#2972#6238#0#HTML" expanded="false" />
-            <element signature="e#6289#11620#0#HTML" expanded="false" />
-            <element signature="e#11667#12277#0#HTML" expanded="false" />
-            <element signature="e#12329#15826#0#HTML" expanded="false" />
-            <element signature="e#15882#19628#0#HTML" expanded="false" />
-            <element signature="e#19675#24273#0#HTML" expanded="false" />
-            <element signature="e#24316#26128#0#HTML" expanded="false" />
-            <element signature="e#26171#31464#0#HTML" expanded="false" />
-            <element signature="e#31504#32444#0#HTML" expanded="false" />
-            <element signature="e#32484#40929#0#HTML" expanded="false" />
-            <element signature="e#40975#41734#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_three/header.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_three/slide.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_three/footer.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout_two.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="73" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="73" />
-          <folding>
-            <element signature="e#4135#4187#0#Twig" expanded="true" />
-            <element signature="e#4237#4288#0#Twig" expanded="true" />
-            <element signature="e#4353#4405#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout_three.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
-          <folding>
-            <element signature="e#3797#3851#0#Twig" expanded="true" />
-            <element signature="e#3899#3952#0#Twig" expanded="true" />
-            <element signature="e#4019#4073#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/layout_forth/assets/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/layout_forth/assets/rs-plugin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/layout_forth/assets/index.html" />
+    <entry file="file://$PROJECT_DIR$/web/layout_forth/assets/rs-plugin/index.html" />
     <entry file="file://$PROJECT_DIR$/web/layout_forth/assets/js/npm.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="12" column="28" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -967,24 +992,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="785" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/page_forth.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="443" column="32" selection-start-line="443" selection-start-column="32" selection-end-line="443" selection-end-column="32" />
-          <folding>
-            <element signature="e#102#2444#0#HTML" expanded="false" />
-            <element signature="e#2506#5178#0#HTML" expanded="false" />
-            <element signature="e#5245#9189#0#HTML" expanded="false" />
-            <element signature="e#9262#13954#0#HTML" expanded="false" />
-            <element signature="e#14014#15696#0#HTML" expanded="false" />
-            <element signature="e#15767#20699#0#HTML" expanded="false" />
-            <element signature="e#20775#22260#0#HTML" expanded="false" />
-            <element signature="e#22342#24800#0#HTML" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -992,48 +999,332 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="96" selection-start-line="9" selection-start-column="96" selection-end-line="9" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout_forth.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+          <folding>
+            <element signature="e#1546#1599#0#Twig" expanded="false" />
+            <element signature="e#1672#1726#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../illustation/template/museum_v10/Museum/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="531" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout_one.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding>
+            <element signature="e#2468#2520#0#Twig" expanded="true" />
+            <element signature="e#2588#2639#0#Twig" expanded="true" />
+            <element signature="e#2822#2874#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/page_two.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/page_three.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/page_one.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/page_forth.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_forth/slide.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/layout_two/libraries/bootstrap/bootstrap.min.css" />
+    <entry file="file://$PROJECT_DIR$/web/layout_two/style.css" />
+    <entry file="file://$PROJECT_DIR$/web/layout_two/css/navigation-menu.css" />
+    <entry file="file://$PROJECT_DIR$/../illustation/template/aideo_v10/aideo-html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="921" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_two/slide.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../illustation/template/marize_v10/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="830" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_three/footer.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="87" column="6" selection-start-line="87" selection-start-column="6" selection-end-line="87" selection-end-column="6" />
+          <folding>
+            <element signature="n#section#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_three/slide.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-988">
+          <caret line="75" column="83" selection-start-line="75" selection-start-column="83" selection-end-line="75" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout_three.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding>
+            <element signature="e#1878#1932#0#Twig" expanded="false" />
+            <element signature="e#2000#2053#0#Twig" expanded="false" />
+            <element signature="e#2196#2250#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout_two.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/layout_two/css/responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="401" column="28" selection-start-line="401" selection-start-column="28" selection-end-line="401" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/layout_two/css/owl.theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1409">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/layout_two/css/normalize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-53">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/layout_two/css/animate.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7551">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/layout_two/css/featherlight.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-53">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/layout_two/css/font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-53">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/layout_two/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="793" column="33" selection-start-line="793" selection-start-column="33" selection-end-line="793" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_two/footer.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="42" column="116" selection-start-line="42" selection-start-column="116" selection-end-line="42" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_two/header.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="42" column="123" selection-start-line="42" selection-start-column="123" selection-end-line="42" selection-end-column="123" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/layout_three/css/modern-business.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/layout_three/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40056">
+          <caret line="2136" column="18" selection-start-line="2136" selection-start-column="18" selection-end-line="2136" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_three/header.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/layout_three/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-53">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/layout_three/css/ionicons.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-53">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/layout_three/css/animate.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-53">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/layout_three/css/responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-53">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_one/footer.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/layout_one/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-53">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/layout_one/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="437" column="18" selection-start-line="437" selection-start-column="18" selection-end-line="437" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_one/slide.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="6" column="120" selection-start-line="6" selection-start-column="120" selection-end-line="6" selection-end-column="120" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_one/header.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="17" column="92" selection-start-line="17" selection-start-column="92" selection-end-line="17" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/layout_forth/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="1087" column="21" selection-start-line="1087" selection-start-column="21" selection-end-line="1087" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_forth/header.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
-          <folding>
-            <element signature="n#header#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_forth/slide.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="n#section#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="1542">
+          <caret line="69" column="54" selection-start-line="69" selection-start-column="54" selection-end-line="69" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/layout_forth/footer.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-          <folding>
-            <element signature="n#footer#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout_forth.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
-          <folding>
-            <element signature="e#1546#1599#0#Twig" expanded="true" />
-            <element signature="e#1672#1726#0#Twig" expanded="true" />
-          </folding>
+        <state relative-caret-position="138">
+          <caret line="6" column="109" selection-start-line="6" selection-start-column="109" selection-end-line="6" selection-end-column="109" />
+          <folding />
         </state>
       </provider>
     </entry>

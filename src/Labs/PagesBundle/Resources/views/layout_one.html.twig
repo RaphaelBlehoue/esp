@@ -11,55 +11,65 @@
     <link rel="shortcut icon" href="{{ asset('favicon/favicon.ico') }}" type="image/x-icon">
     <link rel="apple-touch-icon" href="{{ asset('favicon/apple-icon-57x57.png') }}">
 
-    <!-- FONTS -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,500italic,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic' rel='stylesheet' type='text/css'>
+    <!-- FONTS ONLINE -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700,100,800,900,400,200,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,800,700italic' rel='stylesheet' type='text/css'>
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="{{ asset('layout_one/css/vendor.css') }}">
-    <link rel="stylesheet" href="{{ asset('layout_one/css/base.css') }}">
-    <link rel="stylesheet" href="{{ asset('layout_one/css/layout.css')}}">
-    <link rel="stylesheet" href="{{ asset('layout_one/css/components.css')}}">
-    <link rel="stylesheet" href="{{ asset('layout_one/css/pages.css')}}">
+    <!--MAIN STYLE-->
+    <link href="{{ asset('layout_one/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('layout_one/css/main.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('layout_one/css/style.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('layout_one/css/responsive.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('layout_one/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
     {% block stylesheets %}{% endblock %}
+    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('layout_one/rs-plugin/css/settings.css') }}" media="screen" />
 
-    <!-- MODERNIZR -->
-    <script src="{{ asset('layout_one/js/vendor/modernizr-2.8.3.min.js') }}"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body class="homepage">
+<body>
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<!-- PRELOADER -->
-<div id="preloader">
-    <div class="spinner"></div>
+<!-- Page Wrap -->
+<div id="wrap">
+    {% include 'LabsPagesBundle:includes/layout_one:header.html.twig' %}
+
+    <!--======= HOME MAIN SLIDER =========-->
+    {% include 'LabsPagesBundle:includes/layout_one:slide.html.twig' %}
+
+    <!-- CONTENT START -->
+    <div class="content">
+        {% block body %}{% endblock %}
+        <!-- Map -->
+    </div>
+
+    <!--======= Footer =========-->
+    {% include 'LabsPagesBundle:includes/layout_one:footer.html.twig' %}
 </div>
-<!-- // PRELOADER -->
+<!-- Wrap End -->
+<!-- Wrap End -->
+<script src="{{ asset('layout_one/js/jquery-1.11.0.min.js') }}"></script>
+<script src="{{ asset('layout_one/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('layout_one/js/own-menu.js') }}"></script>
+<script src="{{ asset('layout_one/js/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('layout_one/js/jquery.stellar.min.js') }}"></script>
+<script src="{{ asset('layout_one/js/smooth-scroll.js') }}"></script>
+<script src="{{ asset('layout_one/js/jquery.prettyPhoto.js') }}"></script>
 
-{% include 'LabsPagesBundle:includes/layout_one:header.html.twig' %}
-
-<!-- SECTION 1 - HERO SLIDER -->
-{% include 'LabsPagesBundle:includes/layout_one:slide.html.twig' %}
-
-{% block body %}
-
-{% endblock %}
-
-
-{% include 'LabsPagesBundle:includes/layout_one:footer.html.twig' %}
-<!-- JQUERY / PLUGINS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-<script src="{{ asset('layout_one/js/vendor/bootstrap.min.js') }}"></script>
-<script src="{{ asset('layout_one/js/vendor/owl.carousel.min.js') }}"></script>
-<script src="{{ asset('layout_one/js/vendor/jquery.magnific-popup.min.js') }}"></script>
-<script src="{{ asset('layout_one/js/vendor/circle-progress.js') }}"></script>
-
-<!-- MAIN JS FOLDER -->
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+<script type="text/javascript" src="{{ asset('layout_one/rs-plugin/js/jquery.themepunch.tools.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('layout_one/rs-plugin/js/jquery.themepunch.revolution.min.js') }}"></script>
 <script src="{{ asset('layout_one/js/main.js') }}"></script>
 {% block javascripts %}{% endblock %}
 </body>
