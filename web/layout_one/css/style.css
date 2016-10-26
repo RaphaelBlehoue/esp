@@ -398,7 +398,7 @@ header:before {
 header .logo {
 	float: left;
 	width: 50%;
-	margin: -2px 0;
+	margin: -20px 0;
 	position: relative;
 	z-index: 99;
 }
@@ -427,7 +427,7 @@ header nav li.active a:hover {
 	color: #000;
 }
 header nav li.active a {
-	color: #000;
+	color: #f4a801;
 	font-weight: 600;
 }
 header nav .ownmenu li {
@@ -435,7 +435,7 @@ header nav .ownmenu li {
 	padding: 0 15px;
 }
 header nav li a:hover {
-	color: #f4a801;
+	color: #000;
 }
 header .ownmenu ul.dropdown {
 	padding-bottom: 0px;
@@ -448,7 +448,7 @@ header .ownmenu ul.dropdown li a {
 	padding:0px 20px;
 	line-height: 38px;
 	background: none;
-	color: #000;
+	color: #f4a801;
 	font-size: 12px;
 	display: inline-block;
 	width: 100%;
