@@ -7,18 +7,16 @@ $(document).ready(function(){
         singleItem: true,
         pagination: false
     });
+	
 
-
-
-
-	$('#clock').countdown('2015/12/29', function(event) {
+	/*$('#clock').countdown('2016/11/24', function(event) {
 	   var $this = $(this).html(event.strftime(''
 	    
 	     + '<div class="time-p mt-80 text-center"><span class="days poppins text-uppercase d-black">days</span> <span class="karla fz-60 green-6f">%d</span><span class="year karala fz-14 gray-777">2015</span></div>  '
 	     + '<div class="time-p mt-80 text-center"><span class="hr poppins text-uppercase d-black">hours</span> <span class="karla fz-60 green-6f">%H</span><span class="year karala fz-14 gray-777">2015</span></div>  '
 	     + '<div class="time-p mt-80 text-center"><span class="min poppins text-uppercase d-black">mins</span> <span class="karla fz-60 green-6f">%M</span><span class="year karala fz-14 gray-777">2015</span></div>  '
 	     + '<div class="time-p mt-80 text-center"><span class="sec poppins text-uppercase d-black">secs</span> <span class="karla fz-60 green-6f">%S</span><span class="year karala fz-14 gray-777">2015</span></div> '));
- 	});
+ 	});*/
  	$(".causes").owlCarousel({
         autoPlay: 3000, //Set AutoPlay to 3 seconds
         items: 3,
@@ -54,11 +52,11 @@ $(document).ready(function(){
         itemsCustom: [[0, 1], [400, 1], [700, 1], [1000, 1], [1200, 2], [1600, 2]]
     });
 
-     $('#upcoming').countdown('2015/12/29', function(event) {
+     $('#upcoming').countdown('2016/11/24', function(event) {
 	   var $this = $(this).html(event.strftime(''
 	    
-	     + '<div class="text-center display-ib event-count-down mt-60"><span class="martel text-extra-bold green-5c fz-26 display-block">%d</span><span class="martel fz-16 display-block text-bold text-uppercase white">Days</span></div>  '
-	     + '<div class="text-center display-ib event-count-down mt-60"><span class="martel text-extra-bold green-5c fz-26 display-block">%H</span><span class="martel fz-16 display-block text-bold text-uppercase white">hours</span></div>  '
+	     + '<div class="text-center display-ib event-count-down mt-60"><span class="martel text-extra-bold green-5c fz-26 display-block">%D</span><span class="martel fz-16 display-block text-bold text-uppercase white">Jour(s)</span></div>  '
+	     + '<div class="text-center display-ib event-count-down mt-60"><span class="martel text-extra-bold green-5c fz-26 display-block">%H</span><span class="martel fz-16 display-block text-bold text-uppercase white">Heures</span></div>  '
 	     + '<div class="text-center display-ib event-count-down mt-60"><span class="martel text-extra-bold green-5c fz-26 display-block">%M</span><span class="martel fz-16 display-block text-bold text-uppercase white">Minutes</span></div>  '
 	     + '<div class="text-center display-ib event-count-down mt-60"><span class="martel text-extra-bold green-5c fz-26 display-block">%S</span><span class="martel fz-16 display-block text-bold text-uppercase white">seconds</span></div> '));
  	});
