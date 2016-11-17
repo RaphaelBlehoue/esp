@@ -53,4 +53,22 @@ class DefaultController extends Controller
     {
         return $this->render('LabsPagesBundle:Default:participant.html.twig');
     }
+
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/forum/engagements", name="engagement")
+     */
+    public function EngagementPageBundle()
+    {
+        return $this->render('LabsPagesBundle:Default:engagement.html.twig');
+    }
+
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/forum/les_donnees_de_la_croissance", name="croissance")
+     */
+    public function CroissancePageBundle()
+    {
+        return $this->render('LabsPagesBundle:Default:croissance.html.twig');
+    }
 }

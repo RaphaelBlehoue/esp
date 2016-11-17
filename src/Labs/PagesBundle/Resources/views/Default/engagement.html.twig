@@ -1,0 +1,50 @@
+{% extends 'LabsPagesBundle::layout.html.twig' %}
+{% block title %} {{ 'FORUM POUR LE FINANCEMENT DU SECTEUR PRIVÉ'|capitalize }}{% endblock %}
+{% block  body %}
+    <div class="page-title causes-title text-center">
+        <h2 class="text-extra-bold white text-uppercase">{{ 'les Engagements'|upper }}</h2>
+        <div class="page-location direct text-center display-ib">
+            <span class="ubuntu fz-14 green-5c">{{ 'Accueil' }} <i class="gray-e9">/</i> {{ 'engagements' }}</span>
+        </div>
+    </div>
+
+    <section class="mt-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="text-uppercase black h-sep"><span class="text-ultra-bold">{{ 'Le financement, un besoin stratégique face à une impasse'|upper }}</span> </h3>
+                </div>
+            </div>
+            <div class="row">
+                {% for i in 1..5 %}
+                    <div class="col-md-8 mt-5 col-md-offset-2">
+                    <div class="about-author mt-50">
+                        <div class="author-info clearfix mt-30">
+                            <img src="{{ asset('layout_two/img/round.png') }}" alt="" class="pull-left img-responsive">
+                            <div class="author-details pull-left">
+                                <h5 class="fz-15 h-sep text-semi-bold text-uppercase">Lorem ipsum dolor sit amet, consectetur. </h5>
+                                <p class="mt-30 lh-26">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur delectus ducimus iure nihil. Ad aspernatur error eveniet facilis fugiat id illum in ipsa itaque laudantium minima, nisi, numquam unde!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock %}
+{% block partners %}
+    <!-- sub slide -->
+    <div class="container-fluid no-padding" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+         xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+        <div class="main-slider">
+            <div class="item">
+                <div class="main-slider-img position-r" style="border-bottom: 4px solid #f48a38;">
+                    <img src="{{ asset('layout_two/img/sub.jpg') }}" alt="la finance s'engage" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end sub slide -->
+{% endblock %}
+{% block javascripts %}{% endblock %}
