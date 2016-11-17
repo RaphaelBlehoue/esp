@@ -336,7 +336,7 @@ a:hover{
     color: #a1242b !important;
 }
 .green-67{
-    color: #67ba67 !important;
+    color: #f48a38 !important;
 }
 .green-5c{
     color: #f48a38 !important;
@@ -378,7 +378,7 @@ a:hover{
     background-color: #a1242b !important;
 }
 .green-67-bg{
-    background-color: #67ba67 !important;
+    background-color: #f48a38 !important;
 }
 .green-5c-bg{
     background-color: #f48a38 !important;
@@ -995,13 +995,13 @@ a.btn-prime:hover{
     transition: all .5s ease ;
 }
 .b-round{
-    border: 4px solid #d0d0d0;
+    border: 4px solid #a1242b;
     border-radius: 50%;
     display: block;
-    height: 50px;
+    height: 65px;
     line-height: 46px;
-    margin-top: 20px;
-    width: 50px;
+    margin-top: 0;
+    width: 65px;
 }
 .cause-content > a:nth-of-type(1){
     margin-right: 14px;
@@ -1015,10 +1015,10 @@ a.btn-prime:hover{
     padding-right: 15px;
 }
 .causes .owl-item .item:hover .badge-c, .cause-main .item:hover .badge-c{
-    background: #67ba67;
+    background: #f48a38;
 }
 .causes .owl-item .item:hover .btn-black, .cause-main .item:hover .btn-black{
-    background: #67ba67;
+    background: #f48a38;
     color: #fff;
 }
 .causes.owl-theme .owl-controls .owl-page span{
