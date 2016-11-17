@@ -1,6 +1,8 @@
 {% extends 'LabsPagesBundle::layout.html.twig' %}
 {% block title %} {{ 'FORUM POUR LE FINANCEMENT DU SECTEUR PRIVÉ'|capitalize }}{% endblock %}
+{% block stylesheets %}{% endblock %}
 {% block  body %}
+    {% include 'LabsPagesBundle:includes:slide.html.twig' %}
     <!-- sub slide -->
     <div class="container-fluid no-padding" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
          xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
@@ -253,3 +255,4 @@
     <!-- end sponsors -->
 
 {% endblock %}
+{% block javascripts %}{% endblock %}

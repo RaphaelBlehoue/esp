@@ -47,13 +47,13 @@
                     </div>
                     <div id="navbar" class="navbar-collapse collapse no-margin no-padding">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="">{{ 'Accueil'|upper }}</a></li>
+                            <li><a href="{{ path('homepage') }}">{{ 'Accueil'|upper }}</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ 'Présentation' }} <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="">{{ 'l\'initiative'|upper }}</a></li>
-                                    <li><a href=""> {{ 'les organisateurs'|upper }} </a></li>
-                                    <li><a href=""> {{ 'Partenaires'|upper }} </a></li>
+                                    <li><a href="{{ path('initiative') }}">{{ 'l\'initiative'|upper }}</a></li>
+                                    <li><a href="{{ path('organisateur') }}"> {{ 'les organisateurs'|upper }} </a></li>
+                                    <li><a href="{{ path('partners') }}"> {{ 'Partenaires'|upper }} </a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">

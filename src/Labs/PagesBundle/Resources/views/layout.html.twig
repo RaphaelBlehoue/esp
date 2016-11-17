@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="{{ asset('layout_two/css/normalize.css') }}">
     <link rel="stylesheet" href="{{ asset('layout_two/css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('layout_two/css/responsive.css') }}">
+    {% block stylesheets %}{% endblock %}
     <script src="{{ asset('layout_two/js/modernizr-2.8.3.min.js') }}"></script>
 </head>
 <body>
@@ -43,7 +44,6 @@
 
 
 {% include 'LabsPagesBundle:includes:header.html.twig' %}
-{% include 'LabsPagesBundle:includes:slide.html.twig' %}
 
 {% block body %}{% endblock %}
 
@@ -57,6 +57,7 @@
 <script src="{{ asset('layout_two/js/jquery.mixitup.js') }}"></script>
 <script src="{{ asset('layout_two/js/Chart.min.js') }}"></script>
 <script src="{{ asset('layout_two/js/custom-chart.js') }}"></script>
+{% block javascripts %}{% endblock %}
 <script src="{{ asset('layout_two/js/main.js') }}"></script>
 </body>
 </html>

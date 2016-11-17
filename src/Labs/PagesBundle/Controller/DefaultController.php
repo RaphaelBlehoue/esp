@@ -16,5 +16,32 @@ class DefaultController extends Controller
     {
         return $this->render('LabsPagesBundle:Default:index.html.twig');
     }
-    
+
+
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/presentation/initiative", name="initiative")
+     */
+    public function InitiativePageBundle()
+    {
+        return $this->render('LabsPagesBundle:Default:initiative.html.twig');
+    }
+
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/presentation/organisateurs", name="organisateur")
+     */
+    public function OrganisateurPageBundle()
+    {
+        return $this->render('LabsPagesBundle:Default:Organisateur.html.twig');
+    }
+
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/presentation/partenaires", name="partners")
+     */
+    public function PartnerPageBundle()
+    {
+        return $this->render('LabsPagesBundle:Default:partners.html.twig');
+    }
 }

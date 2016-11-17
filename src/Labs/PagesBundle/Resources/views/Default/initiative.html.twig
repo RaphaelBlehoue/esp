@@ -1,0 +1,120 @@
+{% extends 'LabsPagesBundle::layout.html.twig' %}
+{% block title %} {{ 'FORUM POUR LE FINANCEMENT DU SECTEUR PRIVÉ'|capitalize }}{% endblock %}
+{% block stylesheets %}
+<style>
+    .causes-title{
+        background:
+                linear-gradient(
+                        rgba(28, 28, 28, 0.8),
+                        rgba(28, 28, 28, 0.8)
+                ),
+                    /* bottom, image */
+                url('{{ asset('layout_two/img/about-bg.jpg') }}');
+    }
+</style>
+{% endblock %}
+{% block  body %}
+    <div class="page-title causes-title text-center">
+        <h2 class="text-extra-bold white text-uppercase">{{ 'l\'initiative'|upper }}</h2>
+        <div class="page-location direct text-center display-ib">
+            <span class="ubuntu fz-14 green-5c">{{ 'Accueil' }} <i class="gray-e9">/</i> {{ 'Initiative' }}</span>
+        </div>
+    </div>
+
+    <section class="mt-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 overcoming">
+                    <h4 class="d-black lh-33 h-sep">{{ 'l\'initiative de création du forum'|capitalize }}</h4>
+                    <p class="lh-28 mt-50 fz-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aspernatur assumenda cum delectus dicta dolore eaque illum inventore, ipsam itaque laborum libero maiores molestiae nobis officiis omnis soluta, vitae?</p>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="upcoming-event-s">
+                        <img class="img-responsive" src="{{ asset('layout_two/img/up2.jpg') }}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="upcoming-event-s">
+                        <img class="img-responsive" src="{{ asset('layout_two/img/up2.jpg') }}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 overcoming">
+                    <h4 class="d-black lh-33 h-sep">{{ 'Nos objectifs poursuivis' }}</h4>
+                    <p class="lh-28 mt-50 fz-15">
+                        <ul>
+                            <li class="lh-28 mt-5 fz-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            <li class="lh-28 mt-5 fz-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            <li class="lh-28 mt-5 fz-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            <li class="lh-28 mt-5 fz-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            <li class="lh-28 mt-5 fz-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- les données de la croissance -->
+    <section class="our-help mt-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class=" white h-sep">Les données pour la <span class="text-ultra-bold">Croissance </span> </h3>
+                    <p class="fz-16 white mt-50">
+                        <span class="green-5c">91% des entreprises </span> déclarent avoir besoin de financement
+                        Le financement, un besoin stratégique face à une impasse
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mt-70">
+                    <div id="canvas-holder" class="clearfix">
+                        <canvas id="chart-area" class="pull-left" ></canvas>
+                        <div class="round-bar-status pull-left text-center">
+                            <h2 class="white text-semi-bold">91%</h2>
+                            <h5 class="fz-13 text-semi-bold white text-uppercase mt-10">Besoin de </br>financement</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-70">
+                    <div id="canvas-holder1" class="clearfix">
+                        <canvas id="chart-area1" class="pull-left" ></canvas>
+                        <div class="round-bar-status pull-left text-center">
+                            <h2 class="white text-semi-bold">29%</h2>
+                            <h5 class="fz-13 text-semi-bold white text-uppercase mt-10">Dépot d'une </br> demande de </br>financement</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-70">
+                    <div id="canvas-holder2" class="clearfix">
+                        <canvas id="chart-area2" class="pull-left" ></canvas>
+                        <div class="round-bar-status pull-left text-center">
+                            <h2 class="white text-semi-bold">14%</h2>
+                            <h5 class="fz-13 text-semi-bold white text-uppercase mt-10">Financement </br> obtenu</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-70">
+                    <div id="canvas-holder3" class="clearfix">
+                        <canvas id="chart-area3" class="pull-left"  ></canvas>
+                        <div class="round-bar-status pull-left text-center">
+                            <h2 class="white text-semi-bold"><span class="green-5c">3574 milliards</span></h2>
+                            <h5 class="fz-13 text-semi-bold white text-uppercase mt-10">Besoin </br> Total de <br/> financement</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end données de la croissance -->
+
+{% endblock %}
+{% block javascripts %}{% endblock %}
