@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row row-eq-height">
             <div class="col-md-5 text-center logo">
-                <img class="img-responsive" src="{{ asset('layout_two/img/logo_final.png') }}" alt="">
+                 <img class="img-responsive" src="{{ asset('layout_two/img/logo_final.png') }}" alt="">
             </div>
             <div class="col-md-7">
                 <div class="top-contact-details">
@@ -59,7 +59,7 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ 'Le forum'|upper }}  <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="">{{ 'les participants'|upper }}</a></li>
+                                    <li><a href="{{ path('participant') }}">{{ 'les participants'|upper }}</a></li>
                                     <li><a href=""> {{ 'les engagements'|upper }} </a></li>
                                     <li><a href=""> {{ 'Les Données pour la croissance'|upper }} </a></li>
                                 </ul>

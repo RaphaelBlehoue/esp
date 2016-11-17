@@ -1,0 +1,57 @@
+{% extends 'LabsPagesBundle::layout.html.twig' %}
+{% block title %} {{ 'Participants'|capitalize }}{% endblock %}
+{% block  body %}
+    <div class="page-title causes-title text-center">
+        <h2 class="text-extra-bold white text-uppercase">{{ 'Participants'|upper }}</h2>
+        <div class="page-location direct text-center display-ib">
+            <span class="ubuntu fz-14 green-5c">{{ 'Accueil' }} <i class="gray-e9">/</i> {{ 'participants' }}</span>
+        </div>
+    </div>
+    <!-- participants -->
+    <section class="recent-causes no-margin">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="text-uppercase black h-sep"><span class="text-ultra-bold">{{ 'DES DÉCIDEURS ET FINANCIERS DU SECTEUR PRIVÉ'|upper }}</span> </h3>
+                </div>
+            </div>
+            <div class="row mt-20">
+                {% for i in 1..6 %}
+                    <div class="col-md-6 mt-50 cause-main">
+                        <div class="item">
+                            <div class="test-img display-ib position-r pull-left">
+                                <img class="img-responsive display-ib" src="{{ asset('layout_two/img/test1.jpg') }}" alt="">
+                            </div>
+                            <div class="display-ib pull-left test-text">
+                                <img src="{{ asset('layout_two/img/quote-open.png') }}" alt="">
+                                <h4 class="fz-17 d-black text-bold mt-30">{{ 'Participant' }}</h4>
+                                <h5 class="fz-15 green-5c mt-10">CEO & Founder</h5>
+                                <p class="mt-25">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur, atque dolore expedita incidunt necessitatibus nemo nihil nulla odio perferendis praesentium repellat repellendus sed, sequi similique sunt suscipit tempore totam!</p>
+                                <img class="pull-right mt-30" src="{{ asset('layout_two/img/quote-close.png') }}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    {% if loop.index % 2 == 0 %}
+                        <div class="clearfix visible-md-block"></div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- end participants -->
+{% endblock %}
+{% block partners %}
+    <!-- sub slide -->
+    <div class="container-fluid no-padding" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+         xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+        <div class="main-slider">
+            <div class="item">
+                <div class="main-slider-img position-r" style="border-bottom: 4px solid #f48a38;">
+                    <img src="{{ asset('layout_two/img/footer_partenaire.jpg') }}" alt="la finance s'engage" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end sub slide -->
+{% endblock %}
+{% block javascripts %}{% endblock %}

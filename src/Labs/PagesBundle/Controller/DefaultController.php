@@ -44,4 +44,13 @@ class DefaultController extends Controller
     {
         return $this->render('LabsPagesBundle:Default:partners.html.twig');
     }
+
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/forum/participants", name="participant")
+     */
+    public function ParticipantPageBundle()
+    {
+        return $this->render('LabsPagesBundle:Default:participant.html.twig');
+    }
 }
