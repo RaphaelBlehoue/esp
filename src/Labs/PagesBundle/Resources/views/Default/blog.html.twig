@@ -1,0 +1,40 @@
+{% extends 'LabsPagesBundle::layout.html.twig' %}
+{% block title %} {{ 'FORUM POUR LE FINANCEMENT DU SECTEUR PRIVÉ'|capitalize }}{% endblock %}
+{% block  body %}
+    <div class="page-title causes-title text-center">
+        <h2 class="text-extra-bold white text-uppercase">{{ 'COMMUNIQUÉS DE PRESSE'|upper }}</h2>
+        <div class="page-location direct text-center display-ib">
+            <span class="ubuntu fz-14 green-5c">{{ 'Accueil' }} <i class="gray-e9">/</i> {{ 'Presse' }}</span>
+        </div>
+    </div>
+
+    <section class="mt-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="text-uppercase black h-sep"><span class="text-ultra-bold">{{ 'RECENT COMMUNIQUÉS DE PRESSE '|upper }}</span> </h3>
+                </div>
+            </div>
+            <div class="row">
+                {% for i in 1..4 %}
+                    <div class="col-md-6 r-event mt-70">
+                        <img src="{{ asset('layout_two/img/re1.jpg') }}" alt="" class="img-responsive">
+                        <h4 class="mt-40 fz-15 text-semi-bold d-black">Lorem ipsum dolor sit amet.</h4>
+                        <h5 class="ubuntu fz-14 gray-777 mt-10 r-divider">Date: <span class="green-5c">{{ 'now'|date('d M Y') }}</span> </h5>
+                        <p class="lh-26 mt-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aspernatur consequatur culpa cum cupiditate dolores ea esse eum excepturi exercitationem fuga minus, nihil perferendis praesentium repellat temporibus ut voluptatem.</p>
+                        <div class="mt-30">
+                            <a href="#" class="btn-green-br">{{ 'En savoir +' }}</a>
+                        </div>
+                    </div>
+                {% endfor %}
+                <hr class="ed-divider mt-40">
+                <div class="bp-btns pull-right mt-70">
+                    <a href="#"><i class="fa fa-caret-left"></i> Précedent</a>
+                    <a href="#">Suivant <i class="fa fa-caret-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+{% endblock %}
+{% block javascripts %}{% endblock %}

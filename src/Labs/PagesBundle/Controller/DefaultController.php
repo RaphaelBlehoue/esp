@@ -71,4 +71,15 @@ class DefaultController extends Controller
     {
         return $this->render('LabsPagesBundle:Default:croissance.html.twig');
     }
+
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/medias/communiques_de_presse", name="blog")
+     */
+    public function BlogPageBundle()
+    {
+        return $this->render('LabsPagesBundle:Default:blog.html.twig');
+    }
+
+
 }

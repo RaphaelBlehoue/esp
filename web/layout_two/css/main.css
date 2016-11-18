@@ -677,7 +677,7 @@ a:hover{
         left: 50%;
         margin-left: -100px;
         position: absolute;
-        top: 30%;
+        top: 0;
         z-index: 3;
     }
     /*== Top Contact Info ==*/
