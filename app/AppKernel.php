@@ -22,6 +22,14 @@ class AppKernel extends Kernel
             new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            new Vich\UploaderBundle\VichUploaderBundle(),
+            new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
+            new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
+            new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
+            new Liip\ImagineBundle\LiipImagineBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
+            new Labs\BackBundle\LabsBackBundle(),
+            new Labs\UboldBundle\LabsUboldBundle(),
             new Labs\PagesBundle\LabsPagesBundle(),
         ];
 
