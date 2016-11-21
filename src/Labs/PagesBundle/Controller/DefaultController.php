@@ -81,5 +81,13 @@ class DefaultController extends Controller
         return $this->render('LabsPagesBundle:Default:blog.html.twig');
     }
 
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/contactez_nous", name="contact")
+     */
+    public function ContactPageBundle()
+    {
+        return $this->render('LabsPagesBundle:Default:contact.html.twig');
+    }
 
 }

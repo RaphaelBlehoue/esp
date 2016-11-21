@@ -1,21 +1,21 @@
 {% extends 'LabsPagesBundle::layout.html.twig' %}
 {% block title %} {{ 'FORUM POUR LE FINANCEMENT DU SECTEUR PRIVÉ'|capitalize }}{% endblock %}
 {% block stylesheets %}
-<style>
-    .causes-title{
-        background:
-                linear-gradient(
-                        rgba(28, 28, 28, 0.8),
-                        rgba(28, 28, 28, 0.8)
-                ),
-                    /* bottom, image */
-                url('{{ asset('layout_two/img/about-bg.jpg') }}');
-    }
-</style>
+    <style>
+        .causes-title{
+            background:
+                    linear-gradient(
+                            rgba(28, 28, 28, 0.8),
+                            rgba(28, 28, 28, 0.8)
+                    ),
+                        /* bottom, image */
+                    url('{{ asset('layout_two/img/about-bg.jpg') }}');
+        }
+    </style>
 {% endblock %}
 {% block  body %}
     <div class="page-title causes-title text-center">
-        <h2 class="text-extra-bold white text-uppercase">{{ 'l\'initiative'|upper }}</h2>
+        <h2 class="text-extra-bold white text-uppercase">{{ 'initiative'|upper }}</h2>
         <div class="page-location direct text-center display-ib">
             <span class="ubuntu fz-14 green-5c">{{ 'Accueil' }} <i class="gray-e9">/</i> {{ 'Initiative' }}</span>
         </div>
@@ -25,7 +25,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-6 overcoming">
-                    <h4 class="d-black lh-33 h-sep">{{ 'l\'initiative de création du forum'|capitalize }}</h4>
+                    <h4 class="d-black lh-33 h-sep mt-5">
+                        <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive">
+                        <span style="padding-left: 5px;">{{ 'l\'initiative de création du forum'|capitalize }}</span>
+                    </h4>
                     <p class="lh-28 mt-50 fz-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aspernatur assumenda cum delectus dicta dolore eaque illum inventore, ipsam itaque laborum libero maiores molestiae nobis officiis omnis soluta, vitae?</p>
                 </div>
                 <div class="col-md-6 col-sm-6">
@@ -46,15 +49,18 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 overcoming">
-                    <h4 class="d-black lh-33 h-sep">{{ 'Nos objectifs poursuivis' }}</h4>
+                    <h4 class="d-black lh-33 h-sep mt-5">
+                        <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive">
+                        <span style="padding-left: 5px;">{{ 'Nos objectifs poursuivis' }}</span>
+                    </h4>
                     <p class="lh-28 mt-50 fz-15">
-                        <ul>
-                            <li class="lh-28 mt-5 fz-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                            <li class="lh-28 mt-5 fz-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                            <li class="lh-28 mt-5 fz-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                            <li class="lh-28 mt-5 fz-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                            <li class="lh-28 mt-5 fz-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                        </ul>
+                    <ul>
+                        <li class="lh-28 mt-5 fz-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li class="lh-28 mt-5 fz-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li class="lh-28 mt-5 fz-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li class="lh-28 mt-5 fz-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li class="lh-28 mt-5 fz-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    </ul>
                     </p>
                 </div>
             </div>
@@ -66,7 +72,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h3 class=" white h-sep">Les données pour la <span class="text-ultra-bold">Croissance </span> </h3>
+                    <h3 class="text-uppercase white mt-5" style="padding-left: 30%;">
+                        <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive">
+                        <span class="pull-left mt-5" style="padding-left: 2%;">Les données pour la <span class="text-ultra-bold">Croissance </span></span>
+                        <div class="clearfix"></div>
+                    </h3>
                     <p class="fz-16 white mt-50">
                         <span class="green-5c">91% des entreprises </span> déclarent avoir besoin de financement
                         Le financement, un besoin stratégique face à une impasse
@@ -115,19 +125,5 @@
         </div>
     </section>
     <!-- end données de la croissance -->
-{% endblock %}
-{% block partners %}
-    <!-- sub slide -->
-    <div class="container-fluid no-padding" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
-         xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
-        <div class="main-slider">
-            <div class="item">
-                <div class="main-slider-img position-r" style="border-bottom: 4px solid #f48a38;">
-                    <img src="{{ asset('layout_two/img/footer_partenaire.jpg') }}" alt="la finance s'engage" class="img-responsive">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end sub slide -->
 {% endblock %}
 {% block javascripts %}{% endblock %}

@@ -2,7 +2,7 @@
 {% block title %} {{ 'FORUM POUR LE FINANCEMENT DU SECTEUR PRIVÉ'|capitalize }}{% endblock %}
 {% block  body %}
     <div class="page-title causes-title text-center">
-        <h2 class="text-extra-bold white text-uppercase">{{ 'les Engagements'|upper }}</h2>
+        <h2 class="text-extra-bold white text-uppercase">{{ 'Engagements'|upper }}</h2>
         <div class="page-location direct text-center display-ib">
             <span class="ubuntu fz-14 green-5c">{{ 'Accueil' }} <i class="gray-e9">/</i> {{ 'engagements' }}</span>
         </div>
@@ -22,7 +22,11 @@
                         <div class="author-info clearfix mt-30">
                             <img src="{{ asset('layout_two/img/round.png') }}" alt="" class="pull-left img-responsive">
                             <div class="author-details pull-left">
-                                <h5 class="fz-15 h-sep text-semi-bold text-uppercase">Lorem ipsum dolor sit amet, consectetur. </h5>
+                                <h5 class="fz-15 h-sep text-semi-bold text-uppercase">
+                                    <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive">
+                                    <span class="pull-left mt-10" style="padding-left: 2%;">Lorem ipsum dolor sit amet, consectetur.</span>
+                                    <div class="clearfix"></div>
+                                </h5>
                                 <p class="mt-30 lh-26">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur delectus ducimus iure nihil. Ad aspernatur error eveniet facilis fugiat id illum in ipsa itaque laudantium minima, nisi, numquam unde!</p>
                             </div>
                         </div>
@@ -32,19 +36,5 @@
             </div>
         </div>
     </section>
-{% endblock %}
-{% block partners %}
-    <!-- sub slide -->
-    <div class="container-fluid no-padding" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
-         xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
-        <div class="main-slider">
-            <div class="item">
-                <div class="main-slider-img position-r" style="border-bottom: 4px solid #f48a38;">
-                    <img src="{{ asset('layout_two/img/sub.jpg') }}" alt="la finance s'engage" class="img-responsive">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end sub slide -->
 {% endblock %}
 {% block javascripts %}{% endblock %}

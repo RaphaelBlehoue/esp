@@ -2,7 +2,7 @@
 {% block title %} {{ 'FORUM POUR LE FINANCEMENT DU SECTEUR PRIVÉ'|capitalize }}{% endblock %}
 {% block  body %}
     <div class="page-title causes-title text-center">
-        <h2 class="text-extra-bold white text-uppercase">{{ 'les organisateurs'|upper }}</h2>
+        <h2 class="text-extra-bold white text-uppercase">{{ 'organisateurs'|upper }}</h2>
         <div class="page-location direct text-center display-ib">
             <span class="ubuntu fz-14 green-5c">{{ 'Accueil' }} <i class="gray-e9">/</i> {{ 'organisateurs' }}</span>
         </div>
@@ -17,7 +17,10 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 overcoming">
-                    <h4 class="d-black lh-33 h-sep">{{ 'Confédération Générale des Entreprises de Côte d\'Ivoire - Patronat ivoirien (CGECI)' }}</h4>
+                    <h4 class="d-black lh-33 h-sep mt-5">
+                        <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive">
+                        <span style="padding-left: 5px;">{{ 'Confédération Générale des Entreprises de Côte d\'Ivoire - Patronat ivoirien (CGECI)' }}</span>
+                    </h4>
                     <p class="lh-28 mt-50 fz-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aspernatur assumenda cum delectus dicta dolore eaque illum inventore, ipsam itaque laborum libero maiores molestiae nobis officiis omnis soluta, vitae?</p>
                 </div>
                 <div class="pull-right mt-10 mb-10">
@@ -32,7 +35,10 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 overcoming">
-                    <h4 class="d-black lh-33 h-sep">{{ 'Entrepreneurial Solution Partners (ESP)' }}</h4>
+                    <h4 class="d-black lh-33 h-sep mt-5">
+                        <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive">
+                        <span style="padding-left: 5px;">{{ 'Entrepreneurial Solution Partners (ESP)' }}</span>
+                    </h4>
                     <p class="lh-28 mt-50 fz-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aspernatur assumenda cum delectus dicta dolore eaque illum inventore, ipsam itaque laborum libero maiores molestiae nobis officiis omnis soluta, vitae?</p>
                 </div>
                 <div class="pull-right mt-10 mb-10">
@@ -47,7 +53,10 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 overcoming">
-                    <h4 class="d-black lh-33 h-sep">{{ 'Banque Africaine de Développement (BAD) ' }}</h4>
+                    <h4 class="d-black lh-33 h-sep mt-5">
+                        <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive">
+                        <span style="padding-left: 5px;">{{ 'Banque Africaine de Développement (BAD) ' }}</span>
+                    </h4>
                     <p class="lh-28 mt-50 fz-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aspernatur assumenda cum delectus dicta dolore eaque illum inventore, ipsam itaque laborum libero maiores molestiae nobis officiis omnis soluta, vitae?</p>
                 </div>
                 <div class="pull-right mt-10">
@@ -56,31 +65,5 @@
             </div>
         </div>
     </section>
-
-    <!-- les organisateurs -->
-    <section class="recent-causes">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h3 class="text-uppercase black h-sep"><span class="text-ultra-bold">{{ 'Rendez-vous prit pour'|upper }}</span> </h3>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end organisateurs -->
-{% endblock %}
-{% block partners %}
-    <!-- sub slide -->
-    <div class="container-fluid no-padding" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
-         xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
-        <div class="main-slider">
-            <div class="item">
-                <div class="main-slider-img position-r" style="border-bottom: 4px solid #f48a38;">
-                    <img src="{{ asset('layout_two/img/sub.jpg') }}" alt="la finance s'engage" class="img-responsive">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end sub slide -->
 {% endblock %}
 {% block javascripts %}{% endblock %}

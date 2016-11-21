@@ -1,0 +1,80 @@
+{% extends 'LabsPagesBundle::layout.html.twig' %}
+{% block title %} {{ 'Nous contactez'|capitalize }}{% endblock %}
+{% block stylesheets %}
+    <style>
+        .causes-title{
+            background:
+                    linear-gradient(
+                            rgba(28, 28, 28, 0.8),
+                            rgba(28, 28, 28, 0.8)
+                    ),
+                        /* bottom, image */
+                    url('{{ asset('layout_two/img/about-bg.jpg') }}');
+        }
+    </style>
+{% endblock %}
+{% block  body %}
+    <div class="page-title causes-title text-center">
+        <h2 class="text-extra-bold white text-uppercase">{{ 'Contact'|upper }}</h2>
+        <div class="page-location direct text-center display-ib">
+            <span class="ubuntu fz-14 green-5c">{{ 'Accueil' }} <i class="gray-e9">/</i> {{ 'Contact' }}</span>
+        </div>
+    </div>
+    <section class="mt-150 contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <h3 class="black h-sep">Par <span class="text-extra-bold">Téléphone</span></h3>
+                    <p class="fz-16 gray-666 mt-50">Vous pouvez nous joindre du Lundi au vendredi de 8h à 17h</p>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <h3 class="black h-sep">Pour <span class="text-extra-bold">Nous écrire</span></h3>
+                    <p class="fz-16 gray-666 mt-50">Vous pouvez nous joindre du Lundi au vendredi de 8h à 17h</p>
+                </div>
+                <!--<div class="col-md-3 col-md-offset-1 col-sm-4 mt-150">
+                    <div class="contact-info clearfix">
+                        <div class="pull-left">
+                            <h5 class="fz-15 black text-bold mb-10">Office Address</h5>
+                            <span class="ubuntu fz-14 gray-777 lh-22">44 New Design Street <br>Australia - Melbourne 55455</span>
+                        </div>
+                        <div class="contact-icon pull-right position-r">
+                            <img src="img/office.png" alt="">
+                            <img src="img/office-hover.png" alt="">
+                        </div>
+                        <div class="clearfix"></div>
+                        <hr class="c-border">
+                    </div>
+                    <div class="contact-info clearfix mt-20">
+                        <div class="pull-left">
+                            <h5 class="fz-15 black text-bold mb-10">Phone</h5>
+                            <span class="ubuntu fz-14 gray-777 lh-22">(01) 987 633 522 01 <br>(01) 987 633 522 01</span>
+                        </div>
+                        <div class="contact-icon pull-right position-r">
+                            <img src="img/phone.png" alt="">
+                            <img src="img/phone-hover.png" alt="">
+                        </div>
+                        <div class="clearfix"></div>
+                        <hr class="c-border">
+                    </div>
+                    <div class="contact-info clearfix mt-20">
+                        <div class="pull-left">
+                            <h5 class="fz-15 black text-bold mb-10">E-mail</h5>
+                            <span class="ubuntu fz-14 gray-777 lh-22">office@aideo.com <br>admin@aideo.com</span>
+                        </div>
+                        <div class="contact-icon pull-right position-r">
+                            <img src="img/mail.png" alt="">
+                            <img src="img/mail-hover.png" alt="">
+                        </div>
+                        <div class="clearfix"></div>
+                        <hr class="c-border">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('layout_two/js/custom-map.js') }}"></script>
+    <script src="{{ asset('layout_two/js/contact-jquery.js') }}"></script>
+{% endblock %}

@@ -674,7 +674,7 @@ a:hover{
    }
    header .logo > img {
         display: inline-block;
-        left: 50%;
+        left: 45%;
         margin-left: -100px;
         position: absolute;
         top: 0;
@@ -1643,6 +1643,12 @@ footer .input-group-addon{
     font-size: 45px;
     line-height: 250px;
 }
+.page-title .slide-img{
+    display: block;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+}
 .page-location{
     padding: 20px 80px;
     position: absolute;
@@ -1654,7 +1660,7 @@ footer .input-group-addon{
     background-size: 100% 100%;
 }
 .page-location.direct{
-    margin-left: -108px;
+    margin-left: -120px;
 }
 .page-location span{
     word-spacing: 10px;

@@ -2,7 +2,7 @@
 {% block title %} {{ 'FORUM POUR LE FINANCEMENT DU SECTEUR PRIVÉ'|capitalize }}{% endblock %}
 {% block  body %}
     <div class="page-title causes-title text-center">
-        <h2 class="text-extra-bold white text-uppercase">{{ 'Nos partenaires'|upper }}</h2>
+        <h2 class="text-extra-bold white text-uppercase">{{ 'partenaires'|upper }}</h2>
         <div class="page-location direct text-center display-ib">
             <span class="ubuntu fz-14 green-5c">{{ 'Accueil' }} <i class="gray-e9">/</i> {{ 'partenaires' }}</span>
         </div>
@@ -17,6 +17,13 @@
                 </div>
             </div>
             <div class="row mt-20">
+                <div class="col-md-3 col-md-6 col-sm-6 overcoming">
+                    <h4 class="d-black lh-33 h-sep mt-5">
+                        <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive">
+                        <span style="padding-left: 5px;">{{ 'Partenaires platinum'|capitalize }}</span>
+                    </h4>
+                </div>
+                <div class="clearfix"></div>
                 <div class="col-md-4 mt-50 cause-main">
                     <div class="item">
                         <div class="causes-img text-center">
@@ -53,7 +60,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="clearfix visible-md-block"></div>
+                <div class="clearfix"></div>
+
+                <div class="col-md-3 col-md-6 col-sm-6 overcoming">
+                    <h4 class="d-black lh-33 h-sep mt-5">
+                        <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive">
+                        <span style="padding-left: 5px;">{{ 'Partenaires silver'|capitalize }}</span>
+                    </h4>
+                </div>
+                <div class="clearfix"></div>
                 <div class="col-md-4 mt-50 cause-main">
                     <div class="item">
                         <div class="causes-img text-center">
@@ -90,7 +105,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="clearfix visible-md-block"></div>
+                <div class="col-md-4 mt-50 cause-main">
+                    <div class="item">
+                        <div class="causes-img text-center">
+                            <a href="http://www.apsfd.ci/" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/apsfdci_2x.jpg') }}" alt="" class="img-responsive"></a>
+                        </div>
+                        <div class="cause-content text-center">
+                            <h5 class="martel text-semi-bold d-black">{{ 'Association Professionnelle des systèmes financiers Decentralises de Côte d\'Ivoire' }}</h5>
+                            <p class="lh-22 mt-10">Totam rem aperiam, eaque ipsa quae ab illosa inventore veritatis et quasi.</p>
+                            <a class="fz-14 mt-20 btn-green-br" href="http://www.apsfd.ci/" target="_blank">{{ 'en savoir +'|capitalize }}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="col-md-3 col-md-6 col-sm-6 overcoming">
+                    <h4 class="d-black lh-33 h-sep mt-5">
+                        <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive">
+                        <span style="padding-left: 5px;">{{ 'Partenaires Medias'|capitalize }}</span>
+                    </h4>
+                </div>
+                <div class="clearfix"></div>
                 <div class="col-md-4 mt-50 cause-main">
                     <div class="item">
                         <div class="causes-img text-center">
@@ -127,7 +162,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="clearfix visible-md-block"></div>
                 <div class="col-md-4 mt-50 cause-main">
                     <div class="item">
                         <div class="causes-img text-center">
@@ -152,35 +186,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mt-50 cause-main">
-                    <div class="item">
-                        <div class="causes-img text-center">
-                            <a href="http://www.rfi.fr" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/rfi_2x.jpg') }}" alt="" class="img-responsive"></a>
-                        </div>
-                        <div class="cause-content text-center">
-                            <h5 class="martel text-semi-bold d-black">{{ 'Radio France Internationale' }}</h5>
-                            <p class="lh-22 mt-10">Totam rem aperiam, eaque ipsa quae ab illosa inventore veritatis et quasi.</p>
-                            <a class="fz-14 mt-20 btn-green-br" href="http://www.rfi.fr" target="_blank">{{ 'en savoir +'|capitalize }}</a>
-                        </div>
-                    </div>
-                </div>
+                <div class="clearfix"></div>
             </div>
         </div>
     </section>
     <!-- end partenaires -->
-{% endblock %}
-{% block partners %}
-    <!-- sub slide -->
-    <div class="container-fluid no-padding" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
-         xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
-        <div class="main-slider">
-            <div class="item">
-                <div class="main-slider-img position-r" style="border-bottom: 4px solid #f48a38;">
-                    <img src="{{ asset('layout_two/img/sub.jpg') }}" alt="la finance s'engage" class="img-responsive">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end sub slide -->
 {% endblock %}
 {% block javascripts %}{% endblock %}
