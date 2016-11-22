@@ -3,7 +3,7 @@
 namespace Labs\BackBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+use Ivory\CKEditorBundle\Form\Type\CKEditorType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Vich\UploaderBundle\Form\Type\VichImageType;
@@ -20,7 +20,7 @@ class TeamType extends AbstractType
         $builder
             ->add('name',TextType::class, array('label' => false, 'attr'  => array('class' => 'form-control')))
             ->add('poste',TextType::class, array('label' => false, 'attr'  => array('class' => 'form-control')))
-            ->add('content',TextareaType::class, array('label' => false, 'attr'  => array('class' => 'form-control')))
+            ->add('content',CKEditorType::class, array('label' => false, 'attr'  => array('class' => 'form-control')))
             ->add('imageFile', VichImageType::class,array(
                 'label' => false,
                 'required' => false,

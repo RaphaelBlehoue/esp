@@ -14,7 +14,10 @@ class DefaultController extends Controller
      */
     public function HomePageBundle()
     {
-        return $this->render('LabsPagesBundle:Default:index.html.twig');
+        $speakers = $this->getTeamContent();
+        return $this->render('LabsPagesBundle:Default:index.html.twig',[
+            'speakers' => $speakers
+        ]);
     }
 
 
@@ -88,6 +91,17 @@ class DefaultController extends Controller
     public function ContactPageBundle()
     {
         return $this->render('LabsPagesBundle:Default:contact.html.twig');
+    }
+
+    /**
+     * @return array|\Labs\BackBundle\Entity\Team[]
+     * Retourne un tabeau de tout les SPEAKERS enregistrez dans la base de donnée
+     */
+    private function getTeamContent()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $team = $em->getRepository('LabsBackBundle:Team')->findAll();
+        return $team;
     }
 
 }

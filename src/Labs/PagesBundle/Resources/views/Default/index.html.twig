@@ -90,16 +90,18 @@
             <div class="row mt-100">
                 <div class="col-md-12">
                     <div class="test-sldier">
-                        {% for i in 1..10 %}
+                        {% for speaker in speakers %}
                             <div class="item">
                                 <div class="test-img display-ib position-r pull-left">
-                                    <img class="img-responsive display-ib" src="{{ asset('layout_two/img/test1.jpg') }}" alt="">
+                                    <img class="img-responsive display-ib" src="{{ speaker.assertPath|imagine_filter('my_thumb_speakers') }}" alt="{{ speaker.name }}">
                                 </div>
                                 <div class="display-ib pull-left test-text">
                                     <img src="{{ asset('layout_two/img/quote-open.png') }}" alt="">
                                     <h4 class="fz-17 d-black text-bold mt-30">{{ 'Participant' }}</h4>
-                                    <h5 class="fz-15 green-5c mt-10">CEO & Founder</h5>
-                                    <p class="mt-25">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur, atque dolore expedita incidunt necessitatibus nemo nihil nulla odio perferendis praesentium repellat repellendus sed, sequi similique sunt suscipit tempore totam!</p>
+                                    <h5 class="fz-15 green-5c mt-10">{{ speaker.poste }}</h5>
+                                    <p class="mt-25">
+                                        {{ speaker.content|truncate(100, true) }}
+                                    </p>
                                     <img class="pull-right mt-30" src="{{ asset('layout_two/img/quote-close.png') }}" alt="">
                                 </div>
                             </div>
