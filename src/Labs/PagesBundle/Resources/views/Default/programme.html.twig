@@ -1,0 +1,72 @@
+{% extends 'LabsPagesBundle::layout.html.twig' %}
+{% block title %} {{ 'Programmes'|capitalize }}{% endblock %}
+{% block  body %}
+    <div class="page-title causes-title text-center" style="min-height: 250px;">
+        <img class="img-responsive slide-img" src="{{ asset('layout_two/img/titles/programme.png') }}" alt="">
+    </div>
+
+    <section class="mt-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="text-uppercase black h-sep mb-50"><span class="text-ultra-bold">{{ 'Programme du forum'|upper }}</span> </h3>
+                </div>
+            </div>
+            <div class="row mt-20">
+                    <div class="col-md-6 mt-5">
+                        <div class="overcoming">
+                            <h4 class="d-black lh-33 h-sep mt-5">
+                                <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive">
+                                <span style="padding-left: 5px;">{{ 'Matinée du 24 novembre 2016' }}</span>
+                                <p class="fz-16 gray-666 mt-5">Lieu : Siège de la Banque Africaine de Développement (BAD) – Abidjan</p>
+                            </h4>
+                        </div>
+                        {% for program in programs %}
+                            {% if program.type == 1 %}
+                                <div class="about-author mt-50">
+                                    <div class="author-info clearfix mt-30">
+                                        <div class="author-details pull-left">
+                                            <h4 class="fz-15 h-sep text-semi-bold text-uppercase mb-30">
+                                                <img src="{{ asset('layout_two/img/icons/icon_clock.jpg') }}" alt="" class="pull-left img-responsive">
+                                                <span class="pull-left mt-10" style="padding-left: 2%;">{{ program.times }}</span>
+                                                <div class="clearfix"></div>
+                                            </h4>
+                                            <strong class="text-semi-bold mt-30">{% if program.title|length > 0 %}{{ program.title }} {% endif %}</strong>
+                                            <p class="mt-10 lh-26">{% if program.content|length > 0 %}{{ program.content|raw }}{% endif %}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <div class="col-md-6 mt-5">
+                        <div class="overcoming">
+                            <h4 class="d-black lh-33 h-sep mt-5">
+                                <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive">
+                                <span style="padding-left: 5px;">{{ 'Soirée du 24 novembre 2016' }}</span>
+                                <p class="fz-16 gray-666 mt-5">Lieu : Maison de l'Entreprise – Siège du patronat - Abidjan</p>
+                            </h4>
+                        </div>
+                        {% for program in programs %}
+                            {% if program.type == 0 %}
+                                <div class="about-author mt-50">
+                                    <div class="author-info clearfix mt-30">
+                                        <div class="author-details pull-left">
+                                            <h4 class="fz-15 h-sep text-semi-bold text-uppercase mb-30">
+                                                <img src="{{ asset('layout_two/img/icons/icon_clock.jpg') }}" alt="" class="pull-left img-responsive">
+                                                <span class="pull-left mt-10" style="padding-left: 2%;">{{ program.times }}</span>
+                                                <div class="clearfix"></div>
+                                            </h4>
+                                            <strong class="text-semi-bold mt-30">{% if program.title|length > 0 %}{{ program.title }} {% endif %}</strong>
+                                            <p class="mt-10 lh-26">{% if program.content|length > 0 %}{{ program.content|raw }}{% endif %}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+{% block javascripts %}{% endblock %}

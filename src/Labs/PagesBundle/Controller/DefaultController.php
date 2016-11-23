@@ -81,6 +81,18 @@ class DefaultController extends Controller
 
     /**
      * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/forum/programmes", name="programme")
+     */
+    public function ProgrammeTypePageBundle()
+    {
+        $programs = $this->getProgramsContent();
+        return $this->render('LabsPagesBundle:Default:programme.html.twig',[
+            'programs' => $programs
+        ]);
+    }
+
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
      * @Route("/medias/communiques_de_presse", name="blog")
      */
     public function BlogPageBundle()
@@ -111,6 +123,16 @@ class DefaultController extends Controller
             $team = $em->getRepository('LabsBackBundle:Team')->findAll();
         }
         return $team;
+    }
+
+    /**
+     * @return array|\Labs\BackBundle\Entity\Programs[]
+     */
+    private function getProgramsContent()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $program = $em->getRepository('LabsBackBundle:Programs')->findAll();
+        return $program;
     }
 
 }

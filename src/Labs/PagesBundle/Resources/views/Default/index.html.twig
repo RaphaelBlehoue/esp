@@ -25,8 +25,15 @@
                       <span class="text-ultra-bold"> {{ 'Presentation l\'initiative' }}</span>
                     </h4>
                     <p class="lh-28 mt-50 fz-15">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta fuga inventore iure magni necessitatibus, non pariatur quam quo tempora velit? Dolores enim fugit iste maxime minima molestias nulla reprehenderit sapiente!
+                        <em class="text-ultra-bold">La Finance S’Engage,</em> est né d’un projet concu par
+                        le Cabinet ESPartners et porté par le Patronat ivoirien
+                        et plus particulièrement avec la création de la Commission
+                        de Financement du Secteur Privé de la CGECI en partenariat
+                        avec  la Banque Africaine de Développement dans le but de
+                        mobiliser le secteur privé pour offrir des solutions concrètes
+                        au financement de l’économie ivoirienne...
                     </p>
+                    <a class="fz-14 mt-20 btn-green-br" href="{{ path('initiative') }}">{{ 'Lire la suite'|capitalize }}</a>
                 </div>
                 <div class="col-md-6 col-sm-6">
                     <div class="upcoming-event-s">
@@ -38,6 +45,81 @@
     </section>
     <!-- end presentation-->
 
+    <!-- les officiels -->
+    <section class="recent-causes no-padding mt-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="text-uppercase black h-sep"><span class="text-ultra-bold">{{ 'Les officiels'|upper }}</span> </h3>
+                </div>
+            </div>
+            <div class="row mt-50">
+                <div class="col-md-12">
+                    <div class="causes">
+                        <div class="item">
+                            <div class="causes-img text-center">
+                                <img src="{{ asset('layout_two/img/officiel/amadou-hot.jpg'|imagine_filter('my_thumb_officel')) }}" alt="" class="img-responsive">
+                            </div>
+                            <div class="cause-content text-center">
+                                <h5 class="martel text-semi-bold d-black mt-5">Amadou HOTT</h5>
+                                <p class="lh-22 mt-10">Vice Président de la BAD en charge de l'Energie, l'Electricité du climat et de la croissance verte</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="causes-img text-center">
+                                <img src="{{ asset('layout_two/img/officiel/souleymane-diarrassouba-1.jpg'|imagine_filter('my_thumb_officel')) }}" alt="" class="img-responsive">
+                            </div>
+                            <div class="cause-content text-center">
+                                <h5 class="martel text-semi-bold d-black mt-5">Souleymane DIARRASSOUBA</h5>
+                                <p class="lh-22 mt-10">Président de la Commission de Financement du Secteur Privé (CGECI)</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="causes-img text-center">
+                                <img src="{{ asset('layout_two/img/officiel/jkdiagou.jpg'|imagine_filter('my_thumb_officel')) }}" alt="" class="img-responsive">
+                            </div>
+                            <div class="cause-content text-center">
+                                <h5 class="martel text-semi-bold d-black mt-5">Jean Kacou DIAGOU</h5>
+                                <p class="lh-22 mt-10">Président de la Confédération Générale des Entreprises de Côte d’Ivoire (CGECI)</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="causes-img text-center">
+                                <img src="{{ asset('layout_two/img/officiel/tiemoko.jpg'|imagine_filter('my_thumb_officel')) }}" alt="" class="img-responsive">
+                            </div>
+                            <div class="cause-content text-center">
+                                <h5 class="martel text-semi-bold d-black mt-5">Tiémoko Meyliet KONÉ</h5>
+                                <p class="lh-22 mt-10">Gouverneur de la BCEAO</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="causes-img text-center">
+                                <img src="{{ asset('layout_two/img/officiel/adama.jpg'|imagine_filter('my_thumb_officel')) }}" alt="" class="img-responsive">
+                            </div>
+                            <div class="cause-content text-center">
+                                <h5 class="martel text-semi-bold d-black mt-5">Adama KONE</h5>
+                                <p class="lh-22 mt-10">Ministre auprès du Premier Ministre chargé de l'Economie et des Finances</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="causes-img text-center">
+                                <img src="{{ asset('layout_two/img/officiel/Kacou-4.jpg'|imagine_filter('my_thumb_officel')) }}" alt="" class="img-responsive">
+                            </div>
+                            <div class="cause-content text-center">
+                                <h5 class="martel text-semi-bold d-black mt-5">Éric KACOU</h5>
+                                <p class="lh-22 mt-10">Co-fondateur & Directeur Général ESPartners</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end officiels -->
+
     <!-- les organisateurs -->
     <section class="recent-causes">
         <div class="container">
@@ -46,7 +128,7 @@
                     <h3 class="text-uppercase black h-sep"><span class="text-ultra-bold">{{ 'Les organisateurs'|upper }}</span> </h3>
                 </div>
             </div>
-            <div class="row mt-20">
+            <div class="row">
                     <div class="col-md-4 mt-50 cause-main">
                         <div class="item">
                             <div class="causes-img text-center">

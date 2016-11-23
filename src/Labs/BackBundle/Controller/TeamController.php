@@ -13,7 +13,7 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 
 /**
- * Product controller.
+ * Team controller.
  *
  * @Route("/Team")
  */
