@@ -1,11 +1,8 @@
 {% extends 'LabsPagesBundle::layout.html.twig' %}
 {% block title %} {{ 'FORUM POUR LE FINANCEMENT DU SECTEUR PRIVÉ'|capitalize }}{% endblock %}
 {% block  body %}
-    <div class="page-title causes-title text-center">
-        <h2 class="text-extra-bold white text-uppercase">{{ 'partenaires'|upper }}</h2>
-        <div class="page-location direct text-center display-ib">
-            <span class="ubuntu fz-14 green-5c">{{ 'Accueil' }} <i class="gray-e9">/</i> {{ 'partenaires' }}</span>
-        </div>
+    <div class="page-title causes-title text-center" style="min-height: 250px;">
+        <img class="img-responsive slide-img" src="{{ asset('layout_two/img/titles/partners.png') }}" alt="">
     </div>
 
     <!-- les partenaires -->
@@ -20,10 +17,11 @@
                 <div class="col-md-3 col-md-6 col-sm-6 overcoming">
                     <h4 class="d-black lh-33 h-sep mt-5">
                         <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive">
-                        <span style="padding-left: 5px;">{{ 'Partenaires platinum'|capitalize }}</span>
+                        <span style="padding-left: 5px;">{{ 'Partenaire Platinum' }}</span>
                     </h4>
                 </div>
                 <div class="clearfix"></div>
+
                 <div class="col-md-4 mt-50 cause-main">
                     <div class="item">
                         <div class="causes-img text-center">
@@ -36,6 +34,16 @@
                         </div>
                     </div>
                 </div>
+                <div class="clearfix"></div>
+
+                <div class="col-md-3 col-md-6 col-sm-6 overcoming">
+                    <h4 class="d-black lh-33 h-sep mt-5">
+                        <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive">
+                        <span style="padding-left: 5px;">{{ 'Partenaires Gold' }}</span>
+                    </h4>
+                </div>
+                <div class="clearfix"></div>
+
                 <div class="col-md-4 mt-50 cause-main">
                     <div class="item">
                         <div class="causes-img text-center">
@@ -65,26 +73,15 @@
                 <div class="col-md-3 col-md-6 col-sm-6 overcoming">
                     <h4 class="d-black lh-33 h-sep mt-5">
                         <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive">
-                        <span style="padding-left: 5px;">{{ 'Partenaires silver'|capitalize }}</span>
+                        <span style="padding-left: 5px;">{{ 'Partenaires Silver'}}</span>
                     </h4>
                 </div>
                 <div class="clearfix"></div>
+
                 <div class="col-md-4 mt-50 cause-main">
                     <div class="item">
                         <div class="causes-img text-center">
-                            <a href="http://www.brvm.org/" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/brvm_2x.jpg') }}" alt="" class="img-responsive"></a>
-                        </div>
-                        <div class="cause-content text-center">
-                            <h5 class="martel text-semi-bold d-black">{{ 'La Bourse Régionale des Valeurs Mobilières' }}</h5>
-                            <p class="lh-22 mt-10">Totam rem aperiam, eaque ipsa quae ab illosa inventore veritatis et quasi.</p>
-                            <a class="fz-14 mt-20 btn-green-br" href="http://www.brvm.org/" target="_blank">{{ 'en savoir +'|capitalize }}</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-50 cause-main">
-                    <div class="item">
-                        <div class="causes-img text-center">
-                            <a href="http://www.apbef-ci.org/" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/apbefci_2x.jpg') }}" alt="" class="img-responsive"></a>
+                            <a href="http://www.apbef-ci.org" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/apbefci_2x.jpg') }}" alt="" class="img-responsive"></a>
                         </div>
                         <div class="cause-content text-center">
                             <h5 class="martel text-semi-bold d-black">{{ 'Association Professionnel des Banques et Etablissements Financiers de Côte d\'Ivoire' }}</h5>
@@ -96,12 +93,12 @@
                 <div class="col-md-4 mt-50 cause-main">
                     <div class="item">
                         <div class="causes-img text-center">
-                            <a href="http://www.apsfd.ci/" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/apsfdci_2x.jpg') }}" alt="" class="img-responsive"></a>
+                            <a href="http://www.unacoopec.com/" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/unacoopeci_2x.jpg') }}" alt="" class="img-responsive"></a>
                         </div>
                         <div class="cause-content text-center">
-                            <h5 class="martel text-semi-bold d-black">{{ 'Association Professionnelle des systèmes financiers Decentralises de Côte d\'Ivoire' }}</h5>
+                            <h5 class="martel text-semi-bold d-black">{{ 'Union Nationale des Coopératives d\'Epargne et de Crédit de Côte d\'Ivoire' }}</h5>
                             <p class="lh-22 mt-10">Totam rem aperiam, eaque ipsa quae ab illosa inventore veritatis et quasi.</p>
-                            <a class="fz-14 mt-20 btn-green-br" href="http://www.apsfd.ci/" target="_blank">{{ 'en savoir +'|capitalize }}</a>
+                            <a class="fz-14 mt-20 btn-green-br" href="http://www.unacoopec.com/" target="_blank">{{ 'en savoir +'|capitalize }}</a>
                         </div>
                     </div>
                 </div>
@@ -111,7 +108,7 @@
                             <a href="http://www.apsfd.ci/" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/apsfdci_2x.jpg') }}" alt="" class="img-responsive"></a>
                         </div>
                         <div class="cause-content text-center">
-                            <h5 class="martel text-semi-bold d-black">{{ 'Association Professionnelle des systèmes financiers Decentralises de Côte d\'Ivoire' }}</h5>
+                            <h5 class="martel text-semi-bold d-black">{{ 'Association Professionnelle des Systèmes Financiers Decentralisés de COTE D\'IVOIRE)' }}</h5>
                             <p class="lh-22 mt-10">Totam rem aperiam, eaque ipsa quae ab illosa inventore veritatis et quasi.</p>
                             <a class="fz-14 mt-20 btn-green-br" href="http://www.apsfd.ci/" target="_blank">{{ 'en savoir +'|capitalize }}</a>
                         </div>
@@ -122,19 +119,20 @@
                 <div class="col-md-3 col-md-6 col-sm-6 overcoming">
                     <h4 class="d-black lh-33 h-sep mt-5">
                         <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive">
-                        <span style="padding-left: 5px;">{{ 'Partenaires Medias'|capitalize }}</span>
+                        <span style="padding-left: 5px;">{{ 'Partenaires Medias'}}</span>
                     </h4>
                 </div>
                 <div class="clearfix"></div>
+
                 <div class="col-md-4 mt-50 cause-main">
                     <div class="item">
                         <div class="causes-img text-center">
-                            <a href="http://www.rti.ci" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/rti_2x.jpg') }}" alt="" class="img-responsive"></a>
+                            <a href="http://www.rti.ci/" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/rti_2x.jpg') }}" alt="" class="img-responsive"></a>
                         </div>
                         <div class="cause-content text-center">
-                            <h5 class="martel text-semi-bold d-black">{{ 'Radiodiffusion-télévision Ivoirienne' }}</h5>
+                            <h5 class="martel text-semi-bold d-black">{{ 'Radiodiffusion-télévision ivoirienne' }}</h5>
                             <p class="lh-22 mt-10">Totam rem aperiam, eaque ipsa quae ab illosa inventore veritatis et quasi.</p>
-                            <a class="fz-14 mt-20 btn-green-br" href="http://www.rti.ci" target="_blank">{{ 'en savoir +'|capitalize }}</a>
+                            <a class="fz-14 mt-20 btn-green-br" href="http://www.rti.ci/" target="_blank">{{ 'en savoir +'|capitalize }}</a>
                         </div>
                     </div>
                 </div>
@@ -165,6 +163,18 @@
                 <div class="col-md-4 mt-50 cause-main">
                     <div class="item">
                         <div class="causes-img text-center">
+                            <a href="" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/business_2x.jpg') }}" alt="" class="img-responsive"></a>
+                        </div>
+                        <div class="cause-content text-center">
+                            <h5 class="martel text-semi-bold d-black">{{ 'Business24 Africa' }}</h5>
+                            <p class="lh-22 mt-10">Totam rem aperiam, eaque ipsa quae ab illosa inventore veritatis et quasi.</p>
+                            <a class="fz-14 mt-20 btn-green-br" href="">{{ 'en savoir +'|capitalize }}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-50 cause-main">
+                    <div class="item">
+                        <div class="causes-img text-center">
                             <a href="http://www.pmepmimagazine.info" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/pme_2x.jpg') }}" alt="" class="img-responsive"></a>
                         </div>
                         <div class="cause-content text-center">
@@ -177,12 +187,12 @@
                 <div class="col-md-4 mt-50 cause-main">
                     <div class="item">
                         <div class="causes-img text-center">
-                            <a href="" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/business_2x.jpg') }}" alt="" class="img-responsive"></a>
+                            <a href="http://www.brvm.org/" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/brvm_2x.jpg') }}" alt="" class="img-responsive"></a>
                         </div>
                         <div class="cause-content text-center">
-                            <h5 class="martel text-semi-bold d-black">{{ 'Business24 Africa' }}</h5>
+                            <h5 class="martel text-semi-bold d-black">{{ 'Bourse Régionale des Valeurs Mobilières' }}</h5>
                             <p class="lh-22 mt-10">Totam rem aperiam, eaque ipsa quae ab illosa inventore veritatis et quasi.</p>
-                            <a class="fz-14 mt-20 btn-green-br" href="">{{ 'en savoir +'|capitalize }}</a>
+                            <a class="fz-14 mt-20 btn-green-br" href="http://www.brvm.org/" target="_blank">{{ 'en savoir +'|capitalize }}</a>
                         </div>
                     </div>
                 </div>

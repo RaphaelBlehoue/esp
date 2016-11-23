@@ -14,7 +14,8 @@ class DefaultController extends Controller
      */
     public function HomePageBundle()
     {
-        $speakers = $this->getTeamContent();
+        $limit = 7;
+        $speakers = $this->getTeamContent($limit);
         return $this->render('LabsPagesBundle:Default:index.html.twig',[
             'speakers' => $speakers
         ]);
@@ -54,7 +55,10 @@ class DefaultController extends Controller
      */
     public function ParticipantPageBundle()
     {
-        return $this->render('LabsPagesBundle:Default:participant.html.twig');
+        $speakers = $this->getTeamContent();
+        return $this->render('LabsPagesBundle:Default:participant.html.twig',[
+            'speakers' => $speakers
+        ]);
     }
 
     /**
@@ -97,10 +101,15 @@ class DefaultController extends Controller
      * @return array|\Labs\BackBundle\Entity\Team[]
      * Retourne un tabeau de tout les SPEAKERS enregistrez dans la base de donnée
      */
-    private function getTeamContent()
+    private function getTeamContent($num = null)
     {
-        $em = $this->getDoctrine()->getManager();
-        $team = $em->getRepository('LabsBackBundle:Team')->findAll();
+        if (!empty($num)){
+            $em = $this->getDoctrine()->getManager();
+            $team = $em->getRepository('LabsBackBundle:Team')->findLimit(7);
+        }else{
+            $em = $this->getDoctrine()->getManager();
+            $team = $em->getRepository('LabsBackBundle:Team')->findAll();
+        }
         return $team;
     }
 

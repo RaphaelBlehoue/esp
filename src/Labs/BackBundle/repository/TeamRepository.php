@@ -17,4 +17,12 @@ class TeamRepository extends \Doctrine\ORM\EntityRepository
         $qb->setParameter(':id', $entity);
         return $qb->getQuery()->getOneOrNullResult();
     }
+
+    public function findLimit($num = 7)
+    {
+        $qb = $this->createQueryBuilder('t');
+        $qb->setMaxResults($num);
+        return $qb->getQuery()->getResult();
+    }
+
 }

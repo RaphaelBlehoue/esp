@@ -1,11 +1,8 @@
 {% extends 'LabsPagesBundle::layout.html.twig' %}
 {% block title %} {{ 'FORUM POUR LE FINANCEMENT DU SECTEUR PRIVÉ'|capitalize }}{% endblock %}
 {% block  body %}
-    <div class="page-title causes-title text-center">
-        <h2 class="text-extra-bold white text-uppercase">{{ 'organisateurs'|upper }}</h2>
-        <div class="page-location direct text-center display-ib">
-            <span class="ubuntu fz-14 green-5c">{{ 'Accueil' }} <i class="gray-e9">/</i> {{ 'organisateurs' }}</span>
-        </div>
+    <div class="page-title causes-title text-center" style="min-height: 250px;">
+        <img class="img-responsive slide-img" src="{{ asset('layout_two/img/titles/organisateur.png') }}" alt="">
     </div>
 
     <section class="mt-100">

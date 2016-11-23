@@ -49,7 +49,8 @@ $(document).ready(function(){
      $(".test-sldier").owlCarousel({
         autoPlay: 3000, //Set AutoPlay to 3 seconds
         items: 2,
-        itemsCustom: [[0, 1], [400, 1], [700, 1], [1000, 1], [1200, 2], [1600, 2]]
+		 autoWidth : true,
+		 itemsCustom: [[0, 1], [400, 1], [700, 1], [1000, 1], [1200, 2], [1600, 2]]
     });
 
      $('#upcoming').countdown('2016/11/24', function(event) {

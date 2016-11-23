@@ -20,7 +20,7 @@
     <section class="mt-100" style="border-bottom: 2px solid #eee; padding-bottom: 10px;">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 col-sm-5 overcoming">
+                <div class="col-md-6 col-sm-6 overcoming">
                     <h4 class="d-black lh-33 h-sep">
                       <span class="text-ultra-bold"> {{ 'Presentation l\'initiative' }}</span>
                     </h4>
@@ -28,15 +28,9 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta fuga inventore iure magni necessitatibus, non pariatur quam quo tempora velit? Dolores enim fugit iste maxime minima molestias nulla reprehenderit sapiente!
                     </p>
                 </div>
-                <div class="col-md-7 col-sm-7">
-                    <div class="upcoming-event">
-                        <img class="img-responsive" src="{{ asset('layout_two/img/upcoming-event.jpg') }}" alt="">
-                        <div class="upcoming-count-down text-center">
-                            <h5 class="ubuntu white text-medium text-uppercase">{{ 'Forum pour le Financement du Secteur Privé' }}</h5>
-                            <h4 class="white text-extra-bold text-uppercase mt-40">A PARTIR DU <span class="green-5c">24 Novembre 2016</span></h4>
-                            <div id="upcoming" class=""></div>
-                            <h6 class="ubuntu gray-f9f9 mt-60"> {{ 'Première'  }} <span class="green-5c">{{ 'Edition' }}</span> </h6>
-                        </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="upcoming-event-s">
+                        <img class="img-responsive" src="{{ asset('layout_two/img/up2.jpg') }}" alt="">
                     </div>
                 </div>
             </div>
@@ -79,12 +73,12 @@
     </section>
     <!-- end organisateurs -->
 
-    <!-- les participants -->
+    <!-- les speakers -->
     <section class="testimonials mt-30 mb-50">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h3 class=" black h-sep"><span class="text-ultra-bold"> {{ 'LES PARTICIPANTS'|upper }}</span> </h3>
+                    <h3 class=" black h-sep"><span class="text-ultra-bold"> {{ 'les speakers'|upper }}</span> </h3>
                 </div>
             </div>
             <div class="row mt-100">
@@ -97,23 +91,21 @@
                                 </div>
                                 <div class="display-ib pull-left test-text">
                                     <img src="{{ asset('layout_two/img/quote-open.png') }}" alt="">
-                                    <h4 class="fz-17 d-black text-bold mt-30">{{ 'Participant' }}</h4>
+                                    <h4 class="fz-17 d-black text-bold mt-30">{{ speaker.name }}</h4>
                                     <h5 class="fz-15 green-5c mt-10">{{ speaker.poste }}</h5>
                                     <p class="mt-25">
-                                        {{ speaker.content|truncate(100, true) }}
+                                        {{ speaker.content|truncate(250, true)|raw }} <a href="">{{ 'En savoir +' }}</a>
                                     </p>
                                     <img class="pull-right mt-30" src="{{ asset('layout_two/img/quote-close.png') }}" alt="">
                                 </div>
                             </div>
                         {% endfor %}
-
-
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- end les participants -->
+    <!-- end les speakers -->
 
     <!-- les données de la croissance -->
     <section class="mt-15">
@@ -193,62 +185,62 @@
             <div class="col-md-12 clients-slider">
                 <div class="col-md-3">
                     <div class="client-img">
-                        <a href="http://baci.banqueatlantique.net" target="_blank"><img src="{{ asset('layout_two/img/sponsors/bank_atlantique.jpg') }}" alt="Banque atlantique Côte d'ivoire"></a>
+                        <a href="http://baci.banqueatlantique.net" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/bank_atlantique_2x.jpg') }}" alt="" class="img-responsive"></a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="client-img">
-                        <a href="https://www.orange.ci/" target="_blank"><img src="{{ asset('layout_two/img/sponsors/orange.jpg') }}" alt="Orange Côte d'ivoire"></a>
+                        <a href="https://www.orange.ci/" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/orange_2x.jpg') }}" alt="" class="img-responsive"></a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="client-img">
-                        <a href="http://www.bicici.com" target="_blank"><img src="{{ asset('layout_two/img/sponsors/bicici.jpg') }}" alt="BICICI Côte d'ivoire"></a>
+                        <a href="http://www.bicici.com" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/bicici_2x.jpg') }}" alt="" class="img-responsive"></a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="client-img">
-                        <a href="http://www.brvm.org/" target="_blank"><img src="{{ asset('layout_two/img/sponsors/brvm.jpg') }}" alt="BRVM"></a>
+                        <a href="http://www.apbef-ci.org" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/apbefci_2x.jpg') }}" alt="" class="img-responsive"></a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="client-img">
-                        <a href="http://www.apbef-ci.org/" target="_blank"><img src="{{ asset('layout_two/img/sponsors/apbefci.jpg') }}" alt="apbef ci"></a>
+                        <a href="http://www.unacoopec.com/" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/unacoopeci_2x.jpg') }}" alt="" class="img-responsive"></a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="client-img">
-                        <a href="http://www.apsfd.ci/" target="_blank"><img src="{{ asset('layout_two/img/sponsors/apsfdci.jpg') }}" alt="apsfd ci"></a>
+                        <a href="http://www.apsfd.ci/" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/apsfdci_2x.jpg') }}" alt="" class="img-responsive"></a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="client-img">
-                        <a href="http://www.rti.ci" target="_blank"><img src="{{ asset('layout_two/img/sponsors/rti.jpg') }}" alt="RTI"></a>
+                        <a href="http://www.rti.ci/" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/rti_2x.jpg') }}" alt="" class="img-responsive"></a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="client-img">
-                        <a href="http://abidjan.net/" target="_blank"><img src="{{ asset('layout_two/img/sponsors/abinet.jpg') }}" alt="Abidjan net"></a>
+                        <a href="http://abidjan.net/" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/abinet_2x.jpg') }}" alt="" class="img-responsive"></a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="client-img">
-                        <a href="http://www.fratmat.info/" target="_blank"><img src="{{ asset('layout_two/img/sponsors/frat-mat.jpg') }}" alt="Fraternité Matin"></a>
+                        <a href="http://www.fratmat.info" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/frat-mat_2x.jpg') }}" alt="" class="img-responsive"></a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="client-img">
-                        <a href="http://www.pmepmimagazine.info" target="_blank"><img src="{{ asset('layout_two/img/sponsors/pme.jpg') }}" alt="PME Magazine"></a>
+                        <a href="" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/business_2x.jpg') }}" alt="" class="img-responsive"></a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="client-img">
-                        <a href="" target="_blank"><img src="{{ asset('layout_two/img/sponsors/business.jpg') }}" alt="Business 24"></a>
+                        <a href="http://www.pmepmimagazine.info" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/pme_2x.jpg') }}" alt="" class="img-responsive"></a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="client-img">
-                        <a href="http://www.rfi.fr" target="_blank"><img src="{{ asset('layout_two/img/sponsors/rfi.jpg') }}" alt="RFI"></a>
+                        <a href="http://www.brvm.org/" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/brvm_2x.jpg') }}" alt="" class="img-responsive"></a>
                     </div>
                 </div>
             </div>
