@@ -3,11 +3,12 @@
 namespace Labs\BackBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
-use Ivory\CKEditorBundle\Form\Type\CKEditorType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Vich\UploaderBundle\Form\Type\VichImageType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+
 
 class TeamType extends AbstractType
 {
@@ -20,7 +21,10 @@ class TeamType extends AbstractType
         $builder
             ->add('name',TextType::class, array('label' => false, 'attr'  => array('class' => 'form-control')))
             ->add('poste',TextType::class, array('label' => false, 'attr'  => array('class' => 'form-control')))
-            ->add('content',CKEditorType::class, array('label' => false, 'attr'  => array('class' => 'form-control')))
+            ->add('link',TextType::class, array('label' => false, 'attr'  => array('class' => 'form-control')))
+            ->add('types',ChoiceType::class, array(
+                'choices' => array('Officiel' => 1, 'Speakers' => 0),
+            ))
             ->add('imageFile', VichImageType::class,array(
                 'label' => false,
                 'required' => false,

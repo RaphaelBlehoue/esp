@@ -1,0 +1,96 @@
+<?php
+
+namespace Labs\BackBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Symfony\Component\Validator\Constraints as Assert;
+
+/**
+ * Team
+ *
+ * @ORM\Table(name="team")
+ * @ORM\Entity(repositoryClass="Labs\BackBundle\Repository\TeamRepository")
+ * @ORM\HasLifecycleCallbacks()
+ * @Vich\Uploadable
+ */
+class Team
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+
+    /**
+     * @Assert\File(
+     *     maxSize="3M",
+     *     mimeTypes={"image/png", "image/jpeg", "image/jpg"}
+     * )
+     *
+     * @Vich\UploadableField(mapping="team_image", fileNameProperty="imageName")
+     *
+     * @var File $imageFile
+     */
+    protected $imageFile;
+
+    /**
+     * @var string $imageName
+     *
+     * @ORM\Column(type="string", length=255)
+     */
+    protected $imageName;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=255, nullable=true)
+     */
+    protected $name;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="poste", type="string", length=255, nullable=true)
+     */
+    protected $poste;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="types", type="integer")
+     */
+    protected $types;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="link", type="string", length=255, nullable=true, options={"comment":"Lien du site de l'officiel ou speakers"})
+     */
+    protected $link;
+
+    /**
+     * @var dateTime
+     *
+     * @ORM\Column(name="created", type="datetime")
+     */
+    protected $created;
+
+    /**
+     * @var
+     *
+     * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Item", mappedBy="team")
+     */
+    protected $item;
+
+
+
+    public function __construct()
+    {
+        $this->created = new \DateTime('now');
+    }
+}

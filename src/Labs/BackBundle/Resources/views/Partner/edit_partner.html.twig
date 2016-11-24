@@ -36,6 +36,13 @@
                                 {{ form_start(form, {'role': 'form', 'action': path('partner_edit', {'id' : id}), 'attr': {'class': 'form-horizontal'}}) }}
 
                                 <div class="form-group">
+                                    <label class="col-md-2 control-label">{{ 'Type' }}</label>
+                                    <div class="col-md-10">
+                                        {{ form_row(form.types) }}
+                                        {{ form_errors(form.types) }}
+                                    </div>
+                                </div>
+                                <div class="form-group">
                                     <label class="col-md-2 control-label">{{ 'Nom' }}</label>
                                     <div class="col-md-10">
                                         {{ form_row(form.name) }}
@@ -58,13 +65,19 @@
                                         {{ form_errors(form.imageFile) }}
                                     </div>
                                 </div>
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label">{{ 'resumé' }}</label>
+                                    <div class="col-md-10">
+                                        {{ form_row(form.content) }}
+                                        {{ form_errors(form.content) }}
+                                    </div>
+                                </div>
 
                                 <div class="form-group">
                                     <div class="col-md-8 col-md-offset-2">
                                         <button type="submit" class="btn btn-danger">{{ 'Modifier partenaire' }}</button>
                                     </div>
                                 </div>
-
                                 {{ form_end(form) }}
                             </div>
                         </div>

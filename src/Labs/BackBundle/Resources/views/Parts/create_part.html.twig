@@ -1,5 +1,5 @@
 {% extends 'LabsUboldBundle::loyout_ubold.html.twig' %}
-{% block title %}{{ 'Team - Page | LFS' }}{% endblock %}
+{% block title %}{{ 'Parts - Page | AGR' }}{% endblock %}
 {% block body %}
     <div class="content">
         <div class="container">
@@ -14,13 +14,13 @@
                         </div>
                     {% endif %}
 
-                    <h4 class="page-title">{{ 'Creation de la team' }}</h4>
+                    <h4 class="page-title">{{ 'Creation du Contenu Parts pour Partners' }}</h4>
                     <ol class="breadcrumb">
                         <li>
                             <a href="{{ path('homepage') }}">{{ 'LFS' }}</a>
                         </li>
                         <li class="active">
-                            {{ 'Page Team' }}
+                            {{ 'Page Parts' }}
                         </li>
                     </ol>
                 </div>
@@ -30,51 +30,34 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="card-box">
-                        <h4 class="m-t-0 header-title"><b>{{ 'Formulaire de creation de Team' }}</b></h4>
+                        <h4 class="m-t-0 header-title"><b>{{ 'Formulaire de creation de Parts' }}</b></h4>
                         <div class="row">
                             <div class="col-md-8 col-md-offset-2">
-                                {{ form_start(form, {'role': 'form', 'action': path('team_create'), 'attr': {'class': 'form-horizontal'}}) }}
+                                {{ form_start(form, {'role': 'form', 'action': path('part_create'), 'attr': {'class': 'form-horizontal'}}) }}
                                 <div class="form-group">
-                                    <label class="col-md-2 control-label">{{ 'Type d\'intervants' }}</label>
+                                    <label class="col-md-2 control-label">{{ 'Partnaires associé' }}</label>
                                     <div class="col-md-10">
-                                        {{ form_row(form.types) }}
-                                        {{ form_errors(form.types) }}
+                                        {{ form_row(form.partner) }}
+                                        {{ form_errors(form.partner) }}
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-md-2 control-label">{{ 'Nom' }}</label>
+                                    <label class="col-md-2 control-label">{{ 'titre' }}</label>
                                     <div class="col-md-10">
-                                        {{ form_row(form.name) }}
-                                        {{ form_errors(form.name) }}
+                                        {{ form_row(form.title) }}
+                                        {{ form_errors(form.title) }}
                                     </div>
                                 </div>
-
                                 <div class="form-group">
-                                    <label class="col-md-2 control-label">{{ 'poste' }}</label>
+                                    <label class="col-md-2 control-label">{{ 'description' }}</label>
                                     <div class="col-md-10">
-                                        {{ form_row(form.poste) }}
-                                        {{ form_errors(form.poste) }}
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-md-2 control-label">{{ 'photo' }}</label>
-                                    <div class="col-md-10">
-                                        {{ form_row(form.imageFile) }}
-                                        {{ form_errors(form.imageFile) }}
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-md-2 control-label">{{ 'Lien du site' }}</label>
-                                    <div class="col-md-10">
-                                        {{ form_row(form.link) }}
-                                        {{ form_errors(form.link) }}
+                                        {{ form_row(form.content) }}
+                                        {{ form_errors(form.content) }}
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-8 col-md-offset-2">
-                                        <button type="submit" class="btn btn-primary" formnovalidate>{{ 'Créer l\'intervenant' }}</button>
+                                        <button type="submit" class="btn btn-primary">{{ 'Créer Parts' }}</button>
                                     </div>
                                 </div>
                                 {{ form_end(form) }}

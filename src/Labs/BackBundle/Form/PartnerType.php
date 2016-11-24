@@ -2,11 +2,13 @@
 
 namespace Labs\BackBundle\Form;
 
+use Ivory\CKEditorBundle\Form\Type\CKEditorType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Vich\UploaderBundle\Form\Type\VichImageType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 
 class PartnerType extends AbstractType
 {
@@ -19,10 +21,16 @@ class PartnerType extends AbstractType
         $builder
             ->add('name',TextType::class, array('label' => false, 'attr'  => array('class' => 'form-control')))
             ->add('url',TextType::class, array('label' => false, 'attr'  => array('class' => 'form-control')))
+            ->add('content', CKEditorType::class, array(
+                'label' => false
+            ))            
             ->add('imageFile', VichImageType::class,array(
                 'label' => false,
                 'required' => false,
                 'allow_delete' => true
+            ))
+            ->add('types',ChoiceType::class, array(
+                'choices' => array('Organisateur' => 1, 'Sponsors' => 0),
             ))
         ;
     }

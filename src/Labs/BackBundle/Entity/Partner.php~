@@ -1,0 +1,76 @@
+<?php
+
+namespace Labs\BackBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Symfony\Component\Validator\Constraints as Assert;
+
+/**
+ * Partner
+ *
+ * @ORM\Table(name="partner")
+ * @ORM\Entity(repositoryClass="Labs\BackBundle\Repository\PartnerRepository")
+ * @ORM\HasLifecycleCallbacks()
+ * @Vich\Uploadable
+ */
+class Partner
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+
+    /**
+     * @Assert\File(
+     *     maxSize="3M",
+     *     mimeTypes={"image/png", "image/jpeg", "image/jpg"}
+     * )
+     *
+     * @Vich\UploadableField(mapping="partner_image", fileNameProperty="imageName")
+     *
+     * @var File $imageFile
+     */
+    protected $imageFile;
+
+    /**
+     * @var string $imageName
+     *
+     * @ORM\Column(type="string", length=255)
+     */
+    protected $imageName;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=255)
+     */
+    protected $name;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="url", type="string", length=255)
+     */
+    protected $url;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="types", type="integer")
+     */
+    protected $types;
+
+    /**
+     * @var dateTime
+     *
+     * @ORM\Column(name="created", type="datetime")
+     */
+    protected $created;
+    
+}

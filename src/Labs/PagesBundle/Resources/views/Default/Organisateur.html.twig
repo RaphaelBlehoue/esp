@@ -7,59 +7,27 @@
 
     <section class="mt-100">
         <div class="container">
-            <div class="row mt-15">
+            {% for organisateur in organisateurs %}
+                <div class="row mt-15">
                 <div class="col-md-6 col-sm-6">
                     <div class="upcoming-event-s">
-                        <a href="http://www.cgeci.ci/" target="_blank"><img class="img-responsive" src="{{ asset('layout_two/img/organisateurs/cgeci_2x.jpg') }}" alt=""></a>
+                        <a href="{{ path('view_organisateur', {'org' : organisateur.id }) }}"><img class="img-responsive" src="{{ asset(organisateur.assertPath) }}" alt="{{ organisateur.name }}"></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 overcoming">
                     <h4 class="d-black lh-33 h-sep mt-5">
                         <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive">
-                        <span style="padding-left: 5px;">{{ 'Confédération Générale des Entreprises de Côte d\'Ivoire - Patronat ivoirien (CGECI)' }}</span>
+                        <span style="padding-left: 5px;">{{ organisateur.name }}</span>
                     </h4>
-                    <p class="lh-28 mt-50 fz-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aspernatur assumenda cum delectus dicta dolore eaque illum inventore, ipsam itaque laborum libero maiores molestiae nobis officiis omnis soluta, vitae?</p>
+                        <p class="lh-28 mt-50 fz-15">
+                            {{ organisateur.content|raw }}
+                        </p>
                 </div>
                 <div class="pull-right mt-10 mb-10">
-                    <a class="btn-prime tri-b text-uppercase" style="line-height: 39px;" href="http://www.cgeci.ci/" target="_blank">{{ 'en savoir plus'|upper }}</a>
+                    <a class="btn-prime tri-b text-uppercase" style="line-height: 39px;" href="{{ path('view_organisateur', {'org' : organisateur.id }) }}">{{ 'en savoir plus'|upper }}</a>
                 </div>
             </div>
-
-            <div class="row mt-15">
-                <div class="col-md-6 col-sm-6">
-                    <div class="upcoming-event-s">
-                        <a href="http://espartners.co/" target="_blank"><img class="img-responsive" src="{{ asset('layout_two/img/organisateurs/esp_2x.jpg') }}" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 overcoming">
-                    <h4 class="d-black lh-33 h-sep mt-5">
-                        <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive">
-                        <span style="padding-left: 5px;">{{ 'Entrepreneurial Solution Partners (ESP)' }}</span>
-                    </h4>
-                    <p class="lh-28 mt-50 fz-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aspernatur assumenda cum delectus dicta dolore eaque illum inventore, ipsam itaque laborum libero maiores molestiae nobis officiis omnis soluta, vitae?</p>
-                </div>
-                <div class="pull-right mt-10 mb-10">
-                    <a class="btn-prime tri-b text-uppercase" href="http://espartners.co/" style="line-height: 39px;" target="_blank">{{ 'en savoir plus'|upper }}</a>
-                </div>
-            </div>
-
-            <div class="row mt-15 mb-20">
-                <div class="col-md-6 col-sm-6">
-                    <div class="upcoming-event-s">
-                        <a href="http://www.afdb.org/fr/" target="_blank"><img class="img-responsive" src="{{ asset('layout_two/img/organisateurs/bad_2x.jpg') }}" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 overcoming">
-                    <h4 class="d-black lh-33 h-sep mt-5">
-                        <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive">
-                        <span style="padding-left: 5px;">{{ 'Banque Africaine de Développement (BAD) ' }}</span>
-                    </h4>
-                    <p class="lh-28 mt-50 fz-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aspernatur assumenda cum delectus dicta dolore eaque illum inventore, ipsam itaque laborum libero maiores molestiae nobis officiis omnis soluta, vitae?</p>
-                </div>
-                <div class="pull-right mt-10">
-                    <a class="btn-prime tri-b text-uppercase" href="http://www.afdb.org/fr/" style="line-height: 39px;" target="_blank">{{ 'en savoir plus'|capitalize }}</a>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </section>
 {% endblock %}

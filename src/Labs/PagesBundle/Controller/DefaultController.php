@@ -16,8 +16,10 @@ class DefaultController extends Controller
     {
         $limit = 7;
         $speakers = $this->getTeamContent($limit);
+        $office = $this->getTeamContent();
         return $this->render('LabsPagesBundle:Default:index.html.twig',[
-            'speakers' => $speakers
+            'speakers' => $speakers,
+            'office' => $office
         ]);
     }
 
@@ -37,7 +39,23 @@ class DefaultController extends Controller
      */
     public function OrganisateurPageBundle()
     {
-        return $this->render('LabsPagesBundle:Default:Organisateur.html.twig');
+        $organisateurs = $this->getAllOrganisateur();
+        return $this->render('LabsPagesBundle:Default:Organisateur.html.twig',[
+            'organisateurs' => $organisateurs
+        ]);
+    }
+
+    /**
+     * @param $org
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/presentation/{org}/organisateur", name="view_organisateur")
+     */
+    public function ViewOrganisateurPageBundle($org)
+    {
+        $orga = $this->getOneOrga($org);
+        return $this->render('LabsPagesBundle:Default:view_orgl.html.twig',[
+            'orga' => $orga
+        ]);
     }
 
     /**
@@ -47,6 +65,18 @@ class DefaultController extends Controller
     public function PartnerPageBundle()
     {
         return $this->render('LabsPagesBundle:Default:partners.html.twig');
+    }
+
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/forum/officiels", name="officiel")
+     */
+    public function OfficielPageBundle()
+    {
+        $office = $this->getTeamContent();
+        return $this->render('LabsPagesBundle:Default:officiel.html.twig',[
+            'office' => $office
+        ]);
     }
 
     /**
@@ -92,6 +122,20 @@ class DefaultController extends Controller
     }
 
     /**
+     * @param $team
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/forum/{team}/officiel", name="viewofficiel")
+     */
+    public function SpeakerViewAction($team)
+    {
+        $office = $this->getOneTeam($team);
+        return $this->render('LabsPagesBundle:Default:view_officiel.html.twig',[
+            'office' => $office
+        ]);
+    }
+
+    /**
      * @return \Symfony\Component\HttpFoundation\Response
      * @Route("/medias/communiques_de_presse", name="blog")
      */
@@ -132,6 +176,38 @@ class DefaultController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
         $program = $em->getRepository('LabsBackBundle:Programs')->findAll();
+        return $program;
+    }
+
+    /**
+     * @param $team
+     * @return mixed
+     */
+    private function getOneTeam($team)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $program = $em->getRepository('LabsBackBundle:Team')->findOne($team);
+        return $program; 
+    }
+
+    /**
+     * @return array|\Labs\BackBundle\Entity\Partner[]
+     */
+    private function getAllOrganisateur()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $program = $em->getRepository('LabsBackBundle:Partner')->findAll();
+        return $program;
+    }
+
+    /**
+     * @param $org
+     * @return mixed
+     */
+    private function getOneOrga($org)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $program = $em->getRepository('LabsBackBundle:Partner')->findOne($org);
         return $program;
     }
 

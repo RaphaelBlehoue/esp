@@ -56,62 +56,23 @@
             <div class="row mt-50">
                 <div class="col-md-12">
                     <div class="causes">
-                        <div class="item">
-                            <div class="causes-img text-center">
-                                <img src="{{ asset('layout_two/img/officiel/amadou-hot.jpg'|imagine_filter('my_thumb_officel')) }}" alt="" class="img-responsive">
-                            </div>
-                            <div class="cause-content text-center">
-                                <h5 class="martel text-semi-bold d-black mt-5">Amadou HOTT</h5>
-                                <p class="lh-22 mt-10">Vice Président de la BAD en charge de l'Energie, l'Electricité du climat et de la croissance verte</p>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="causes-img text-center">
-                                <img src="{{ asset('layout_two/img/officiel/souleymane-diarrassouba-1.jpg'|imagine_filter('my_thumb_officel')) }}" alt="" class="img-responsive">
-                            </div>
-                            <div class="cause-content text-center">
-                                <h5 class="martel text-semi-bold d-black mt-5">Souleymane DIARRASSOUBA</h5>
-                                <p class="lh-22 mt-10">Président de la Commission de Financement du Secteur Privé (CGECI)</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="causes-img text-center">
-                                <img src="{{ asset('layout_two/img/officiel/jkdiagou.jpg'|imagine_filter('my_thumb_officel')) }}" alt="" class="img-responsive">
-                            </div>
-                            <div class="cause-content text-center">
-                                <h5 class="martel text-semi-bold d-black mt-5">Jean Kacou DIAGOU</h5>
-                                <p class="lh-22 mt-10">Président de la Confédération Générale des Entreprises de Côte d’Ivoire (CGECI)</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="causes-img text-center">
-                                <img src="{{ asset('layout_two/img/officiel/tiemoko.jpg'|imagine_filter('my_thumb_officel')) }}" alt="" class="img-responsive">
-                            </div>
-                            <div class="cause-content text-center">
-                                <h5 class="martel text-semi-bold d-black mt-5">Tiémoko Meyliet KONÉ</h5>
-                                <p class="lh-22 mt-10">Gouverneur de la BCEAO</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="causes-img text-center">
-                                <img src="{{ asset('layout_two/img/officiel/adama.jpg'|imagine_filter('my_thumb_officel')) }}" alt="" class="img-responsive">
-                            </div>
-                            <div class="cause-content text-center">
-                                <h5 class="martel text-semi-bold d-black mt-5">Adama KONE</h5>
-                                <p class="lh-22 mt-10">Ministre auprès du Premier Ministre chargé de l'Economie et des Finances</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="causes-img text-center">
-                                <img src="{{ asset('layout_two/img/officiel/Kacou-4.jpg'|imagine_filter('my_thumb_officel')) }}" alt="" class="img-responsive">
-                            </div>
-                            <div class="cause-content text-center">
-                                <h5 class="martel text-semi-bold d-black mt-5">Éric KACOU</h5>
-                                <p class="lh-22 mt-10">Co-fondateur & Directeur Général ESPartners</p>
-                            </div>
-                        </div>
-
+                        {% for officiel in office %}
+                            {% if officiel.types == 1 %}
+                                <div class="item">
+                                    <div class="causes-img text-center">
+                                        <a href="">
+                                            <img src="{{ asset(officiel.assertPath|imagine_filter('my_thumb_officel')) }}" alt="{{ officiel.name }}" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="cause-content text-center">
+                                        <a href="#">
+                                            <h5 class="martel text-semi-bold d-black mt-5">{{ officiel.name }}</h5>
+                                            <p class="lh-22 mt-10">{{ officiel.poste }}</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
                     </div>
                 </div>
             </div>
@@ -167,20 +128,26 @@
                 <div class="col-md-12">
                     <div class="test-sldier">
                         {% for speaker in speakers %}
-                            <div class="item">
-                                <div class="test-img display-ib position-r pull-left">
-                                    <img class="img-responsive display-ib" src="{{ speaker.assertPath|imagine_filter('my_thumb_speakers') }}" alt="{{ speaker.name }}">
+                            {% if speaker.types == 0 %}
+                                <div class="item">
+                                    <div class="test-img display-ib position-r pull-left">
+                                        <a href="">
+                                            <img class="img-responsive display-ib" src="{{ speaker.assertPath|imagine_filter('my_thumb_speakers') }}" alt="{{ speaker.name }}">
+                                        </a>
+                                    </div>
+                                    <div class="display-ib pull-left test-text">
+                                        <img src="{{ asset('layout_two/img/quote-open.png') }}" alt="">
+                                        <a href="">
+                                            <h4 class="fz-17 d-black text-bold mt-30">{{ speaker.name }}</h4>
+                                            <h5 class="fz-15 green-5c mt-10">{{ speaker.poste }}</h5>
+                                        </a>
+                                        <p class="mt-25">
+                                            <a href="">{{ 'Cliquez pour en savoir +' }}</a>
+                                        </p>
+                                        <img class="pull-right mt-30" src="{{ asset('layout_two/img/quote-close.png') }}" alt="">
+                                    </div>
                                 </div>
-                                <div class="display-ib pull-left test-text">
-                                    <img src="{{ asset('layout_two/img/quote-open.png') }}" alt="">
-                                    <h4 class="fz-17 d-black text-bold mt-30">{{ speaker.name }}</h4>
-                                    <h5 class="fz-15 green-5c mt-10">{{ speaker.poste }}</h5>
-                                    <p class="mt-25">
-                                        {{ speaker.content|truncate(250, true)|raw }} <a href="">{{ 'En savoir +' }}</a>
-                                    </p>
-                                    <img class="pull-right mt-30" src="{{ asset('layout_two/img/quote-close.png') }}" alt="">
-                                </div>
-                            </div>
+                            {% endif %}
                         {% endfor %}
                     </div>
                 </div>
@@ -194,22 +161,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h3 class="text-uppercase black h-sep"><span class="text-ultra-bold">L'INITIATIVE</span> </h3>
+                    <h3 class="text-uppercase black h-sep"><span class="text-ultra-bold">Les Données pour la  Croissance </span></h3>
                 </div>
             </div>
         </div>
     </section>
     <section class="our-help mt-100">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h3 class=" white h-sep">Les données pour la <span class="text-ultra-bold">Croissance </span> </h3>
-                    <p class="fz-16 white mt-50">
-                        <span class="green-5c">91% des entreprises </span> déclarent avoir besoin de financement
-                        Le financement, un besoin stratégique face à une impasse
-                    </p>
-                </div>
-            </div>
             <div class="row">
                 <div class="col-md-3 col-sm-6 mt-70">
                     <div id="canvas-holder" class="clearfix">
@@ -318,11 +276,6 @@
                 <div class="col-md-3">
                     <div class="client-img">
                         <a href="http://www.pmepmimagazine.info" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/pme_2x.jpg') }}" alt="" class="img-responsive"></a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="client-img">
-                        <a href="http://www.brvm.org/" target="_blank"><img src="{{ asset('layout_two/img/sponsors/page/brvm_2x.jpg') }}" alt="" class="img-responsive"></a>
                     </div>
                 </div>
             </div>

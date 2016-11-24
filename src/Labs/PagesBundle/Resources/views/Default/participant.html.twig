@@ -14,8 +14,9 @@
             </div>
             <div class="row mt-20">
                 {% for speaker in speakers %}
-                    <div style="border-bottom: 2px solid #eee; padding-bottom: 10px; padding-top: 10px;">
-                        <div class="item">
+                    {% if speaker.types == 0 %}
+                    <div>
+                        <div class="item col-md-6 col-sm-6 mt-70 mt-50">
                             <div class="test-img display-ib position-r pull-left">
                                 <img class=" img-responsive display-ib" src="{{ speaker.assertPath|imagine_filter('my_thumb_speakers') }}" alt="{{ speaker.name }}">
                             </div>
@@ -24,13 +25,14 @@
                                 <h4 class="fz-17 d-black text-bold mt-30">{{ speaker.name }}</h4>
                                 <h5 class="fz-15 green-5c mt-10">{{ speaker.poste }}</h5>
                                 <p class="mt-25">
-                                    {{ speaker.content|truncate(350, true)|raw }} <a href="">{{ 'En savoir +' }}</a>
+                                     <a href="">{{ 'En savoir +' }}</a>
                                 </p>
                                 <img class="pull-right mt-30" src="{{ asset('layout_two/img/quote-close.png') }}" alt="">
                             </div>
                             <div class="clearfix"></div>
                         </div>
                     </div>
+                    {% endif %}
                 {% endfor %}
             </div>
         </div>

@@ -48,24 +48,30 @@ class Team
     /**
      * @var string
      *
-     * @ORM\Column(name="name", type="string", length=255)
+     * @ORM\Column(name="name", type="string", length=255, nullable=true)
      */
     protected $name;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="poste", type="string", length=255)
+     * @ORM\Column(name="poste", type="string", length=255, nullable=true)
      */
     protected $poste;
-    
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="content", type="text", nullable=true)
-     */
-    protected $content;
 
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="types", type="integer")
+     */
+    protected $types;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="link", type="string", length=255, nullable=true, options={"comment":"Lien du site de l'officiel ou speakers"})
+     */
+    protected $link;
 
     /**
      * @var dateTime
@@ -74,17 +80,24 @@ class Team
      */
     protected $created;
 
+    /**
+     * @var
+     *
+     * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Item", mappedBy="team")
+     */
+    protected $item;
+
+
 
     public function __construct()
     {
         $this->created = new \DateTime('now');
     }
 
-
     /**
      * Get id
      *
-     * @return int
+     * @return integer
      */
     public function getId()
     {
@@ -92,82 +105,153 @@ class Team
     }
 
     /**
-     * Set name
-     *
-     * @param string $name
-     *
-     * @return Team
-     */
-    public function setName($name)
-    {
-        $this->name = $name;
-
-        return $this;
-    }
-
-    /**
-     * Get name
-     *
      * @return string
      */
     public function getName()
     {
         return $this->name;
     }
+
+    /**
+     * @param string $name
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
     
 
     /**
-     * Set content
+     * Set poste
      *
-     * @param string $content
+     * @param string $poste
      *
      * @return Team
      */
-    public function setContent($content)
+    public function setPoste($poste)
     {
-        $this->content = $content;
+        $this->poste = $poste;
 
         return $this;
     }
 
     /**
-     * Get content
+     * Get poste
      *
      * @return string
      */
-    public function getContent()
+    public function getPoste()
     {
-        return $this->content;
+        return $this->poste;
     }
-
-    public function getUploadDir()
-    {
-        // On retourne le chemin relatif vers l'image pour un navigateur
-        return 'uploads/teams';
-    }
-
-
-    protected function getUploadRootDir()
-    {
-        // On retourne le chemin relatif vers l'image pour notre code PHP
-        return __DIR__.'/../../../../web/'.$this->getUploadDir();
-    }
-
 
     /**
+     * Set types
+     *
+     * @param integer $types
+     *
+     * @return Team
+     */
+    public function setTypes($types)
+    {
+        $this->types = $types;
+
+        return $this;
+    }
+
+    /**
+     * Get types
+     *
+     * @return integer
+     */
+    public function getTypes()
+    {
+        return $this->types;
+    }
+
+    /**
+     * Set link
+     *
+     * @param string $link
+     *
+     * @return Team
+     */
+    public function setLink($link)
+    {
+        $this->link = $link;
+
+        return $this;
+    }
+
+    /**
+     * Get link
+     *
      * @return string
      */
-    public function getAssertPath()
+    public function getLink()
     {
-        return $this->getUploadDir().'/'.$this->imageName;
+        return $this->link;
     }
 
     /**
+     * Set created
      *
-     * @param File|\Symfony\Component\HttpFoundation\File\UploadedFile $image
+     * @param \DateTime $created
      *
-     * @return Banner
+     * @return Team
      */
+    public function setCreated($created)
+    {
+        $this->created = $created;
+
+        return $this;
+    }
+
+    /**
+     * Get created
+     *
+     * @return \DateTime
+     */
+    public function getCreated()
+    {
+        return $this->created;
+    }
+
+    /**
+     * Add item
+     *
+     * @param \Labs\BackBundle\Entity\Item $item
+     *
+     * @return Team
+     */
+    public function addItem(\Labs\BackBundle\Entity\Item $item)
+    {
+        $this->item[] = $item;
+
+        return $this;
+    }
+
+    /**
+     * Remove item
+     *
+     * @param \Labs\BackBundle\Entity\Item $item
+     */
+    public function removeItem(\Labs\BackBundle\Entity\Item $item)
+    {
+        $this->item->removeElement($item);
+    }
+
+    /**
+     * Get item
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getItem()
+    {
+        return $this->item;
+    }
+
     public function setImageFile(File $image = null)
     {
         $this->imageFile = $image;
@@ -207,44 +291,28 @@ class Team
         return $this->imageName;
     }
 
+
+
+    public function getUploadDir()
+    {
+        // On retourne le chemin relatif vers l'image pour un navigateur
+        return 'uploads/teams';
+    }
+
+
+    protected function getUploadRootDir()
+    {
+        // On retourne le chemin relatif vers l'image pour notre code PHP
+        return __DIR__.'/../../../../web/'.$this->getUploadDir();
+    }
+
+
     /**
      * @return string
      */
-    public function getPoste()
+    public function getAssertPath()
     {
-        return $this->poste;
+        return $this->getUploadDir().'/'.$this->imageName;
     }
 
-    /**
-     * @param string $poste
-     * 
-     * @return Team
-     */
-    public function setPoste($poste)
-    {
-        $this->poste = $poste;
-        return $this;
-    }
-
-    /**
-     * @return dateTime
-     */
-    public function getCreated()
-    {
-        return $this->created;
-    }
-
-    /**
-     * @param dateTime $created
-     * 
-     * @return Team
-     */
-    public function setCreated($created)
-    {
-        $this->created = $created;
-        return $this;
-    }
-    
-    
 }
-

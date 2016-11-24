@@ -1,0 +1,39 @@
+{% extends 'LabsPagesBundle::layout.html.twig' %}
+{% block title %} {{ 'speakers'|capitalize }}{% endblock %}
+{% block  body %}
+    <div class="page-title causes-title text-center" style="min-height: 250px;">
+        <img class="img-responsive slide-img" src="{{ asset('layout_two/img/titles/organisateur.png') }}" alt="">
+    </div>
+    <!-- participants -->
+    <section class="recent-causes no-margin">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="text-uppercase black h-sep"><span class="text-ultra-bold">{{ orga.name }}</span> </h3>
+                </div>
+            </div>
+            <div class="row mt-30">
+                <div class="col-md-4 mt-20 cause-main">
+                    <div class="item">
+                        <div class="causes-img text-center">
+                            <img src="{{ asset(orga.assertPath) }}" alt="{{ orga.name }}" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 mt-30 cause-main">
+                    <div class="item">
+                        <div class="cause-content text-center" style=" padding: 25px 36px;">
+                            {% for item in orga.part  %}
+                                <p class="lh-22 mt-10">{{ item.content|raw }}</p>
+                             {% endfor %}
+                        </div>
+                        <a class="fz-14 mt-20 btn-green-br" href="{{ orga.url }}" target="_blank">{{ 'Visitez le Site web' }}</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end participants -->
+{% endblock %}
+{% block javascripts %}{% endblock %}

@@ -60,11 +60,32 @@ class Partner
     protected $url;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="content", type="text", nullable=true)
+     */
+    protected $content;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="types", type="integer")
+     */
+    protected $types;
+
+    /**
      * @var dateTime
      *
      * @ORM\Column(name="created", type="datetime")
      */
     protected $created;
+
+    /**
+     * @var
+     *
+     * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Parts", mappedBy="partner")
+     */
+    protected $part;
 
 
     public function __construct()
@@ -72,11 +93,10 @@ class Partner
         $this->created = new \DateTime('now');
     }
 
-
     /**
      * Get id
      *
-     * @return int
+     * @return integer
      */
     public function getId()
     {
@@ -88,7 +108,7 @@ class Partner
      *
      * @param string $name
      *
-     * @return Product
+     * @return Partner
      */
     public function setName($name)
     {
@@ -107,36 +127,60 @@ class Partner
         return $this->name;
     }
 
-
-    public function getUploadDir()
+    /**
+     * Set url
+     *
+     * @param string $url
+     *
+     * @return Partner
+     */
+    public function setUrl($url)
     {
-        // On retourne le chemin relatif vers l'image pour un navigateur
-        return 'uploads/partners';
+        $this->url = $url;
+
+        return $this;
     }
-
-
-    protected function getUploadRootDir()
-    {
-        // On retourne le chemin relatif vers l'image pour notre code PHP
-        return __DIR__.'/../../../../web/'.$this->getUploadDir();
-    }
-
 
     /**
+     * Get url
+     *
      * @return string
      */
-    public function getAssertPath()
+    public function getUrl()
     {
-        return $this->getUploadDir().'/'.$this->imageName;
+        return $this->url;
     }
 
+    /**
+     * Set types
+     *
+     * @param integer $types
+     *
+     * @return Partner
+     */
+    public function setTypes($types)
+    {
+        $this->types = $types;
+
+        return $this;
+    }
+
+    /**
+     * Get types
+     *
+     * @return integer
+     */
+    public function getTypes()
+    {
+        return $this->types;
+    }
 
     /**
      * Set created
      *
      * @param \DateTime $created
      *
-     * @return Product
+     * @return Partner
      */
     public function setCreated($created)
     {
@@ -159,7 +203,7 @@ class Partner
      *
      * @param File|\Symfony\Component\HttpFoundation\File\UploadedFile $image
      *
-     * @return Banner
+     * @return Partner
      */
     public function setImageFile(File $image = null)
     {
@@ -183,7 +227,7 @@ class Partner
     /**
      * @param string $imageName
      *
-     * @return Banner
+     * @return Partner
      */
     public function setImageName($imageName)
     {
@@ -200,23 +244,83 @@ class Partner
         return $this->imageName;
     }
 
+    public function getUploadDir()
+    {
+        // On retourne le chemin relatif vers l'image pour un navigateur
+        return 'uploads/partners';
+    }
+
+
+    protected function getUploadRootDir()
+    {
+        // On retourne le chemin relatif vers l'image pour notre code PHP
+        return __DIR__.'/../../../../web/'.$this->getUploadDir();
+    }
+
+
     /**
      * @return string
      */
-    public function getUrl()
+    public function getAssertPath()
     {
-        return $this->url;
+        return $this->getUploadDir().'/'.$this->imageName;
     }
 
     /**
-     * @param string $url
+     * Set content
+     *
+     * @param string $content
+     *
+     * @return Item
+     */
+    public function setContent($content)
+    {
+        $this->content = $content;
+
+        return $this;
+    }
+
+    /**
+     * Get content
+     *
+     * @return string
+     */
+    public function getContent()
+    {
+        return $this->content;
+    }
+
+    /**
+     * Add part
+     *
+     * @param \Labs\BackBundle\Entity\Parts $part
      *
      * @return Partner
      */
-    public function setUrl($url)
+    public function addPart(\Labs\BackBundle\Entity\Parts $part)
     {
-        $this->url = $url;
+        $this->part[] = $part;
+
         return $this;
     }
-    
+
+    /**
+     * Remove part
+     *
+     * @param \Labs\BackBundle\Entity\Parts $part
+     */
+    public function removePart(\Labs\BackBundle\Entity\Parts $part)
+    {
+        $this->part->removeElement($part);
+    }
+
+    /**
+     * Get part
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getPart()
+    {
+        return $this->part;
+    }
 }
