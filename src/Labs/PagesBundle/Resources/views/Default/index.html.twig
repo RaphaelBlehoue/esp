@@ -60,12 +60,12 @@
                             {% if officiel.types == 1 %}
                                 <div class="item">
                                     <div class="causes-img text-center">
-                                        <a href="">
+                                        <a href="{{ path('viewofficiel', {'team' : officiel.id  }) }}">
                                             <img src="{{ asset(officiel.assertPath|imagine_filter('my_thumb_officel')) }}" alt="{{ officiel.name }}" class="img-responsive">
                                         </a>
                                     </div>
                                     <div class="cause-content text-center">
-                                        <a href="#">
+                                        <a href="{{ path('viewofficiel', {'team' : officiel.id  }) }}">
                                             <h5 class="martel text-semi-bold d-black mt-5">{{ officiel.name }}</h5>
                                             <p class="lh-22 mt-10">{{ officiel.poste }}</p>
                                         </a>
@@ -142,7 +142,7 @@
                                             <h5 class="fz-15 green-5c mt-10">{{ speaker.poste }}</h5>
                                         </a>
                                         <p class="mt-25">
-                                            <a href="">{{ 'Cliquez pour en savoir +' }}</a>
+                                            <a class="fz-14 mt-20 btn-green-br" href="{{ path('viewspeaker', {'team' : speaker.id  }) }}">En savoir +</a>
                                         </p>
                                         <img class="pull-right mt-30" src="{{ asset('layout_two/img/quote-close.png') }}" alt="">
                                     </div>

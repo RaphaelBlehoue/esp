@@ -33,7 +33,7 @@ class PartsEditType extends AbstractType
      */
     public function getBlockPrefix()
     {
-        return 'labs_backbundle_parts';
+        return 'labs_backbundle_parts_edit';
     }
 
 

@@ -18,14 +18,18 @@
                     <div>
                         <div class="item col-md-6 col-sm-6 mt-70 mt-50">
                             <div class="test-img display-ib position-r pull-left">
-                                <img class=" img-responsive display-ib" src="{{ speaker.assertPath|imagine_filter('my_thumb_speakers') }}" alt="{{ speaker.name }}">
+                                <a href="{{ path('viewspeaker', {'team' : speaker.id  }) }}">
+                                    <img class=" img-responsive display-ib" src="{{ speaker.assertPath|imagine_filter('my_thumb_speakers') }}" alt="{{ speaker.name }}">
+                                </a>
                             </div>
                             <div class="display-ib pull-left test-text">
                                 <img src="{{ asset('layout_two/img/quote-open.png') }}" alt="">
-                                <h4 class="fz-17 d-black text-bold mt-30">{{ speaker.name }}</h4>
-                                <h5 class="fz-15 green-5c mt-10">{{ speaker.poste }}</h5>
-                                <p class="mt-25">
-                                     <a href="">{{ 'En savoir +' }}</a>
+                                <a href="{{ path('viewspeaker', {'team' : speaker.id  }) }}">
+                                    <h4 class="fz-17 d-black text-bold mt-30">{{ speaker.name }}</h4>
+                                    <h5 class="fz-15 green-5c mt-10">{{ speaker.poste }}</h5>
+                                </a>
+                                <p class="mt-40">
+                                    <a class="fz-14 mt-20 btn-green-br" href="{{ path('viewspeaker', {'team' : speaker.id  }) }}">En savoir +</a>
                                 </p>
                                 <img class="pull-right mt-30" src="{{ asset('layout_two/img/quote-close.png') }}" alt="">
                             </div>

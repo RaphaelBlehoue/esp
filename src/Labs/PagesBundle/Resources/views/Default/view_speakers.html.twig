@@ -1,0 +1,43 @@
+{% extends 'LabsPagesBundle::layout.html.twig' %}
+{% block title %} {{ 'speakers'|capitalize }}{% endblock %}
+{% block  body %}
+    <div class="page-title causes-title text-center" style="min-height: 250px;">
+        <img class="img-responsive slide-img" src="{{ asset('layout_two/img/titles/officiel.png') }}" alt="">
+    </div>
+    <!-- participants -->
+    <section class="recent-causes no-margin">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="text-uppercase black h-sep"><span class="text-ultra-bold">{{ speaker.name }}</span> </h3>
+                </div>
+            </div>
+            <div class="row mt-50">
+                <div class="col-md-4 mt-50 cause-main">
+                    <div class="item">
+                        <div class="causes-img text-center">
+                            <img src="{{ asset(speaker.assertPath|imagine_filter('my_thumb_speakers')) }}" alt="{{ speaker.name }}" class="img-responsive">
+                        </div>
+                        <div class="cause-content text-center">
+                            <h5 class="martel text-semi-bold d-black mt-30">{{ speaker.name }}</h5>
+                            <p class="lh-22 mt-10">{{ speaker.poste }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 mt-5 cause-main">
+                    <div class="item">
+                        <div class="cause-content text-center" style=" padding: 25px 36px;">
+                            {% for item in speaker.item  %}
+                               {% if item.title|length > 0  %} <h5 class="martel text-semi-bold d-black mt-30">{{ item.title }}</h5> {% endif %}
+                                <p class="lh-22 mt-10">{{ item.content|raw }}</p>
+                             {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end participants -->
+{% endblock %}
+{% block javascripts %}{% endblock %}

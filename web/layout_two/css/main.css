@@ -1475,7 +1475,7 @@ a.btn-prime:hover{
     bottom: 0;
     border-color: transparent transparent #fff #fff;
     border-style: solid;
-    border-width: 62px 147px;
+    border-width: 14px 147px;
     position: absolute;
     width: 0;
     height: 0;
@@ -1486,9 +1486,9 @@ a.btn-prime:hover{
     border-width: 6px 150px;
     border-style: solid;
     position: absolute;
-    bottom: 56px;
+    bottom: 10px;
     left: -14px;
-    transform: rotate(21deg);
+    transform: rotate(5deg);
     width: 0;
     z-index: 1;
 }

@@ -127,7 +127,7 @@ class DefaultController extends Controller
      * @return \Symfony\Component\HttpFoundation\Response
      * @Route("/forum/{team}/officiel", name="viewofficiel")
      */
-    public function SpeakerViewAction($team)
+    public function OfficielViewAction($team)
     {
         $office = $this->getOneTeam($team);
         return $this->render('LabsPagesBundle:Default:view_officiel.html.twig',[
@@ -135,6 +135,20 @@ class DefaultController extends Controller
         ]);
     }
 
+
+    /**
+     * @param $team
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/forum/{team}/speakers", name="viewspeaker")
+     */
+    public function SpeakerViewAction($team)
+    {
+        $speaker = $this->getOneTeam($team);
+        return $this->render('LabsPagesBundle:Default:view_speakers.html.twig',[
+            'speaker' => $speaker
+        ]);
+    }
+    
     /**
      * @return \Symfony\Component\HttpFoundation\Response
      * @Route("/medias/communiques_de_presse", name="blog")
@@ -151,6 +165,14 @@ class DefaultController extends Controller
     public function ContactPageBundle()
     {
         return $this->render('LabsPagesBundle:Default:contact.html.twig');
+    }
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/document", name="document")
+     */
+    public function DocumentPageBundle()
+    {
+        return $this->render('LabsPagesBundle:Default:document.html.twig');
     }
 
     /**

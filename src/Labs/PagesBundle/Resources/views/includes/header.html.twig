@@ -27,7 +27,7 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ 'Présentation' }} <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="{{ path('initiative') }}">{{ 'initiative'|upper }}</a></li>
+                                    <li><a href="{{ path('initiative') }}">{{ 'L\'initiative'|upper }}</a></li>
                                     <li><a href="{{ path('organisateur') }}"> {{ 'organisateurs'|upper }} </a></li>
                                     <li><a href="{{ path('programme') }}"> {{ 'programme'|upper }} </a></li>
                                     <li><a href="{{ path('partners') }}"> {{ 'Sponsors'|upper }} </a></li>
@@ -38,14 +38,15 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="{{ path('officiel') }}">{{ 'officiels'|upper }}</a></li>
                                     <li><a href="{{ path('participant') }}">{{ 'speakers'|upper }}</a></li>
-                                    <li><a href=""> {{ 'engagements'|upper }} </a></li>
-                                    <li><a href=""> {{ 'Données pour la croissance'|upper }} </a></li>
+                                    <li><a href="{{ path('engagement') }}"> {{ 'engagements'|upper }} </a></li>
+                                    <li><a href="{{ path('croissance') }}"> {{ 'Données pour la croissance'|upper }} </a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ 'médias'|upper }}  <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="">{{ 'communiqués de presse'|upper }}</a></li>
+                                    <li><a href="{{ path('document') }}">{{ 'documents'|upper }}</a></li>
                                     <li><a href=""> {{ 'galerie photos'|upper }} </a></li>
                                 </ul>
                             </li>
