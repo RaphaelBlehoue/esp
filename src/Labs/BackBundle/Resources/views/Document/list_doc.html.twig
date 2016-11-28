@@ -1,5 +1,5 @@
 {% extends 'LabsUboldBundle::loyout_ubold.html.twig' %}
-{% block title %}{{ 'Partenaire - Page | AGR' }}{% endblock %}
+{% block title %}{{ 'Document - Page | LFS' }}{% endblock %}
 {% block body %}
     <div class="content">
         <div class="container">
@@ -14,13 +14,13 @@
                         </div>
                     {% endif %}
 
-                    <h4 class="page-title">{{  'Page Partner' }}</h4>
+                    <h4 class="page-title">{{  'Page Document' }}</h4>
                     <ol class="breadcrumb">
                         <li>
-                            <a href="{{ path('homepage') }}">{{ 'AGR' }}</a>
+                            <a href="{{ path('homepage') }}">{{ 'LFS' }}</a>
                         </li>
                         <li class="active">
-                            {{ 'Page Partner' }}
+                            {{ 'Page Document' }}
                         </li>
                     </ol>
                 </div>
@@ -30,10 +30,10 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="card-box">
-                        <h4 class="m-t-0 header-title"><b>{{ 'Page Partenaire' }}</b></h4>
+                        <h4 class="m-t-0 header-title"><b>{{ 'Page Document' }}</b></h4>
                         <p class="text-muted font-13">
-                            <span class="pull-left">Liste des partners</span>
-                            <span class="pull-right"> <a href="{{ path('partner_create') }}" class="btn btn-primary btn-block">{{ 'Créer partenaire' }}</a> </span>
+                            <span class="pull-left">Liste des documents</span>
+                            <span class="pull-right"> <a href="{{ path('doc_create') }}" class="btn btn-primary btn-block">{{ 'Upload document' }}</a> </span>
                         </p>
                         <div class="clearfix"></div>
 
@@ -44,7 +44,7 @@
                                data-pagination="true" data-show-pagination-switch="true" class="table-bordered " class="padding-top-sm">
                             <thead>
                             <tr>
-                                <th data-field="tite" data-switchable="false">{{ 'Titre' }}</th>
+                                <th data-field="tite" data-switchable="false">{{ 'Nom' }}</th>
                                 <th data-field="name">{{ 'date' }}</th>
                                 <th data-field="user-status" class="text-center">Edit</th>
                                 <th data-field="user-del" class="text-center">Del</th>
@@ -52,12 +52,12 @@
                             </thead>
 
                             <tbody>
-                            {% for partner in partners %}
+                            {% for doc in docs %}
                                 <tr>
-                                    <td>{{ partner.name }}</td>
-                                    <td>{{ partner.created|date('Y-m-d') }}</td>
-                                    <td><a class="btn btn-block btn-primary" href="{{ path('partner_edit', {'id' : partner.id }) }}">{{ "Modifier" }}</a></td>
-                                    <td><a class="btn btn-block btn-danger" href="{{ path('partner_delete', {'id' : partner.id }) }}">{{ "Delete" }}</a></td>
+                                    <td>{{ doc.name }}</td>
+                                    <td>{{ doc.created|date('Y-m-d') }}</td>
+                                    <td><a class="btn btn-block btn-primary" href="{{ path('doc_edit', {'id' : doc.id }) }}">{{ "Modifier" }}</a></td>
+                                    <td><a class="btn btn-block btn-danger" href="{{ path('doc_delete', {'id' : doc.id }) }}">{{ "Delete" }}</a></td>
                                 </tr>
                             {% endfor %}
                             </tbody>

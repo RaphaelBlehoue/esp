@@ -10,4 +10,19 @@ namespace Labs\BackBundle\Repository;
  */
 class DocumentRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function findOne($entity)
+    {
+        $qb = $this->createQueryBuilder('d');
+        $qb->where($qb->expr()->eq('d.docName', ':docName'));
+        $qb->setParameter(':docName', $entity);
+        return $qb->getQuery()->getOneOrNullResult();
+    }
+
+    public function findOneId($id)
+    {
+        $qb = $this->createQueryBuilder('d');
+        $qb->where($qb->expr()->eq('d.id', ':id'));
+        $qb->setParameter(':id', $id);
+        return $qb->getQuery()->getOneOrNullResult();
+    }
 }

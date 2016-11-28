@@ -13,6 +13,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @ORM\Table(name="document")
  * @ORM\Entity(repositoryClass="Labs\BackBundle\Repository\DocumentRepository")
  * @ORM\HasLifecycleCallbacks()
+ * @Vich\Uploadable
  */
 class Document
 {

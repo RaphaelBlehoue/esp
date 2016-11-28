@@ -4,6 +4,7 @@ namespace Labs\PagesBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController extends Controller
 {
@@ -172,7 +173,27 @@ class DefaultController extends Controller
      */
     public function DocumentPageBundle()
     {
-        return $this->render('LabsPagesBundle:Default:document.html.twig');
+        $docs = $this->getAllDoc();
+        return $this->render('LabsPagesBundle:Default:document.html.twig',[
+            'docs' => $docs
+        ]);
+    }
+
+    /**
+     * @param $filename
+     * @return Response
+     * @Route("/document/{filename}/download", name="document_download")
+     */
+    public function downloadreportfileAction($filename)
+    {
+        $doc = $this->getOneDocs($filename);
+        $files = $doc->getAssertPath();
+        $content = file_get_contents($files);
+        $response = new Response();
+        $response->headers->set('Content-Type', 'application/force-download');
+        $response->headers->set('Content-Disposition', 'attachment;filename="'.$files);
+        $response->setContent($content);
+        return $response;
     }
 
     /**
@@ -231,6 +252,27 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getManager();
         $program = $em->getRepository('LabsBackBundle:Partner')->findOne($org);
         return $program;
+    }
+
+    /**
+     * @return array|\Labs\BackBundle\Entity\Document[]
+     */
+    private function getAllDoc()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $docs = $em->getRepository('LabsBackBundle:Document')->findAll();
+        return $docs;
+    }
+
+    /**
+     * @param $docName
+     * @return mixed
+     */
+    private function getOneDocs($docName)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $docs = $em->getRepository('LabsBackBundle:Document')->findOne($docName);
+        return $docs;
     }
 
 }
