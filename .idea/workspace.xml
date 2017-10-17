@@ -56,22 +56,22 @@
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Intro/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="87" column="107" lean-forward="false" selection-start-line="87" selection-start-column="107" selection-end-line="87" selection-end-column="107" />
+            <state relative-caret-position="170">
+              <caret line="49" column="26" lean-forward="true" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
               <folding>
                 <element signature="e#12#50#0#Twig" expanded="true" />
                 <element signature="e#1708#1756#0#HTML" expanded="true" />
                 <element signature="e#2026#2054#0#HTML" expanded="true" />
-                <element signature="e#2284#2318#0#HTML" expanded="true" />
-                <element signature="e#2606#2636#0#HTML" expanded="true" />
-                <element signature="e#2724#2775#0#HTML" expanded="true" />
-                <element signature="e#3033#3054#0#HTML" expanded="true" />
-                <element signature="e#3029#3510#0#HTML" expanded="false" />
-                <element signature="e#3537#3558#0#HTML" expanded="true" />
-                <element signature="e#3533#4010#0#HTML" expanded="false" />
-                <element signature="e#4037#4058#0#HTML" expanded="true" />
-                <element signature="e#4033#4539#0#HTML" expanded="false" />
-                <element signature="e#4715#4738#0#HTML" expanded="true" />
+                <element signature="e#2284#2335#0#HTML" expanded="true" />
+                <element signature="e#2623#2653#0#HTML" expanded="true" />
+                <element signature="e#2741#2792#0#HTML" expanded="true" />
+                <element signature="e#3050#3071#0#HTML" expanded="true" />
+                <element signature="e#3046#3527#0#HTML" expanded="false" />
+                <element signature="e#3554#3575#0#HTML" expanded="true" />
+                <element signature="e#3550#4027#0#HTML" expanded="false" />
+                <element signature="e#4054#4075#0#HTML" expanded="true" />
+                <element signature="e#4050#4556#0#HTML" expanded="false" />
+                <element signature="e#4732#4755#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -404,7 +404,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="228245000" />
+    <option name="totallyTimeSpent" value="228481000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="717" extended-state="0" />
@@ -889,22 +889,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Intro/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="87" column="107" lean-forward="false" selection-start-line="87" selection-start-column="107" selection-end-line="87" selection-end-column="107" />
+        <state relative-caret-position="170">
+          <caret line="49" column="26" lean-forward="true" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
           <folding>
             <element signature="e#12#50#0#Twig" expanded="true" />
             <element signature="e#1708#1756#0#HTML" expanded="true" />
             <element signature="e#2026#2054#0#HTML" expanded="true" />
-            <element signature="e#2284#2318#0#HTML" expanded="true" />
-            <element signature="e#2606#2636#0#HTML" expanded="true" />
-            <element signature="e#2724#2775#0#HTML" expanded="true" />
-            <element signature="e#3033#3054#0#HTML" expanded="true" />
-            <element signature="e#3029#3510#0#HTML" expanded="false" />
-            <element signature="e#3537#3558#0#HTML" expanded="true" />
-            <element signature="e#3533#4010#0#HTML" expanded="false" />
-            <element signature="e#4037#4058#0#HTML" expanded="true" />
-            <element signature="e#4033#4539#0#HTML" expanded="false" />
-            <element signature="e#4715#4738#0#HTML" expanded="true" />
+            <element signature="e#2284#2335#0#HTML" expanded="true" />
+            <element signature="e#2623#2653#0#HTML" expanded="true" />
+            <element signature="e#2741#2792#0#HTML" expanded="true" />
+            <element signature="e#3050#3071#0#HTML" expanded="true" />
+            <element signature="e#3046#3527#0#HTML" expanded="false" />
+            <element signature="e#3554#3575#0#HTML" expanded="true" />
+            <element signature="e#3550#4027#0#HTML" expanded="false" />
+            <element signature="e#4054#4075#0#HTML" expanded="true" />
+            <element signature="e#4050#4556#0#HTML" expanded="false" />
+            <element signature="e#4732#4755#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
