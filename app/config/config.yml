@@ -132,6 +132,9 @@ fos_user:
     db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
     firewall_name: main
     user_class: Labs\BackBundle\Entity\Users
+    from_email:
+        address:        "%mailer_user%"
+        sender_name:    "%mailer_sender%"
 
 ivory_ck_editor:
     default_config: my_custom_config

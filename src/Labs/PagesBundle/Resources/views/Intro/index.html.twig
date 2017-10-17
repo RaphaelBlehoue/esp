@@ -1,0 +1,112 @@
+{% extends 'LabsPagesBundle::introLayout.html.twig' %}
+
+{% block body %}
+  <div id="Header_wrapper">
+    <div class="covervid-wrapper">
+      <video class="covervid-video" autoplay loop poster="{{ asset('assets/css/images/full-background.jpg') }}">
+        <source src="{{ asset('assets/deploy/videos/cut-film-finance-hd.mp4') }}" type="video/mp4">
+        <source src="{{ asset('assets/deploy/videos/cut-film-finance-hd.webm') }}" type="video/webm">
+      </video>
+      <div id="video-overlay"></div>
+    </div>
+    <!-- Header -->
+    <header id="Header">
+      <!-- Header -  Logo and Menu area -->
+      <div id="Top_bar">
+        <div class="container">
+          <div class="column one">
+            <div class="top_bar_left clearfix">
+              <!-- Logo-->
+              <div class="logo">
+                <a id="logo" href="" title="La Finance s'engage">
+                  <img class="logo-main scale-with-grid" src="{{ asset('assets/css/images/logo/logo_final.png') }}" alt="La Finance s'engage | lafinancesengage" />
+                  <img class="logo-sticky scale-with-grid" src="{{ asset('assets/css/images/logo/logo_final.png') }}" alt="La Finance s'engage | lafinancesengage">
+                  <img class="logo-mobile scale-with-grid" src="{{ asset('assets/css/images/logo/logo_final.png') }}" alt="La Finance s'engage | lafinancesengage">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main Content -->
+    <div id="Content">
+      <div class="content_wrapper clearfix">
+        <div class="sections_group">
+          <div class="entry-content">
+            <div class="section mcb-section full-screen " style="padding-top:120px; padding-bottom:80px; ">
+              <div class="section_wrapper mcb-section-inner">
+                <div class="wrap mcb-wrap one clearfix">
+                  <!-- One Full Row-->
+                  <div class="column mcb-column one column_divider ">
+                    <hr class="no_line" style="margin: 0 auto 80px;" />
+                  </div>
+                  <!-- One Full Row-->
+                  <div class="column mcb-column one column_column">
+                    <div class="column_attr align_center title_bg">
+                      <h1 style="color: #fff; margin: 0;">{{ 'une initiative'|upper }}
+                        <br>
+                        {{ 'pour le financement des pme'|upper }}</h1>
+                    </div>
+                  </div>
+                  <!-- One Full Row-->
+                  <div class="column mcb-column one column_column" style="padding: 0; margin: 0;">
+                    <div class="column_attr align_center">
+                      <div style="width: 100%; height: 1px; background: #fff;"></div>
+                    </div>
+                  </div>
+                  <!-- One Sixth (1/6) Column -->
+                  <div class="column one column_clients">
+                    <ul class="clients clearfix clients_tiles">
+                      <li style="width:30.667%">
+                        <div class="client_wrapper">
+                          <a target="_blank" href="#" title="Client 1">
+                            <div class="gs-wrapper"><img width="145" height="75" src="{{ asset('assets/css/images/logo/Logo-bad.jpg') }}" class="scale-with-grid wp-post-image" alt="logo bad | Banque Africaine de Developpement" />
+                            </div>
+                          </a>
+                        </div>
+                      </li>
+                      <li style="width:30.667%">
+                        <div class="client_wrapper">
+                          <a target="_blank" href="#" title="Client 1">
+                            <div class="gs-wrapper"><img width="145" height="75" src="{{ asset('assets/css/images/logo/logo-esp.jpg') }}" class="scale-with-grid wp-post-image" alt="logo espartners" />
+                            </div>
+                          </a>
+                        </div>
+                      </li>
+                      <li style="width:30.667%">
+                        <div class="client_wrapper">
+                          <a target="_blank" href="#" title="Client 1">
+                            <div class="gs-wrapper"><img width="145" height="75" src="{{ asset('assets/css/images/logo/logo-cegi.jpg') }}" class="scale-with-grid wp-post-image" alt="logo patrona cegci" />
+                            </div>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- One Full Row-->
+                  <div class="column mcb-column one column_column column-margin-0px">
+                    <div class="column_attr align_center">
+                      <a class="button button_right button_large button_js" href="">
+                        <span class="button_icon">
+                          <i class="icon-login"></i>
+                        </span>
+                        <span class="button_label font_label">{{ 'Acceder au Forum'|capitalize }}</span>
+                      </a>
+                      <a class="button button_left button_large button_js" href="">
+                        <span class="button_icon">
+                          <i class="icon-login"></i>
+                        </span>
+                        <span class="button_label font_label">{{ 'Acceder au Portail'|capitalize }}</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

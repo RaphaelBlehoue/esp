@@ -8,10 +8,19 @@ use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController extends Controller
 {
-    
+
+    /**
+     * @return Response
+     * @Route("/", name="intro")
+     */
+    public function IntroPageAction()
+    {
+        return $this->render('LabsPagesBundle:Intro:index.html.twig');
+    }
+
     /**
      * @return \Symfony\Component\HttpFoundation\Response
-     * @Route("/", name="homepage")
+     * @Route("/home", name="homepage")
      */
     public function HomePageBundle()
     {

@@ -1,0 +1,34 @@
+.covervid-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.covervid-video {
+    z-index: 0;
+}
+
+#video-overlay {
+    background-color: #000;
+    opacity: .65;
+    position: absolute;
+    top: 0; left: 0;
+    bottom: 0; right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.font_label {
+    font-family: "Open Sans", Sans-Serif, serif !important;
+    font-size: 1.2em !important;
+    font-weight: 700;
+}
+
+.title_bg {
+    display: block;
+    background-color: rgba(25, 15, 2, 0.5);
+    padding: 0.3rem;
+    overflow: hidden;
+}
