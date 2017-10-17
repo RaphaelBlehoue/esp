@@ -2,133 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5361487-e47d-4cfc-99ae-051457e332c8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/css/animate.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/css/featherlight.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/css/normalize.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/css/owl.carousel.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/css/owl.theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/css/responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/icons/icon_clock.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/icons/pdf.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/besoin_assistance.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/besoins_finance.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/bg_croissance.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/bg_title.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/calls.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/cartographie.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/croissances/acces-au.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/croissances/besoin-financement.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/croissances/formation.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/croissances/information.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/emails.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/engagement/pact-a.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/engagement/pact-c.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/engagement/pact-e.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/engagement/pact-p.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/engagement/pact-t.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/footer_partenaire.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/icons/icon_clock.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/img2_initiative.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/img_acceuil.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/logo_final.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/logo_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/logotype/logotype.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/officiel/Kacou-4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/officiel/adama.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/officiel/amadou-hot.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/officiel/jkd.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/officiel/jkdiagou.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/officiel/pierre.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/officiel/souleymane-diarrassouba-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/officiel/tiemoko.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/organisateurs/bad.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/organisateurs/bad_2x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/organisateurs/cgeci.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/organisateurs/cgeci_2x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/organisateurs/esp.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/organisateurs/esp_2x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/organisateurs/slide.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/round.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/s1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/slide.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/abinet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/apbefci.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/apsfdci.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/bank_atlantique.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/bicici.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/brvm.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/business.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/frat-mat.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/orange.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/page/abinet_2x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/page/apbefci_2x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/page/apsfdci_2x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/page/bank_atlantique_2x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/page/bicici_2x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/page/brvm_2x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/page/business_2x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/page/frat-mat_2x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/page/orange_2x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/page/pme_2x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/page/rfi_2x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/page/rti_2x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/page/unacoopeci_2x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/pme.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/rfi.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sponsors/rti.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/sub.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/titles/contact.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/titles/croissance.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/titles/document.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/titles/engagements.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/titles/initiative.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/titles/officiel.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/titles/organisateur.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/titles/partners.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/titles/presse.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/titles/programme.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/titles/speakers.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/titles/sponsors.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/up1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/up2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/img/upcoming-event.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/js/Chart.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/js/contact-jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/js/custom-chart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/js/custom-map.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/js/featherlight.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/js/jquery-1.11.3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/js/jquery.countdown.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/js/jquery.knob.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/js/jquery.mixitup.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/js/modernizr-2.8.3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/js/owl.carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/layout_two/js/wow.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/lafinancesengage.dev.iml" afterPath="$PROJECT_DIR$/.idea/lafinancesengage.dev.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/parameters.yml.dist" afterPath="$PROJECT_DIR$/app/config/parameters.yml.dist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/symfony_requirements" afterPath="$PROJECT_DIR$/bin/symfony_requirements" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/SymfonyRequirements.php" afterPath="$PROJECT_DIR$/var/SymfonyRequirements.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app_dev.php" afterPath="$PROJECT_DIR$/web/app_dev.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/config.php" afterPath="$PROJECT_DIR$/web/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/introLayout.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/introLayout.html.twig" />
     </list>
     <ignored path="lafinancesengage.dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -151,8 +26,18 @@
       <file leaf-file-name="introLayout.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/introLayout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="65" column="51" lean-forward="false" selection-start-line="65" selection-start-column="51" selection-end-line="65" selection-end-column="51" />
+            <state relative-caret-position="116">
+              <caret line="54" column="32" lean-forward="false" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parameters.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -171,7 +56,7 @@
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Intro/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
+            <state relative-caret-position="-1236">
               <caret line="49" column="26" lean-forward="false" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
               <folding>
                 <element signature="e#12#50#0#Twig" expanded="true" />
@@ -184,16 +69,6 @@
                 <element signature="e#3559#3580#0#HTML" expanded="true" />
                 <element signature="e#4059#4080#0#HTML" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/assets/css/intro/assets/css/custom.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="23" column="59" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -303,11 +178,11 @@
         <option value="$PROJECT_DIR$/web/assets/css/custom.css" />
         <option value="$PROJECT_DIR$/web/assets/js/covervid.min.js" />
         <option value="$PROJECT_DIR$/web/assets/css/intro/assets/css/structure.css" />
-        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/introLayout.html.twig" />
         <option value="$PROJECT_DIR$/web/assets/css/intro/assets/css/styles-intro.css" />
         <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Intro/index.html.twig" />
         <option value="$PROJECT_DIR$/web/assets/css/intro/assets/css/custom.css" />
         <option value="$PROJECT_DIR$/web/assets/css/global.css" />
+        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/introLayout.html.twig" />
       </list>
     </option>
   </component>
@@ -362,6 +237,12 @@
             <path>
               <item name="lafinancesengage.dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="lafinancesengage.dev" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lafinancesengage.dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lafinancesengage.dev" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -373,27 +254,6 @@
               <item name="lafinancesengage.dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="lafinancesengage.dev" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lafinancesengage.dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lafinancesengage.dev" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lafinancesengage.dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lafinancesengage.dev" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lafinancesengage.dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lafinancesengage.dev" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="fonts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -409,6 +269,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -539,7 +400,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225502000" />
+    <option name="totallyTimeSpent" value="227398000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="717" extended-state="0" />
@@ -603,20 +464,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Form/DocumentEditType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="32" column="24" lean-forward="false" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Form/DocumentType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Controller/PartnerController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -761,14 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -896,11 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/css/images/jplayer.blue.monday.video.play.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/deploy/js/jquery.video-background.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -971,14 +805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/js/covervid.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="3043" lean-forward="false" selection-start-line="0" selection-start-column="3043" selection-end-line="0" selection-end-column="3043" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../betheme-html v45/html/loops.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
@@ -986,24 +812,6 @@
           <folding>
             <element signature="n#div#1;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Intro/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="49" column="26" lean-forward="false" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
-          <folding>
-            <element signature="e#12#50#0#Twig" expanded="true" />
-            <element signature="e#1708#1756#0#HTML" expanded="true" />
-            <element signature="e#2026#2054#0#HTML" expanded="true" />
-            <element signature="e#2284#2315#0#HTML" expanded="true" />
-            <element signature="e#2603#2633#0#HTML" expanded="true" />
-            <element signature="e#2721#2772#0#HTML" expanded="true" />
-            <element signature="e#3030#3051#0#HTML" expanded="true" />
-            <element signature="e#3559#3580#0#HTML" expanded="true" />
-            <element signature="e#4059#4080#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1032,10 +840,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/css/images/jplayer.blue.monday.video.play.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/css/images/jplayer.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/js/covervid.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="3043" lean-forward="false" selection-start-line="0" selection-start-column="3043" selection-end-line="0" selection-end-column="3043" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Intro/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1236">
+          <caret line="49" column="26" lean-forward="false" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+          <folding>
+            <element signature="e#12#50#0#Twig" expanded="true" />
+            <element signature="e#1708#1756#0#HTML" expanded="true" />
+            <element signature="e#2026#2054#0#HTML" expanded="true" />
+            <element signature="e#2284#2315#0#HTML" expanded="true" />
+            <element signature="e#2603#2633#0#HTML" expanded="true" />
+            <element signature="e#2721#2772#0#HTML" expanded="true" />
+            <element signature="e#3030#3051#0#HTML" expanded="true" />
+            <element signature="e#3559#3580#0#HTML" expanded="true" />
+            <element signature="e#4059#4080#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-879">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/introLayout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="65" column="51" lean-forward="false" selection-start-line="65" selection-start-column="51" selection-end-line="65" selection-end-column="51" />
+        <state relative-caret-position="116">
+          <caret line="54" column="32" lean-forward="false" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
           <folding />
         </state>
       </provider>
