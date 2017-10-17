@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e5361487-e47d-4cfc-99ae-051457e332c8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/introLayout.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/introLayout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Intro/index.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Intro/index.html.twig" />
     </list>
     <ignored path="lafinancesengage.dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="introLayout.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="introLayout.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/introLayout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="54" column="32" lean-forward="false" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
+            <state relative-caret-position="666">
+              <caret line="58" column="12" lean-forward="false" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -53,21 +53,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Intro/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1236">
-              <caret line="49" column="26" lean-forward="false" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+            <state relative-caret-position="182">
+              <caret line="87" column="107" lean-forward="false" selection-start-line="87" selection-start-column="107" selection-end-line="87" selection-end-column="107" />
               <folding>
                 <element signature="e#12#50#0#Twig" expanded="true" />
                 <element signature="e#1708#1756#0#HTML" expanded="true" />
                 <element signature="e#2026#2054#0#HTML" expanded="true" />
-                <element signature="e#2284#2315#0#HTML" expanded="true" />
-                <element signature="e#2603#2633#0#HTML" expanded="true" />
-                <element signature="e#2721#2772#0#HTML" expanded="true" />
-                <element signature="e#3030#3051#0#HTML" expanded="true" />
-                <element signature="e#3559#3580#0#HTML" expanded="true" />
-                <element signature="e#4059#4080#0#HTML" expanded="true" />
+                <element signature="e#2284#2318#0#HTML" expanded="true" />
+                <element signature="e#2606#2636#0#HTML" expanded="true" />
+                <element signature="e#2724#2775#0#HTML" expanded="true" />
+                <element signature="e#3033#3054#0#HTML" expanded="true" />
+                <element signature="e#3029#3510#0#HTML" expanded="false" />
+                <element signature="e#3537#3558#0#HTML" expanded="true" />
+                <element signature="e#3533#4010#0#HTML" expanded="false" />
+                <element signature="e#4037#4058#0#HTML" expanded="true" />
+                <element signature="e#4033#4539#0#HTML" expanded="false" />
+                <element signature="e#4715#4738#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -179,10 +183,10 @@
         <option value="$PROJECT_DIR$/web/assets/js/covervid.min.js" />
         <option value="$PROJECT_DIR$/web/assets/css/intro/assets/css/structure.css" />
         <option value="$PROJECT_DIR$/web/assets/css/intro/assets/css/styles-intro.css" />
-        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Intro/index.html.twig" />
         <option value="$PROJECT_DIR$/web/assets/css/intro/assets/css/custom.css" />
         <option value="$PROJECT_DIR$/web/assets/css/global.css" />
         <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/introLayout.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Intro/index.html.twig" />
       </list>
     </option>
   </component>
@@ -400,10 +404,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227398000" />
+    <option name="totallyTimeSpent" value="228245000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="717" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -414,7 +419,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28513733" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -858,24 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Intro/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1236">
-          <caret line="49" column="26" lean-forward="false" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
-          <folding>
-            <element signature="e#12#50#0#Twig" expanded="true" />
-            <element signature="e#1708#1756#0#HTML" expanded="true" />
-            <element signature="e#2026#2054#0#HTML" expanded="true" />
-            <element signature="e#2284#2315#0#HTML" expanded="true" />
-            <element signature="e#2603#2633#0#HTML" expanded="true" />
-            <element signature="e#2721#2772#0#HTML" expanded="true" />
-            <element signature="e#3030#3051#0#HTML" expanded="true" />
-            <element signature="e#3559#3580#0#HTML" expanded="true" />
-            <element signature="e#4059#4080#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -894,9 +881,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/introLayout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="54" column="32" lean-forward="false" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
+        <state relative-caret-position="666">
+          <caret line="58" column="12" lean-forward="false" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Intro/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="87" column="107" lean-forward="false" selection-start-line="87" selection-start-column="107" selection-end-line="87" selection-end-column="107" />
+          <folding>
+            <element signature="e#12#50#0#Twig" expanded="true" />
+            <element signature="e#1708#1756#0#HTML" expanded="true" />
+            <element signature="e#2026#2054#0#HTML" expanded="true" />
+            <element signature="e#2284#2318#0#HTML" expanded="true" />
+            <element signature="e#2606#2636#0#HTML" expanded="true" />
+            <element signature="e#2724#2775#0#HTML" expanded="true" />
+            <element signature="e#3033#3054#0#HTML" expanded="true" />
+            <element signature="e#3029#3510#0#HTML" expanded="false" />
+            <element signature="e#3537#3558#0#HTML" expanded="true" />
+            <element signature="e#3533#4010#0#HTML" expanded="false" />
+            <element signature="e#4037#4058#0#HTML" expanded="true" />
+            <element signature="e#4033#4539#0#HTML" expanded="false" />
+            <element signature="e#4715#4738#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
