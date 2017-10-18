@@ -1,13 +1,86 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<!--[if lt IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7 "> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]><html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <title>{{ 'Lafinancesengage | Bienvenue' }}</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,600,700" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('favicon/apple-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('favicon/apple-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('favicon/apple-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('favicon/apple-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('favicon/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('favicon/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('favicon/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('favicon/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('favicon/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('favicon/favicon-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('favicon/manifest.json') }}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{ asset('favicon/ms-icon-144x144.png') }}">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- FONTS -->
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,400italic,700'>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:300'>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Patua+One:100,300,400,400italic,700'>
+    <!-- CSS -->
+    <link rel='stylesheet' href="{{ asset('global/css/global.css') }}">
+    {% block stylesheets %}{% endblock %}
+
+    <!-- Revolution Slider -->
+    <link rel="stylesheet" href="{{ asset('plugins/rs-plugin/css/settings.css') }}">
+
+</head>
+
+<body class="template-slider header-menu-right color-one layout-full-width header-transparent sticky-header sticky-white subheader-title-left">
+
+<!-- Main Theme Wrapper -->
+<div id="Wrapper">
+    {% block body %}{% endblock %}
+</div>
+
+<!-- JS -->
+
+<script src="{{ asset('global/js/jquery-2.1.4.min.js') }}"></script>
+<script src="{{ asset('global/js/mfn.menu.js') }}"></script>
+<script src="{{ asset('global/js/jquery.plugins.js') }}"></script>
+<script src="{{ asset('global/js/jquery.jplayer.min.js') }}"></script>
+<script src="{{ asset('global/js/animations/animations.js') }}"></script>
+<script src="{{ asset('global/js/covervid.min.js') }}"></script>
+<script src="{{ asset('global/js/scripts.js') }}"></script>
+
+{% block javascripts %}{% endblock %}
+
+<script>
+    jQuery(window).load(function() {
+        var retina = window.devicePixelRatio > 1 ? true : false;
+        if (retina) {
+            var retinaEl = jQuery("#logo img");
+            var retinaLogoW = retinaEl.width();
+            var retinaLogoH = retinaEl.height();
+            retinaEl.attr("src", "{{ asset('global/images/logo/logo-web.png') }}").width(retinaLogoW).height(retinaLogoH)
+        }
+    });
+</script>
+
+</body>
+
 </html>

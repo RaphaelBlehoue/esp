@@ -13,24 +13,18 @@ class DefaultController extends Controller
      * @return Response
      * @Route("/", name="intro")
      */
-    public function IntroPageAction()
+    /*public function IntroPageAction()
     {
         return $this->render('LabsPagesBundle:Intro:index.html.twig');
-    }
+    }*/
 
     /**
      * @return \Symfony\Component\HttpFoundation\Response
-     * @Route("/home", name="homepage")
+     * @Route("/", name="homepage")
      */
     public function HomePageBundle()
     {
-        $limit = 7;
-        $speakers = $this->getTeamContent($limit);
-        $office = $this->getTeamContent();
-        return $this->render('LabsPagesBundle:Default:index.html.twig',[
-            'speakers' => $speakers,
-            'office' => $office
-        ]);
+        return $this->render('LabsPagesBundle:Default:index.html.twig');
     }
 
 

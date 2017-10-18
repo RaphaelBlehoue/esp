@@ -1,0 +1,15 @@
+h1 {
+    font-weight: 900;
+}
+h1, .text-logo #logo {
+    font-size: 48px;
+    line-height: 48px;
+}
+h1, .text-logo #logo {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.is-href-color a>span {
+    color: #000;
+}
