@@ -119,12 +119,15 @@ function mfn_sticky() {
 					'top': jQuery('#wpadminbar').innerHeight()
 				}, 300);
 				jQuery('#Top_bar').addClass('is-href-color');
-			}
+                jQuery('#connexion-btn').removeClass('border-buttom').addClass('border-buttom-sticky');
+
+            }
 		} else {
 			if (jQuery('#Top_bar').hasClass('is-sticky')) {
 				jQuery('.header_placeholder').css('height', 0);
 				jQuery('#Top_bar').removeClass('is-sticky').css('top', topBarTop);
                 jQuery('#Top_bar').removeClass('is-href-color');
+                jQuery('#connexion-btn').removeClass('border-buttom-sticky').addClass('border-buttom');
             }
 		}
 	}
@@ -876,7 +879,8 @@ jQuery(document).ready(function() {
 				stickyH = $('.sticky-header #Top_bar').innerHeight();
                 topBar.removeClass('is-sticky');
                 topBar.removeClass('is-href-color');
-			}
+                $('#connexion-btn').removeClass('border-buttom-sticky').addClass('border-buttom');
+            }
 
 			// FIX | responsive 
 			var responsive = $('.responsive-menu-toggle');

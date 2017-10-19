@@ -13,3 +13,25 @@ h1, .text-logo #logo {
 .is-href-color a>span {
     color: #000;
 }
+
+#Top_bar .border-buttom>a {
+    border: 2px solid #f48900;
+    text-decoration: none !important;
+}
+
+#Top_bar .border-buttom>a:hover {
+    text-decoration: none !important;
+}
+
+#Top_bar .border-buttom-sticky>a {
+    border: none;
+    text-decoration: none !important;
+    background-color: #f48900;
+    background-size: cover;
+    color: #fff !important;
+}
+
+#Top_bar .border-buttom-sticky>a>span {
+    text-decoration: none !important;
+    color: #fff !important;
+}

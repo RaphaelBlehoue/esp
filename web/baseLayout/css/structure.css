@@ -1534,6 +1534,8 @@ body.minimalist-header.header-below:not(.template-slider) #Header {
 }
 #Top_bar .menu>li>a:hover {
 	text-decoration: none;
+	border-bottom: 3px solid #f48900;
+	color: #f48900 !important;
 }
 .menu-arrows #Top_bar .menu>li.submenu>a>span:not(.description) {
 	padding-right: 30px;
@@ -2055,6 +2057,9 @@ body.header-stack:not(.template-slider) #Header {
 }
 .header-transparent #Top_bar .menu>li>a span {
 	border-color: rgba(0, 0, 0, 0.03);
+	font-size: 16px;
+	line-height: 60px;
+	font-weight: 700;
 }
 .header-transparent #Top_bar .menu li>ul:not(.mfn-megamenu-bg) {
 	background-image: none;
@@ -4327,7 +4332,7 @@ ul.testimonials-slider {
 	width: 100%;
 	z-index: 3;
 	/*background: url(../images/videomask.png) repeat center;*/
-	background-color: rgba(25, 15, 2, 0.75);
+	background-color: rgba(25, 15, 2, .85);
 	background-size: cover;
 }
 .section.has-video .section_video video {

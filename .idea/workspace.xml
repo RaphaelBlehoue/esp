@@ -2,689 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5361487-e47d-4cfc-99ae-051457e332c8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/css/fonts/mfn-icons.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/css/fonts/mfn-icons.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/css/fonts/mfn-icons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/css/fonts/mfn-icons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/css/fonts/mfn-icons.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/css/images/logo/Logo-bad.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/css/images/logo/Logo-bad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/css/images/logo/logo-cegi.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/css/images/logo/logo-esp.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/css/images/logo/logo_final.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/css/images/logo/logo_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/css/images/logo/logotype.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/deploy/videos/cut-film-finance-hd.mp4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/deploy/videos/cut-film-finance-hd.webm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/js/animations/animations.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/js/covervid.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/js/jquery-2.1.4.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/js/jquery.jplayer.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/js/jquery.plugins.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/js/jquery.plugins_new.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/js/mfn.menu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/js/scripts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/js/translate3d.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/js/ui/jquery-ui-1.8.22.custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/js/ui/jquery-ui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/js/ui/jquery.ui.accordion.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/js/ui/jquery.ui.core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/js/ui/jquery.ui.tabs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/js/ui/jquery.ui.widget.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/assets/coloredbg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/assets/gridtile.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/assets/gridtile_3x3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/assets/gridtile_3x3_white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/assets/gridtile_white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/assets/loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/assets/sources/fb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/assets/sources/fr.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/assets/sources/ig.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/assets/sources/post.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/assets/sources/revolution_slide1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/assets/sources/revolution_slide2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/assets/sources/tw.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/assets/sources/vm.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/assets/sources/wc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/assets/sources/yt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/assets/svg/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/assets/svg/svg.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/css/closedhand.cur" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/css/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/css/layers.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/css/navigation-skins/ares.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/css/navigation-skins/custom.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/css/navigation-skins/dione.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/css/navigation-skins/erinyen.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/css/navigation-skins/gyges.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/css/navigation-skins/hades.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/css/navigation-skins/hebe.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/css/navigation-skins/hephaistos.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/css/navigation-skins/hermes.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/css/navigation-skins/hesperiden.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/css/navigation-skins/metis.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/css/navigation-skins/persephone.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/css/navigation-skins/uranus.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/css/navigation-skins/zeus.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/css/navigation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/css/openhand.cur" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/css/settings-ver.5.3.0.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/css/settings-ver.5.3.1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/css/settings.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/fonts/font-awesome/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/fonts/font-awesome/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/fonts/font-awesome/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/fonts/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/fonts/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/fonts/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/fonts/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/fonts/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/fonts/font-awesome/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/fonts/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/fonts/pe-icon-7-stroke/css/helper.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/fonts/pe-icon-7-stroke/css/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/fonts/pe-icon-7-stroke/fonts/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/fonts/pe-icon-7-stroke/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/fonts/revicons/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/fonts/revicons/revicons.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/fonts/revicons/revicons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/fonts/revicons/revicons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/fonts/revicons/revicons.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/info.cfg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/extensions/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/extensions/revolution.extension.actions.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/extensions/revolution.extension.carousel.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/extensions/revolution.extension.kenburn.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/extensions/revolution.extension.layeranimation.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/extensions/revolution.extension.migration.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/extensions/revolution.extension.navigation.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/extensions/revolution.extension.parallax.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/extensions/revolution.extension.slideanims.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/extensions/revolution.extension.video.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/extensions/source/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/extensions/source/revolution.extension.actions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/extensions/source/revolution.extension.carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/extensions/source/revolution.extension.kenburn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/extensions/source/revolution.extension.layeranimation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/extensions/source/revolution.extension.migration.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/extensions/source/revolution.extension.navigation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/extensions/source/revolution.extension.parallax.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/extensions/source/revolution.extension.slideanims.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/extensions/source/revolution.extension.video.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/jquery.themepunch.enablelog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/jquery.themepunch.revolution.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/jquery.themepunch.tools.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/source/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/source/jquery.themepunch.enablelog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/source/jquery.themepunch.revolution.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/js/source/jquery.themepunch.tools.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/php/facebook/class-facebook.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/php/flickr/class-flickr.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/php/instagram/class-instagram.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/php/twitter/RestApi.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/php/twitter/class-twitter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/php/twitter/connection/Application.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/php/twitter/connection/ConnectionAbstract.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/php/twitter/connection/User.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/php/vimeo/class-vimeo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin-5.3.1/php/youtube/class-youtube.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/coloredbg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/css/noneed.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/agency_grid.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/carousel_classic1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/carousel_highlight1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/carousel_instagram1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/carousel_media1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/carousel_photography1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/carousel_showcase1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/hero_image1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/hero_newscollection.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/hero_newsletter1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/hero_searchform.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/hero_sports1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/hero_vimeo1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/hero_webproductdark.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/hero_webproductlight.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/hero_youtube1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/premium1_content_zoom.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/premium2_big_bold.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/premium3_food_carousel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/premium_better_youtube.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/premium_concept.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/premium_creative_freedom.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/premium_fullscreen_button1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/premium_our_team_carousel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/premium_our_team_slider.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/premium_parallax_scene.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/premium_rotatingwords.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/premium_sliding_overlays.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/premium_web_product_3d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/premium_woocommerce.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/restaurant_grid.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/slider_classic1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/slider_classicfull.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/slider_facebook.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/slider_fancytext.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/slider_fashion.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/slider_flickr.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/slider_generic.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/slider_gym.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/slider_highlight1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/slider_levano.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/slider_media.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/slider_news.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/slider_photography.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/slider_twitter.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/slider_vimeo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/slider_webproductdark.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/slider_webproductlight.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/slider_youtube.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridimages/travelslider.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridtile.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridtile_3x3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridtile_3x3_white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/gridtile_white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/Sail-Away-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/Sail-Away.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/amigos-250x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/amigos.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/animation.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/atable.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/bigbold_1-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/bigbold_1-280x43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/bigbold_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/bigbold_2-280x43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/bigbold_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/bigbold_3-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/bigbold_3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/bike-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/bike-60x60.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/bike.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/bluebar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/blurflake1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/blurflake2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/blurflake3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/blurflake4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/board-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/board.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/browserslide1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/calbuco-250x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/calbuco.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/cameraicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/carousel_element_ipad.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/carousel_element_iphone.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/carousel_element_laptop.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/cc-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/clickhere.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/cloud1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/cloud2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/cloud3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/concept.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/concept4-100x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/concept4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/concept_bg2-100x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/concept_bg2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/contentarea.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/creative_bg1-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/creative_bg1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/custombar.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/datcolor-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/datcolor-280x43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/datcolor-60x60.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/datcolor-70x70.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/datcolor.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/desktopbg1-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/desktopbg1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/drink_cover-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/drink_cover.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/drinkwinecover.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/dummy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/editor_layers1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/ellipse.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/examplebar3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/examplelayer1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/examplelayer2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/examplelayer3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/express_bglight-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/express_bglight.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/express_ipad_content1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/express_iphone_content1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/express_lightlogo1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/express_macbook_content1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/expresswhitelogo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/ezlogo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/fashion_bg1-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/fashion_bg1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/fashion_bg2_big.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/fashion_bg3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/fashion_bg4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/fashion_white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/feature_girl.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/fitness-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/fitness-60x60.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/fitness.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/food1-150x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/food1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/food2-150x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/food2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/food3-150x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/food3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/food4-150x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/food4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/food5-150x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/food5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/food6-150x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/food6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/frontpage_element_ipad.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/frontpage_element_iphone.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/frontpage_element_laptop.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/full_1-150x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/full_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/full_3-150x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/full_3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/full_4-150x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/full_4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/full_5-150x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/full_5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/generic-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/girl.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/girls-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/girls-150x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/girls.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/greenstripe.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/guy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/gym1-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/gym1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/gym2-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/gym2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/gymlogo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/hand.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/hero_element_ipad.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/hero_element_iphone.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/hero_element_laptop.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/iceberg-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/iceberg-250x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/iceberg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/icebg-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/icebg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/icon_download.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/ihpone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/ihpone_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/ipad_content_new2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/ipad_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/iphone_content_new1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/lambo-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/lambo-60x60.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/lambo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/landscape-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/landscape-280x43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/landscape.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/level1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/level2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/level32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/level41.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/lightbg-100x50.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/lightbg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/loader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/macbookpro.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/mainslider_element2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/mainslider_element3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/media1-250x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/media1-280x43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/media1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/mountainbg-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/mountainbg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/muesli-150x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/muesli.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newscarousel1-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newscarousel1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newscarousel2-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newscarousel2-280x43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newscarousel2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newscarousel4-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newscarousel4-280x43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newscarousel4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newscarousel5-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newscarousel5-280x43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newscarousel5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newscarousel6-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newscarousel6-280x43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newscarousel6-60x60.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newscarousel6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newsmag.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newsmag_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newspaper_bg1-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newspaper_bg1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newspaper_bg2-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newspaper_bg2-280x43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newspaper_bg2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newspaper_bg3-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newspaper_bg3-280x43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newspaper_bg3-320x160.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/newspaper_bg3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/notgeneric_bg1-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/notgeneric_bg1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/notgeneric_bg2-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/notgeneric_bg2-280x43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/notgeneric_bg2-70x70.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/notgeneric_bg2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/notgeneric_bg3-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/notgeneric_bg3-280x43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/notgeneric_bg3-70x70.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/notgeneric_bg3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/notgeneric_bg5-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/notgeneric_bg5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/notgenericherobg-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/notgenericherobg-280x43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/notgenericherobg-70x70.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/notgenericherobg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/office_cover-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/office_cover.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/officeloop_cover-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/officeloop_cover.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/pagelogo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/parallaxbgcut.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/phone1-60x60.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/phone1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/phone2-60x60.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/phone2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/phone3-60x60.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/phone3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/phone4-60x60.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/phone4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/phone5-60x60.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/phone5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/phone6-60x60.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/phone6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/phone7-60x60.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/phone7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/phone8-60x60.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/phone8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/phone9-60x60.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/phone9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photocam_hand.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photocam_hand2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photocam_lens.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography1-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography2-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography2-320x160.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography3-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography3-280x43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography4-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography4-280x43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography4-320x160.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography5-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography6-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography6-320x160.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography7-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography7-320x160.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography8-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography8-280x43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography9-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography9-280x43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography9-320x160.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography9-60x60.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography_contact-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography_contact-280x43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography_contact-320x160.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography_contact.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography_thumb1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography_thumb2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography_thumb3-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography_thumb3-320x160.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography_thumb3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography_thumb4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography_thumb5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photography_thumb6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/photoguy1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/pierbg-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/pierbg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/premiumbg1-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/premiumbg1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/premiumdiamond.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/publishslide.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/restaurant_bg_1-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/restaurant_bg_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/restaurant_bg_2-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/restaurant_bg_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/restaurant_bg_3-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/restaurant_bg_3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/restaurant_logo1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/revslider.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/shortcode.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/slider_element_ipad1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/slider_element_iphone.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/slider_element_laptop.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/slider_faqs.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/slider_templates.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/slider_tickets.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/space_cover-250x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/space_cover.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/sports2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/sports_sublinebg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/supportedsocial.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/team_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/team_3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/team_4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/team_5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/team_6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/team_7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/team_9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/team_thumb2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/team_thumb3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/team_thumb4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/team_thumb5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/team_thumb6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/team_thumb7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/team_thumb9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/themenu.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/timelines1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/touchit-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/touchit-280x43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/touchit-60x60.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/touchit.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/tplogo_black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/traincover-100x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/traincover-150x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/traincover.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/transparent.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/travel1-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/travel1-280x43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/travel1-70x70.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/travel1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/travel2-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/travel2-280x43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/travel2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/travel3-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/travel3-280x43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/travel3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/travel4-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/travel4-280x43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/travel4-70x70.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/travel4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/typing_cover-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/typing_cover.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/video.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/vimeobg-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/vimeobg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/webproduct_darkbg1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/webproduct_darkbg2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/webproduct_darkbg3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/wineyard-150x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/wineyard.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/wineyards.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/woo1-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/woo1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/woo2-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/woo2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/woo3-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/woo3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/workspace.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/workspace_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/wowfactor1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/youtube1_cover-250x100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/youtube1_cover.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/youtubebg-100x50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/images/youtubebg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/sources/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/sources/fb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/sources/fr.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/sources/ig.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/sources/post.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/sources/revolution_slide1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/sources/revolution_slide2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/sources/tw.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/sources/vm.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/sources/wc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/assets/sources/yt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/css/closedhand.cur" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/css/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/css/layers.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/css/navigation-skins/ares.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/css/navigation-skins/custom.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/css/navigation-skins/dione.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/css/navigation-skins/erinyen.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/css/navigation-skins/gyges.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/css/navigation-skins/hades.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/css/navigation-skins/hebe.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/css/navigation-skins/hephaistos.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/css/navigation-skins/hermes.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/css/navigation-skins/hesperiden.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/css/navigation-skins/metis.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/css/navigation-skins/persephone.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/css/navigation-skins/uranus.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/css/navigation-skins/zeus.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/css/navigation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/css/openhand.cur" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/css/settings.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/fonts/font-awesome/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/fonts/font-awesome/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/fonts/font-awesome/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/fonts/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/fonts/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/fonts/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/fonts/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/fonts/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/fonts/font-awesome/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/fonts/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/fonts/pe-icon-7-stroke/css/helper.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/fonts/pe-icon-7-stroke/css/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/fonts/pe-icon-7-stroke/fonts/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/fonts/pe-icon-7-stroke/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/fonts/revicons/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/fonts/revicons/revicons.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/fonts/revicons/revicons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/fonts/revicons/revicons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/fonts/revicons/revicons.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/extensions/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/extensions/revolution.extension.actions.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/extensions/revolution.extension.carousel.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/extensions/revolution.extension.kenburn.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/extensions/revolution.extension.migration.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/extensions/revolution.extension.navigation.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/extensions/revolution.extension.parallax.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/extensions/revolution.extension.slideanims.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/extensions/revolution.extension.video.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/extensions/source/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/extensions/source/revolution.extension.actions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/extensions/source/revolution.extension.carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/extensions/source/revolution.extension.kenburn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/extensions/source/revolution.extension.layeranimation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/extensions/source/revolution.extension.migration.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/extensions/source/revolution.extension.navigation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/extensions/source/revolution.extension.parallax.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/extensions/source/revolution.extension.slideanims.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/extensions/source/revolution.extension.video.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/jquery.themepunch.enablelog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/jquery.themepunch.tools.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/source/jquery.themepunch.enablelog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/source/jquery.themepunch.revolution.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/source/jquery.themepunch.tools.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/php/facebook/class-facebook.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/php/flickr/class-flickr.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/php/instagram/class-instagram.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/php/twitter/RestApi.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/php/twitter/class-twitter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/php/twitter/connection/Application.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/php/twitter/connection/ConnectionAbstract.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/php/twitter/connection/User.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/php/vimeo/class-vimeo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/rs-plugin/php/youtube/class-youtube.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/bullet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/fullscreen.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/fullscreen.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/fullscreen.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/fullscreen.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-basic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-basic_linear.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-blast.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-blinds.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-blur.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-book.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-brick.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-bubbles.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-carousel_basic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-cube.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-cube_over.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-domino.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-dribbles.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-fade.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-fly.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-glass_parallax.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-kenburns.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-lines.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-louvers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-page.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-parallax.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-photo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-rotate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-seven.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-shift.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-slices.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-squares.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-stack.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-stack_vertical.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-turn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/script-tv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/triangle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/plugins/wow-slider/scripts/wowslider.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/css/global.css" afterPath="$PROJECT_DIR$/web/global/css/global.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Controller/DefaultController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/config.php" afterPath="$PROJECT_DIR$/web/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/baseLayout/css/custom.css" afterPath="$PROJECT_DIR$/web/baseLayout/css/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/baseLayout/css/structure.css" afterPath="$PROJECT_DIR$/web/baseLayout/css/structure.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/global/js/scripts.js" afterPath="$PROJECT_DIR$/web/global/js/scripts.js" />
     </list>
     <ignored path="lafinancesengage.dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -741,59 +64,49 @@
       <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/baseLayout/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            <state relative-caret-position="141">
+              <caret line="25" column="10" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index-firm.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../betheme-html v45/html/index-firm.html">
+      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/global/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="135" column="40" lean-forward="false" selection-start-line="135" selection-start-column="40" selection-end-line="135" selection-end-column="40" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="156">
+              <caret line="120" column="58" lean-forward="false" selection-start-line="120" selection-start-column="45" selection-end-line="120" selection-end-column="58" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="77" column="78" lean-forward="true" selection-start-line="77" selection-start-column="78" selection-end-line="77" selection-end-column="78" />
+            <state relative-caret-position="145">
+              <caret line="57" column="51" lean-forward="false" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="64" />
               <folding>
                 <element signature="e#12#28#0#Twig" expanded="true" />
                 <element signature="e#932#940#0#Twig" expanded="true" />
-                <element signature="e#2773#2822#0#HTML" expanded="true" />
-                <element signature="e#4345#4376#0#HTML" expanded="true" />
-                <element signature="e#5390#38808#0#HTML" expanded="false" />
-                <element signature="e#17263#19217#0#HTML" expanded="false" />
+                <element signature="e#2017#2185#0#HTML" expanded="false" />
+                <element signature="e#2234#2402#0#HTML" expanded="false" />
+                <element signature="e#2451#2619#0#HTML" expanded="false" />
+                <element signature="e#3948#3997#0#HTML" expanded="true" />
+                <element signature="e#5520#5551#0#HTML" expanded="true" />
+                <element signature="e#6565#39983#0#HTML" expanded="false" />
+                <element signature="e#18438#20392#0#HTML" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="structure.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/baseLayout/css/structure.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="5054" column="26" lean-forward="false" selection-start-line="5054" selection-start-column="26" selection-end-line="5054" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="78" column="75" lean-forward="false" selection-start-line="78" selection-start-column="75" selection-end-line="78" selection-end-column="75" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -819,8 +132,10 @@
       <find>Clients</find>
       <find>font-family</find>
       <find>section_video</find>
+      <find>Headers</find>
       <find>section_wrapper clearfix</find>
       <find>is-sticky</find>
+      <find>is-href-color</find>
     </findStrings>
     <replaceStrings>
       <replace>logo-finance-main</replace>
@@ -842,7 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/partners.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Form/PartsEditType.php" />
         <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/programme.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/officiel.html.twig" />
@@ -888,11 +202,12 @@
         <option value="$PROJECT_DIR$/web/global/css/global.css" />
         <option value="$PROJECT_DIR$/../betheme-html v45/html/index-spa.html" />
         <option value="$PROJECT_DIR$/web/baseLayout/css/finances.css" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-        <option value="$PROJECT_DIR$/web/global/js/scripts.js" />
+        <option value="$PROJECT_DIR$/../betheme-html v45/html/about.html" />
         <option value="$PROJECT_DIR$/web/baseLayout/css/structure.css" />
         <option value="$PROJECT_DIR$/web/baseLayout/css/custom.css" />
         <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/web/global/js/scripts.js" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
       </list>
     </option>
   </component>
@@ -909,7 +224,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="717" />
+    <option name="height" value="726" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -947,6 +262,19 @@
               <item name="lafinancesengage.dev" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lafinancesengage.dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lafinancesengage.dev" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lafinancesengage.dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lafinancesengage.dev" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lafinancesengage.dev" type="b2602c69:ProjectViewProjectNode" />
@@ -1156,15 +484,15 @@
       <workItem from="1480089954446" duration="694000" />
       <workItem from="1480160972676" duration="9317000" />
       <workItem from="1480291606149" duration="10562000" />
-      <workItem from="1508343104119" duration="16027000" />
+      <workItem from="1508343104119" duration="25426000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="245903000" />
+    <option name="totallyTimeSpent" value="255302000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="717" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="726" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1176,7 +504,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32357723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28513733" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1218,13 +546,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/document.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/repository/DocumentRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="479">
@@ -1350,6 +671,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
           <caret line="1233" column="42" lean-forward="false" selection-start-line="1182" selection-start-column="0" selection-end-line="1234" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1500,14 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="78" column="75" lean-forward="false" selection-start-line="78" selection-start-column="75" selection-end-line="78" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/baseLayout/css/finances.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
@@ -1516,34 +833,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/global/js/scripts.js">
+    <entry file="file://$PROJECT_DIR$/../betheme-html v45/html/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="128" column="9" lean-forward="false" selection-start-line="128" selection-start-column="9" selection-end-line="128" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/baseLayout/css/structure.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="5054" column="26" lean-forward="false" selection-start-line="5054" selection-start-column="26" selection-end-line="5054" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/baseLayout/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="191">
+          <caret line="245" column="49" lean-forward="false" selection-start-line="196" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
+          <folding>
+            <element signature="n#aside#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#aside#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#0;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#1;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#2;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#3;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#4;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#5;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#6;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#7;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../betheme-html v45/html/index-firm.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="135" column="40" lean-forward="false" selection-start-line="135" selection-start-column="40" selection-end-line="135" selection-end-column="40" />
+        <state relative-caret-position="-1957">
+          <caret line="139" column="60" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1551,18 +863,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/baseLayout/css/structure.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="1534" column="0" lean-forward="false" selection-start-line="1534" selection-start-column="0" selection-end-line="1534" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="77" column="78" lean-forward="true" selection-start-line="77" selection-start-column="78" selection-end-line="77" selection-end-column="78" />
+        <state relative-caret-position="145">
+          <caret line="57" column="51" lean-forward="false" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="64" />
           <folding>
             <element signature="e#12#28#0#Twig" expanded="true" />
             <element signature="e#932#940#0#Twig" expanded="true" />
-            <element signature="e#2773#2822#0#HTML" expanded="true" />
-            <element signature="e#4345#4376#0#HTML" expanded="true" />
-            <element signature="e#5390#38808#0#HTML" expanded="false" />
-            <element signature="e#17263#19217#0#HTML" expanded="false" />
+            <element signature="e#2017#2185#0#HTML" expanded="false" />
+            <element signature="e#2234#2402#0#HTML" expanded="false" />
+            <element signature="e#2451#2619#0#HTML" expanded="false" />
+            <element signature="e#3948#3997#0#HTML" expanded="true" />
+            <element signature="e#5520#5551#0#HTML" expanded="true" />
+            <element signature="e#6565#39983#0#HTML" expanded="false" />
+            <element signature="e#18438#20392#0#HTML" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/baseLayout/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="25" column="10" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/global/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="120" column="58" lean-forward="false" selection-start-line="120" selection-start-column="45" selection-end-line="120" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
