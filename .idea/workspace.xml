@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5361487-e47d-4cfc-99ae-051457e332c8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/baseLayout/css/custom.css" afterPath="$PROJECT_DIR$/web/baseLayout/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/baseLayout/css/structure.css" afterPath="$PROJECT_DIR$/web/baseLayout/css/structure.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/global/js/scripts.js" afterPath="$PROJECT_DIR$/web/global/js/scripts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/baseLayout/css/finances.css" afterPath="$PROJECT_DIR$/web/baseLayout/css/finances.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/global/css/global.css" afterPath="$PROJECT_DIR$/web/global/css/global.css" />
     </list>
     <ignored path="lafinancesengage.dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +34,8 @@
       <file leaf-file-name="index-spa.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../betheme-html v45/html/index-spa.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1005">
-              <caret line="120" column="27" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
+            <state relative-caret-position="-254">
+              <caret line="570" column="0" lean-forward="false" selection-start-line="570" selection-start-column="0" selection-end-line="694" selection-end-column="13" />
               <folding>
                 <element signature="n#div#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -46,6 +44,7 @@
                 <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -61,51 +60,168 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/baseLayout/css/custom.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="25" column="10" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/global/js/scripts.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="120" column="58" lean-forward="false" selection-start-line="120" selection-start-column="45" selection-end-line="120" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="57" column="51" lean-forward="false" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="64" />
+            <state relative-caret-position="171">
+              <caret line="76" column="57" lean-forward="false" selection-start-line="76" selection-start-column="57" selection-end-line="76" selection-end-column="57" />
               <folding>
                 <element signature="e#12#28#0#Twig" expanded="true" />
                 <element signature="e#932#940#0#Twig" expanded="true" />
-                <element signature="e#2017#2185#0#HTML" expanded="false" />
-                <element signature="e#2234#2402#0#HTML" expanded="false" />
-                <element signature="e#2451#2619#0#HTML" expanded="false" />
-                <element signature="e#3948#3997#0#HTML" expanded="true" />
-                <element signature="e#5520#5551#0#HTML" expanded="true" />
-                <element signature="e#6565#39983#0#HTML" expanded="false" />
-                <element signature="e#18438#20392#0#HTML" expanded="false" />
+                <element signature="e#2040#2211#0#HTML" expanded="false" />
+                <element signature="e#2260#2435#0#HTML" expanded="false" />
+                <element signature="e#2484#2654#0#HTML" expanded="false" />
+                <element signature="e#2703#2879#0#HTML" expanded="false" />
+                <element signature="e#4548#4597#0#HTML" expanded="true" />
+                <element signature="e#6106#6137#0#HTML" expanded="true" />
+                <element signature="e#7395#11933#0#HTML" expanded="false" />
+                <element signature="e#8757#8789#0#HTML" expanded="true" />
+                <element signature="e#10112#11828#0#HTML" expanded="false" />
+                <element signature="e#10621#10653#0#HTML" expanded="true" />
+                <element signature="e#11993#12166#0#HTML" expanded="true" />
+                <element signature="e#12604#12669#0#HTML" expanded="true" />
+                <element signature="e#12723#12787#0#HTML" expanded="true" />
+                <element signature="e#13565#13630#0#HTML" expanded="true" />
+                <element signature="e#13684#13748#0#HTML" expanded="true" />
+                <element signature="e#15267#29975#0#HTML" expanded="false" />
+                <element signature="e#16186#16401#0#HTML" expanded="true" />
+                <element signature="e#16429#16593#0#HTML" expanded="true" />
+                <element signature="e#16679#16701#0#HTML" expanded="true" />
+                <element signature="e#16647#20509#0#HTML" expanded="false" />
+                <element signature="e#18902#18929#0#HTML" expanded="true" />
+                <element signature="e#20218#20238#0#HTML" expanded="true" />
+                <element signature="e#20594#20616#0#HTML" expanded="true" />
+                <element signature="e#20562#24424#0#HTML" expanded="false" />
+                <element signature="e#22817#22844#0#HTML" expanded="true" />
+                <element signature="e#24133#24153#0#HTML" expanded="true" />
+                <element signature="e#24509#24531#0#HTML" expanded="true" />
+                <element signature="e#24477#28339#0#HTML" expanded="false" />
+                <element signature="e#26732#26759#0#HTML" expanded="true" />
+                <element signature="e#28048#28068#0#HTML" expanded="true" />
+                <element signature="e#28520#28543#0#HTML" expanded="true" />
+                <element signature="e#30000#32043#0#HTML" expanded="false" />
+                <element signature="e#32100#32233#0#HTML" expanded="true" />
+                <element signature="e#33364#34137#0#HTML" expanded="false" />
+                <element signature="e#34243#35017#0#HTML" expanded="false" />
+                <element signature="e#35123#35896#0#HTML" expanded="false" />
+                <element signature="e#36002#36774#0#HTML" expanded="false" />
+                <element signature="e#37527#37574#0#HTML" expanded="true" />
+                <element signature="e#41054#42859#0#HTML" expanded="false" />
+                <element signature="e#42908#44713#0#HTML" expanded="false" />
+                <element signature="e#44762#46567#0#HTML" expanded="false" />
+                <element signature="e#46616#48421#0#HTML" expanded="false" />
+                <element signature="e#48470#50275#0#HTML" expanded="false" />
+                <element signature="e#50324#52129#0#HTML" expanded="false" />
+                <element signature="e#52178#53983#0#HTML" expanded="false" />
+                <element signature="e#54793#54966#0#HTML" expanded="true" />
+                <element signature="e#55243#58591#0#HTML" expanded="false" />
+                <element signature="e#58697#60517#0#HTML" expanded="false" />
+                <element signature="e#58890#58955#0#HTML" expanded="true" />
+                <element signature="e#59009#59073#0#HTML" expanded="true" />
+                <element signature="e#60698#60744#0#HTML" expanded="true" />
+                <element signature="e#60648#66479#0#HTML" expanded="false" />
+                <element signature="e#62011#62496#0#HTML" expanded="false" />
+                <element signature="e#62545#63030#0#HTML" expanded="false" />
+                <element signature="e#63079#63564#0#HTML" expanded="false" />
+                <element signature="e#63613#64098#0#HTML" expanded="false" />
+                <element signature="e#64147#64632#0#HTML" expanded="false" />
+                <element signature="e#64681#65166#0#HTML" expanded="false" />
+                <element signature="e#65215#65700#0#HTML" expanded="false" />
+                <element signature="e#65749#66234#0#HTML" expanded="false" />
+                <element signature="e#66505#69286#0#HTML" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home_spa_section_boxes.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/baseLayout/images/home_spa_section_boxes.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home_spa_section_boxes_img.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/baseLayout/images/home_spa_section_boxes_img.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1164">
+              <caret line="149" column="0" lean-forward="false" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+              <folding>
+                <element signature="n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#aside#0;n#div#1;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#0;n#ul#0;n#div#0;n#aside#0;n#div#1;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#1;n#ul#0;n#div#0;n#aside#0;n#div#1;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#2;n#ul#0;n#div#0;n#aside#0;n#div#1;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#0;n#ul#0;n#div#0;n#aside#0;n#div#2;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#1;n#ul#0;n#div#0;n#aside#0;n#div#2;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#2;n#ul#0;n#div#0;n#aside#0;n#div#2;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#3;n#ul#0;n#div#0;n#aside#0;n#div#2;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#4;n#ul#0;n#div#0;n#aside#0;n#div#2;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#5;n#ul#0;n#div#0;n#aside#0;n#div#2;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#6;n#ul#0;n#div#0;n#aside#0;n#div#2;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../betheme-html v45/html/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="1699" column="17" lean-forward="false" selection-start-line="1559" selection-start-column="0" selection-end-line="1700" selection-end-column="0" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index-agro.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../betheme-html v45/html/index-agro.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="719" column="17" lean-forward="false" selection-start-line="590" selection-start-column="0" selection-end-line="720" selection-end-column="0" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="finances.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/baseLayout/css/finances.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="213" column="17" lean-forward="false" selection-start-line="213" selection-start-column="17" selection-end-line="213" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loops.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../betheme-html v45/html/loops.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="1335" column="30" lean-forward="false" selection-start-line="1172" selection-start-column="0" selection-end-line="1336" selection-end-column="0" />
+              <folding>
+                <element signature="n#div#5;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -133,9 +249,22 @@
       <find>font-family</find>
       <find>section_video</find>
       <find>Headers</find>
-      <find>section_wrapper clearfix</find>
       <find>is-sticky</find>
       <find>is-href-color</find>
+      <find>mfn-icons</find>
+      <find>f48900</find>
+      <find>#20295b</find>
+      <find>:hover</find>
+      <find>Columns</find>
+      <find>offersliderthumb</find>
+      <find>Offer slider thumb</find>
+      <find>section_wrapper clearfix</find>
+      <find>Offer slider</find>
+      <find>counter</find>
+      <find>products</find>
+      <find>#Clients</find>
+      <find>#clients</find>
+      <find>clients</find>
     </findStrings>
     <replaceStrings>
       <replace>logo-finance-main</replace>
@@ -143,6 +272,7 @@
       <replace>logo-finance-mobile</replace>
       <replace>#A51E1C</replace>
       <replace>#a6241c;</replace>
+      <replace>f48900</replace>
       <replace>#f48900</replace>
     </replaceStrings>
   </component>
@@ -199,15 +329,15 @@
         <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/introLayout.html.twig" />
         <option value="$PROJECT_DIR$/web/baseLayout/js/main.js" />
-        <option value="$PROJECT_DIR$/web/global/css/global.css" />
         <option value="$PROJECT_DIR$/../betheme-html v45/html/index-spa.html" />
-        <option value="$PROJECT_DIR$/web/baseLayout/css/finances.css" />
         <option value="$PROJECT_DIR$/../betheme-html v45/html/about.html" />
         <option value="$PROJECT_DIR$/web/baseLayout/css/structure.css" />
         <option value="$PROJECT_DIR$/web/baseLayout/css/custom.css" />
-        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/web/global/js/scripts.js" />
+        <option value="$PROJECT_DIR$/web/global/css/global.css" />
+        <option value="$PROJECT_DIR$/web/baseLayout/css/finances.css" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig" />
       </list>
     </option>
   </component>
@@ -224,7 +354,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="726" />
+    <option name="height" value="724" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -330,14 +460,14 @@
               <item name="lafinancesengage.dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="lafinancesengage.dev" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="global" type="462c0819:PsiDirectoryNode" />
+              <item name="baseLayout" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lafinancesengage.dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="lafinancesengage.dev" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="global" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="baseLayout" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -484,15 +614,15 @@
       <workItem from="1480089954446" duration="694000" />
       <workItem from="1480160972676" duration="9317000" />
       <workItem from="1480291606149" duration="10562000" />
-      <workItem from="1508343104119" duration="25426000" />
+      <workItem from="1508343104119" duration="48995000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255302000" />
+    <option name="totallyTimeSpent" value="278871000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="726" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="724" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -504,7 +634,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32357723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32300162" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28513733" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -546,82 +676,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/repository/DocumentRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Controller/DocumentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="72" column="71" lean-forward="false" selection-start-line="72" selection-start-column="71" selection-end-line="72" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="137" column="0" lean-forward="true" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app_dev.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="14" column="57" lean-forward="false" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/js/ui/jquery-ui.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="5" column="1264" lean-forward="false" selection-start-line="5" selection-start-column="1264" selection-end-line="5" selection-end-column="1264" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/plugins/rs-plugin/js/source/index.php" />
     <entry file="file://$PROJECT_DIR$/web/assets/deploy/css/preview.css" />
     <entry file="file://$PROJECT_DIR$/web/assets/deploy/css/video-background.css" />
@@ -664,17 +718,6 @@
         <state relative-caret-position="150">
           <caret line="4110" column="20" lean-forward="false" selection-start-line="4110" selection-start-column="20" selection-end-line="4110" selection-end-column="20" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../betheme-html v45/html/loops.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="1233" column="42" lean-forward="false" selection-start-line="1182" selection-start-column="0" selection-end-line="1234" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -768,14 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/global/css/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="819" column="23" lean-forward="false" selection-start-line="819" selection-start-column="23" selection-end-line="819" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Intro/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -795,40 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="57" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../betheme-html v45/html/index-spa.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="120" column="27" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/baseLayout/css/finances.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="178" column="16" lean-forward="false" selection-start-line="178" selection-start-column="16" selection-end-line="178" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -871,32 +872,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="57" column="51" lean-forward="false" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="64" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="true" />
-            <element signature="e#932#940#0#Twig" expanded="true" />
-            <element signature="e#2017#2185#0#HTML" expanded="false" />
-            <element signature="e#2234#2402#0#HTML" expanded="false" />
-            <element signature="e#2451#2619#0#HTML" expanded="false" />
-            <element signature="e#3948#3997#0#HTML" expanded="true" />
-            <element signature="e#5520#5551#0#HTML" expanded="true" />
-            <element signature="e#6565#39983#0#HTML" expanded="false" />
-            <element signature="e#18438#20392#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/baseLayout/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="25" column="10" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/global/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -905,11 +880,247 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/global/css/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-959">
+          <caret line="841" column="16" lean-forward="false" selection-start-line="841" selection-start-column="16" selection-end-line="841" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../betheme-html v45/html/typography.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="2718" column="0" lean-forward="false" selection-start-line="2718" selection-start-column="0" selection-end-line="2722" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/baseLayout/images/home_spa_slider_section.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/baseLayout/images/spa.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../betheme-html v45/html/theme/content-blocks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28955">
+          <caret line="363" column="126" lean-forward="false" selection-start-line="363" selection-start-column="108" selection-end-line="363" selection-end-column="126" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/baseLayout/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="25" column="10" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../betheme-html v45/html/content-blocks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="1993" column="0" lean-forward="false" selection-start-line="1993" selection-start-column="0" selection-end-line="2444" selection-end-column="30" />
+          <folding>
+            <element signature="n#div#9;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#10;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../betheme-html v45/html/boxes-infographics.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="1396" column="0" lean-forward="false" selection-start-line="1396" selection-start-column="0" selection-end-line="1443" selection-end-column="42" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#9;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#9;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#div#9;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#0;n#div#0;n#div#9;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../betheme-html v45/html/loops.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="1335" column="30" lean-forward="false" selection-start-line="1172" selection-start-column="0" selection-end-line="1336" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#5;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../betheme-html v45/html/index-agro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="719" column="17" lean-forward="false" selection-start-line="590" selection-start-column="0" selection-end-line="720" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/baseLayout/css/finances.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="213" column="17" lean-forward="false" selection-start-line="213" selection-start-column="17" selection-end-line="213" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="-1164">
+          <caret line="149" column="0" lean-forward="false" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#aside#0;n#div#1;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#0;n#ul#0;n#div#0;n#aside#0;n#div#1;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#1;n#ul#0;n#div#0;n#aside#0;n#div#1;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#2;n#ul#0;n#div#0;n#aside#0;n#div#1;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#0;n#ul#0;n#div#0;n#aside#0;n#div#2;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#1;n#ul#0;n#div#0;n#aside#0;n#div#2;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#2;n#ul#0;n#div#0;n#aside#0;n#div#2;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#3;n#ul#0;n#div#0;n#aside#0;n#div#2;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#4;n#ul#0;n#div#0;n#aside#0;n#div#2;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#5;n#ul#0;n#div#0;n#aside#0;n#div#2;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#6;n#ul#0;n#div#0;n#aside#0;n#div#2;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../betheme-html v45/html/index-spa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-254">
+          <caret line="570" column="0" lean-forward="false" selection-start-line="570" selection-start-column="0" selection-end-line="694" selection-end-column="13" />
+          <folding>
+            <element signature="n#div#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../betheme-html v45/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="1699" column="17" lean-forward="false" selection-start-line="1559" selection-start-column="0" selection-end-line="1700" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/baseLayout/images/home_spa_section_boxes_img.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/baseLayout/images/home_spa_section_boxes.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="76" column="57" lean-forward="false" selection-start-line="76" selection-start-column="57" selection-end-line="76" selection-end-column="57" />
+          <folding>
+            <element signature="e#12#28#0#Twig" expanded="true" />
+            <element signature="e#932#940#0#Twig" expanded="true" />
+            <element signature="e#2040#2211#0#HTML" expanded="false" />
+            <element signature="e#2260#2435#0#HTML" expanded="false" />
+            <element signature="e#2484#2654#0#HTML" expanded="false" />
+            <element signature="e#2703#2879#0#HTML" expanded="false" />
+            <element signature="e#4548#4597#0#HTML" expanded="true" />
+            <element signature="e#6106#6137#0#HTML" expanded="true" />
+            <element signature="e#7395#11933#0#HTML" expanded="false" />
+            <element signature="e#8757#8789#0#HTML" expanded="true" />
+            <element signature="e#10112#11828#0#HTML" expanded="false" />
+            <element signature="e#10621#10653#0#HTML" expanded="true" />
+            <element signature="e#11993#12166#0#HTML" expanded="true" />
+            <element signature="e#12604#12669#0#HTML" expanded="true" />
+            <element signature="e#12723#12787#0#HTML" expanded="true" />
+            <element signature="e#13565#13630#0#HTML" expanded="true" />
+            <element signature="e#13684#13748#0#HTML" expanded="true" />
+            <element signature="e#15267#29975#0#HTML" expanded="false" />
+            <element signature="e#16186#16401#0#HTML" expanded="true" />
+            <element signature="e#16429#16593#0#HTML" expanded="true" />
+            <element signature="e#16679#16701#0#HTML" expanded="true" />
+            <element signature="e#16647#20509#0#HTML" expanded="false" />
+            <element signature="e#18902#18929#0#HTML" expanded="true" />
+            <element signature="e#20218#20238#0#HTML" expanded="true" />
+            <element signature="e#20594#20616#0#HTML" expanded="true" />
+            <element signature="e#20562#24424#0#HTML" expanded="false" />
+            <element signature="e#22817#22844#0#HTML" expanded="true" />
+            <element signature="e#24133#24153#0#HTML" expanded="true" />
+            <element signature="e#24509#24531#0#HTML" expanded="true" />
+            <element signature="e#24477#28339#0#HTML" expanded="false" />
+            <element signature="e#26732#26759#0#HTML" expanded="true" />
+            <element signature="e#28048#28068#0#HTML" expanded="true" />
+            <element signature="e#28520#28543#0#HTML" expanded="true" />
+            <element signature="e#30000#32043#0#HTML" expanded="false" />
+            <element signature="e#32100#32233#0#HTML" expanded="true" />
+            <element signature="e#33364#34137#0#HTML" expanded="false" />
+            <element signature="e#34243#35017#0#HTML" expanded="false" />
+            <element signature="e#35123#35896#0#HTML" expanded="false" />
+            <element signature="e#36002#36774#0#HTML" expanded="false" />
+            <element signature="e#37527#37574#0#HTML" expanded="true" />
+            <element signature="e#41054#42859#0#HTML" expanded="false" />
+            <element signature="e#42908#44713#0#HTML" expanded="false" />
+            <element signature="e#44762#46567#0#HTML" expanded="false" />
+            <element signature="e#46616#48421#0#HTML" expanded="false" />
+            <element signature="e#48470#50275#0#HTML" expanded="false" />
+            <element signature="e#50324#52129#0#HTML" expanded="false" />
+            <element signature="e#52178#53983#0#HTML" expanded="false" />
+            <element signature="e#54793#54966#0#HTML" expanded="true" />
+            <element signature="e#55243#58591#0#HTML" expanded="false" />
+            <element signature="e#58697#60517#0#HTML" expanded="false" />
+            <element signature="e#58890#58955#0#HTML" expanded="true" />
+            <element signature="e#59009#59073#0#HTML" expanded="true" />
+            <element signature="e#60698#60744#0#HTML" expanded="true" />
+            <element signature="e#60648#66479#0#HTML" expanded="false" />
+            <element signature="e#62011#62496#0#HTML" expanded="false" />
+            <element signature="e#62545#63030#0#HTML" expanded="false" />
+            <element signature="e#63079#63564#0#HTML" expanded="false" />
+            <element signature="e#63613#64098#0#HTML" expanded="false" />
+            <element signature="e#64147#64632#0#HTML" expanded="false" />
+            <element signature="e#64681#65166#0#HTML" expanded="false" />
+            <element signature="e#65215#65700#0#HTML" expanded="false" />
+            <element signature="e#65749#66234#0#HTML" expanded="false" />
+            <element signature="e#66505#69286#0#HTML" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

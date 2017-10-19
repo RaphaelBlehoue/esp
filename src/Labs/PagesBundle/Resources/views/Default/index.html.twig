@@ -27,36 +27,42 @@
                                 <nav id="menu">
                                     <ul id="menu-main-menu" class="menu">
                                         <li class="current_page_item">
-                                            <a href=""><span>Home</span></a>
+                                            <a href=""><span>{{ 'Accueil'|capitalize }}</span></a>
                                         </li>
                                         <li>
-                                            <a href="home-modern-header.html"><span>Headers</span></a>
+                                            <a href=""><span>{{ 'presentation'|capitalize }}</span></a>
                                             <ul class="sub-menu">
                                                 <li>
-                                                    <a href="home-modern-header.html"><span>Modern</span></a>
+                                                    <a href=""><span>{{ 'l\'initiative'|capitalize }}</span></a>
                                                 </li>
                                                 <li>
-                                                    <a href="home-modern-header.html"><span>Modern</span></a>
+                                                    <a href=""><span>{{ 'les organisateurs'|capitalize }}</span></a>
                                                 </li>
                                                 <li>
-                                                    <a href="home-modern-header.html"><span>Modern</span></a>
+                                                    <a href=""><span>{{ 'les sponsors'|capitalize }}</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href=""><span>{{ 'medias partenaires'|capitalize }}</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href=""><span>{{ 'Programme de l\'événement'|capitalize }}</span></a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href=""><span>About us</span></a>
+                                            <a href=""><span>{{ 'forum'|capitalize }}</span></a>
                                         </li>
                                         <li>
-                                            <a href=""><span>Our SPA</span></a>
+                                            <a href=""><span>{{ 'Documents & photos'|capitalize }}</span></a>
                                         </li>
                                         <li>
-                                            <a href=""><span>Services</span></a>
+                                            <a href=""><span>{{ 'Actualités'|capitalize }}</span></a>
                                         </li>
                                         <li>
-                                            <a href=""><span>Location</span></a>
+                                            <a href=""><span>{{ 'contact'|capitalize }}</span></a>
                                         </li>
                                         <li class="border-buttom" id="connexion-btn">
-                                            <a href=""><span>Connexion</span></a>
+                                            <a href=""><span>{{ 'Notre portail'|capitalize }}</span></a>
                                         </li>
                                     </ul>
                                 </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu"></i></a>
@@ -68,7 +74,7 @@
             <div class="section has-video" style="padding-top:250px; padding-bottom:210px; ">
                 <div class="section_video">
                     <div class="mask"></div>
-                    <video poster="#" controls="controls" muted="muted" preload="auto" loop autoplay>
+                    <video poster="#" controls="controls" preload="auto" loop autoplay>
                         <source type="video/mp4" src="{{ asset('global/videos/cut-film-finance-hd.mp4') }}" />
                         <source type="video/webm" src="{{ asset('global/videos/cut-film-finance-hd.mp4') }}" />
                         <object width="1900" height="1060" type="application/x-shockwave-flash" data="js/flashmediaelement.swf">
@@ -93,16 +99,16 @@
                                     </div>
                                     <div class="column mcb-column one column_column">
                                         <div class="column_attr align_center">
-                                            <h4 style="color: #fff;">Vestibulum ante ipsum primis in faucibus orci luctus et</h4>
+                                            <h4 style="color: #fff;">{{ 'La Finance s\'engage est une plateforme pour le développement du financement des PME' }}</h4>
                                         </div>
                                     </div>
+                                </div>
                                     <!--<img class="scale-with-grid" src="{{ asset('baseLayout/images/home_spa_video_logo.png') }}" alt="">-->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </header>
         <!-- Main Content -->
         <div id="Content">
@@ -113,69 +119,52 @@
                             <div class="section_wrapper clearfix">
                                 <div class="items_group clearfix">
                                     <!-- Page Title-->
-                                    <!-- One full width row-->
+                                    <!-- One full width row | les organisateurs-->
                                     <div class="column one column_fancy_heading">
                                         <div class="fancy_heading fancy_heading_icon">
-                                            <h2 class="title">WHAT DO YOU NEED?</h2>
+                                            <h2 class="title">{{ 'plus qu\'un forum'|upper }} | {{ 'les organisateurs'|upper }}</h2>
                                         </div>
                                     </div>
-                                    <!-- One Third (1/3) Column -->
-                                    <div class="column one-third column_flat_box">
+                                    <!-- One Third (1/2) Column | organisateur -->
+                                    <div class="column one-second column_column column_flat_box">
                                         <div class="flat_box">
                                             <!-- Animated area -->
                                             <div class="animate" data-anim-type="fadeInLeft">
                                                 <a href="#">
                                                     <div class="photo_wrapper">
-                                                        <div class="icon themebg" style="background-color:#7ac2d7">
-                                                            <i class="icon-heart-line"></i>
-                                                        </div><img class="scale-with-grid" src="content/spa/images/home_spa_flatbox_1.jpg" alt="Beauty centre" />
+                                                        <div class="icon themebg" style="background-color:#f48900">
+                                                            <i class="icon-globe"></i>
+                                                        </div>
+                                                        <img class="scale-with-grid" src="{{ asset('baseLayout/images/home_organisateur_cegci.jpg') }}" alt="CGECI Patronat | ivoirien" />
                                                     </div>
                                                     <div class="desc_wrapper">
-                                                        <h4>Beauty centre</h4>
+                                                        <h4>{{ 'CGECI | Le Patronat ivoirien' }}</h4>
                                                         <div class="desc">
-                                                            Duis sed odio ligula. Suspendisse tempor consequat felis tempor lacinia. Nam porttitor, massa eget blandit mollis
+                                                            Duis sed odio ligula. Suspendisse tempor consequat felis tempor lacinia. Nam porttitor,
+                                                            massa eget blandit mollis
                                                         </div>
                                                     </div>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- One Third (1/3) Column -->
-                                    <div class="column one-third column_flat_box">
+                                    <!-- One Third (1/2) Column | organisateur -->
+                                    <div class="column one-second column_column column_flat_box">
                                         <div class="flat_box">
                                             <!-- Animated area -->
-                                            <div class="animate" data-anim-type="fadeInUp">
+                                            <div class="animate" data-anim-type="fadeInLeft">
                                                 <a href="#">
                                                     <div class="photo_wrapper">
-                                                        <div class="icon themebg" style="background-color:#7ac2d7">
-                                                            <i class="icon-beaker-line"></i>
-                                                        </div><img class="scale-with-grid" src="content/spa/images/home_spa_flatbox_2.jpg" alt="Geotermal centre" />
-                                                    </div>
-                                                    <div class="desc_wrapper">
-                                                        <h4>Geotermal centre</h4>
-                                                        <div class="desc">
-                                                            Duis sed odio ligula. Suspendisse tempor consequat felis tempor lacinia. Nam porttitor, massa eget blandit mollis
+                                                        <div class="icon themebg" style="background-color:#f48900">
+                                                            <i class="icon-globe"></i>
                                                         </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- One Third (1/3) Column -->
-                                    <div class="column one-third column_flat_box">
-                                        <div class="flat_box">
-                                            <!-- Animated area -->
-                                            <div class="animate" data-anim-type="fadeInRight">
-                                                <a href="#">
-                                                    <div class="photo_wrapper">
-                                                        <div class="icon themebg" style="background-color:#7ac2d7">
-                                                            <i class="icon-air"></i>
-                                                        </div><img class="scale-with-grid" src="content/spa/images/home_spa_flatbox_3.jpg" alt="Massage centre" />
+                                                        <img class="scale-with-grid" src="{{ asset('baseLayout/images/home_organisateur_esp.jpg') }}" alt="ESP | Espartners" />
                                                     </div>
                                                     <div class="desc_wrapper">
-                                                        <h4>Massage centre</h4>
+                                                        <h4>{{ 'ESPARTNERS ' }}</h4>
                                                         <div class="desc">
-                                                            Duis sed odio ligula. Suspendisse tempor consequat felis tempor lacinia. Nam porttitor, massa eget blandit mollis
+                                                            Duis sed odio ligula. Suspendisse tempor consequat felis tempor lacinia. Nam porttitor,
+                                                            massa eget blandit mollis
                                                         </div>
                                                     </div>
                                                 </a>
@@ -185,30 +174,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="section" id="welcome" style="padding-top:120px; padding-bottom:80px; background-image:url(content/spa/images/home_spa_slider_section.jpg); background-repeat:no-repeat; background-position:center top; background-attachment:fixed; background-size:cover; -webkit-background-size:cover" data-stellar-background-ratio="0.5">
+                        <div class="section" id="welcomes" style="padding-top:120px; padding-bottom:80px; background: url({{ asset('baseLayout/images/home_bg_initiative.jpg')}}); background-size:cover; -webkit-background-size:cover" data-stellar-background-ratio="0.5">
                             <div class="section_wrapper clearfix">
                                 <div class="items_group clearfix">
                                     <!-- One Second (1/2) Column -->
                                     <div class="column one-second column_column">
-                                        <div class="column_attr ">
-                                            <div id="rev_slider_2_3_wrapper" class="rev_slider_wrapper fullwidthbanner-container sections_style_1">
-                                                <div id="rev_slider_2_3" class="rev_slider fullwidthabanner tp-overflow-hidden" data-version="5.0.4.1">
-                                                    <ul>
-                                                        <li data-index="rs-2" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="content/spa/images/home_spa_slider_1-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
-                                                            <img src="content/spa/images/home_spa_slider_1.jpg" alt="" width="600" height="460" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                                                        </li>
-                                                        <li data-index="rs-3" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="content/spa/images/home_spa_slider_2-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
-                                                            <img src="content/spa/images/home_spa_slider_2.jpg" alt="" width="600" height="460" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                                                        </li>
-                                                        <li data-index="rs-4" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="content/spa/images/home_spa_slider_3-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
-                                                            <img src="content/spa/images/home_spa_slider_3.jpg" alt="" width="600" height="460" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                                                        </li>
-                                                        <li data-index="rs-5" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="content/spa/images/home_spa_slider_4-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
-                                                            <img src="content/spa/images/home_spa_slider_4.jpg" alt="" width="600" height="460" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="tp-bannertimer tp-bottom flv_viz_hid"></div>
-                                                </div>
+                                        <div class="column_attr">
+                                            <div style="background: #fff; padding: 39px 40px; text-align: center;">
+                                                <h2 style="font-size: 42px; line-height: 42px; margin-bottom: 30px;">{{ 'La finance s\'engage'|upper }}</h2>
+                                            </div>
+                                            <div class="column_attr">
+                                                <iframe width="640" height="360" src="https://www.youtube.com/embed/IeOFvScT7qU?rel=0" frameborder="0" allowfullscreen></iframe>
                                             </div>
                                         </div>
                                     </div>
@@ -216,14 +192,15 @@
                                     <div class="column one-second column_column">
                                         <div class="column_attr animate" data-anim-type="fadeIn">
                                             <div style="background: #fff; padding: 39px 40px; text-align: center;">
-                                                <h2 style="font-size: 42px; line-height: 42px; margin-bottom: 30px;">WELCOME TO OUR
+                                                <h2 style="font-size: 42px; line-height: 42px; margin-bottom: 30px;">{{ 'Une initiative portée par'|upper }}
                                                     <br>
-                                                    SPA CENTRE</h2>
+                                                    {{ 'CGECI & ESPARTNES'|upper }}</h2>
                                                 <h5 class="hrmargin_b_30">Proin gravida nibh vel velit a Proin gravida nibh vel velit ataciti sociosqu ad litora torquent uctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</h5>
                                                 <p class="hrmargin_b_30">
                                                     Morbi accumsan ipsum velit. Nam nec tel ent taciti sociosqu ad lus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condim
                                                 </p>
-                                                <a class="button button_theme button_js" href="#"> <span class="button_label">Button with icon</span>
+                                                <a class="button button_theme button_js" href="#">
+                                                    <span class="button_label">{{ 'en savoir plus'|capitalize }}</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -231,13 +208,160 @@
                                 </div>
                             </div>
                         </div>
-
+                        <div class="section" style="padding-top:80px; padding-bottom:40px; ">
+                            <div class="section_wrapper clearfix">
+                                <div class="items_group clearfix">
+                                    <!-- Page Title-->
+                                    <!-- One full width row-->
+                                    <div class="column one column_fancy_heading">
+                                        <div class="fancy_heading fancy_heading_icon">
+                                            <h2 class="title">{{ 'les officiels'|upper }}</h2>
+                                        </div>
+                                    </div>
+                                    <div class="column mcb-column one column_offer_thumb ">
+                                        <div class="offer_thumb bottom">
+                                            <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 1176px; height: 394px; margin: 0px; overflow: hidden; cursor: move;"><ul class="offer_thumb_ul" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 8232px; height: 394px; z-index: auto;">
+                                                    <li class="offer_thumb_li id_1" style="width: 1176px;">
+                                                        <div class="image_wrapper">
+                                                            <img width="650" height="550" src="http://via.placeholder.com/650x550" class="scale-with-grid wp-post-image" alt="">
+                                                        </div>
+                                                        <div class="desc_wrapper align_left has-link">
+                                                            <div class="title">
+                                                                <h3>{{ '{{ Nom de l\'officiel }}' }}</h3>
+                                                                <a class="button button_left button_orange button_js kill_the_icon" href="#">
+                                                                    <span class="button_icon"><i class="icon-layout"></i></span>
+                                                                    <span class="button_label">{{ 'en savoir plus'|capitalize }}</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="desc">
+                                                                <p class="big">
+                                                                    {{ '{{ description résumé}}' }}
+                                                                    Vitae adipiscing turpis. Aenean ligula nibh, mo lest ie id viverra a, dapibus at dolor. In iaculis viverra ne que, ac eleifend ante lobortis.
+                                                                    Vitae adipiscing turpis. Aenean ligula nibh, mo lest ie id viverra a, dapibus at dolor. In iaculis viverra ne que, ac eleifend ante lobortis.
+                                                                    Vitae adipiscing turpis. Aenean ligula nibh, mo lest ie id viverra a, dapibus at dolor. In iaculis viverra ne que, ac eleifend ante lobortis.
+                                                                </p>
+                                                                <div class="hr_dots" style="margin: 0 auto 30px">
+                                                                    <span></span><span></span><span></span>
+                                                                </div>
+                                                                <h5>{{ '{{ Fonction occupé & dans quel lieu }}' }}:</h5>
+                                                                <div class="idea_box">
+                                                                    <div class="icon">
+                                                                        <i class="icon-info"></i>
+                                                                    </div>
+                                                                    <div class="desc">
+                                                                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam ultricies dolor a purus varius.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="thumbnail" style="display:none">
+                                                            <img src="http://via.placeholder.com/85x85" class="scale-with-grid" alt="Morbi egestas">
+                                                        </div>
+                                                    </li>
+                                                    <li class="offer_thumb_li id_2" style="width: 1176px;">
+                                                        <div class="image_wrapper">
+                                                            <img width="650" height="550" src="http://via.placeholder.com/650x550" class="scale-with-grid wp-post-image" alt="">
+                                                        </div>
+                                                        <div class="desc_wrapper align_left has-link">
+                                                            <div class="title">
+                                                                <h3>{{ '{{ Nom de l\'officiel }}' }}</h3>
+                                                                <a class="button button_left button_orange button_js kill_the_icon" href="#">
+                                                                    <span class="button_icon"><i class="icon-layout"></i></span>
+                                                                    <span class="button_label">{{ 'en savoir plus'|capitalize }}</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="desc">
+                                                                <p class="big">
+                                                                    {{ '{{ description résumé}}' }}
+                                                                    Vitae adipiscing turpis. Aenean ligula nibh, mo lest ie id viverra a, dapibus at dolor. In iaculis viverra ne que, ac eleifend ante lobortis.
+                                                                    Vitae adipiscing turpis. Aenean ligula nibh, mo lest ie id viverra a, dapibus at dolor. In iaculis viverra ne que, ac eleifend ante lobortis.
+                                                                    Vitae adipiscing turpis. Aenean ligula nibh, mo lest ie id viverra a, dapibus at dolor. In iaculis viverra ne que, ac eleifend ante lobortis.
+                                                                </p>
+                                                                <div class="hr_dots" style="margin: 0 auto 30px">
+                                                                    <span></span><span></span><span></span>
+                                                                </div>
+                                                                <h5>{{ '{{ Fonction occupé & dans quel lieu }}' }}:</h5>
+                                                                <div class="idea_box">
+                                                                    <div class="icon">
+                                                                        <i class="icon-info"></i>
+                                                                    </div>
+                                                                    <div class="desc">
+                                                                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam ultricies dolor a purus varius.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="thumbnail" style="display:none">
+                                                            <img src="http://via.placeholder.com/85x85" class="scale-with-grid" alt="Morbi egestas">
+                                                        </div>
+                                                    </li>
+                                                    <li class="offer_thumb_li id_3" style="width: 1176px;">
+                                                        <div class="image_wrapper">
+                                                            <img width="650" height="550" src="http://via.placeholder.com/650x550" class="scale-with-grid wp-post-image" alt="">
+                                                        </div>
+                                                        <div class="desc_wrapper align_left has-link">
+                                                            <div class="title">
+                                                                <h3>{{ '{{ Nom de l\'officiel }}' }}</h3>
+                                                                <a class="button button_left button_orange button_js kill_the_icon" href="#">
+                                                                    <span class="button_icon"><i class="icon-layout"></i></span>
+                                                                    <span class="button_label">{{ 'en savoir plus'|capitalize }}</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="desc">
+                                                                <p class="big">
+                                                                    {{ '{{ description résumé}}' }}
+                                                                    Vitae adipiscing turpis. Aenean ligula nibh, mo lest ie id viverra a, dapibus at dolor. In iaculis viverra ne que, ac eleifend ante lobortis.
+                                                                    Vitae adipiscing turpis. Aenean ligula nibh, mo lest ie id viverra a, dapibus at dolor. In iaculis viverra ne que, ac eleifend ante lobortis.
+                                                                    Vitae adipiscing turpis. Aenean ligula nibh, mo lest ie id viverra a, dapibus at dolor. In iaculis viverra ne que, ac eleifend ante lobortis.
+                                                                </p>
+                                                                <div class="hr_dots" style="margin: 0 auto 30px">
+                                                                    <span></span><span></span><span></span>
+                                                                </div>
+                                                                <h5>{{ '{{ Fonction occupé & dans quel lieu }}' }}:</h5>
+                                                                <div class="idea_box">
+                                                                    <div class="icon">
+                                                                        <i class="icon-info"></i>
+                                                                    </div>
+                                                                    <div class="desc">
+                                                                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam ultricies dolor a purus varius.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="thumbnail" style="display:none">
+                                                            <img src="http://via.placeholder.com/85x85" class="scale-with-grid" alt="Morbi egestas">
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="slider_pagination" style="display: block;">
+                                                <a href="#1" class="selected"><img src="http://via.placeholder.com/85x85" alt="1"></a>
+                                                <a href="#2"><img src="http://via.placeholder.com/85x85" alt="2"></a>
+                                                <a href="#3" class=""><img src="http://via.placeholder.com/85x85" alt="3"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Page devider -->
+                                    <!-- One full width row-->
+                                    <div class="column one column_divider">
+                                        <hr class="no_line hrmargin_b_40" />
+                                    </div>
+                                    <!-- Page Title-->
+                                    <!-- One full width row-->
+                                    <div class="column one column_fancy_heading">
+                                        <div class="fancy_heading fancy_heading_icon">
+                                            <h2 class="title">{{ 'programmme de l\'édition 2017'|upper }}</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="section has-video" style="padding-top:250px; padding-bottom:210px; ">
                             <div class="section_video">
                                 <div class="mask"></div>
                                 <video poster="#" controls="controls" muted="muted" preload="auto" loop autoplay>
-                                    <source type="video/mp4" src="content/spa/images/home_spa_video.mp4" />
-                                    <source type="video/ogg" src="content/spa/images/home_spa_video.ogv" />
+                                    <source type="video/mp4" src="{{ asset('global/videos/cut-film-finance-hd.mp4') }}" />
+                                    <source type="video/webm" src="{{ asset('global/videos/cut-film-finance-hd.mp4') }}" />
                                     <object width="1900" height="1060" type="application/x-shockwave-flash" data="js/flashmediaelement.swf">
                                         <param name="movie" value="js/flashmediaelement.swf" />
                                         <param name="flashvars" value="controls=true&amp;file=content/spa/images/home_spa_video.mp4" />
@@ -251,122 +375,263 @@
                                     <div class="column one column_image">
                                         <div class="image_frame no_link scale-with-grid no_border aligncenter">
                                             <div class="image_wrapper">
-                                                <img class="scale-with-grid" src="content/spa/images/home_spa_video_logo.png" alt="">
+                                                <img class="scale-with-grid" src="{{ asset('baseLayout/images/prog_img.png') }}" alt="programme la finance s'engage {{ 'now'|date('Y') - 1 }}">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="section" style="padding-top:80px; padding-bottom:40px; ">
+                        <div class="section" id="boxes" style="padding-top:80px; padding-bottom:0px; background-color:#f4f4f4; background-repeat:no-repeat; background-position:center top; ">
                             <div class="section_wrapper clearfix">
                                 <div class="items_group clearfix">
                                     <!-- Page Title-->
                                     <!-- One full width row-->
                                     <div class="column one column_fancy_heading">
                                         <div class="fancy_heading fancy_heading_icon">
-                                            <h2 class="title">SPECIAL SUMMER PRICES</h2>
-                                        </div>
-                                    </div>
-                                    <!-- One Fourth (1/4) Column -->
-                                    <div class="column one-fourth column_pricing_item">
-                                        <div class="pricing-box pricing-box-box">
-                                            <!-- Animated area -->
-                                            <div class="animate" data-anim-type="bounceIn">
-                                                <div class="plan-header">
-                                                    <div class="image">
-                                                        <img src="content/spa/images/home_spa_pricing_1.jpg" alt="Massage" />
-                                                    </div>
-                                                    <h2>Massage</h2>
-                                                    <div class="price">
-                                                        <sup class="currency">$</sup><span>12</span><sup class="period"></sup>
-                                                    </div>
-                                                    <hr class="hr_color" />
-                                                    <div class="big">
-                                                        <p class="subtitle">
-                                                            Vitae adipiscing turpis. Aenean ligula nibh, molestie id viverra a, dapibus at dolor. In iaculis viverra neque, ac eleifend ante lobortis id. In viverra ipsum stie id viverra a.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="plan-inside">
-                                                    <a style="display: block; margin-bottom: 10px;" href="#">Read more</a>
-                                                </div>
+                                            <h2 class="title">{{ 'les statistiques de l\'edition'|upper }} {{ 'now'|date('Y') - 1 }} </h2>
+                                            <div class="inside">
+                                                <p class="big">
+                                                    This is Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bib
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- One Fourth (1/4) Column -->
-                                    <div class="column one-fourth column_pricing_item">
-                                        <div class="pricing-box pricing-box-featured pricing-box-box">
-                                            <!-- Animated area -->
-                                            <div class="animate" data-anim-type="bounceIn">
-                                                <div class="plan-header">
-                                                    <div class="image"><img src="content/spa/images/home_spa_pricing_2.jpg" alt="Wellness" />
-                                                    </div>
-                                                    <h2>Wellness</h2>
-                                                    <div class="price">
-                                                        <sup class="currency">$</sup><span>29</span><sup class="period"></sup>
-                                                    </div>
-                                                    <hr class="hr_color" />
-                                                    <p class="subtitle">
-                                                    <div class="big">
-                                                        Vitae adipiscing turpis. Aenean ligula nibh, molestie id vivide.
-                                                    </div>
-                                                    </p>
-                                                </div>
-                                                <div class="plan-inside">
-                                                    <a style="display: block; margin-bottom: 10px; color: #fff;" href="#">Read more</a>
-                                                </div>
-                                            </div>
+                                    <div class="column one-fourth column_quick_fact">
+                                        <!-- Counter area-->
+                                        <div class="quick_fact animate-math">
+                                            <div class="number" data-to="35">
+                                                0 </div>
+                                            <h3 class="title">{{ 'statistique 1' }}</h3>
+                                            <hr class="hr_narrow" />
+                                            <div class="desc">
+                                                Donec vestibulum justo a diam ultricies pel lentesque. Quisque mattis diam vel lac. </div>
                                         </div>
                                     </div>
                                     <!-- One Fourth (1/4) Column -->
-                                    <div class="column one-fourth column_pricing_item">
-                                        <div class="pricing-box pricing-box-box">
-                                            <!-- Animated area -->
-                                            <div class="animate" data-anim-type="bounceIn">
-                                                <div class="plan-header">
-                                                    <div class="image"><img src="content/spa/images/home_spa_pricing_3.jpg" alt="Beauty" />
-                                                    </div>
-                                                    <h2>Beauty</h2>
-                                                    <div class="price">
-                                                        <sup class="currency">$</sup><span>39</span><sup class="period"></sup>
-                                                    </div>
-                                                    <hr class="hr_color" />
-                                                    <p class="subtitle">
-                                                    <div class="big">
-                                                        Vitae adipiscing turpis. Aenean ligula nibh, molestie id vivide.
-                                                    </div>
-                                                    </p>
-                                                </div>
-                                                <div class="plan-inside">
-                                                    <a style="display: block; margin-bottom: 10px;" href="#">Read more</a>
-                                                </div>
-                                            </div>
+                                    <div class="column one-fourth column_quick_fact">
+                                        <!-- Counter area-->
+                                        <div class="quick_fact animate-math">
+                                            <div class="number" data-to="142">
+                                                0 </div>
+                                            <h3 class="title">{{ 'statistique 2' }}</h3>
+                                            <hr class="hr_narrow" />
+                                            <div class="desc">
+                                                Donec vestibulum justo a diam ultricies pel lentesque. Quisque mattis diam vel lac. </div>
                                         </div>
                                     </div>
                                     <!-- One Fourth (1/4) Column -->
-                                    <div class="column one-fourth column_pricing_item">
-                                        <div class="pricing-box pricing-box-box">
-                                            <!-- Animated area -->
-                                            <div class="animate" data-anim-type="bounceIn">
-                                                <div class="plan-header">
-                                                    <div class="image"><img src="content/spa/images/home_spa_pricing_4.jpg" alt="Full service" />
-                                                    </div>
-                                                    <h2>Full service</h2>
-                                                    <div class="price">
-                                                        <sup class="currency">$</sup><span>49</span><sup class="period"></sup>
-                                                    </div>
-                                                    <hr class="hr_color" />
-                                                    <p class="subtitle">
-                                                    <div class="big">
-                                                        Vitae adipiscing turpis. Aenean ligula nibh, molestie id vivide.
-                                                    </div>
-                                                    </p>
-                                                </div>
-                                                <div class="plan-inside">
-                                                    <a style="display: block; margin-bottom: 10px;" href="#">Read more</a>
-                                                </div>
+                                    <div class="column one-fourth column_quick_fact">
+                                        <!-- Counter area-->
+                                        <div class="quick_fact animate-math">
+                                            <div class="number" data-to="89">
+                                                0 </div>
+                                            <h3 class="title">{{ 'statistique 3' }}</h3>
+                                            <hr class="hr_narrow" />
+                                            <div class="desc">
+                                                Donec vestibulum justo a diam ultricies pel lentesque. Quisque mattis diam vel lac. </div>
+                                        </div>
+                                    </div>
+                                    <!-- One Fourth (1/4) Column -->
+                                    <div class="column one-fourth column_quick_fact">
+                                        <!-- Counter area-->
+                                        <div class="quick_fact animate-math">
+                                            <div class="number" data-to="9">
+                                                0 </div>
+                                            <h3 class="title">{{ 'statistique 4' }}</h3>
+                                            <hr class="hr_narrow" />
+                                            <div class="desc">
+                                                Donec vestibulum justo a diam ultricies pel lentesque. Quisque mattis diam vel lac. </div>
+                                        </div>
+                                    </div>
+                                    <!-- One full width row-->
+                                    <div class="column one column_image">
+                                        <div class="image_frame no_link scale-with-grid no_border aligncenter">
+                                            <div class="image_wrapper"><img class="scale-with-grid" src="{{ asset('baseLayout/images/home_stats_bg_3.jpg') }}" alt="">
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- intervenant -->
+                        <div class="section" style="padding-top:60px; padding-bottom:20px; ">
+                            <div class="section_wrapper clearfix">
+                                <div class="items_group clearfix">
+                                    <!-- Page Title-->
+                                    <!-- One full width row-->
+                                    <div class="column one column_fancy_heading">
+                                        <div class="fancy_heading fancy_heading_icon">
+                                            <h2 class="title">{{ 'les intervenants'|upper }}</h2>
+                                        </div>
+                                    </div>
+                                    <div class="column one column_shop_slider">
+                                        <div class="shop_slider">
+                                            <div class="blog_slider_header">
+                                                <h4 class="title">&nbsp;</h4>
+                                                <a class="button button_js slider_prev" href="#">
+                                                    <span class="button_icon"><i class="icon-left-open-big"></i></span>
+                                                </a>
+                                                <a class="button button_js slider_next" href="#">
+                                                    <span class="button_icon"><i class="icon-right-open-big"></i></span>
+                                                </a>
+                                            </div>
+                                            <ul class="shop_slider_ul">
+                                                <li class="post-1171 product type-product has-post-thumbnail shipping-taxable purchasable product-type-simple product-cat-clothing product-cat-hoodies instock">
+                                                    <div class="item_wrapper">
+                                                        <div class="image_frame scale-with-grid product-loop-thumb">
+                                                            <div class="image_wrapper">
+                                                                <a href="">
+                                                                    <div class="mask"></div>
+                                                                    <img width="500" height="500" src="http://via.placeholder.com/500x500" class="scale-with-grid wp-post-image" alt="hoodie_6_front" />
+                                                                </a>
+                                                                <div class="image_links">
+                                                                    <a class="link" href=""><i class="icon-link"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="desc">
+                                                            <h4><a href="">{{ '{{ Nom de l\'intervenant }}' }}</a></h4>
+                                                            <span class="price"><span class="amount">{{ '{{ Fonction }}' }}</span></span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="post-1172 product type-product has-post-thumbnail shipping-taxable purchasable product-type-simple product-cat-clothing product-cat-hoodies instock">
+                                                    <div class="item_wrapper">
+                                                        <div class="image_frame scale-with-grid product-loop-thumb">
+                                                            <div class="image_wrapper">
+                                                                <a href="">
+                                                                    <div class="mask"></div>
+                                                                    <img width="500" height="500" src="http://via.placeholder.com/500x500" class="scale-with-grid wp-post-image" alt="hoodie_6_front" />
+                                                                </a>
+                                                                <div class="image_links">
+                                                                    <a class="link" href=""><i class="icon-link"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="desc">
+                                                            <h4><a href="">{{ '{{ Nom de l\'intervenant }}' }}</a></h4>
+                                                            <span class="price"><span class="amount">{{ '{{ Fonction }}' }}</span></span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="post-1173 product type-product has-post-thumbnail shipping-taxable purchasable product-type-simple product-cat-clothing product-cat-hoodies instock">
+                                                    <div class="item_wrapper">
+                                                        <div class="image_frame scale-with-grid product-loop-thumb">
+                                                            <div class="image_wrapper">
+                                                                <a href="">
+                                                                    <div class="mask"></div>
+                                                                    <img width="500" height="500" src="http://via.placeholder.com/500x500" class="scale-with-grid wp-post-image" alt="hoodie_6_front" />
+                                                                </a>
+                                                                <div class="image_links">
+                                                                    <a class="link" href=""><i class="icon-link"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="desc">
+                                                            <h4><a href="">{{ '{{ Nom de l\'intervenant }}' }}</a></h4>
+                                                            <span class="price"><span class="amount">{{ '{{ Fonction }}' }}</span></span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="post-1174 product type-product has-post-thumbnail shipping-taxable purchasable product-type-simple product-cat-clothing product-cat-hoodies instock">
+                                                    <div class="item_wrapper">
+                                                        <div class="image_frame scale-with-grid product-loop-thumb">
+                                                            <div class="image_wrapper">
+                                                                <a href="">
+                                                                    <div class="mask"></div>
+                                                                    <img width="500" height="500" src="http://via.placeholder.com/500x500" class="scale-with-grid wp-post-image" alt="hoodie_6_front" />
+                                                                </a>
+                                                                <div class="image_links">
+                                                                    <a class="link" href=""><i class="icon-link"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="desc">
+                                                            <h4><a href="">{{ '{{ Nom de l\'intervenant }}' }}</a></h4>
+                                                            <span class="price"><span class="amount">{{ '{{ Fonction }}' }}</span></span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="post-1175 product type-product has-post-thumbnail shipping-taxable purchasable product-type-simple product-cat-clothing product-cat-hoodies instock">
+                                                    <div class="item_wrapper">
+                                                        <div class="image_frame scale-with-grid product-loop-thumb">
+                                                            <div class="image_wrapper">
+                                                                <a href="">
+                                                                    <div class="mask"></div>
+                                                                    <img width="500" height="500" src="http://via.placeholder.com/500x500" class="scale-with-grid wp-post-image" alt="hoodie_6_front" />
+                                                                </a>
+                                                                <div class="image_links">
+                                                                    <a class="link" href=""><i class="icon-link"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="desc">
+                                                            <h4><a href="">{{ '{{ Nom de l\'intervenant }}' }}</a></h4>
+                                                            <span class="price"><span class="amount">{{ '{{ Fonction }}' }}</span></span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="post-1176 product type-product has-post-thumbnail shipping-taxable purchasable product-type-simple product-cat-clothing product-cat-hoodies instock">
+                                                    <div class="item_wrapper">
+                                                        <div class="image_frame scale-with-grid product-loop-thumb">
+                                                            <div class="image_wrapper">
+                                                                <a href="">
+                                                                    <div class="mask"></div>
+                                                                    <img width="500" height="500" src="http://via.placeholder.com/500x500" class="scale-with-grid wp-post-image" alt="hoodie_6_front" />
+                                                                </a>
+                                                                <div class="image_links">
+                                                                    <a class="link" href=""><i class="icon-link"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="desc">
+                                                            <h4><a href="">{{ '{{ Nom de l\'intervenant }}' }}</a></h4>
+                                                            <span class="price"><span class="amount">{{ '{{ Fonction }}' }}</span></span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="post-1177 product type-product has-post-thumbnail shipping-taxable purchasable product-type-simple product-cat-clothing product-cat-hoodies instock">
+                                                    <div class="item_wrapper">
+                                                        <div class="image_frame scale-with-grid product-loop-thumb">
+                                                            <div class="image_wrapper">
+                                                                <a href="">
+                                                                    <div class="mask"></div>
+                                                                    <img width="500" height="500" src="http://via.placeholder.com/500x500" class="scale-with-grid wp-post-image" alt="hoodie_6_front" />
+                                                                </a>
+                                                                <div class="image_links">
+                                                                    <a class="link" href=""><i class="icon-link"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="desc">
+                                                            <h4><a href="">{{ '{{ Nom de l\'intervenant }}' }}</a></h4>
+                                                            <span class="price"><span class="amount">{{ '{{ Fonction }}' }}</span></span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="post-1178 product type-product has-post-thumbnail shipping-taxable purchasable product-type-simple product-cat-clothing product-cat-hoodies instock">
+                                                    <div class="item_wrapper">
+                                                        <div class="image_frame scale-with-grid product-loop-thumb">
+                                                            <div class="image_wrapper">
+                                                                <a href="">
+                                                                    <div class="mask"></div>
+                                                                    <img width="500" height="500" src="http://via.placeholder.com/500x500" class="scale-with-grid wp-post-image" alt="hoodie_6_front" />
+                                                                </a>
+                                                                <div class="image_links">
+                                                                    <a class="link" href=""><i class="icon-link"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="desc">
+                                                            <h4><a href="">{{ '{{ Nom de l\'intervenant }}' }}</a></h4>
+                                                            <span class="price"><span class="amount">{{ '{{ Fonction }}' }}</span></span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="slider_pagination"></div>
                                         </div>
                                     </div>
                                     <!-- Page devider -->
@@ -375,116 +640,131 @@
                                         <hr class="no_line hrmargin_b_40" />
                                     </div>
                                     <!-- Page Title-->
-                                    <!-- One full width row-->
-                                    <div class="column one column_fancy_heading">
-                                        <div class="fancy_heading fancy_heading_icon">
-                                            <h2 class="title">BOOK YOUR STAY TODAY</h2>
-                                            <div class="inside">
-                                                <p class="hrmargin_0 big">
-                                                    Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- One full width row-->
-                                    <div class="column one column_column">
-                                        <div class="column_attr ">
-                                            <div class="aligncenter">
-                                                <a class="button button_large button_theme button_js" href="#"><span class="button_label">Button with icon</span></a>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="section" id="boxes" style="padding-top:80px; padding-bottom:0px; background-color:#e8f3f5; background-image:url(content/spa/images/home_spa_section_boxes.jpg); background-repeat:no-repeat; background-position:center top; ">
+                        <!-- photo edition 2017 -->
+                        <div class="section" id="welcome" style="padding-top:120px; padding-bottom:80px; background: url({{ asset('baseLayout/images/home_bg_initiative.jpg')}}); background-size:cover; -webkit-background-size:cover" data-stellar-background-ratio="0.5">
                             <div class="section_wrapper clearfix">
                                 <div class="items_group clearfix">
-                                    <!-- Page Title-->
-                                    <!-- One full width row-->
-                                    <div class="column one column_fancy_heading">
-                                        <div class="fancy_heading fancy_heading_icon">
-                                            <h2 class="title">WHAT PEOPLE SAY?</h2>
-                                            <div class="inside">
-                                                <p class="big">
-                                                    This is Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bib
+                                    <!-- One Second (1/2) Column -->
+                                    <div class="column one-second column_column">
+                                        <div class="column_attr ">
+                                            <div id="rev_slider_2_3_wrapper" class="rev_slider_wrapper fullwidthbanner-container sections_style_1">
+                                                <div id="rev_slider_2_3" class="rev_slider fullwidthabanner tp-overflow-hidden" data-version="5.0.4.1">
+                                                    <ul>
+                                                        <li data-index="rs-2" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="http://via.placeholder.com/100x50" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
+                                                            <img src="http://via.placeholder.com/600x460" alt="" width="600" height="460" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                                                        </li>
+                                                        <li data-index="rs-3" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="http://via.placeholder.com/100x50" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
+                                                            <img src="http://via.placeholder.com/600x460" alt="" width="600" height="460" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                                                        </li>
+                                                        <li data-index="rs-4" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="http://via.placeholder.com/100x50" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
+                                                            <img src="http://via.placeholder.com/600x460" alt="" width="600" height="460" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                                                        </li>
+                                                        <li data-index="rs-5" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="http://via.placeholder.com/100x50" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
+                                                            <img src="http://via.placeholder.com/600x460" alt="" width="600" height="460" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="tp-bannertimer tp-bottom flv_viz_hid"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- One Second (1/2) Column -->
+                                    <div class="column one-second column_column">
+                                        <div class="column_attr animate" data-anim-type="fadeIn">
+                                            <div style="background: #fff; padding: 39px 40px; text-align: center;">
+                                                <h2 style="font-size: 42px; line-height: 42px; margin-bottom: 30px;">{{ 'quelques photos de'|upper }}
+                                                    <br>
+                                                    {{ 'l\'édition'|upper }} {{ 'now'|date('Y') -1 }}</h2>
+                                                <h5>{{ '{{ Rapport en resumé de l\'edition passé }} ' }}</h5>
+                                                <p class="hrmargin_b_30">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, itaque minus nisi officia perspiciatis rerum sed similique. Adipisci maiores molestiae obcaecati officiis sapiente.
                                                 </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- One Third (1/3) Column -->
-                                    <div class="column one-third column_icon_box">
-                                        <!-- Animated area -->
-                                        <div class="animate" data-anim-type="zoomInUp">
-                                            <div class="icon_box icon_position_left no_border">
-                                                <a href="#">
-                                                    <div class="icon_wrapper">
-                                                        <div class="icon">
-                                                            <i class="icon-leaf"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="desc_wrapper">
-                                                        <h4>Natural cosmetics</h4>
-                                                        <div class="desc">
-                                                            Vitae adipiscing turpis. Aenean ligula nibo molestie id vivide.
-                                                        </div>
-                                                    </div>
+                                                <p class="hrmargin_b_30">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, itaque minus nisi officia perspiciatis rerum sed similique. Adipisci maiores molestiae obcaecati officiis sapiente, sint sit.
+                                                </p>
+                                                <a class="button button_theme button_js" href="#">
+                                                    <span class="button_label">{{ 'voir plus'|upper }}</span>
                                                 </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- One Third (1/3) Column -->
-                                    <div class="column one-third column_icon_box">
-                                        <!-- Animated area -->
-                                        <div class="animate" data-anim-type="zoomInUp">
-                                            <div class="icon_box icon_position_left no_border">
-                                                <a href="#">
-                                                    <div class="icon_wrapper">
-                                                        <div class="icon">
-                                                            <i class="icon-droplet"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="desc_wrapper">
-                                                        <h4>Steam room</h4>
-                                                        <div class="desc">
-                                                            Vitae adipiscing turpis. Aenean ligula nibo molestie id vivide.
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- One Third (1/3) Column -->
-                                    <div class="column one-third column_icon_box">
-                                        <!-- Animated area -->
-                                        <div class="animate" data-anim-type="zoomInUp">
-                                            <div class="icon_box icon_position_left no_border">
-                                                <a href="#">
-                                                    <div class="icon_wrapper">
-                                                        <div class="icon">
-                                                            <i class="icon-globe"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="desc_wrapper">
-                                                        <h4>World service</h4>
-                                                        <div class="desc">
-                                                            Vitae adipiscing turpis. Aenean ligula nibo molestie id vivide.
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- One full width row-->
-                                    <div class="column one column_image">
-                                        <div class="image_frame no_link scale-with-grid no_border aligncenter">
-                                            <div class="image_wrapper"><img class="scale-with-grid" src="content/spa/images/home_spa_section_boxes_img.png" alt="">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="section" id="clients flv_sections_16" style="padding-top:40px; padding-bottom:40px;">
+                            <div class="section_wrapper clearfix">
+                                <div class="items_group clearfix">
+                                    <!-- One full width row-->
+                                    <div class="column one column_fancy_heading">
+                                        <div class="fancy_heading fancy_heading_icon">
+                                            <h2 class="title">{{ 'partenanires & sponsors'|upper }}</h2>
+                                        </div>
+                                    </div>
+                                    <div class="column one column_clients_slider">
+                                        <div class="clients_slider">
+                                            <div class="clients_slider_header">
+                                                <a class="button button_js slider_prev" href="#"><span class="button_icon"><i class="icon-left-open-big"></i></span></a><a class="button button_js slider_next" href="#"><span class="button_icon"><i class="icon-right-open-big"></i></span></a>
+                                            </div>
+                                            <ul class="clients clients_slider_ul">
+                                                <li>
+                                                    <div class="client_wrapper">
+                                                        <a target="_blank" href="#" title="Client 1"><img width="145" height="75" src="http://via.placeholder.com/145x75" class="scale-with-grid wp-post-image" alt="client_1" />
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="client_wrapper">
+                                                        <a target="_blank" href="#" title="Client 1"><img width="145" height="75" src="http://via.placeholder.com/145x75" class="scale-with-grid wp-post-image" alt="client_1" />
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="client_wrapper">
+                                                        <a target="_blank" href="#" title="Client 1"><img width="145" height="75" src="http://via.placeholder.com/145x75" class="scale-with-grid wp-post-image" alt="client_1" />
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="client_wrapper">
+                                                        <a target="_blank" href="#" title="Client 1"><img width="145" height="75" src="http://via.placeholder.com/145x75" class="scale-with-grid wp-post-image" alt="client_1" />
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="client_wrapper">
+                                                        <a target="_blank" href="#" title="Client 1"><img width="145" height="75" src="http://via.placeholder.com/145x75" class="scale-with-grid wp-post-image" alt="client_1" />
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="client_wrapper">
+                                                        <a target="_blank" href="#" title="Client 1"><img width="145" height="75" src="http://via.placeholder.com/145x75" class="scale-with-grid wp-post-image" alt="client_1" />
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="client_wrapper">
+                                                        <a target="_blank" href="#" title="Client 1"><img width="145" height="75" src="http://via.placeholder.com/145x75" class="scale-with-grid wp-post-image" alt="client_1" />
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="client_wrapper">
+                                                        <a target="_blank" href="#" title="Client 1"><img width="145" height="75" src="http://via.placeholder.com/145x75" class="scale-with-grid wp-post-image" alt="client_1" />
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="section" style="padding-top:80px; padding-bottom:40px; background-color:#fff">
                             <div class="section_wrapper clearfix">
                                 <div class="items_group clearfix">
@@ -492,7 +772,7 @@
                                     <!-- One full width row-->
                                     <div class="column one column_fancy_heading">
                                         <div class="fancy_heading fancy_heading_icon">
-                                            <h2 class="title">BECOME OUR FRIEND</h2>
+                                            <h4 class="title">{{ 'Rejoingnez'|upper }} <strong>{{ 'la finance s\'engage'|upper }}</strong> {{ 'sur les reseaux'|upper }}</h4>
                                             <div class="inside">
                                                 <p class="big">
                                                     Lorem quis proin gravida nibh vel velit auctor aliquet. Vestibulum commodo volutpat a, convallis ac.
@@ -515,7 +795,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -536,4 +815,130 @@
     <script src="{{ asset('plugins/rs-plugin/js/extensions/revolution.extension.navigation.min.js') }}"></script>
     <script src="{{ asset('plugins/rs-plugin/js/extensions/revolution.extension.migration.min.js') }}"></script>
     <script src="{{ asset('plugins/rs-plugin/js/extensions/revolution.extension.parallax.min.js') }}"></script>
+
+    <script>
+        var tpj = jQuery;
+        tpj.noConflict();
+        var revapi1;
+        tpj(document).ready(function() {
+            if (tpj("#rev_slider_1_2").revolution == undefined) {
+                revslider_showDoubleJqueryError("#rev_slider_1_2");
+            } else {
+                revapi1 = tpj("#rev_slider_1_2").show().revolution({
+                    sliderType: "standard",
+                    sliderLayout: "fullscreen",
+                    dottedOverlay: "none",
+                    delay: 90000,
+                    gridwidth: 1180,
+                    gridheight: 1000,
+                    lazyType: "none",
+                    shadow: 0,
+                    spinner: "spinner3",
+                    stopLoop: "on",
+                    stopAfterLoops: 0,
+                    stopAtSlide: 1,
+                    shuffle: "off",
+                    autoHeight: "off",
+                    fullScreenAlignForce: "off",
+                    fullScreenOffsetContainer: "",
+                    fullScreenOffset: "",
+                    disableProgressBar: "on",
+                    hideThumbsOnMobile: "off",
+                    hideSliderAtLimit: 0,
+                    hideCaptionAtLimit: 0,
+                    hideAllCaptionAtLilmit: 0,
+                    startWithSlide: 0,
+                    debugMode: false,
+                    fallbacks: {
+                        simplifyAll: "off",
+                        nextSlideOnWindowFocus: "off",
+                        disableFocusListener: "off",
+                    }
+                });
+            }
+        });
+
+        var tpj = jQuery;
+        tpj.noConflict();
+        var revapi2;
+        tpj(document).ready(function() {
+            if (tpj("#rev_slider_2_3").revolution == undefined) {
+                revslider_showDoubleJqueryError("#rev_slider_2_3");
+            } else {
+                revapi2 = tpj("#rev_slider_2_3").show().revolution({
+                    sliderType: "standard",
+                    sliderLayout: "auto",
+                    dottedOverlay: "none",
+                    delay: 9000,
+                    navigation: {
+                        keyboardNavigation: "off",
+                        keyboard_direction: "horizontal",
+                        mouseScrollNavigation: "off",
+                        onHoverStop: "on",
+                        touch: {
+                            touchenabled: "on",
+                            swipe_threshold: 0.7,
+                            swipe_min_touches: 1,
+                            swipe_direction: "horizontal",
+                            drag_block_vertical: false
+                        },
+                        arrows: {
+                            style: "hesperiden",
+                            enable: true,
+                            hide_onmobile: false,
+                            hide_onleave: false,
+                            tmp: '',
+                            left: {
+                                h_align: "left",
+                                v_align: "center",
+                                h_offset: 20,
+                                v_offset: 0
+                            },
+                            right: {
+                                h_align: "right",
+                                v_align: "center",
+                                h_offset: 20,
+                                v_offset: 0
+                            }
+                        },
+                        bullets: {
+                            enable: true,
+                            hide_onmobile: false,
+                            style: "hesperiden",
+                            hide_onleave: false,
+                            direction: "horizontal",
+                            h_align: "center",
+                            v_align: "bottom",
+                            h_offset: 0,
+                            v_offset: 20,
+                            space: 5,
+                            tmp: ''
+                        }
+                    },
+                    gridwidth: 600,
+                    gridheight: 460,
+                    lazyType: "none",
+                    shadow: 0,
+                    spinner: "spinner3",
+                    stopLoop: "off",
+                    stopAfterLoops: -1,
+                    stopAtSlide: -1,
+                    shuffle: "off",
+                    autoHeight: "off",
+                    disableProgressBar: "on",
+                    hideThumbsOnMobile: "off",
+                    hideSliderAtLimit: 0,
+                    hideCaptionAtLimit: 0,
+                    hideAllCaptionAtLilmit: 0,
+                    startWithSlide: 0,
+                    debugMode: false,
+                    fallbacks: {
+                        simplifyAll: "off",
+                        nextSlideOnWindowFocus: "off",
+                        disableFocusListener: "off",
+                    }
+                });
+            }
+        });
+    </script>
 {% endblock %}
