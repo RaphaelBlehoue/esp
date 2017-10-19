@@ -4332,7 +4332,7 @@ ul.testimonials-slider {
 	width: 100%;
 	z-index: 3;
 	/*background: url(../images/videomask.png) repeat center;*/
-	background-color: rgba(25, 15, 2, .85);
+	background-color: rgba(25, 15, 2, .55);
 	background-size: cover;
 }
 .section.has-video .section_video video {
