@@ -1055,6 +1055,12 @@ body:not(.template-slider) #Header_wrapper.bg-fixed {
 }
 #Header {
 	position: relative;
+	background: url(../images/home_bg_fullscreen_video.jpg) #000 no-repeat center center fixed;
+	width: auto;
+	height: auto;
+	min-height: 100%;
+	max-width: 100%;
+	background-size: cover !important;
 }
 body:not(.template-slider) #Header {
 	min-height: 250px;
@@ -5366,6 +5372,8 @@ body {
 	#Wrapper {
 		width: 728px;
 	}
+	#header{ background: url(../images/home_bg_fullscreen_video.jpg) #000 no-repeat center center fixed;  width: auto; height: auto; background-size: cover !important;}
+	#bgvid {display: none !important;}
 	.section_wrapper, .container, .with_aside .content_wrapper {
 		width: 708px;
 	}
@@ -5673,6 +5681,8 @@ body {
 	.section {
 		background-attachment: scroll !important;
 		height: auto !important;
+		padding-top: 40px !important;
+		padding-bottom: 10px !important;
 	}
 	/* Header */
 	#Top_bar, #Action_bar {

@@ -31,7 +31,31 @@ h1, .text-logo #logo {
     color: #fff !important;
 }
 
+video#bgvid {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url(../images/home_bg_fullscreen_video.jpg) no-repeat;
+    background-size: cover;
+}
+
+video { display: block; }
+
 #Top_bar .border-buttom-sticky>a>span {
     text-decoration: none !important;
     color: #fff !important;
+}
+
+@media screen and (max-device-width: 800px) {
+    .section_video { background: url(../images/home_bg_fullscreen_video.jpg) #000 no-repeat center center fixed;         width: auto;
+        height: auto; background-size: cover;}
+    #bgvid {display: none;}
+}
+@media only screen and (min-device-width: 767px) and (max-device-width: 800px) {
+
 }

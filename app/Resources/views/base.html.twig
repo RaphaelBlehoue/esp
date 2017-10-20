@@ -207,7 +207,11 @@
 <script src="{{ asset('global/js/scripts.js') }}"></script>
 
 {% block javascripts %}{% endblock %}
-
+<!-- [if lt 9]>
+<script >
+    document.createElement('video');
+</script>
+<![endif]-->
 <script>
     jQuery(window).load(function() {
         var retina = window.devicePixelRatio > 1 ? true : false;

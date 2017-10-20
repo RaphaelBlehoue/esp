@@ -3180,7 +3180,7 @@ a.icon_bar_dribbble span.b{background:#ec4a89;color:#fff}
 .fancy_heading .title{font-size:42px;line-height:42px}
 .fancy_heading_icon .icon_top{font-size:50px;line-height:50px;margin-bottom:15px;overflow:hidden;display:block}
 .fancy_heading_icon .icon_top i:before{margin:0}
-.fancy_heading_line{background-image:url(../images/fancy_heading_hr.png);background-position:bottom center;background-repeat:no-repeat;padding-bottom:15px}
+.fancy_heading_line{background-image:url(../images/esp_heading_hr.png);background-position:bottom center;background-repeat:no-repeat;padding-bottom:15px}
 .fancy_heading_line .slogan{display:block;margin-bottom:7px;text-transform:uppercase;letter-spacing:1px;font-size:14px}
 .fancy_heading_line .inside{margin-bottom:15px}
 
@@ -11911,7 +11911,9 @@ button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 .fancy_heading .title{font-size:35px;line-height:35px}
 .fancy_heading_icon .icon_top{font-size:50px;line-height:50px;margin-bottom:15px;overflow:hidden;display:block}
 .fancy_heading_icon .icon_top i:before{margin:0}
-.fancy_heading_line{background-image:url(../images/fancy_heading_hr.png);background-position:bottom center;background-repeat:no-repeat;padding-bottom:15px}
+.fancy_heading_line{
+	background: url(../images/esp_heading_hr.png) no-repeat bottom center;
+	padding-bottom:15px}
 .fancy_heading_line .slogan{display:block;margin-bottom:7px;text-transform:uppercase;letter-spacing:1px;font-size:14px}
 .fancy_heading_line .inside{margin-bottom:15px}
 
