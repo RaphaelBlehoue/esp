@@ -4,7 +4,7 @@
 	background-color: #deecef;
 }
 #Subheader {
-	background-color: rgba(166, 36, 28, 0.4);
+	background-color: rgba(247, 247, 247, 0.8);
 }
 .header-classic #Action_bar, .header-stack #Action_bar {
 	background-color: #2C2C2C;
@@ -522,23 +522,23 @@ body, button, span.date_label, .timeline_items li h3 span, input[type="submit"],
 	font-weight: 400;
 }
 #Subheader .title {
-	font-family: "Lato", Arial, Tahoma, sans-serif;
+	font-family: "Open Sans", Arial, Tahoma, sans-serif;
 	font-weight: 400;
 }
 h1, .text-logo #logo {
-	font-family: "Lato", Arial, Tahoma, sans-serif;
+	font-family: "Open Sans", Arial, Tahoma, sans-serif;
 	font-weight: 300;
 }
 h2 {
-	font-family: "Lato", Arial, Tahoma, sans-serif;
+	font-family: "Open Sans", Arial, Tahoma, sans-serif;
 	font-weight: 300;
 }
 h3 {
-	font-family: "Lato", Arial, Tahoma, sans-serif;
+	font-family: "Open Sans", Arial, Tahoma, sans-serif;
 	font-weight: 300;
 }
 h4 {
-	font-family: "Lato", Arial, Tahoma, sans-serif;
+	font-family: "Open Sans", Arial, Tahoma, sans-serif;
 	font-weight: 300;
 }
 h5 {
@@ -550,7 +550,7 @@ h6 {
 	font-weight: 400;
 }
 blockquote {
-	font-family: "Lato", Arial, Tahoma, sans-serif;
+	font-family: "Open Sans", Arial, Tahoma, sans-serif;
 }
 
 /********************** Font | Size **********************/

@@ -1,174 +1,165 @@
-{% extends 'LabsPagesBundle::layout.html.twig' %}
+{% extends '::base.html.twig' %}
 {% block title %} {{ 'FORUM POUR LE FINANCEMENT DU SECTEUR PRIVÉ'|capitalize }}{% endblock %}
-{% block stylesheets %}
-    <style xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
-        .causes-title{
-            background:
-                    linear-gradient(
-                            rgba(28, 28, 28, 0.8),
-                            rgba(28, 28, 28, 0.8)
-                    ),
-                        /* bottom, image */
-                    url('{{ asset('layout_two/img/about-bg.jpg') }}');
-        }
-    </style>
+{% block cssClass %}
+    layout-full-width header-transparent header-menu-right sticky-header sticky-white subheader-both-center no-content-padding
 {% endblock %}
-{% block  body %}
-    <div class="page-title causes-title text-center" style="min-height: 250px;">
-        <img class="img-responsive slide-img" src="{{ asset('layout_two/img/titles/initiative.png') }}" alt="">
+{% block stylesheets %}
+    <link rel='stylesheet' href="{{ asset('baseLayout/css/structure.css') }}">
+    <link rel='stylesheet' href="{{ asset('baseLayout/css/finances.css') }}">
+    <link rel='stylesheet' href="{{ asset('baseLayout/css/custom.css') }}">
+{% endblock %}
+{% block subHeader %}
+    <div id="Subheader">
+        <div class="container">
+            <div class="column one">
+                <h1 class="title">{{ 'l\'initiative'|upper }}</h1>
+            </div>
+        </div>
     </div>
-    <section class="mt-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 overcoming">
-                    <h4 class="d-black lh-33 h-sep mt-5">
-                        <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive">
-                        <span style="padding-left: 5px;">{{ 'l\'initiative du forum'|capitalize }}</span>
-                    </h4>
-                    <p class="lh-28 mt-50 fz-15 " style="text-align: justify;">
-                        <strong class="text-ultra-bold">La Finance S’Engage </strong>est née d’un projet conçu par le Cabinet ESPartners et portée par le Patronat ivoirien et plus particulièrement par la Commission de Financement du Secteur Privé de la CGECI en partenariat avec  la Banque Africaine de Développement dans le but de mobiliser le secteur privé pour offrir des solutions concrètes au financement de l’économie ivoirienne.
-                    </p>
-                    <p class="lh-28 mt-10 fz-15" style="text-align: justify;">
-                        L’accès au financement reste une des  contraintes majeures à la croissance des entreprises. Le système financier ivoirien ne joue pas suffisamment son rôle d’intermédiation financière. Les TPME sont particulièrement concernées, mais la question de l’accès et du coût du financement touche aussi les grandes entreprises.
-                    </p>
-                    <p class="lh-28 mt-10 fz-15" style="text-align: justify;">
-                        Cette initiative, qui n’est surtout pas un énième forum mondain, est une plate-forme réunissant les décideurs majeurs de la finance ivoirienne et régionale pour aboutir à des partages d’expérience et surtout à la prise d’engagements publics, pratiques et mesurables. C’est également une initiative, dont la première édition n’est que le début d’une tradition. La FSE a vocation à s’institutionnaliser pour s’ancrer sur le respect des engagements pris et l’impact enregistré sur le financement du secteur privé.
-                    </p>
-                    <p class="lh-28 mt-10 fz-15" style="text-align: justify;">
-                        La Finance s'Engage c'est avant tout la Naissance d'une Tradition et avec elle, la transformation de  l'écosystème financier en Côte d'Ivoire. Ce rendez-vous de la finance que nous voulons incontournable et unique va transformer la manière d'appréhender la problématique du financement du secteur privé en Côte d'Ivoire et pourquoi pas et celle de la sous-région. Nous ambitionnons dans 10 ans, grâce à cette initiative, voir les PME participer véritablement à la croissance économique du continent.
-                    </p>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                    <div class="upcoming-event-s">
-                        <img class="img-responsive" src="{{ asset('layout_two/img/up2.jpg') }}" alt="">
+{% endblock %}
+{% block body %}
+    <div id="Content">
+        <div class="content_wrapper clearfix">
+            <div class="sections_group">
+                <div class="entry-content">
+                    <div class="section" style="padding-top:50px; padding-bottom:0px; ">
+                        <div class="section_wrapper clearfix">
+                            <div class="items_group clearfix">
+                                <!-- One Second (1/2) Column -->
+                                <!-- One full width row-->
+                                <div class="column one column_divider">
+                                    <hr class="no_line" />
+                                </div>
+                                <!-- One full width row-->
+                                <div class="column one column_column">
+                                    <div class="column_attr align_center">
+                                        <h3 style="margin: 0px;"> {{ '3 avantages clés'|upper }}</h3>
+                                    </div>
+                                </div>
+                                <!-- One Second (1/2) Column -->
+                                <div class="column one-second column_video">
+                                    <div class="content_video">
+                                        <iframe class="scale-with-grid"  width="700" height="400" src="https://www.youtube.com/embed/IeOFvScT7qU?rel=0" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <!-- One Second (1/2) Column -->
+                                <div class="column one-second column_column">
+                                    <div class="column_attr ">
+                                        <div class="icon_box icon_position_left no_border">
+                                            <div class="icon_wrapper">
+                                                <div class="icon">
+                                                    <i class="icon-leaf"></i>
+                                                </div>
+                                            </div>
+                                            <div class="desc_wrapper">
+                                                <h4>{{ 'Engagement' }}</h4>
+                                                <div class="desc text-justify">
+                                                    {{ 'Participer à un évènement qui permet de valoriser votre engagement en faveur du financement du secteur privé.
+                                                     Vous associer à un évènement qui vous donne accès à des études exclusives
+                                                      et récentes pour poser des actes concrets et réalistes pour le développement du secteur privé dans notre pays'
+                                                    |capitalize}}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="icon_box icon_position_left no_border">
+                                            <div class="icon_wrapper">
+                                                <div class="icon">
+                                                    <i class="icon-droplet"></i>
+                                                </div>
+                                            </div>
+                                            <div class="desc_wrapper">
+                                                <h4>{{ 'Visibilité'|capitalize }}</h4>
+                                                <div class="desc text-justify">
+                                                    {{ 'Vous lier à la réalisation d\'un événement fédérateur auprès du grand public comme des professionnels (secteur privé et public) en particulier les PME. Accéder à des médias à très large diffusion qui porteront vos messages.' }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="icon_box icon_position_left no_border">
+                                            <div class="icon_wrapper">
+                                                <div class="icon">
+                                                    <i class="icon-globe"></i>
+                                                </div>
+                                            </div>
+                                            <div class="desc_wrapper">
+                                                <h4>{{'Implication'|capitalize }}</h4>
+                                                <div class="desc text-justify">
+                                                    {{ 'Intégrer un réseau inédit de contacts institutionnels, financiers et entrepreneurials qui impacteront positivement votre business. Capitaliser sur des opportunités de développement de business avec à la fois le secteur privé et le secteur public.' }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Page devider -->
+                                <!-- One full width row-->
+                                <div class="column one column_divider">
+                                    <hr class="no_line" />
+                                </div>
+                                <div class="column one column_fancy_heading">
+                                    <div class="fancy_heading fancy_heading_icon">
+                                        <h2 class="title">{{ 'Notre adn'|upper }}</h2>
+                                    </div>
+                                </div>
+                                <!-- One Third (1/3) Column -->
+                                <div class="column one-third column_column">
+                                    <div class="column_attr ">
+                                        <h3 class="themecolor">{{ 'Innovation'|capitalize }}</h3>
+                                        <p>
+                                            <span class="big text-justify">
+                                                {{ 'Être partie prenante d’un projet novateur qui rompt avec les habitudes à travers des actes concrets, suivis, évalués et récompensés. Etre membre d’une plateforme qui rassemble pour la première fois TOUS les acteurs impliqués dans le développement économique: l\'écosystème financier mais aussi les PME.' }}
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- One Third (1/3) Column -->
+                                <div class="column one-third column_column">
+                                    <div class="column_attr">
+                                        <h3 class="themecolor">{{ 'Avenir'|capitalize }}</h3>
+                                        <p>
+                                            <span class="big text-justify">{{ 'Apporter sa pierre à la construction d’une économie prospère. Multiplier les opportunités d’affaires tant en direction des professionnels que des clients finaux.' }}</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- One Third (1/3) Column -->
+                                <div class="column one-third column_column">
+                                    <div class="column_attr ">
+                                        <h3 class="themecolor">{{ 'Unicité'|capitalize }}</h3>
+                                        <p>
+                                            <span class="big text-justify">{{ 'Plus que quelques actions ponctuelles, s\'inscrire dans un processus évolutif  qui produit des fruits reconnus et récompensés. Écrire de nouvelles pages qui obligent à l\'amélioration continue, en sortant des sentiers battus.' }}</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Page devider -->
+                            </div>
+                        </div>
                     </div>
-                    <p class="lh-28 mt-50 fz-15 " style="text-align: justify;">
-                        <strong class="text-ultra-bold">La Finance S’Engage </strong> n’est pas un forum comme les autres, elle est ambitieuse et innovante dans sa conception. Elle repose sur la conviction qu’innover est crucial pour avancer. Cette conviction se matérialise par différents traits de cette initiative 
-                    </p>
-                    <p class="lh-28 mt-10 fz-15 " style="text-align: justify;">
-                        <strong class="text-ultra-bold">la participation des acteurs via des engagements publics et concrets </strong>, et non pas seulement des prises de parole ; </br>
-                        <strong class="text-ultra-bold">la mesure fiable, approfondie et actuelle des besoins et des opportunités en financement  </strong>rencontrés par les entreprises, petites et grandes, d’Abidjan à Korhogo en passant par Man, grâce à l’initiative Données pour la croissance ;</br>
-                        <strong class="text-ultra-bold">l’identification des acteurs les plus engagés pour financer le secteur privé</strong>, avec la mise en place des Awards du financement, qui reposera à partir de l’an prochain sur l’évaluation rigoureuse des engagements pris cette année ;</br>
-                        <strong class="text-ultra-bold">le suivi résolu des engagements pris </strong>-	, qui assurera la continuité de la FSE tout au long de l’année ; et enfin </br>
-                        <strong class="text-ultra-bold">le modèle économique novateur </strong>de la FSE, qui est fondée sur  la mobilisation des ressources et non pas sur une subvention. </br>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="mt-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6">
-                    <div class="upcoming-event-s">
-                        <img class="img-responsive" src="{{ asset('layout_two/img/img2_initiative.jpg') }}" alt="">
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 overcoming">
-                    <p class="lh-28 mt-10 fz-15" style="text-align: justify;">
-                        <strong class="text-ultra-bold">La Finance s’Engage</strong> s’ancre véritablement sur la promotion de notions capitales pour notre économie et sur une culture du respect des engagements et du service.
-                    </p>
-                    <p class="lh-28 mt-10 fz-15" style="text-align: justify;">
-                        Ces engagements, pour en garantir l’effectivité seront présentés à l’autorité de tutelle, et seront également présentés aux représentants du secteur privé ivoirien, des petites et des grandes entreprises. <strong class="text-ultra-bold">La Finance s’engage </strong> vivra aussi hors de ces murs, pour aller à la rencontre des entreprises, destinataires ultimes de notre rencontre d’aujourd’hui. Nous mènerons donc des activités en continuité avec le forum, pour résoudre les défis identifiés notamment sur la question de la rareté du crédit, de l’asymétrie d’information et des enjeux sectoriels.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="mt-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 overcoming">
-                    <p class="lh-28 mt-10 fz-15" style="text-align: justify;">
-                        Ainsi,  <strong class="text-ultra-bold">la Finance S’engage </strong> a vocation à se poursuivre. Tout au long de l’année mais aussi au fil des ans. Aujourd’hui elle marque la naissance d’une tradition. Un forum ponctuel ne saurait répondre aux problématiques saillantes que notre pays connaît, ni aujourd’hui, ni demain. Seule une réponse renouvelée, affinée et affirmée saura en mesure de résoudre durablement le défi du financement du secteur privé. Une telle réponse irait même au-delà de la résolution d’un problème, elle ouvrirait des voies d’avenir et d’innovation. Elle positionnerait la Côte d’Ivoire comme un pionnier en matière d’écosystème entrepreneurial et financier, elle offrirait des perspectives de marché nouvelles aux acteurs financiers et faciliterait l’accompagnement et la création de champions nationaux et régionaux.
-                    </p>
-                </div>
-                <div class="col-md-6 col-sm-6 overcoming no-padding">
-                    <div class="about-author mt-5">
-                        <div class="author-info clearfix">
-                            <h5 class="fz-15 h-sep text-semi-bold text-uppercase">
-                                Résultats attendus :
-                            </h5>
-                            <div class="author-details pull-left">
-                                <p class="mt-30 lh-26">
-                                    <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive" style="padding-right: 5px;">
-                                    Institutionnaliser cette plateforme du financement en rassemblant les acteurs des secteurs financier et privé, 
-                                </p>
-                                <p class="mt-30 lh-26">
-                                    <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive" style="padding-right: 5px;">
-                                    Participer à l'enrichissement de l'écosystème par le lancement de produit innovants de financement des PME                                </p>
-                                <p class="mt-30 lh-26">
-                                    <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive" style="padding-right: 5px;">
-                                    Permettre de faire se rencontrer la demande et l'offre de financements en mobilisant les partenaires stratégiques et les institutions financières et
-                                    répondre aux besoins et profils des entreprises
-                                </p>
-                                <p class="mt-30 lh-26">
-                                    <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive" style="padding-right: 5px;">
-                                    Mesurer l'impact des résultats que cette initiative aura généré et
-                                    renforcer la relation entre les professionnels de la finance et les entreprises
-                                </p>
+                    <div class="section" style="padding-top:80px; padding-bottom:40px; background-color:#fff">
+                        <div class="section_wrapper clearfix">
+                            <div class="items_group clearfix">
+                                <!-- Page Title-->
+                                <!-- One full width row-->
+                                <div class="column one column_fancy_heading">
+                                    <div class="fancy_heading fancy_heading_icon">
+                                        <h4 class="title">{{ 'Rejoignez'|upper }} <strong>{{ 'la finance s\'engage'|upper }}</strong> {{ 'sur les reseaux'|upper }}</h4>
+                                    </div>
+                                </div>
+                                <!-- One full width row-->
+                                <div class="column one column_column">
+                                    <div class="column_attr animate" data-anim-type="bounceIn">
+                                        <div class="aligncenter">
+                                            <a href="#" class="icon_bar icon_bar_facebook icon_bar_large"><span class="t"><i class="icon-facebook"></i></span><span class="b"><i class="icon-facebook"></i></span></a>
+                                            <a href="#" class="icon_bar icon_bar_google icon_bar_large"><span class="t"><i class="icon-gplus"></i></span><span class="b"><i class="icon-gplus"></i></span></a>
+                                            <a href="#" class="icon_bar icon_bar_twitter icon_bar_large"><span class="t"><i class="icon-twitter"></i></span><span class="b"><i class="icon-twitter"></i></span></a>
+                                            <a href="#" class="icon_bar icon_bar_vimeo icon_bar_large"><span class="t"><i class="icon-vimeo"></i></span><span class="b"><i class="icon-vimeo"></i></span></a>
+                                            <a href="#" class="icon_bar icon_bar_youtube icon_bar_large"><span class="t"><i class="icon-play"></i></span><span class="b"><i class="icon-play"></i></span></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- les données de la croissance -->
-    <section class="our-help mt-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h3 class="text-uppercase white mt-5" style="padding-left: 30%;">
-                        <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive">
-                        <span class="pull-left mt-5" style="padding-left: 2%;">Les données pour la <span class="text-ultra-bold">Croissance </span></span>
-                        <div class="clearfix"></div>
-                    </h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6 mt-70">
-                    <div id="canvas-holder" class="clearfix">
-                        <canvas id="chart-area" class="pull-left" ></canvas>
-                        <div class="round-bar-status pull-left text-center">
-                            <h2 class="white text-semi-bold">91%</h2>
-                            <h5 class="fz-13 text-semi-bold white text-uppercase mt-10">Besoin de </br>financement</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mt-70">
-                    <div id="canvas-holder1" class="clearfix">
-                        <canvas id="chart-area1" class="pull-left" ></canvas>
-                        <div class="round-bar-status pull-left text-center">
-                            <h2 class="white text-semi-bold">29%</h2>
-                            <h5 class="fz-13 text-semi-bold white text-uppercase mt-10">Dépot d'une </br> demande de </br>financement</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mt-70">
-                    <div id="canvas-holder2" class="clearfix">
-                        <canvas id="chart-area2" class="pull-left" ></canvas>
-                        <div class="round-bar-status pull-left text-center">
-                            <h2 class="white text-semi-bold">14%</h2>
-                            <h5 class="fz-13 text-semi-bold white text-uppercase mt-10">Financement </br> obtenu</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mt-70">
-                    <div id="canvas-holder3" class="clearfix">
-                        <canvas id="chart-area3" class="pull-left"  ></canvas>
-                        <div class="round-bar-status pull-left text-center">
-                            <h2 class="white text-semi-bold"><span class="green-5c">3574 milliards</span></h2>
-                            <h5 class="fz-13 text-semi-bold white text-uppercase mt-10">Besoin </br> Total de <br/> financement</h5>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- end données de la croissance -->
+    </div>
 {% endblock %}
 {% block javascripts %}{% endblock %}

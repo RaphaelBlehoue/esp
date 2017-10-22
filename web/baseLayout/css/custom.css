@@ -43,6 +43,7 @@ video#bgvid {
     background: url(../images/home_bg_fullscreen_video.jpg) no-repeat;
     background-size: cover;
 }
+.text-justify{ text-align: justify;}
 
 video { display: block; }
 

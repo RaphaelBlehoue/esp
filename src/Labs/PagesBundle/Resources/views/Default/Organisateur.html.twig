@@ -1,34 +1,92 @@
-{% extends 'LabsPagesBundle::layout.html.twig' %}
+{% extends '::base.html.twig' %}
 {% block title %} {{ 'FORUM POUR LE FINANCEMENT DU SECTEUR PRIVÉ'|capitalize }}{% endblock %}
-{% block  body %}
-    <div class="page-title causes-title text-center" style="min-height: 250px;">
-        <img class="img-responsive slide-img" src="{{ asset('layout_two/img/titles/organisateur.png') }}" alt="">
-    </div>
-
-    <section class="mt-100">
+{% block cssClass %}
+    layout-full-width header-transparent header-menu-right sticky-header sticky-white subheader-both-center no-content-padding
+{% endblock %}
+{% block stylesheets %}
+    <link rel='stylesheet' href="{{ asset('baseLayout/css/structure.css') }}">
+    <link rel='stylesheet' href="{{ asset('baseLayout/css/finances.css') }}">
+    <link rel='stylesheet' href="{{ asset('baseLayout/css/custom.css') }}">
+{% endblock %}
+{% block subHeader %}
+    <div id="Subheader">
         <div class="container">
-            {% for organisateur in organisateurs %}
-                <div class="row mt-15">
-                <div class="col-md-6 col-sm-6">
-                    <div class="upcoming-event-s">
-                        <a href="{{ path('view_organisateur', {'org' : organisateur.id }) }}"><img class="img-responsive" src="{{ asset(organisateur.assertPath) }}" alt="{{ organisateur.name }}"></a>
+            <div class="column one">
+                <h1 class="title">{{ 'les organisateurs'|upper }}</h1>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block body %}
+    <div id="Content">
+        <div class="content_wrapper clearfix">
+            <div class="sections_group">
+                <div class="entry-content">
+                    {% for organisateur in organisateurs %}
+                        <div class="section column-margin-20px" style="padding-top:80px; padding-bottom:20px; ">
+                        <div class="section_wrapper clearfix">
+                            <div class="items_group clearfix">
+                                <!-- One Second (1/2) Column -->
+                                <div class="column one-second column_image ">
+                                    <div class="image_frame no_link scale-with-grid aligncenter no_border">
+                                        <div class="image_wrapper">
+                                            <img class="scale-with-grid" src="{{ asset(organisateur.assertPath) }}" alt="{{ organisateur.name }}" width="526" height="438" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- One Second (1/2) Column -->
+                                <div class="column one-second column_column ">
+                                    <div class="column_attr">
+                                        <h4>{{ organisateur.name }}</h4>
+                                        <p style="color: #768186;">
+                                            {{ organisateur.content|raw }}
+                                        </p>
+                                        <hr class="no_line hrmargin_b_25" />
+                                    </div>
+                                </div>
+                                <!-- One full width row-->
+                                <div class="column one column_column ">
+                                    <div class="column_attr">
+                                        <hr class="no_line hrmargin_b_20" />
+                                        <div style="background: url(images/home_agro_sep.png) repeat-x; height: 3px;">
+                                            <hr class="no_line hrmargin_b_20" />
+                                            <a class="button button_theme button_js" href="#"><span class="button_label">Read more</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    <div class="section" style="padding-top:80px; padding-bottom:40px; background-color:#fff">
+                        <div class="section_wrapper clearfix">
+                            <div class="items_group clearfix">
+                                <!-- Page Title-->
+                                <!-- One full width row-->
+                                <div class="column one column_fancy_heading">
+                                    <div class="fancy_heading fancy_heading_icon">
+                                        <h4 class="title">{{ 'Rejoignez'|upper }} <strong>{{ 'la finance s\'engage'|upper }}</strong> {{ 'sur les reseaux'|upper }}</h4>
+                                    </div>
+                                </div>
+                                <!-- One full width row-->
+                                <div class="column one column_column">
+                                    <div class="column_attr animate" data-anim-type="bounceIn">
+                                        <div class="aligncenter">
+                                            <a href="#" class="icon_bar icon_bar_facebook icon_bar_large"><span class="t"><i class="icon-facebook"></i></span><span class="b"><i class="icon-facebook"></i></span></a>
+                                            <a href="#" class="icon_bar icon_bar_google icon_bar_large"><span class="t"><i class="icon-gplus"></i></span><span class="b"><i class="icon-gplus"></i></span></a>
+                                            <a href="#" class="icon_bar icon_bar_twitter icon_bar_large"><span class="t"><i class="icon-twitter"></i></span><span class="b"><i class="icon-twitter"></i></span></a>
+                                            <a href="#" class="icon_bar icon_bar_vimeo icon_bar_large"><span class="t"><i class="icon-vimeo"></i></span><span class="b"><i class="icon-vimeo"></i></span></a>
+                                            <a href="#" class="icon_bar icon_bar_youtube icon_bar_large"><span class="t"><i class="icon-play"></i></span><span class="b"><i class="icon-play"></i></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-6 overcoming">
-                    <h4 class="d-black lh-33 h-sep mt-5">
-                        <img src="{{ asset('layout_two/img/logo_icon.png') }}" alt="" class="pull-left img-responsive">
-                        <span style="padding-left: 5px;">{{ organisateur.name }}</span>
-                    </h4>
-                        <p class="lh-28 mt-50 fz-15">
-                            {{ organisateur.content|raw }}
-                        </p>
-                </div>
-                <div class="pull-right mt-10 mb-10">
-                    <a class="btn-prime tri-b text-uppercase" style="line-height: 39px;" href="{{ path('view_organisateur', {'org' : organisateur.id }) }}">{{ 'en savoir plus'|upper }}</a>
-                </div>
             </div>
-            {% endfor %}
         </div>
-    </section>
+    </div>
 {% endblock %}
 {% block javascripts %}{% endblock %}

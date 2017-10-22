@@ -1055,12 +1055,14 @@ body:not(.template-slider) #Header_wrapper.bg-fixed {
 }
 #Header {
 	position: relative;
-	background: url(../images/home_bg_fullscreen_video.jpg) #000 no-repeat center center fixed;
 	width: auto;
 	height: auto;
 	min-height: 100%;
 	max-width: 100%;
 	background-size: cover !important;
+}
+#Header .bg_index {
+	background: url(../images/home_bg_fullscreen_video.jpg) #000 no-repeat center center fixed;
 }
 body:not(.template-slider) #Header {
 	min-height: 250px;
@@ -3625,7 +3627,8 @@ body:not(.with_aside) .portfolio_group.list .portfolio-item .portfolio-item-fw-w
 	display: none;
 }
 #Footer .footer_copy {
-	border-top: 1px solid rgba(255, 255, 255, .1);
+	border-top: 1px solid rgba(162, 41, 43, .1);
+	background-color: rgb(242, 122, 35);
 }
 #Footer .footer_copy .one {
 	margin-bottom: 20px;
