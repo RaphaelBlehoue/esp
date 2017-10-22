@@ -45,9 +45,14 @@ class PartnerController extends Controller
         $form->handleRequest($request);
         if($form->isValid())
         {
-            $em->persist($partner);
-            $em->flush();
-            return $this->redirectToRoute('partner_list');
+            try {
+                $em->persist($partner);
+                $em->flush();
+                return $this->redirectToRoute('partner_list');
+            }catch (\Exception $e){
+                $flashbag = $this->get('session')->getFlashBag();
+                $flashbag->add('error', 'Errreur d\'enregistrement');
+            }
         }
         return $this->render('LabsBackBundle:Partner:create_partner.html.twig', array(
             'form' => $form->createView()
