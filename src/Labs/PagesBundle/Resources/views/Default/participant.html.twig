@@ -1,46 +1,130 @@
-{% extends 'LabsPagesBundle::layout.html.twig' %}
-{% block title %} {{ 'speakers'|capitalize }}{% endblock %}
-{% block  body %}
-    <div class="page-title causes-title text-center" style="min-height: 250px;">
-        <img class="img-responsive slide-img" src="{{ asset('layout_two/img/titles/speakers.png') }}" alt="">
-    </div>
-    <!-- participants -->
-    <section class="recent-causes no-margin">
+{% extends '::base.html.twig' %}
+{% block title %} {{ 'Officiel & speakers'|capitalize }}{% endblock %}
+{% block cssClass %}
+    layout-full-width header-transparent header-menu-right sticky-header sticky-white subheader-both-center no-content-padding
+{% endblock %}
+{% block stylesheets %}
+    <link rel='stylesheet' href="{{ asset('baseLayout/css/structure.css') }}">
+    <link rel='stylesheet' href="{{ asset('baseLayout/css/finances.css') }}">
+    <link rel='stylesheet' href="{{ asset('baseLayout/css/custom.css') }}">
+{% endblock %}
+{% block subHeader %}
+    <div id="Subheader">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h3 class="text-uppercase black h-sep"><span class="text-ultra-bold">{{ 'Speakers'|upper }}</span> </h3>
-                </div>
-            </div>
-            <div class="row mt-20">
-                {% for speaker in speakers %}
-                    {% if speaker.types == 0 %}
-                    <div>
-                        <div class="item col-md-6 col-sm-6 mt-70 mt-50">
-                            <div class="test-img display-ib position-r pull-left">
-                                <a href="{{ path('viewspeaker', {'team' : speaker.id  }) }}">
-                                    <img class=" img-responsive display-ib" src="{{ speaker.assertPath|imagine_filter('my_thumb_speakers') }}" alt="{{ speaker.name }}">
-                                </a>
-                            </div>
-                            <div class="display-ib pull-left test-text">
-                                <img src="{{ asset('layout_two/img/quote-open.png') }}" alt="">
-                                <a href="{{ path('viewspeaker', {'team' : speaker.id  }) }}">
-                                    <h4 class="fz-17 d-black text-bold mt-30">{{ speaker.name }}</h4>
-                                    <h5 class="fz-15 green-5c mt-10">{{ speaker.poste }}</h5>
-                                </a>
-                                <p class="mt-40">
-                                    <a class="fz-14 mt-20 btn-green-br" href="{{ path('viewspeaker', {'team' : speaker.id  }) }}">En savoir +</a>
-                                </p>
-                                <img class="pull-right mt-30" src="{{ asset('layout_two/img/quote-close.png') }}" alt="">
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                    {% endif %}
-                {% endfor %}
+            <div class="column one">
+                <h1 class="title">{{ 'Officiel & Speakers'|upper }}</h1>
             </div>
         </div>
-    </section>
-    <!-- end participants -->
+    </div>
+{% endblock %}
+{% block  body %}
+    <div id="Content">
+        <div class="content_wrapper clearfix">
+            <div class="sections_group">
+                <div class="entry-content">
+                    <div class="section" style="padding-top:50px; padding-bottom:0px; ">
+                        <div class="section_wrapper clearfix">
+                            <div class="items_group clearfix">
+                                <!-- One Second (1/2) Column -->
+                                <!-- One full width row-->
+                                <div class="column one column_divider">
+                                    <hr class="no_line" />
+                                </div>
+                                <!-- One full width row-->
+                                <div class="column one column_column">
+                                    <div class="column_attr align_center">
+                                        <h3 style="margin: 0px;">{{ 'ils ont déjà participé'|upper }}</h3>
+                                    </div>
+                                </div>
+
+                                <div class="flv_sections_16 section" id="slidingbox">
+                                    <div class="section_wrapper clearfix">
+                                        <div class="items_group clearfix">
+                                            {% for officiel in office %}
+                                                {% if officiel.types == 1 %}
+                                                    <div class="column one-third column_sliding_box">
+                                                        <div class="sliding_box">
+                                                            <a href="#">
+                                                                <div class="photo_wrapper">
+                                                                    <img class="scale-with-grid" src="{{ officiel.assertPath|imagine_filter('my_thumb_of') }}" alt="{{ officiel.name }}"/>
+                                                                </div>
+                                                                <div class="desc_wrapper">
+                                                                    <h4>{{ officiel.name }}</h4>
+                                                                    <h6>{{ officiel.poste|truncate('40', ' ', '...') }}</h6>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                {% endif %}
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="column one column_column ">
+                                    <div class="column_attr">
+                                        <hr class="no_line hrmargin_b_20">
+                                        <div style="background: url({{ asset('global/images/diviser.png') }}) repeat-x; height: 3px;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="flv_sections_16 section" id="slidingbox">
+                                    <div class="section_wrapper clearfix">
+                                        <div class="items_group clearfix">
+                                            {% for speaker in speakers %}
+                                                {% if speaker.types == 0 %}
+                                                    <div class="column one-third column_sliding_box">
+                                                        <div class="sliding_box">
+                                                            <a href="#">
+                                                                <div class="photo_wrapper">
+                                                                    <img class="scale-with-grid" src="{{ speaker.assertPath|imagine_filter('my_thumb_speakers') }}" alt="{{ speaker.name }}"/>
+                                                                </div>
+                                                                <div class="desc_wrapper">
+                                                                    <h4>{{ speaker.name }}</h4>
+                                                                    <h6>{{ speaker.poste|truncate('50', ' ', '...') }}</h6>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                {% endif %}
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- One Third (1/3) Column -->
+
+                                <!-- Page devider -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section" style="padding-top:80px; padding-bottom:40px; background-color:#fff">
+                        <div class="section_wrapper clearfix">
+                            <div class="items_group clearfix">
+                                <!-- Page Title-->
+                                <!-- One full width row-->
+                                <div class="column one column_fancy_heading">
+                                    <div class="fancy_heading fancy_heading_icon">
+                                        <h4 class="title">{{ 'Rejoignez'|upper }} <strong>{{ 'la finance s\'engage'|upper }}</strong> {{ 'sur les reseaux'|upper }}</h4>
+                                    </div>
+                                </div>
+                                <!-- One full width row-->
+                                <div class="column one column_column">
+                                    <div class="column_attr animate" data-anim-type="bounceIn">
+                                        <div class="aligncenter">
+                                            <a href="#" class="icon_bar icon_bar_facebook icon_bar_large"><span class="t"><i class="icon-facebook"></i></span><span class="b"><i class="icon-facebook"></i></span></a>
+                                            <a href="#" class="icon_bar icon_bar_google icon_bar_large"><span class="t"><i class="icon-gplus"></i></span><span class="b"><i class="icon-gplus"></i></span></a>
+                                            <a href="#" class="icon_bar icon_bar_twitter icon_bar_large"><span class="t"><i class="icon-twitter"></i></span><span class="b"><i class="icon-twitter"></i></span></a>
+                                            <a href="#" class="icon_bar icon_bar_vimeo icon_bar_large"><span class="t"><i class="icon-vimeo"></i></span><span class="b"><i class="icon-vimeo"></i></span></a>
+                                            <a href="#" class="icon_bar icon_bar_youtube icon_bar_large"><span class="t"><i class="icon-play"></i></span><span class="b"><i class="icon-play"></i></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
 {% block javascripts %}{% endblock %}

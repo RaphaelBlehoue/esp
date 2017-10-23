@@ -90,8 +90,10 @@ class DefaultController extends Controller
     public function ParticipantPageBundle()
     {
         $speakers = $this->getTeamContent();
+        $office = $this->getTeamContent();
         return $this->render('LabsPagesBundle:Default:participant.html.twig',[
-            'speakers' => $speakers
+            'speakers' => $speakers,
+            'office' => $office
         ]);
     }
 
