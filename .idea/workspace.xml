@@ -2,23 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5361487-e47d-4cfc-99ae-051457e332c8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_old/uploads/teams/583666b7d5824.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_old/uploads/teams/5836681f01b91.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_old/uploads/teams/583668412df3e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_old/uploads/teams/5836686249357.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_old/uploads/teams/58366883c0932.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_old/uploads/teams/5836692eb9b66.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_old/uploads/teams/58366adccfcd6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_old/uploads/teams/58398c969d8a6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_old/uploads/teams/58398cc2073fd.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_old/uploads/teams/58398cd697de4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_old/uploads/teams/58398ce9730fe.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_old/uploads/teams/58398cf4abe22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_old/uploads/teams/58398d08941c3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_old/uploads/teams/58398d2327bcf.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_old/uploads/teams/58398d348b24b.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig" />
     </list>
     <ignored path="lafinancesengage.dev.iws" />
@@ -48,16 +31,16 @@
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-750">
-              <caret line="160" column="93" lean-forward="false" selection-start-line="160" selection-start-column="93" selection-end-line="160" selection-end-column="93" />
+            <state relative-caret-position="255">
+              <caret line="164" column="42" lean-forward="true" selection-start-line="164" selection-start-column="42" selection-end-line="164" selection-end-column="42" />
               <folding>
                 <element signature="e#4108#4120#0#Twig" expanded="true" />
                 <element signature="e#9401#9447#0#HTML" expanded="true" />
                 <element signature="e#11001#11021#0#HTML" expanded="true" />
                 <element signature="e#11126#11146#0#HTML" expanded="true" />
-                <element signature="e#11547#11677#0#HTML" expanded="true" />
-                <element signature="e#19608#21755#0#HTML" expanded="false" />
-                <element signature="e#20266#21662#0#HTML" expanded="false" />
+                <element signature="e#11571#11701#0#HTML" expanded="true" />
+                <element signature="e#19632#21779#0#HTML" expanded="false" />
+                <element signature="e#20290#21686#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -527,15 +510,16 @@
       <workItem from="1508343104119" duration="53440000" />
       <workItem from="1508440140937" duration="1940000" />
       <workItem from="1508497155173" duration="7431000" />
-      <workItem from="1508598129607" duration="70075000" />
+      <workItem from="1508598129607" duration="70288000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="362762000" />
+    <option name="totallyTimeSpent" value="362975000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -546,7 +530,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32300162" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32300162" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29886913" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1053,16 +1037,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-750">
-          <caret line="160" column="93" lean-forward="false" selection-start-line="160" selection-start-column="93" selection-end-line="160" selection-end-column="93" />
+        <state relative-caret-position="255">
+          <caret line="164" column="42" lean-forward="true" selection-start-line="164" selection-start-column="42" selection-end-line="164" selection-end-column="42" />
           <folding>
             <element signature="e#4108#4120#0#Twig" expanded="true" />
             <element signature="e#9401#9447#0#HTML" expanded="true" />
             <element signature="e#11001#11021#0#HTML" expanded="true" />
             <element signature="e#11126#11146#0#HTML" expanded="true" />
-            <element signature="e#11547#11677#0#HTML" expanded="true" />
-            <element signature="e#19608#21755#0#HTML" expanded="false" />
-            <element signature="e#20266#21662#0#HTML" expanded="false" />
+            <element signature="e#11571#11701#0#HTML" expanded="true" />
+            <element signature="e#19632#21779#0#HTML" expanded="false" />
+            <element signature="e#20290#21686#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
