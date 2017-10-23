@@ -132,6 +132,36 @@
                             </div>
                         </div>
                     </div>
+                    <div class="section" id="clients flv_sections_16" style="padding-top:40px; padding-bottom:40px;">
+                        <div class="section_wrapper clearfix">
+                            <div class="items_group clearfix">
+                                <!-- One full width row-->
+                                <div class="column one column_fancy_heading">
+                                    <div class="fancy_heading fancy_heading_icon">
+                                        <h2 class="title">{{ 'partenaires & sponsors'|upper }}</h2>
+                                    </div>
+                                </div>
+                                <div class="column one column_clients_slider">
+                                    <div class="clients_slider">
+                                        <div class="clients_slider_header">
+                                            <a class="button button_js slider_prev" href="#"><span class="button_icon"><i class="icon-left-open-big"></i></span></a><a class="button button_js slider_next" href="#"><span class="button_icon"><i class="icon-right-open-big"></i></span></a>
+                                        </div>
+                                        <ul class="clients clients_slider_ul">
+                                            {% for i in 1..12 %}
+                                                <li>
+                                                    <div class="client_wrapper">
+                                                        <a target="_blank" href="#" title="{{ loop.index }}"><img width="145" height="75" src="{{ asset('baseLayout/images/partners/'~ i ~ '.jpg') }}" class="scale-with-grid wp-post-image" alt="{{ loop.index }}" />
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="section" style="padding-top:80px; padding-bottom:40px; background-color:#fff">
                         <div class="section_wrapper clearfix">
                             <div class="items_group clearfix">
