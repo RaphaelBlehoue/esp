@@ -25,4 +25,11 @@ class TeamRepository extends \Doctrine\ORM\EntityRepository
         return $qb->getQuery()->getResult();
     }
 
+    public function findAllName()
+    {
+        $qb = $this->createQueryBuilder('t');
+        $qb->orderBy('t.name', 'ASC');
+        return $qb->getQuery()->getResult();
+    }
+
 }

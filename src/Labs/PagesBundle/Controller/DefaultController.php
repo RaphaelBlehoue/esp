@@ -95,10 +95,8 @@ class DefaultController extends Controller
      */
     public function ParticipantPageBundle()
     {
-        $speakers = $this->getTeamContent();
         $office = $this->getTeamContent();
         return $this->render('LabsPagesBundle:Default:participant.html.twig',[
-            'speakers' => $speakers,
             'office' => $office
         ]);
     }
@@ -218,7 +216,7 @@ class DefaultController extends Controller
             $team = $em->getRepository('LabsBackBundle:Team')->findLimit(7);
         }else{
             $em = $this->getDoctrine()->getManager();
-            $team = $em->getRepository('LabsBackBundle:Team')->findAll();
+            $team = $em->getRepository('LabsBackBundle:Team')->findAllName();
         }
         return $team;
     }
