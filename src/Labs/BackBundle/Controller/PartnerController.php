@@ -45,14 +45,10 @@ class PartnerController extends Controller
         $form->handleRequest($request);
         if($form->isValid())
         {
-            try {
-                $em->persist($partner);
-                $em->flush();
-                return $this->redirectToRoute('partner_list');
-            }catch (\Exception $e){
-                $flashbag = $this->get('session')->getFlashBag();
-                $flashbag->add('error', 'Errreur d\'enregistrement');
-            }
+            dump($form->getData()); die;
+            $em->persist($partner);
+            $em->flush();
+            return $this->redirectToRoute('partner_list');
         }
         return $this->render('LabsBackBundle:Partner:create_partner.html.twig', array(
             'form' => $form->createView()
@@ -79,6 +75,7 @@ class PartnerController extends Controller
         $form->handleRequest($request);
         if($form->isValid())
         {
+            dump($form->getData()); die;
             $em->flush();
             return $this->redirectToRoute('partner_list');
         }
