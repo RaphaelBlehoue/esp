@@ -95,9 +95,9 @@ class DefaultController extends Controller
      */
     public function ParticipantPageBundle()
     {
-        $office = $this->getTeamContent();
+        $intervenant = $this->getTeamContent();
         return $this->render('LabsPagesBundle:Default:participant.html.twig',[
-            'office' => $office
+            'intervenants' => $intervenant
         ]);
     }
 

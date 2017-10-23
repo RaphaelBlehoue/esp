@@ -40,29 +40,20 @@
                                 <div class="flv_sections_16 section" id="slidingbox">
                                     <div class="section_wrapper clearfix">
                                         <div class="items_group clearfix">
-                                            {% for officiel in office %}
-                                                    <div class="column one-third column_sliding_box">
-                                                        <div class="sliding_box">
-                                                            <a href="#">
-                                                                <div class="photo_wrapper">
-                                                                    <img class="scale-with-grid" src="{{ officiel.assertPath|imagine_filter('my_thumb_of') }}" alt="{{ officiel.name }}"/>
-                                                                </div>
-                                                                <div class="desc_wrapper">
-                                                                    <h4>{{ officiel.name }}</h4>
-                                                                    <h6>{{ officiel.poste|truncate('40', ' ', '...') }}</h6>
-                                                                </div>
-                                                            </a>
-                                                        </div>
+                                            {% for intervenant in intervenants %}
+                                                <div class="column one-fourth column_sliding_box" style="padding-bottom: 30px; padding-top: 20px;">
+                                                    <div class="sliding_box">
+                                                        <a href="#">
+                                                            <div class="photo_wrapper"><img class="scale-with-grid" src="{{ intervenant.assertPath|imagine_filter('my_thumb_off_old') }}" alt="{{ intervenant.name }}" /> </div>
+                                                            <div class="desc_wrapper">
+                                                                <h5 class="text-center_h" style="color: #fff;">{{ intervenant.name }}</h5>
+                                                                <span class="text-center_h" style="color: #fff;">{{ intervenant.poste|truncate (40, '', '...')}}</span>
+                                                            </div>
+                                                        </a>
                                                     </div>
+                                                </div>
                                             {% endfor %}
                                         </div>
-                                    </div>
-                                </div>
-
-                                <div class="column one column_column ">
-                                    <div class="column_attr">
-                                        <hr class="no_line hrmargin_b_20">
-                                        <div style="background: url({{ asset('global/images/diviser.png') }}) repeat-x; height: 3px;"></div>
                                     </div>
                                 </div>
                                 <!-- One Third (1/3) Column -->
