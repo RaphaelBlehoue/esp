@@ -2,40 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5361487-e47d-4cfc-99ae-051457e332c8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index/uploads/teams/583666b7d5824.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index/uploads/teams/5836681f01b91.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index/uploads/teams/583668412df3e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index/uploads/teams/5836686249357.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index/uploads/teams/58366883c0932.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index/uploads/teams/5836692eb9b66.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index/uploads/teams/58366adccfcd6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index/uploads/teams/58398c969d8a6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index/uploads/teams/58398cc2073fd.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index/uploads/teams/58398cd697de4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index/uploads/teams/58398ce9730fe.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index/uploads/teams/58398cf4abe22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index/uploads/teams/58398d08941c3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index/uploads/teams/58398d2327bcf.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index/uploads/teams/58398d348b24b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index_small/uploads/teams/583666b7d5824.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index_small/uploads/teams/5836681f01b91.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index_small/uploads/teams/583668412df3e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index_small/uploads/teams/5836686249357.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index_small/uploads/teams/58366883c0932.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index_small/uploads/teams/5836692eb9b66.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index_small/uploads/teams/58366adccfcd6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index_small/uploads/teams/58398c969d8a6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index_small/uploads/teams/58398cc2073fd.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index_small/uploads/teams/58398cd697de4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index_small/uploads/teams/58398ce9730fe.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index_small/uploads/teams/58398cf4abe22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index_small/uploads/teams/58398d08941c3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index_small/uploads/teams/58398d2327bcf.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_off_index_small/uploads/teams/58398d348b24b.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/baseLayout/css/custom.css" afterPath="$PROJECT_DIR$/web/baseLayout/css/custom.css" />
     </list>
     <ignored path="lafinancesengage.dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,13 +31,13 @@
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="166" column="37" lean-forward="true" selection-start-line="166" selection-start-column="37" selection-end-line="166" selection-end-column="37" />
+            <state relative-caret-position="232">
+              <caret line="217" column="84" lean-forward="false" selection-start-line="217" selection-start-column="84" selection-end-line="217" selection-end-column="84" />
               <folding>
                 <element signature="e#4108#4120#0#Twig" expanded="true" />
                 <element signature="e#9412#9458#0#HTML" expanded="true" />
-                <element signature="e#24524#26671#0#HTML" expanded="false" />
-                <element signature="e#25182#26578#0#HTML" expanded="false" />
+                <element signature="e#24546#26693#0#HTML" expanded="false" />
+                <element signature="e#25204#26600#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -572,12 +539,12 @@
       <workItem from="1508343104119" duration="53440000" />
       <workItem from="1508440140937" duration="1940000" />
       <workItem from="1508497155173" duration="7431000" />
-      <workItem from="1508598129607" duration="60216000" />
+      <workItem from="1508598129607" duration="60386000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="352903000" />
+    <option name="totallyTimeSpent" value="353073000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="0" />
@@ -1103,13 +1070,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="166" column="37" lean-forward="true" selection-start-line="166" selection-start-column="37" selection-end-line="166" selection-end-column="37" />
+        <state relative-caret-position="232">
+          <caret line="217" column="84" lean-forward="false" selection-start-line="217" selection-start-column="84" selection-end-line="217" selection-end-column="84" />
           <folding>
             <element signature="e#4108#4120#0#Twig" expanded="true" />
             <element signature="e#9412#9458#0#HTML" expanded="true" />
-            <element signature="e#24524#26671#0#HTML" expanded="false" />
-            <element signature="e#25182#26578#0#HTML" expanded="false" />
+            <element signature="e#24546#26693#0#HTML" expanded="false" />
+            <element signature="e#25204#26600#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
