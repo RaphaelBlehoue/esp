@@ -149,57 +149,27 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="section">
+                    <div class="flv_sections_16 section" id="slidingbox">
                         <div class="section_wrapper clearfix">
-                            <!-- One full width row-->
-                            <div class="column one column_portfolio">
-                                <div class="portfolio_wrapper isotope_wrapper">
-                                    <ul class="portfolio_group lm_wrapper isotope grid">
-                                        <!-- Portfolio item -->
-                                        {% for intervenant in intervenants %}
-                                            <li class="portfolio-item isotope-item {{ (intervenant.types == 1) ? 'category-officiel' : 'category-intervanant' }} wide tall">
-                                            <div class="portfolio-item-fw-bg flv_style_port_1">
-                                                <div class="portfolio-item-fw-wrapper">
-                                                    <div class="list_style_header">
-                                                        <h3 class="entry-title"><a href="#">{{ intervenant.name }}</a></h3>
-                                                        <div class="links_wrapper">
-                                                            <a href="#" class="button button_left button_theme button_js">
-                                                                <span class="button_icon"><i class="icon-link"></i></span>
-                                                                <span class="button_label">{{ 'En savoir +' }}</span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="image_frame scale-with-grid">
-                                                        <div class="image_wrapper">
-                                                            <a href="#">
-                                                                <div class="mask"></div><img width="576" height="450" src="{{ intervenant.assertPath|imagine_filter('my_thumb_off_old') }}" alt="{{ intervenant.name }}" class="scale-with-grid wp-post-image" />
-                                                            </a>
-                                                            <div class="image_links one">
-                                                                <a href="#" class="link"><i class="icon-link"></i>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="desc">
-                                                        <div class="title_wrapper">
-                                                            <h5 class="entry-title text-center_h"><a href="#">{{ intervenant.name|upper }}</a></h5>
-                                                            <h6 class="text-center_h">{{ intervenant.poste }}</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                            <div class="items_group clearfix">
+                                {% for intervenant in intervenants %}
+                                    <div class="column one-fourth column_sliding_box">
+                                    <div class="sliding_box">
+                                        <a href="#">
+                                            <div class="photo_wrapper"><img class="scale-with-grid" src="{{ intervenant.assertPath|imagine_filter('my_thumb_off_old') }}" alt="{{ intervenant.name }}" /> </div>
+                                            <div class="desc_wrapper">
+                                                <h5 class="text-center_h" style="color: #fff;">{{ intervenant.name }}</h5>
+                                                <span class="text-center_h" style="color: #fff;">{{ intervenant.poste }}</span>
                                             </div>
-                                        </li>
-                                        {% endfor %}
-                                        <!-- Portfolio item -->
-                                    </ul>
-                                    <!-- One full width row-->
+                                        </a>
+                                    </div>
                                 </div>
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
 
-                    <div class="section" id="boxes" style="padding-top:80px; padding-bottom:0px; background-color:#f4f4f4; background-repeat:no-repeat; background-position:center top; ">
+                    <div class="section" id="boxes" style="padding-top:80px; padding-bottom:0px; background-color:#fff; background-repeat:no-repeat; background-position:center top; ">
                         <div class="section_wrapper clearfix">
                             <div class="items_group clearfix">
                                 <!-- Page Title-->
@@ -262,12 +232,6 @@
                                     </div>
                                 </div>
                                 <!-- One full width row-->
-                                <div class="column one column_image">
-                                    <div class="image_frame no_link scale-with-grid no_border aligncenter">
-                                        <div class="image_wrapper"><img class="scale-with-grid" src="{{ asset('baseLayout/images/home_stats_bg_3.jpg') }}" alt="">
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
