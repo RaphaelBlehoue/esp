@@ -45,10 +45,10 @@ class Media
 
     /**
      * @var
-     * @ORM\ManyToOne(targetEntity="Labs\BackBundle\Entity\Project", inversedBy="medias")
+     * @ORM\ManyToOne(targetEntity="Gallery", inversedBy="medias")
      * @ORM\JoinColumn(referencedColumnName="id", nullable=true)
      */
-    protected $project;
+    protected $gallery;
 
     
     public function __construct()
@@ -140,27 +140,27 @@ class Media
     }
 
     /**
-     * Set project
+     * Set gallery
      *
-     * @param \Labs\BackBundle\Entity\Project $project
+     * @param \Labs\BackBundle\Entity\Gallery $gallery
      *
-     * @return Media
+     * @return $this
      */
-    public function setProject(\Labs\BackBundle\Entity\Project $project)
+    public function setGallery(Gallery $gallery)
     {
-        $this->project = $project;
+        $this->gallery = $gallery;
 
         return $this;
     }
 
-    /**
- * Get project
+ /**
+ * Get Gallery
  *
- * @return \Labs\BackBundle\Entity\Project
+ * @return \Labs\BackBundle\Entity\Gallery
  */
-    public function getProject()
+    public function getGallery()
     {
-        return $this->project;
+        return $this->gallery;
     }
 
 

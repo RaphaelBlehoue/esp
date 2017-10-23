@@ -1,0 +1,329 @@
+<?php
+/**
+ * Created by IntelliJ IDEA.
+ * User: raphael
+ * Date: 23/10/2017
+ * Time: 03:11
+ */
+
+namespace Labs\BackBundle\Entity;
+
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+use Gedmo\Mapping\Annotation as Gedmo;
+
+
+
+/**
+ * Gallery
+ *
+ * @ORM\Table(name="gallery")
+ * @ORM\Entity(repositoryClass="Labs\BackBundle\Repository\GalleryRepository")
+ * @ORM\HasLifecycleCallbacks()
+ */
+
+class Gallery
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+
+    /**
+     * @var string
+     *
+     * @Assert\NotNull(message="Entrez le nom du dossier")
+     * @ORM\Column(name="name", type="string", length=255, nullable=true)
+     */
+    protected $name;
+
+    /**
+     * @var
+     *
+     * @ORM\Column(name="created", type="datetime")
+     */
+    protected $created;
+
+    /**
+     * @var
+     * @ORM\OneToMany(targetEntity="Media", mappedBy="gallery", cascade={"remove"})
+     */
+    protected $medias;
+
+    /**
+     * @var
+     *
+     * @ORM\ManyToOne(targetEntity="Users", inversedBy="gallery")
+     * @ORM\JoinColumn(referencedColumnName="id", nullable=true)
+     */
+    protected $user;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="updated", type="datetime")
+     */
+    protected $updated;
+
+    /**
+     * @var bool
+     * @ORM\Column(name="online", type="boolean", nullable=true)
+     */
+    protected $online;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="draft", type="integer", nullable=true)
+     */
+    protected $draft;
+
+    /**
+     * @Gedmo\Slug(fields={"name", "id"})
+     * @ORM\Column(length=128, unique=true, nullable=true)
+     */
+    protected $slug;
+
+
+
+    public function __construct()
+    {
+        $this->medias = new ArrayCollection();
+        $this->created = new \DateTime("now");
+        $this->updated = new \DateTime("now");
+        $this->draft = false;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param string $name
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+
+    /**
+     * Add media
+     *
+     * @param \Labs\BackBundle\Entity\Media $media
+     * @return $this
+     */
+    public function addMedia(Media $media)
+    {
+        $this->medias[] = $media;
+
+        return $this;
+    }
+
+    /**
+     * Remove media
+     *
+     * @param \Labs\BackBundle\Entity\Media $media
+     */
+    public function removeMedia(Media $media)
+    {
+        $this->medias->removeElement($media);
+    }
+
+    /**
+     * Get medias
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getMedias()
+    {
+        return $this->medias;
+    }
+
+
+    /**
+     * @return mixed
+     */
+    public function getCreated()
+    {
+        return $this->created;
+    }
+
+    /**
+     * @param mixed $created
+     */
+    public function setCreated($created)
+    {
+        $this->created = $created;
+    }
+
+    /**
+     * Set slug
+     *
+     * @param string $slug
+     *
+     * @return $this
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
+
+        return $this;
+    }
+
+    /**
+     * Get slug
+     *
+     * @return string
+     */
+    public function getSlug()
+    {
+        return $this->slug;
+    }
+
+
+    /**
+     * @return string
+     */
+    public function getUploadDir()
+    {
+        // On retourne le chemin relatif vers l'image pour un navigateur
+        return 'uploads/gallery';
+    }
+
+    /**
+     * @return string
+     */
+    protected function getUploadRootDir()
+    {
+        // On retourne le chemin relatif vers l'image pour notre code PHP
+        return __DIR__.'/../../../../web/'.$this->getUploadDir();
+    }
+
+
+    /**
+     * Set user
+     *
+     * @param \Labs\BackBundle\Entity\Users $user
+     *
+     * @return Gallery
+     */
+    public function setUser(Users $user = null)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return \Labs\BackBundle\Entity\Users
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+
+    /**
+     * Set online
+     *
+     * @param boolean $online
+     *
+     * @return Gallery
+     */
+    public function setOnline($online)
+    {
+        $this->online = $online;
+
+        return $this;
+    }
+
+    /**
+     * Get online
+     *
+     * @return bool
+     */
+    public function getOnline()
+    {
+        return $this->online;
+    }
+
+    /**
+     * Set draft
+     *
+     * @param boolean $draft
+     *
+     * @return Gallery
+     */
+    public function setDraft($draft)
+    {
+        $this->draft = $draft;
+
+        return $this;
+    }
+
+    /**
+     * Get draft
+     *
+     * @return bool
+     */
+    public function getDraft()
+    {
+        return $this->draft;
+    }
+
+    /**
+     * Get updated
+     *
+     * @return \DateTime
+     */
+    public function getUpdated()
+    {
+        return $this->updated;
+    }
+
+    /**
+     * @return \DateTime
+     * @ORM\PostUpdate()
+     */
+    public function updatedSet(){
+        return $this->updated = new \DateTime('now');
+    }
+
+
+    /**
+     * Set updated
+     *
+     * @param \DateTime $updated
+     *
+     * @return Gallery
+     */
+    public function setUpdated($updated)
+    {
+        $this->updated = $updated;
+
+        return $this;
+    }
+}

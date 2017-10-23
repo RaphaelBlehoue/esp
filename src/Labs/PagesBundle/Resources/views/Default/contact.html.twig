@@ -1,77 +1,183 @@
-{% extends 'LabsPagesBundle::layout.html.twig' %}
-{% block title %} {{ 'Nous contactez'|capitalize }}{% endblock %}
-{% block stylesheets %}
-    <style>
-        .causes-title{
-            background:
-                    linear-gradient(
-                            rgba(28, 28, 28, 0.8),
-                            rgba(28, 28, 28, 0.8)
-                    ),
-                        /* bottom, image */
-                    url('{{ asset('layout_two/img/about-bg.jpg') }}');
-        }
-    </style>
+{% extends '::base.html.twig' %}
+{% block title %} {{ 'Contact'|capitalize }}{% endblock %}
+{% block cssClass %}
+    layout-full-width header-transparent header-menu-right sticky-header sticky-white subheader-both-center no-content-padding
 {% endblock %}
-{% block  body %}
-    <div class="page-title causes-title text-center" style="min-height: 250px;">
-        <img class="img-responsive slide-img" src="{{ asset('layout_two/img/titles/contact.png') }}" alt="">
-    </div>
-    <section class="mt-150 contact-us">
+{% block stylesheets %}
+    <link rel='stylesheet' href="{{ asset('baseLayout/css/structure.css') }}">
+    <link rel='stylesheet' href="{{ asset('baseLayout/css/finances.css') }}">
+    <link rel='stylesheet' href="{{ asset('baseLayout/css/custom.css') }}">
+{% endblock %}
+{% block subHeader %}
+    <div id="Subheader">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6">
-                    <h3 class="black h-sep">Par <span class="text-extra-bold">Téléphone</span></h3>
-                    <p class="fz-16 gray-666 mt-50">Vous pouvez nous joindre du Lundi au vendredi de 8h à 17h</p>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                    <h3 class="black h-sep">Par <span class="text-extra-bold">mail</span></h3>
-                    <p class="fz-16 gray-666 mt-50">Vous pouvez nous joindre du Lundi au vendredi de 8h à 17h</p>
-                </div>
-                <!--<div class="col-md-3 col-md-offset-1 col-sm-4 mt-150">
-                    <div class="contact-info clearfix">
-                        <div class="pull-left">
-                            <h5 class="fz-15 black text-bold mb-10">Office Address</h5>
-                            <span class="ubuntu fz-14 gray-777 lh-22">44 New Design Street <br>Australia - Melbourne 55455</span>
-                        </div>
-                        <div class="contact-icon pull-right position-r">
-                            <img src="img/office.png" alt="">
-                            <img src="img/office-hover.png" alt="">
-                        </div>
-                        <div class="clearfix"></div>
-                        <hr class="c-border">
-                    </div>
-                    <div class="contact-info clearfix mt-20">
-                        <div class="pull-left">
-                            <h5 class="fz-15 black text-bold mb-10">Phone</h5>
-                            <span class="ubuntu fz-14 gray-777 lh-22">(01) 987 633 522 01 <br>(01) 987 633 522 01</span>
-                        </div>
-                        <div class="contact-icon pull-right position-r">
-                            <img src="img/phone.png" alt="">
-                            <img src="img/phone-hover.png" alt="">
-                        </div>
-                        <div class="clearfix"></div>
-                        <hr class="c-border">
-                    </div>
-                    <div class="contact-info clearfix mt-20">
-                        <div class="pull-left">
-                            <h5 class="fz-15 black text-bold mb-10">E-mail</h5>
-                            <span class="ubuntu fz-14 gray-777 lh-22">office@aideo.com <br>admin@aideo.com</span>
-                        </div>
-                        <div class="contact-icon pull-right position-r">
-                            <img src="img/mail.png" alt="">
-                            <img src="img/mail-hover.png" alt="">
-                        </div>
-                        <div class="clearfix"></div>
-                        <hr class="c-border">
-                    </div>
-                </div> -->
+            <div class="column one">
+                <h1 class="title">{{ 'Nous contactez'|upper }}</h1>
             </div>
         </div>
-    </section>
+    </div>
+{% endblock %}
+{% block  body %}
+    <div id="Content">
+        <div class="content_wrapper clearfix">
+            <div class="sections_group">
+                <div class="entry-content">
+                    <div class="section full-width sections_style_0 ">
+                        <div class="section_wrapper clearfix">
+                            <div class="items_group clearfix">
+                                <!-- One full width row-->
+                                <div class="column one column_map">
+                                    <!-- Google map area -->
+                                    <div class="google-map-wrapper">
+                                        <div class="google-map" id="google-map-area-552024edb743e" style="width:100%; height:450px;">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section" style="padding-top:60px; padding-bottom:20px; background-color:#edeff2">
+                        <div class="section_wrapper clearfix">
+                            <div class="items_group clearfix">
+                                <!-- One full width row-->
+                                <div class="column one column_column">
+                                    <div class="column_attr ">
+                                        <div style="text-align: center;">
+                                            <h2 class="hrmargin_0">Restez en contact avec nous</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- One Third (1/3) Column -->
+                                <div class="column one-third column_list">
+                                    <div class="list_item lists_2 clearfix">
+                                        <!-- Animated area -->
+                                        <div class="animate" data-anim-type="zoomIn">
+                                            <div class="list_left list_icon">
+                                                <i class="icon-mail-line"></i>
+                                            </div>
+                                            <div class="list_right">
+                                                <div class="desc">
+                                                    <span class="flv_span_12px">Vous avez des questions?</span>
+                                                    <h4><a href="mailto:nfo@lafinancesengage.com">info@lafinancesengage.com</a></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- One Third (1/3) Column -->
+                                <div class="column one-third column_list">
+                                    <div class="list_item lists_2 clearfix">
+                                        <!-- Animated area -->
+                                        <div class="animate" data-anim-type="zoomIn">
+                                            <div class="list_left list_icon">
+                                                <i class="icon-comment-line"></i>
+                                            </div>
+                                            <div class="list_right">
+                                                <div class="desc">
+                                                    <span class="flv_span_12px">Appelez-nous</span>
+                                                    <h4><a href="#">+225 2242 7954</a></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- One Third (1/3) Column -->
+                                <div class="column one-third column_list">
+                                    <div class="list_item lists_2 clearfix">
+                                        <!-- Animated area -->
+                                        <div class="animate" data-anim-type="zoomIn">
+                                            <div class="list_left list_icon">
+                                                <i class="icon-doc-line"></i>
+                                            </div>
+                                            <div class="list_right">
+                                                <div class="desc">
+                                                    <span class="flv_span_12px">Fax</span>
+                                                    <h4><a href="#">+225 2242 7954</a></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
 {% block javascripts %}
-    {{ parent() }}
-    <script src="{{ asset('layout_two/js/custom-map.js') }}"></script>
-    <script src="{{ asset('layout_two/js/contact-jquery.js') }}"></script>
+{{ parent() }}
+    <script src="http://maps.google.com/maps/api/js?sensor=false&ver=5.9"></script>
+    <script>
+        function google_maps_552024edb743e() {
+            var latlng = new google.maps.LatLng(-33.8710, 151.2039);
+            var myOptions = {
+                zoom: 13,
+                center: latlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                styles: [{
+                    "featureType": "landscape.natural",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "visibility": "on"
+                    }, {
+                        "color": "#e0efef"
+                    }]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "visibility": "on"
+                    }, {
+                        "hue": "#f27a23"
+                    }, {
+                        "color": "#c0e8e8"
+                    }]
+                }, {
+                    "featureType": "road",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "lightness": 100
+                    }, {
+                        "visibility": "simplified"
+                    }]
+                }, {
+                    "featureType": "road",
+                    "elementType": "labels",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                }, {
+                    "featureType": "transit.line",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "visibility": "on"
+                    }, {
+                        "lightness": 700
+                    }]
+                }, {
+                    "featureType": "water",
+                    "elementType": "all",
+                    "stylers": [{
+                        "color": "#7dcdcd"
+                    }]
+                }],
+                zoomControl: true,
+                mapTypeControl: false,
+                streetViewControl: false,
+                scrollwheel: false
+            };
+            var map = new google.maps.Map(document.getElementById("google-map-area-552024edb743e"), myOptions);
+            var marker = new google.maps.Marker({
+                position: latlng,
+                icon: "{{ asset('global/images/gmaps_piker.png') }}",
+                map: map
+            });
+        }
+        jQuery(document).ready(function($) {
+            google_maps_552024edb743e();
+        });
+    </script>
 {% endblock %}

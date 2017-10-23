@@ -45,7 +45,6 @@ class PartnerController extends Controller
         $form->handleRequest($request);
         if($form->isValid())
         {
-            dump($form->getData()); die;
             $em->persist($partner);
             $em->flush();
             return $this->redirectToRoute('partner_list');
@@ -75,7 +74,6 @@ class PartnerController extends Controller
         $form->handleRequest($request);
         if($form->isValid())
         {
-            dump($form->getData()); die;
             $em->flush();
             return $this->redirectToRoute('partner_list');
         }
