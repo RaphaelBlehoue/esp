@@ -32,17 +32,17 @@
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="155" column="133" lean-forward="false" selection-start-line="155" selection-start-column="133" selection-end-line="155" selection-end-column="133" />
+            <state relative-caret-position="281">
+              <caret line="163" column="44" lean-forward="true" selection-start-line="163" selection-start-column="44" selection-end-line="163" selection-end-column="44" />
               <folding>
                 <element signature="e#4108#4120#0#Twig" expanded="true" />
                 <element signature="e#9401#9447#0#HTML" expanded="true" />
                 <element signature="e#10531#10579#0#HTML" expanded="true" />
-                <element signature="e#11050#11070#0#HTML" expanded="true" />
-                <element signature="e#11177#11197#0#HTML" expanded="true" />
-                <element signature="e#11599#11729#0#HTML" expanded="true" />
-                <element signature="e#19660#21807#0#HTML" expanded="false" />
-                <element signature="e#20318#21714#0#HTML" expanded="false" />
+                <element signature="e#11050#11087#0#HTML" expanded="true" />
+                <element signature="e#11194#11214#0#HTML" expanded="true" />
+                <element signature="e#11641#11771#0#HTML" expanded="true" />
+                <element signature="e#19702#21849#0#HTML" expanded="false" />
+                <element signature="e#20360#21756#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -512,12 +512,12 @@
       <workItem from="1508343104119" duration="53440000" />
       <workItem from="1508440140937" duration="1940000" />
       <workItem from="1508497155173" duration="7431000" />
-      <workItem from="1508598129607" duration="70925000" />
+      <workItem from="1508598129607" duration="71468000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="363612000" />
+    <option name="totallyTimeSpent" value="364155000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="0" />
@@ -1039,17 +1039,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="155" column="133" lean-forward="false" selection-start-line="155" selection-start-column="133" selection-end-line="155" selection-end-column="133" />
+        <state relative-caret-position="281">
+          <caret line="163" column="44" lean-forward="true" selection-start-line="163" selection-start-column="44" selection-end-line="163" selection-end-column="44" />
           <folding>
             <element signature="e#4108#4120#0#Twig" expanded="true" />
             <element signature="e#9401#9447#0#HTML" expanded="true" />
             <element signature="e#10531#10579#0#HTML" expanded="true" />
-            <element signature="e#11050#11070#0#HTML" expanded="true" />
-            <element signature="e#11177#11197#0#HTML" expanded="true" />
-            <element signature="e#11599#11729#0#HTML" expanded="true" />
-            <element signature="e#19660#21807#0#HTML" expanded="false" />
-            <element signature="e#20318#21714#0#HTML" expanded="false" />
+            <element signature="e#11050#11087#0#HTML" expanded="true" />
+            <element signature="e#11194#11214#0#HTML" expanded="true" />
+            <element signature="e#11641#11771#0#HTML" expanded="true" />
+            <element signature="e#19702#21849#0#HTML" expanded="false" />
+            <element signature="e#20360#21756#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
