@@ -44,6 +44,7 @@ video#bgvid {
     background-size: cover;
 }
 .text-justify{ text-align: justify;}
+.text-center_h{ text-align: center;}
 
 video { display: block; }
 

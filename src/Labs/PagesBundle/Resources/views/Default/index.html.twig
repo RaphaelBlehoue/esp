@@ -135,7 +135,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="section" style="padding-top:80px; padding-bottom:40px; ">
+                    <div class="section" style="padding-top:80px; padding-bottom:5px; ">
                         <div class="section_wrapper clearfix">
                             <div class="items_group clearfix">
                                 <!-- Page Title-->
@@ -145,59 +145,91 @@
                                         <h2 class="title">{{ 'ils ont déjà participé'|upper }}</h2>
                                     </div>
                                 </div>
-                                <div class="column mcb-column one column_offer_thumb ">
-                                    <div class="offer_thumb bottom">
-                                        <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 1176px; height: 394px; margin: 0px; overflow: hidden; cursor: move;"><ul class="offer_thumb_ul" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 8232px; height: 394px; z-index: auto;">
-                                                {% for intervenant in intervenants %}
-                                                <li class="offer_thumb_li id_{{ loop.index }}" style="width: 1176px;">
-                                                    <div class="image_wrapper">
-                                                        <img width="650" height="550" src="{{ intervenant.assertPath|imagine_filter('my_thumb_off_index') }}" class="scale-with-grid wp-post-image" alt=""/>
-                                                    </div>
-                                                    <div class="desc_wrapper align_left has-link">
-                                                        <div class="title">
-                                                            <h3>{{ intervenant.name }}</h3>
-                                                            <a class="button button_left button_orange button_js kill_the_icon" href="#">
-                                                                <span class="button_icon"><i class="icon-layout"></i></span>
-                                                                <span class="button_label">{{ 'en savoir plus'|capitalize }}</span>
-                                                            </a>
-                                                        </div>
-                                                        <h5>{{ intervenant.poste }}</h5>
-                                                        <div class="desc">
-                                                            <p class="big">
-                                                                {% for item in intervenant.item %}
-                                                                  {{ item.content|truncate(500, '', '...')|striptags}}
-                                                                {% endfor %}
-                                                            </p>
-                                                            <div class="hr_dots" style="margin: 0 auto 30px">
-                                                                <span></span><span></span><span></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="thumbnail" style="display:none">
-                                                        <img src="{{ intervenant.assertPath|imagine_filter('my_thumb_off_index_small') }}" class="scale-with-grid" alt="{{ intervenant.name }}">
-                                                    </div>
-                                                </li>
-                                                {% endfor %}
-
-                                            </ul>
-                                        </div>
-                                        <div class="slider_pagination" style="display: block;">
-                                            {% for inter in intervenants %}
-                                                <a href="#{{ loop.index }}" class="selected"><img src="{{ inter.assertPath|imagine_filter('my_thumb_off_index_small') }}" alt="{{ loop.index }}"></a>
-                                            {% endfor %}
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Page devider -->
-                                <!-- One full width row-->
-                                <div class="column one column_divider">
-                                    <hr class="no_line hrmargin_b_40" />
-                                </div>
-                                <!-- Page Title-->
                                 <!-- One full width row-->
                             </div>
                         </div>
                     </div>
+
+                    <div class="section section-filters">
+                        <div class="section_wrapper clearfix">
+                            <!--  Filter Area -->
+                            <div id="Filters" class="column one isotope-filters">
+                                <ul class="filters_buttons">
+                                    <li class="label">
+                                        Filtrez par
+                                    </li>
+                                    <li class="categories">
+                                        <a class="open" href="#"><i class="icon-docs"></i>Types<i class="icon-down-dir"></i></a>
+                                    </li>
+                                    <li class="reset">
+                                        <a class="close" data-rel="*" href=""><i class="icon-cancel"></i> {{ 'Affichez tout' }}</a>
+                                    </li>
+                                </ul>
+                                <div class="filters_wrapper">
+                                    <ul class="categories">
+                                        <li>
+                                            <a data-rel=".category-officiel" href="#">Officiels</a>
+                                        </li>
+                                        <li>
+                                            <a data-rel=".category-intervanant" href="#">Intervenants</a>
+                                        </li>
+                                        <li class="close">
+                                            <a href="#"><i class="icon-cancel"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="section_wrapper clearfix">
+                            <!-- One full width row-->
+                            <div class="column one column_portfolio">
+                                <div class="portfolio_wrapper isotope_wrapper">
+                                    <ul class="portfolio_group lm_wrapper isotope grid">
+                                        <!-- Portfolio item -->
+                                        {% for intervenant in intervenants %}
+                                            <li class="portfolio-item isotope-item {{ (intervenant.types == 1) ? 'category-officiel' : 'category-intervanant' }} wide tall">
+                                            <div class="portfolio-item-fw-bg flv_style_port_1">
+                                                <div class="portfolio-item-fw-wrapper">
+                                                    <div class="list_style_header">
+                                                        <h3 class="entry-title"><a href="#">{{ intervenant.name }}</a></h3>
+                                                        <div class="links_wrapper">
+                                                            <a href="#" class="button button_left button_theme button_js">
+                                                                <span class="button_icon"><i class="icon-link"></i></span>
+                                                                <span class="button_label">{{ 'En savoir +' }}</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="image_frame scale-with-grid">
+                                                        <div class="image_wrapper">
+                                                            <a href="#">
+                                                                <div class="mask"></div><img width="576" height="450" src="{{ intervenant.assertPath|imagine_filter('my_thumb_off_old') }}" alt="{{ intervenant.name }}" class="scale-with-grid wp-post-image" />
+                                                            </a>
+                                                            <div class="image_links one">
+                                                                <a href="#" class="link"><i class="icon-link"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="title_wrapper">
+                                                            <h5 class="entry-title text-center_h"><a href="#">{{ intervenant.name|upper }}</a></h5>
+                                                            <h6>{{ intervenant.poste }}</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        {% endfor %}
+                                        <!-- Portfolio item -->
+                                    </ul>
+                                    <!-- One full width row-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="section" id="boxes" style="padding-top:80px; padding-bottom:0px; background-color:#f4f4f4; background-repeat:no-repeat; background-position:center top; ">
                         <div class="section_wrapper clearfix">
                             <div class="items_group clearfix">

@@ -170,12 +170,17 @@ liip_imagine:
             filters:
                 thumbnail: { size: [360, 263], mode: outbound }
 
-        my_thumb_off_index:
+        my_thumb_off_zoom:
             quality: 95
             filters:
-                thumbnail: { size: [650, 550], mode: outbound }
+                thumbnail: { size: [1200, 800], mode: outbound }
 
         my_thumb_off_index_small:
             quality: 95
             filters:
                 thumbnail: { size: [85, 85], mode: outbound }
+
+        my_thumb_off_old:
+            quality: 95
+            filters:
+                thumbnail: { size: [576, 450], mode: outbound }
