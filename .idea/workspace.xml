@@ -31,13 +31,13 @@
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="256" column="78" lean-forward="false" selection-start-line="256" selection-start-column="78" selection-end-line="256" selection-end-column="78" />
+            <state relative-caret-position="142">
+              <caret line="217" column="73" lean-forward="false" selection-start-line="217" selection-start-column="73" selection-end-line="217" selection-end-column="73" />
               <folding>
                 <element signature="e#4108#4120#0#Twig" expanded="true" />
                 <element signature="e#9401#9447#0#HTML" expanded="true" />
-                <element signature="e#22603#24750#0#HTML" expanded="false" />
-                <element signature="e#23261#24657#0#HTML" expanded="false" />
+                <element signature="e#22587#24734#0#HTML" expanded="false" />
+                <element signature="e#23245#24641#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -492,12 +492,12 @@
       <workItem from="1508343104119" duration="53440000" />
       <workItem from="1508440140937" duration="1940000" />
       <workItem from="1508497155173" duration="7431000" />
-      <workItem from="1508598129607" duration="65350000" />
+      <workItem from="1508598129607" duration="65699000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="358037000" />
+    <option name="totallyTimeSpent" value="358386000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="0" />
@@ -1020,13 +1020,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="256" column="78" lean-forward="false" selection-start-line="256" selection-start-column="78" selection-end-line="256" selection-end-column="78" />
+        <state relative-caret-position="142">
+          <caret line="217" column="73" lean-forward="false" selection-start-line="217" selection-start-column="73" selection-end-line="217" selection-end-column="73" />
           <folding>
             <element signature="e#4108#4120#0#Twig" expanded="true" />
             <element signature="e#9401#9447#0#HTML" expanded="true" />
-            <element signature="e#22603#24750#0#HTML" expanded="false" />
-            <element signature="e#23261#24657#0#HTML" expanded="false" />
+            <element signature="e#22587#24734#0#HTML" expanded="false" />
+            <element signature="e#23245#24641#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
