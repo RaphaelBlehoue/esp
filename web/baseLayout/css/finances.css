@@ -508,17 +508,17 @@ html {
 	background-color: #FCFCFC;
 }
 body:not(.template-slider) #Header_wrapper {
-	background-image: url("../images/home_spa_subheader.jpg");
+	background-image: url("../images/bg_full_old_page.jpg");
 }
 
 /********************** Font | Family **********************/
 
 body, button, span.date_label, .timeline_items li h3 span, input[type="submit"], input[type="reset"], input[type="button"], input[type="text"], input[type="password"], input[type="tel"], input[type="email"], textarea, select, .offer_li .title h3 {
-	font-family: "Roboto", Arial, Tahoma, sans-serif;
+	font-family: "Open Sans", Arial, Tahoma, sans-serif;
 	font-weight: 400;
 }
 #menu>ul>li>a, #header_action_button, #header_cart {
-	font-family: "Roboto", Arial, Tahoma, sans-serif;
+	font-family: "Open Sans", Arial, Tahoma, sans-serif;
 	font-weight: 400;
 }
 #Subheader .title {

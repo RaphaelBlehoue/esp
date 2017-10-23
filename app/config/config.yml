@@ -169,3 +169,13 @@ liip_imagine:
             quality: 95
             filters:
                 thumbnail: { size: [360, 263], mode: outbound }
+
+        my_thumb_off_index:
+            quality: 95
+            filters:
+                thumbnail: { size: [650, 550], mode: outbound }
+
+        my_thumb_off_index_small:
+            quality: 95
+            filters:
+                thumbnail: { size: [85, 85], mode: outbound }

@@ -24,7 +24,13 @@ class DefaultController extends Controller
      */
     public function HomePageBundle()
     {
-        return $this->render('LabsPagesBundle:Default:index.html.twig');
+        $organisateurs = $this->getAllOrganisateur();
+        $intervenant = $this->getTeamContent();
+        return $this->render('LabsPagesBundle:Default:index.html.twig',[
+                'organisateurs' => $organisateurs,
+                'intervenants'   => $intervenant
+            ]
+        );
     }
 
 

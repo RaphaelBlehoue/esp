@@ -66,15 +66,14 @@
                                     <div class="flat_box">
                                         <!-- Animated area -->
                                         <div class="animate" data-anim-type="fadeInLeft">
-                                            <a href="#">
+                                            <a href="{{ path('organisateur') }}">
                                                 <div class="photo_wrapper">
                                                     <img class="scale-with-grid" src="{{ asset('baseLayout/images/home_organisateur_cegci.jpg') }}" alt="CGECI Patronat | ivoirien" />
                                                 </div>
                                                 <div class="desc_wrapper">
                                                     <h4>{{ 'CGECI | Le Patronat ivoirien' }}</h4>
                                                     <div class="desc">
-                                                        Duis sed odio ligula. Suspendisse tempor consequat felis tempor lacinia. Nam porttitor,
-                                                        massa eget blandit mollis
+                                                        {{ 'La Confédération Générale des Entreprises de Côte d’Ivoire (CGECI) est la principale organisation patronale de Côte d’Ivoire' }}
                                                     </div>
                                                 </div>
                                             </a>
@@ -93,8 +92,7 @@
                                                 <div class="desc_wrapper">
                                                     <h4>{{ 'ESPARTNERS ' }}</h4>
                                                     <div class="desc">
-                                                        Duis sed odio ligula. Suspendisse tempor consequat felis tempor lacinia. Nam porttitor,
-                                                        massa eget blandit mollis
+                                                        {{ 'ESPartners est un cabinet d’investissement et de conseil en stratégie. Avec un siège à Washington, nous disposons de bureaux régionaux en Côte d’Ivoire, au Rwanda et en Haïti. ' }}
                                                     </div>
                                                 </div>
                                             </a>
@@ -122,12 +120,11 @@
                                 <div class="column one-second column_column">
                                     <div class="column_attr animate" data-anim-type="fadeIn">
                                         <div style="background: #fff; padding: 39px 40px; text-align: center;">
-                                            <h2 style="font-size: 42px; line-height: 42px; margin-bottom: 30px;">{{ 'Une initiative portée par'|upper }}
+                                            <h2 style="font-size: 42px; line-height: 42px; margin-bottom: 30px;">{{ 'Une initiative unique pour'|upper }}
                                                 <br>
-                                                {{ 'CGECI & ESPARTNES'|upper }}</h2>
-                                            <h5 class="hrmargin_b_30">Proin gravida nibh vel velit a Proin gravida nibh vel velit ataciti sociosqu ad litora torquent uctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</h5>
+                                                {{ 'le financement des pme'|upper }}</h2>
                                             <p class="hrmargin_b_30">
-                                                Morbi accumsan ipsum velit. Nam nec tel ent taciti sociosqu ad lus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condim
+                                                {{ 'contenu en attentes' }}
                                             </p>
                                             <a class="button button_theme button_js" href="#">
                                                 <span class="button_label">{{ 'en savoir plus'|capitalize }}</span>
@@ -151,123 +148,43 @@
                                 <div class="column mcb-column one column_offer_thumb ">
                                     <div class="offer_thumb bottom">
                                         <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 1176px; height: 394px; margin: 0px; overflow: hidden; cursor: move;"><ul class="offer_thumb_ul" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 8232px; height: 394px; z-index: auto;">
-                                                <li class="offer_thumb_li id_1" style="width: 1176px;">
+                                                {% for intervenant in intervenants %}
+                                                <li class="offer_thumb_li id_{{ loop.index }}" style="width: 1176px;">
                                                     <div class="image_wrapper">
-                                                        <img width="650" height="550" src="http://via.placeholder.com/650x550" class="scale-with-grid wp-post-image" alt="">
+                                                        <img width="650" height="550" src="{{ intervenant.assertPath|imagine_filter('my_thumb_off_index') }}" class="scale-with-grid wp-post-image" alt=""/>
                                                     </div>
                                                     <div class="desc_wrapper align_left has-link">
                                                         <div class="title">
-                                                            <h3>{{ '{{ Nom de l\'officiel }}' }}</h3>
+                                                            <h3>{{ intervenant.name }}</h3>
                                                             <a class="button button_left button_orange button_js kill_the_icon" href="#">
                                                                 <span class="button_icon"><i class="icon-layout"></i></span>
                                                                 <span class="button_label">{{ 'en savoir plus'|capitalize }}</span>
                                                             </a>
                                                         </div>
+                                                        <h5>{{ intervenant.poste }}</h5>
                                                         <div class="desc">
                                                             <p class="big">
-                                                                {{ '{{ description résumé}}' }}
-                                                                Vitae adipiscing turpis. Aenean ligula nibh, mo lest ie id viverra a, dapibus at dolor. In iaculis viverra ne que, ac eleifend ante lobortis.
-                                                                Vitae adipiscing turpis. Aenean ligula nibh, mo lest ie id viverra a, dapibus at dolor. In iaculis viverra ne que, ac eleifend ante lobortis.
-                                                                Vitae adipiscing turpis. Aenean ligula nibh, mo lest ie id viverra a, dapibus at dolor. In iaculis viverra ne que, ac eleifend ante lobortis.
+                                                                {% for item in intervenant.item %}
+                                                                  {{ item.content|truncate(500, '', '...')|striptags}}
+                                                                {% endfor %}
                                                             </p>
                                                             <div class="hr_dots" style="margin: 0 auto 30px">
                                                                 <span></span><span></span><span></span>
                                                             </div>
-                                                            <h5>{{ '{{ Fonction occupé & dans quel lieu }}' }}:</h5>
-                                                            <div class="idea_box">
-                                                                <div class="icon">
-                                                                    <i class="icon-info"></i>
-                                                                </div>
-                                                                <div class="desc">
-                                                                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam ultricies dolor a purus varius.
-                                                                </div>
-                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="thumbnail" style="display:none">
-                                                        <img src="http://via.placeholder.com/85x85" class="scale-with-grid" alt="Morbi egestas">
+                                                        <img src="{{ intervenant.assertPath|imagine_filter('my_thumb_off_index_small') }}" class="scale-with-grid" alt="{{ intervenant.name }}">
                                                     </div>
                                                 </li>
-                                                <li class="offer_thumb_li id_2" style="width: 1176px;">
-                                                    <div class="image_wrapper">
-                                                        <img width="650" height="550" src="http://via.placeholder.com/650x550" class="scale-with-grid wp-post-image" alt="">
-                                                    </div>
-                                                    <div class="desc_wrapper align_left has-link">
-                                                        <div class="title">
-                                                            <h3>{{ '{{ Nom de l\'officiel }}' }}</h3>
-                                                            <a class="button button_left button_orange button_js kill_the_icon" href="#">
-                                                                <span class="button_icon"><i class="icon-layout"></i></span>
-                                                                <span class="button_label">{{ 'en savoir plus'|capitalize }}</span>
-                                                            </a>
-                                                        </div>
-                                                        <div class="desc">
-                                                            <p class="big">
-                                                                {{ '{{ description résumé}}' }}
-                                                                Vitae adipiscing turpis. Aenean ligula nibh, mo lest ie id viverra a, dapibus at dolor. In iaculis viverra ne que, ac eleifend ante lobortis.
-                                                                Vitae adipiscing turpis. Aenean ligula nibh, mo lest ie id viverra a, dapibus at dolor. In iaculis viverra ne que, ac eleifend ante lobortis.
-                                                                Vitae adipiscing turpis. Aenean ligula nibh, mo lest ie id viverra a, dapibus at dolor. In iaculis viverra ne que, ac eleifend ante lobortis.
-                                                            </p>
-                                                            <div class="hr_dots" style="margin: 0 auto 30px">
-                                                                <span></span><span></span><span></span>
-                                                            </div>
-                                                            <h5>{{ '{{ Fonction occupé & dans quel lieu }}' }}:</h5>
-                                                            <div class="idea_box">
-                                                                <div class="icon">
-                                                                    <i class="icon-info"></i>
-                                                                </div>
-                                                                <div class="desc">
-                                                                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam ultricies dolor a purus varius.
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="thumbnail" style="display:none">
-                                                        <img src="http://via.placeholder.com/85x85" class="scale-with-grid" alt="Morbi egestas">
-                                                    </div>
-                                                </li>
-                                                <li class="offer_thumb_li id_3" style="width: 1176px;">
-                                                    <div class="image_wrapper">
-                                                        <img width="650" height="550" src="http://via.placeholder.com/650x550" class="scale-with-grid wp-post-image" alt="">
-                                                    </div>
-                                                    <div class="desc_wrapper align_left has-link">
-                                                        <div class="title">
-                                                            <h3>{{ '{{ Nom de l\'officiel }}' }}</h3>
-                                                            <a class="button button_left button_orange button_js kill_the_icon" href="#">
-                                                                <span class="button_icon"><i class="icon-layout"></i></span>
-                                                                <span class="button_label">{{ 'en savoir plus'|capitalize }}</span>
-                                                            </a>
-                                                        </div>
-                                                        <div class="desc">
-                                                            <p class="big">
-                                                                {{ '{{ description résumé}}' }}
-                                                                Vitae adipiscing turpis. Aenean ligula nibh, mo lest ie id viverra a, dapibus at dolor. In iaculis viverra ne que, ac eleifend ante lobortis.
-                                                                Vitae adipiscing turpis. Aenean ligula nibh, mo lest ie id viverra a, dapibus at dolor. In iaculis viverra ne que, ac eleifend ante lobortis.
-                                                                Vitae adipiscing turpis. Aenean ligula nibh, mo lest ie id viverra a, dapibus at dolor. In iaculis viverra ne que, ac eleifend ante lobortis.
-                                                            </p>
-                                                            <div class="hr_dots" style="margin: 0 auto 30px">
-                                                                <span></span><span></span><span></span>
-                                                            </div>
-                                                            <h5>{{ '{{ Fonction occupé & dans quel lieu }}' }}:</h5>
-                                                            <div class="idea_box">
-                                                                <div class="icon">
-                                                                    <i class="icon-info"></i>
-                                                                </div>
-                                                                <div class="desc">
-                                                                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam ultricies dolor a purus varius.
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="thumbnail" style="display:none">
-                                                        <img src="http://via.placeholder.com/85x85" class="scale-with-grid" alt="Morbi egestas">
-                                                    </div>
-                                                </li>
+                                                {% endfor %}
+
                                             </ul>
                                         </div>
                                         <div class="slider_pagination" style="display: block;">
-                                            <a href="#1" class="selected"><img src="http://via.placeholder.com/85x85" alt="1"></a>
-                                            <a href="#2"><img src="http://via.placeholder.com/85x85" alt="2"></a>
-                                            <a href="#3" class=""><img src="http://via.placeholder.com/85x85" alt="3"></a>
+                                            {% for inter in intervenants %}
+                                                <a href="#{{ loop.index }}" class="selected"><img src="{{ inter.assertPath|imagine_filter('my_thumb_off_index_small') }}" alt="{{ loop.index }}"></a>
+                                            {% endfor %}
                                         </div>
                                     </div>
                                 </div>
@@ -365,18 +282,11 @@
                                         <div id="rev_slider_2_3_wrapper" class="rev_slider_wrapper fullwidthbanner-container sections_style_1">
                                             <div id="rev_slider_2_3" class="rev_slider fullwidthabanner tp-overflow-hidden" data-version="5.0.4.1">
                                                 <ul>
-                                                    <li data-index="rs-2" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="http://via.placeholder.com/100x50" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
-                                                        <img src="http://via.placeholder.com/600x460" alt="" width="600" height="460" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                                                   {% for i in 1..7 %}
+                                                    <li data-index="rs-{{ i }}" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="http://via.placeholder.com/100x50" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
+                                                        <img src="{{ asset('baseLayout/images/album/'~ i ~'.jpg') }}" alt="" width="600" height="460" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
                                                     </li>
-                                                    <li data-index="rs-3" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="http://via.placeholder.com/100x50" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
-                                                        <img src="http://via.placeholder.com/600x460" alt="" width="600" height="460" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                                                    </li>
-                                                    <li data-index="rs-4" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="http://via.placeholder.com/100x50" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
-                                                        <img src="http://via.placeholder.com/600x460" alt="" width="600" height="460" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                                                    </li>
-                                                    <li data-index="rs-5" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="http://via.placeholder.com/100x50" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
-                                                        <img src="http://via.placeholder.com/600x460" alt="" width="600" height="460" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                                                    </li>
+                                                    {% endfor %}
                                                 </ul>
                                                 <div class="tp-bannertimer tp-bottom flv_viz_hid"></div>
                                             </div>
@@ -392,10 +302,7 @@
                                                 {{ 'l\'édition'|upper }} {{ 'now'|date('Y') -1 }}</h2>
                                             <h5>{{ '{{ Rapport en resumé de l\'edition passé }} ' }}</h5>
                                             <p class="hrmargin_b_30">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, itaque minus nisi officia perspiciatis rerum sed similique. Adipisci maiores molestiae obcaecati officiis sapiente.
-                                            </p>
-                                            <p class="hrmargin_b_30">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, itaque minus nisi officia perspiciatis rerum sed similique. Adipisci maiores molestiae obcaecati officiis sapiente, sint sit.
+                                                {{ 'contenu en attentes' }}
                                             </p>
                                             <a class="button button_theme button_js" href="#">
                                                 <span class="button_label">{{ 'voir plus'|upper }}</span>
@@ -422,54 +329,14 @@
                                             <a class="button button_js slider_prev" href="#"><span class="button_icon"><i class="icon-left-open-big"></i></span></a><a class="button button_js slider_next" href="#"><span class="button_icon"><i class="icon-right-open-big"></i></span></a>
                                         </div>
                                         <ul class="clients clients_slider_ul">
+                                            {% for i in 1..12 %}
                                             <li>
                                                 <div class="client_wrapper">
-                                                    <a target="_blank" href="#" title="Client 1"><img width="145" height="75" src="http://via.placeholder.com/145x75" class="scale-with-grid wp-post-image" alt="client_1" />
+                                                    <a target="_blank" href="#" title="{{ loop.index }}"><img width="145" height="75" src="{{ asset('baseLayout/images/partners/'~ i ~ '.jpg') }}" class="scale-with-grid wp-post-image" alt="{{ loop.index }}" />
                                                     </a>
                                                 </div>
                                             </li>
-                                            <li>
-                                                <div class="client_wrapper">
-                                                    <a target="_blank" href="#" title="Client 1"><img width="145" height="75" src="http://via.placeholder.com/145x75" class="scale-with-grid wp-post-image" alt="client_1" />
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="client_wrapper">
-                                                    <a target="_blank" href="#" title="Client 1"><img width="145" height="75" src="http://via.placeholder.com/145x75" class="scale-with-grid wp-post-image" alt="client_1" />
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="client_wrapper">
-                                                    <a target="_blank" href="#" title="Client 1"><img width="145" height="75" src="http://via.placeholder.com/145x75" class="scale-with-grid wp-post-image" alt="client_1" />
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="client_wrapper">
-                                                    <a target="_blank" href="#" title="Client 1"><img width="145" height="75" src="http://via.placeholder.com/145x75" class="scale-with-grid wp-post-image" alt="client_1" />
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="client_wrapper">
-                                                    <a target="_blank" href="#" title="Client 1"><img width="145" height="75" src="http://via.placeholder.com/145x75" class="scale-with-grid wp-post-image" alt="client_1" />
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="client_wrapper">
-                                                    <a target="_blank" href="#" title="Client 1"><img width="145" height="75" src="http://via.placeholder.com/145x75" class="scale-with-grid wp-post-image" alt="client_1" />
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="client_wrapper">
-                                                    <a target="_blank" href="#" title="Client 1"><img width="145" height="75" src="http://via.placeholder.com/145x75" class="scale-with-grid wp-post-image" alt="client_1" />
-                                                    </a>
-                                                </div>
-                                            </li>
+                                            {% endfor %}
                                         </ul>
                                     </div>
                                 </div>
