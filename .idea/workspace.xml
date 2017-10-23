@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e5361487-e47d-4cfc-99ae-051457e332c8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Controller/DefaultController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/participant.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/participant.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/global/css/global.css" afterPath="$PROJECT_DIR$/web/global/css/global.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/baseLayout/css/finances.css" afterPath="$PROJECT_DIR$/web/baseLayout/css/finances.css" />
     </list>
     <ignored path="lafinancesengage.dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,43 +30,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="169" column="26" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
-              <folding>
-                <element signature="e#4108#4120#0#Twig" expanded="true" />
-                <element signature="e#9401#9447#0#HTML" expanded="true" />
-                <element signature="e#10195#11566#0#HTML" expanded="false" />
-                <element signature="e#10531#10579#0#HTML" expanded="true" />
-                <element signature="e#11050#11070#0#HTML" expanded="true" />
-                <element signature="e#11175#11195#0#HTML" expanded="true" />
-                <element signature="e#11620#11750#0#HTML" expanded="true" />
-                <element signature="e#19681#21828#0#HTML" expanded="false" />
-                <element signature="e#20339#21735#0#HTML" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="participant.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/participant.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="57" column="38" lean-forward="false" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
-              <folding>
-                <element signature="e#12#28#0#Twig" expanded="true" />
-                <element signature="e#1897#3524#0#HTML" expanded="false" />
-                <element signature="e#2281#2329#0#HTML" expanded="true" />
-                <element signature="e#2880#2900#0#HTML" expanded="true" />
-                <element signature="e#3021#3041#0#HTML" expanded="true" />
-                <element signature="e#3757#6055#0#HTML" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="global.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/global/css/global.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -76,27 +37,6 @@
               <caret line="2878" column="41" lean-forward="false" selection-start-line="2878" selection-start-column="41" selection-end-line="2878" selection-end-column="41" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="58366adccfcd6.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/uploads/teams/58366adccfcd6.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="58398c969d8a6.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/uploads/teams/58398c969d8a6.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="58398cc2073fd.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/uploads/teams/58398cc2073fd.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -112,21 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="185" column="42" lean-forward="false" selection-start-line="185" selection-start-column="42" selection-end-line="185" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="245">
-              <caret line="101" column="5" lean-forward="true" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+              <caret line="101" column="5" lean-forward="false" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
               <folding>
                 <element signature="e#6587#6608#1#PHP" expanded="true" />
               </folding>
@@ -137,12 +67,22 @@
       <file leaf-file-name="initiative.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/initiative.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="597">
-              <caret line="163" column="0" lean-forward="false" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+            <state relative-caret-position="107">
+              <caret line="47" column="91" lean-forward="false" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="91" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="286" column="38" lean-forward="true" selection-start-line="286" selection-start-column="38" selection-end-line="286" selection-end-column="38" />
               <folding>
-                <element signature="e#12#28#0#Twig" expanded="true" />
-                <element signature="e#9414#11585#0#HTML" expanded="false" />
-                <element signature="e#10072#11492#0#HTML" expanded="false" />
+                <element signature="e#4108#4120#0#Twig" expanded="true" />
+                <element signature="e#11588#17950#0#HTML" expanded="false" />
+                <element signature="e#20378#20444#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -254,16 +194,16 @@
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Gallery/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Gallery.php" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Form/GalleryType.php" />
-        <option value="$PROJECT_DIR$/web/baseLayout/css/finances.css" />
         <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/footer.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/initiative.html.twig" />
         <option value="$PROJECT_DIR$/web/baseLayout/css/custom.css" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Repository/TeamRepository.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/web/global/css/global.css" />
         <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/participant.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/web/baseLayout/css/finances.css" />
+        <option value="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig" />
       </list>
     </option>
   </component>
@@ -393,6 +333,13 @@
               <item name="lafinancesengage.dev" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="baseLayout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lafinancesengage.dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lafinancesengage.dev" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="baseLayout" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lafinancesengage.dev" type="b2602c69:ProjectViewProjectNode" />
@@ -560,12 +507,12 @@
       <workItem from="1508343104119" duration="53440000" />
       <workItem from="1508440140937" duration="1940000" />
       <workItem from="1508497155173" duration="7431000" />
-      <workItem from="1508598129607" duration="73974000" />
+      <workItem from="1508598129607" duration="76071000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="366661000" />
+    <option name="totallyTimeSpent" value="368758000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="0" />
@@ -833,14 +780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/baseLayout/css/finances.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="520" column="27" lean-forward="false" selection-start-line="520" selection-start-column="27" selection-end-line="520" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Gallery.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1955">
@@ -998,18 +937,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/initiative.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="163" column="0" lean-forward="false" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="true" />
-            <element signature="e#9414#11585#0#HTML" expanded="false" />
-            <element signature="e#10072#11492#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/baseLayout/images/home_stats_bg_3.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1033,11 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/uploads/teams/58366adccfcd6.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/uploads/teams/58398c969d8a6.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1048,29 +970,16 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/global/css/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="2878" column="41" lean-forward="false" selection-start-line="2878" selection-start-column="41" selection-end-line="2878" selection-end-column="41" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/web/uploads/teams/58366adccfcd6.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/web/baseLayout/css/finances.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="169" column="26" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
-          <folding>
-            <element signature="e#4108#4120#0#Twig" expanded="true" />
-            <element signature="e#9401#9447#0#HTML" expanded="true" />
-            <element signature="e#10195#11566#0#HTML" expanded="false" />
-            <element signature="e#10531#10579#0#HTML" expanded="true" />
-            <element signature="e#11050#11070#0#HTML" expanded="true" />
-            <element signature="e#11175#11195#0#HTML" expanded="true" />
-            <element signature="e#11620#11750#0#HTML" expanded="true" />
-            <element signature="e#19681#21828#0#HTML" expanded="false" />
-            <element signature="e#20339#21735#0#HTML" expanded="false" />
-          </folding>
+        <state relative-caret-position="230">
+          <caret line="296" column="24" lean-forward="false" selection-start-line="296" selection-start-column="24" selection-end-line="296" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1081,20 +990,48 @@
           <folding>
             <element signature="e#12#28#0#Twig" expanded="true" />
             <element signature="e#1897#3524#0#HTML" expanded="false" />
-            <element signature="e#2281#2329#0#HTML" expanded="true" />
-            <element signature="e#2880#2900#0#HTML" expanded="true" />
-            <element signature="e#3021#3041#0#HTML" expanded="true" />
+            <element signature="e#2281#2329#0#HTML" expanded="false" />
+            <element signature="e#2880#2900#0#HTML" expanded="false" />
+            <element signature="e#3021#3041#0#HTML" expanded="false" />
             <element signature="e#3757#6055#0#HTML" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/global/css/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="2878" column="41" lean-forward="false" selection-start-line="2878" selection-start-column="41" selection-end-line="2878" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
-          <caret line="101" column="5" lean-forward="true" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+          <caret line="101" column="5" lean-forward="false" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
           <folding>
             <element signature="e#6587#6608#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/initiative.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="47" column="91" lean-forward="false" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="286" column="38" lean-forward="true" selection-start-line="286" selection-start-column="38" selection-end-line="286" selection-end-column="38" />
+          <folding>
+            <element signature="e#4108#4120#0#Twig" expanded="true" />
+            <element signature="e#11588#17950#0#HTML" expanded="false" />
+            <element signature="e#20378#20444#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
