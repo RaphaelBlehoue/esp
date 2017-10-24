@@ -317,10 +317,13 @@
                                             <a class="button button_js slider_prev" href="#"><span class="button_icon"><i class="icon-left-open-big"></i></span></a><a class="button button_js slider_next" href="#"><span class="button_icon"><i class="icon-right-open-big"></i></span></a>
                                         </div>
                                         <ul class="clients clients_slider_ul">
-                                            {% for i in 1..12 %}
+                                            {% for i in 1..18 %}
                                             <li>
-                                                <div class="client_wrapper">
-                                                    <a target="_blank" href="#" title="{{ loop.index }}"><img width="145" height="75" src="{{ asset('baseLayout/images/partners/'~ i ~ '.jpg') }}" class="scale-with-grid wp-post-image" alt="{{ loop.index }}" />
+                                                <div class="article_box">
+                                                    <a href="#">
+                                                        <div class="photo_wrapper">
+                                                            <img class="scale-with-grid" src="{{ asset('baseLayout/images/partners/'~ i ~ '.jpg') }}" alt="{{ loop.index }}" width="188" height="138"/>
+                                                        </div>
                                                     </a>
                                                 </div>
                                             </li>
