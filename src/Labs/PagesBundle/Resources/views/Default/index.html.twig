@@ -158,7 +158,7 @@
                                         <a href="#">
                                             <div class="photo_wrapper"><img class="scale-with-grid" src="{{ intervenant.assertPath|imagine_filter('my_thumb_off_old') }}" alt="{{ intervenant.name }}" /> </div>
                                             <div class="desc_wrapper">
-                                                <h5 class="text-center_h" style="color: #fff;">{{ intervenant.name }}</h5>
+                                                <h5 class="text-center_h" style="color: #fff;">{{ intervenant.name|upper }}</h5>
                                                 <span class="text-center_h" style="color: #fff;">{{ intervenant.poste|truncate (40, '', '...')}}</span>
                                             </div>
                                         </a>

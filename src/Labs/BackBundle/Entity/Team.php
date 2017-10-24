@@ -82,6 +82,12 @@ class Team
 
     /**
      * @var
+     * @ORM\Column(name="updated", type="datetime")
+     */
+    protected $updated;
+
+    /**
+     * @var
      *
      * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Item", mappedBy="team")
      */
@@ -92,6 +98,7 @@ class Team
     public function __construct()
     {
         $this->created = new \DateTime('now');
+        $this->updated = new \DateTime('now');
     }
 
     /**
@@ -315,4 +322,36 @@ class Team
         return $this->getUploadDir().'/'.$this->imageName;
     }
 
+    /**
+     * @ORM\PreUpdate()
+     */
+    public function onPreUpdate()
+    {
+        $this->updated = new \DateTime();
+    }
+
+
+    /**
+     * Set updated
+     *
+     * @param \DateTime $updated
+     *
+     * @return Team
+     */
+    public function setUpdated($updated)
+    {
+        $this->updated = $updated;
+
+        return $this;
+    }
+
+    /**
+     * Get updated
+     *
+     * @return \DateTime
+     */
+    public function getUpdated()
+    {
+        return $this->updated;
+    }
 }

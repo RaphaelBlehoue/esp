@@ -82,6 +82,12 @@ class Team
 
     /**
      * @var
+     * @ORM\Column(name="update", type="datetime")
+     */
+    protected $update;
+
+    /**
+     * @var
      *
      * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Item", mappedBy="team")
      */
@@ -93,4 +99,234 @@ class Team
     {
         $this->created = new \DateTime('now');
     }
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param string $name
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+    
+
+    /**
+     * Set poste
+     *
+     * @param string $poste
+     *
+     * @return Team
+     */
+    public function setPoste($poste)
+    {
+        $this->poste = $poste;
+
+        return $this;
+    }
+
+    /**
+     * Get poste
+     *
+     * @return string
+     */
+    public function getPoste()
+    {
+        return $this->poste;
+    }
+
+    /**
+     * Set types
+     *
+     * @param integer $types
+     *
+     * @return Team
+     */
+    public function setTypes($types)
+    {
+        $this->types = $types;
+
+        return $this;
+    }
+
+    /**
+     * Get types
+     *
+     * @return integer
+     */
+    public function getTypes()
+    {
+        return $this->types;
+    }
+
+    /**
+     * Set link
+     *
+     * @param string $link
+     *
+     * @return Team
+     */
+    public function setLink($link)
+    {
+        $this->link = $link;
+
+        return $this;
+    }
+
+    /**
+     * Get link
+     *
+     * @return string
+     */
+    public function getLink()
+    {
+        return $this->link;
+    }
+
+    /**
+     * Set created
+     *
+     * @param \DateTime $created
+     *
+     * @return Team
+     */
+    public function setCreated($created)
+    {
+        $this->created = $created;
+
+        return $this;
+    }
+
+    /**
+     * Get created
+     *
+     * @return \DateTime
+     */
+    public function getCreated()
+    {
+        return $this->created;
+    }
+
+    /**
+     * Add item
+     *
+     * @param \Labs\BackBundle\Entity\Item $item
+     *
+     * @return Team
+     */
+    public function addItem(\Labs\BackBundle\Entity\Item $item)
+    {
+        $this->item[] = $item;
+
+        return $this;
+    }
+
+    /**
+     * Remove item
+     *
+     * @param \Labs\BackBundle\Entity\Item $item
+     */
+    public function removeItem(\Labs\BackBundle\Entity\Item $item)
+    {
+        $this->item->removeElement($item);
+    }
+
+    /**
+     * Get item
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getItem()
+    {
+        return $this->item;
+    }
+
+    public function setImageFile(File $image = null)
+    {
+        $this->imageFile = $image;
+        if ($image) {
+            // It is required that at least one field changes if you are using doctrine
+            // otherwise the event listeners won't be called and the file is lost
+            $this->created = new \DateTime('now');
+        }
+        return $this;
+    }
+
+    /**
+     * @return File
+     */
+    public function getImageFile()
+    {
+        return $this->imageFile;
+    }
+
+    /**
+     * @param string $imageName
+     *
+     * @return Banner
+     */
+    public function setImageName($imageName)
+    {
+        $this->imageName = $imageName;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getImageName()
+    {
+        return $this->imageName;
+    }
+
+
+
+    public function getUploadDir()
+    {
+        // On retourne le chemin relatif vers l'image pour un navigateur
+        return 'uploads/teams';
+    }
+
+
+    protected function getUploadRootDir()
+    {
+        // On retourne le chemin relatif vers l'image pour notre code PHP
+        return __DIR__.'/../../../../web/'.$this->getUploadDir();
+    }
+
+
+    /**
+     * @return string
+     */
+    public function getAssertPath()
+    {
+        return $this->getUploadDir().'/'.$this->imageName;
+    }
+
+    /**
+     * @ORM\PreUpdate()
+     */
+    public function onPreUpdate()
+    {
+        $this->update = new \DateTime();
+    }
+
 }
