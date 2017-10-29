@@ -1,43 +1,37 @@
-{% extends 'LabsBackBundle::layout.html.twig' %}
+{% extends 'LabsBackBundle::admin.html.twig' %}
 {% block stylesheets %}{% endblock %}
 {% block body %}
-    <div class="content">
-        <div class="container">
-
-            <!-- Page-Title -->
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="btn-group pull-right m-t-15">
-                        <button type="button" class="btn btn-default dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-expanded="false">Settings <span class="m-l-5"><i class="fa fa-cog"></i></span></button>
-                        <ul class="dropdown-menu drop-menu-right" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
-                    </div>
-
-                    <h4 class="page-title">Blank Page</h4>
-                    <ol class="breadcrumb">
+    <!-- BEGIN CONTAINER -->
+    <div class="page-container">
+        <!-- BEGIN SIDEBAR -->
+        {{ include('LabsBackBundle:Includes:sidebar.html.twig') }}
+        <!-- END SIDEBAR -->
+        <!-- BEGIN CONTENT -->
+        <div class="page-content-wrapper">
+            <!-- BEGIN CONTENT BODY -->
+            <div class="page-content">
+                <!-- BEGIN PAGE HEADER-->
+                <h1 class="page-title"> {{ 'Dashboard |' }}
+                    <small>{{ 'La Finance s\'engage' }}</small>
+                </h1>
+                <div class="page-bar">
+                    <ul class="page-breadcrumb">
                         <li>
-                            <a href="#">{{ 'AGR' }}</a>
+                            <i class="icon-home"></i>
+                            <a href="{{ path('admin_homepage') }}">{{ 'Dashboard' }}</a>
+                            <i class="fa fa-angle-right"></i>
                         </li>
-                        <li>
-                            <a href="#">Pages</a>
-                        </li>
-                        <li class="active">
-                            Blank Page
-                        </li>
-                    </ol>
+                    </ul>
+                </div>
+                <!-- END PAGE HEADER-->
+                <div class="note note-info">
+                    <p> {{ 'Administration Dashboard' }} </p>
                 </div>
             </div>
-
-
-
-
-        </div> <!-- container -->
-
-    </div> <!-- content -->
+            <!-- END CONTENT BODY -->
+        </div>
+        <!-- END CONTENT -->
+    </div>
+    <!-- END CONTAINER -->
 {% endblock %}
 {% block javascripts %}{% endblock %}

@@ -1,7 +1,29 @@
-<div class="navbar navbar-default navbar-sm navbar-fixed-bottom bg-primary">
-    <div class="navbar-collapse collapse" id="navbar-second">
-        <div class="navbar-text text-center">
-            &copy; {{ 'now'|date('Y') }}. <a href="#" style="color: #FFFFFF;">{{ 'Touslesjours.com' }}</a> by <a href="#" target="_blank" style="color: #FFFFFF;">Raphael Blehoue</a>
+<!-- BEGIN FOOTER -->
+<div class="page-footer">
+    <div class="page-footer-inner"> {{ 'now'|date('Y') }} &copy; Admin Theme By
+        <a target="_blank" href="http://lafinancesengage.com">{{ 'Lafinancesengage.com' }}</a> &nbsp;|&nbsp;
+        <a href="http://lafinancesengage.com" title="La finance s'engage" target="_blank">{{ 'Voir le site' }}</a>
+        <div class="scroll-to-top">
+            <i class="icon-arrow-up"></i>
         </div>
     </div>
+    <!-- END FOOTER -->
+    <!-- BEGIN QUICK NAV -->
+    <nav class="quick-nav">
+        <a class="quick-nav-trigger" href="#0">
+            <span aria-hidden="true"></span>
+        </a>
+        <ul>
+            <li>
+                <a href="" class="active">
+                    <span>{{ 'Menu en attentes' }}</span>
+                    <i class="icon-basket"></i>
+                </a>
+            </li>
+        </ul>
+        <span aria-hidden="true" class="quick-nav-bg"></span>
+    </nav>
+    <div class="quick-nav-overlay"></div>
+    <!-- END QUICK NAV -->
 </div>
+<!-- END FOOTER -->

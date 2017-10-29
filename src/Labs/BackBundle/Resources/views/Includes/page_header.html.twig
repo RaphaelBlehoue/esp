@@ -1,44 +1,97 @@
-<!-- Page header -->
-<div class="page-header">
-    <div class="breadcrumb-line breadcrumb-line-wide">
-        <ul class="breadcrumb">
-            <li class="active"> <a href=""><i class="icon-home2 position-left"></i> Dashboard</a></li>
-        </ul>
-
-        <ul class="breadcrumb-elements">
-            <li><a href="#"><i class="icon-comment-discussion position-left"></i> Support</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    <i class="icon-gear position-left"></i>
-                    {{ 'paramètres'|capitalize }}
-                    <span class="caret"></span>
-                </a>
-
-                <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a href="#"><i class="icon-user-lock"></i> Account security</a></li>
-                    <li><a href="#"><i class="icon-statistics"></i> Analytics</a></li>
-                    <li><a href="#"><i class="icon-accessibility"></i> Accessibility</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#"><i class="icon-gear"></i> All settings</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-
-    <div class="page-header-content">
-        <div class="page-title">
-            <h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Home</span> - Dashboard <small> Bienvenu, Victoria!</small></h4>
-        </div>
-
-        <div class="heading-elements">
-            <div class="heading-btn-group">
-                <a href="#" class="btn btn-link btn-float has-text"><i class="icon-newspaper text-primary"></i><span>{{ 'Créer un article'|capitalize }}</span></a>
-                <a href="#" class="btn btn-link btn-float has-text"><i class="icon-folder-plus2 text-primary"></i> <span>{{ 'Créer un dossier' }}</span></a>
-                {% if is_granted("ROLE_SUPER_ADMIN") %}
-                    <a href="#" class="btn btn-link btn-float has-text"><i class="icon-plus-circle2  text-primary"></i> <span>{{ 'Ajouter une publicité' }}</span></a>
-                {% endif %}
+<!-- BEGIN HEADER -->
+<div class="page-header navbar navbar-fixed-top">
+    <!-- BEGIN HEADER INNER -->
+    <div class="page-header-inner ">
+        <!-- BEGIN LOGO -->
+        <div class="page-logo">
+            <a href="{{ path('admin_homepage') }}">
+                <img src="{{ asset('global/images/logo/logo-web-admin.jpg') }}" alt="lafinancesengage admin" class="logo-default" /> </a>
+            <div class="menu-toggler sidebar-toggler">
+                <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
             </div>
         </div>
+        <!-- END LOGO -->
+        <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+        <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> </a>
+        <!-- END RESPONSIVE MENU TOGGLER -->
+        <!-- BEGIN PAGE ACTIONS -->
+        <!-- DOC: Remove "hide" class to enable the page header actions -->
+        <div class="page-actions">
+            <div class="btn-group">
+                <button type="button" class="btn btn-circle btn-outline red dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-plus"></i>&nbsp;
+                    <span class="hidden-sm hidden-xs">Nouveau&nbsp;</span>&nbsp;
+                    <i class="fa fa-angle-down"></i>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <a href="javascript:;">
+                            <i class="icon-docs"></i> New Post </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="icon-tag"></i> New Comment </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="icon-share"></i> Share </a>
+                    </li>
+                    <li class="divider"> </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="icon-flag"></i> Comments
+                            <span class="badge badge-success">4</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="icon-users"></i> Feedbacks
+                            <span class="badge badge-danger">2</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- END PAGE ACTIONS -->
+        <!-- BEGIN PAGE TOP -->
+        <div class="page-top">
+            <!-- BEGIN TOP NAVIGATION MENU -->
+            <div class="top-menu">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="dropdown dropdown-user">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            <img alt="" class="img-circle" src="" />
+                            <span class="username username-hide-on-mobile"> {{ app.user.username|capitalize }} </span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-default">
+                            <li>
+                                <a href="#">
+                                    <i class="icon-user"></i> Mon Profile
+                                </a>
+                            </li>
+                            <li class="divider"> </li>
+                            <li>
+                                <a href="{{ path('fos_user_security_logout') }}">
+                                    <i class="icon-key"></i> {{ 'Se deconnecter' }}
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- END USER LOGIN DROPDOWN -->
+                    <!-- BEGIN QUICK SIDEBAR TOGGLER -->
+                    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                    <!--<li class="dropdown dropdown-extended quick-sidebar-toggler">
+                        <span class="sr-only">Toggle Quick Sidebar</span>
+                        <i class="icon-logout"></i>
+                    </li>-->
+                    <!-- END QUICK SIDEBAR TOGGLER -->
+                </ul>
+            </div>
+            <!-- END TOP NAVIGATION MENU -->
+        </div>
+        <!-- END PAGE TOP -->
     </div>
+    <!-- END HEADER INNER -->
 </div>
-<!-- /page header -->
+<!-- END HEADER -->
