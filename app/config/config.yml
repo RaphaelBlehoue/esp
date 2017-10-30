@@ -213,3 +213,12 @@ liip_imagine:
             quality: 95
             filters:
                 thumbnail: { size: [1200, 480], mode: outbound }
+
+        my_thumb_profolio_full:
+            quality: 100
+            filters:
+                relative_resize: { widen: 1200 }
+                watermark :
+                    image: "%kernel.root_dir%/../web/global/images/logo/logo_final.png"
+                    size: 0.2
+                    position: bottomright

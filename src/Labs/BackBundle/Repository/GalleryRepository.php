@@ -182,4 +182,21 @@ class GalleryRepository extends \Doctrine\ORM\EntityRepository
         $qb->setParameter('id', $id);
         return $qb->getQuery()->getOneOrNullResult();
     }
+
+    /**
+     * @return array
+     */
+    public function getAllGalleryWithMediaActived()
+    {
+        $qb = $this->createQueryBuilder('g');
+        $qb->leftJoin('g.medias', 'm')
+            ->addSelect('m');
+        $qb->where(
+            $qb->expr()->eq('g.online', 1)
+        );
+        $qb->andWhere(
+            $qb->expr()->eq('m.actived', 1)
+        );
+        return $qb->getQuery()->getResult();
+    }
 }

@@ -30,7 +30,6 @@ class AppKernel extends Kernel
             new Liip\ImagineBundle\LiipImagineBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new Labs\BackBundle\LabsBackBundle(),
-            new Labs\UboldBundle\LabsUboldBundle(),
             new Labs\PagesBundle\LabsPagesBundle(),
         ];
 

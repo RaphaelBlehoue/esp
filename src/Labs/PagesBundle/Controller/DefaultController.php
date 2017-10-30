@@ -2,6 +2,7 @@
 
 namespace Labs\PagesBundle\Controller;
 
+use Labs\BackBundle\Entity\Gallery;
 use Labs\BackBundle\Entity\Post;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -207,6 +208,31 @@ class DefaultController extends Controller
         ]);
         return $this->render('LabsPagesBundle:Default:blog_single.html.twig',[
             'post' => $post
+        ]);
+    }
+
+    /**
+     * @return Response
+     * @Route("/portfolio", name="portfolio")
+     */
+    public function portfolioAction()
+    {
+        $albums = $this->getDoctrine()->getRepository('LabsBackBundle:Gallery')->getAllGalleryWithMediaActived();
+        return $this->render('LabsPagesBundle:Default:portfolio.html.twig',[
+            'albums' => $albums
+        ]);
+    }
+
+    /**
+     * @param $slug
+     * @return Response
+     * @Route("/portfolio/{slug}", name="single_portfolio")
+     */
+    public function portfolioSingleAction($slug)
+    {
+        $albums = $this->getDoctrine()->getRepository('LabsBackBundle:Gallery')->getAllGalleryWithMediaActived();
+        return $this->render('LabsPagesBundle:Default:portfolio_single.html.twig',[
+            'albums' => $albums
         ]);
     }
 

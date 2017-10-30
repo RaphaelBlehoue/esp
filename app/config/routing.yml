@@ -3,11 +3,6 @@ labs_pages:
     type:     annotation
     prefix:   /
 
-labs_ubold:
-    resource: "@LabsUboldBundle/Controller/"
-    type:     annotation
-    prefix:   /tpl
-
 labs_back:
     resource: "@LabsBackBundle/Controller/"
     type:     annotation

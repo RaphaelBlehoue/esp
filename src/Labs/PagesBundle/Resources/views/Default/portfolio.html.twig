@@ -1,0 +1,76 @@
+{% extends '::base.html.twig' %}
+{% block title %} {{ 'FORUM POUR LE FINANCEMENT DU SECTEUR PRIVÉ'|capitalize }}{% endblock %}
+{% block cssClass %}
+    layout-full-width header-transparent header-menu-right sticky-header sticky-white subheader-both-center no-content-padding
+{% endblock %}
+{% block stylesheets %}
+    <link rel='stylesheet' href="{{ asset('baseLayout/css/structure.css') }}">
+    <link rel='stylesheet' href="{{ asset('baseLayout/css/finances.css') }}">
+    <link rel='stylesheet' href="{{ asset('baseLayout/css/custom.css') }}">
+{% endblock %}
+{% block subHeader %}
+    <div id="Subheader">
+        <div class="container">
+            <div class="column one">
+                <h1 class="title">{{ 'Galerie photos'|upper }}</h1>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block body %}
+    <div id="Content">
+        <div class="content_wrapper clearfix">
+            <div class="sections_group">
+                <div class="extra_content">
+                </div>
+                <!-- Portfolio filters -->
+                <div class="section">
+                    <div class="section_wrapper clearfix">
+                        <!-- One full width row-->
+                        <div class="column one column_portfolio">
+                            <div class="portfolio_wrapper isotope_wrapper">
+                                <ul class="portfolio_group lm_wrapper isotope grid">
+                                    {% for galery in albums %}
+                                        <li class="portfolio-item isotope-item category-artwork category-banner wide">
+                                        <div class="portfolio-item-fw-bg">
+                                            <div class="portfolio-item-fw-wrapper">
+                                                <div class="image_frame scale-with-grid">
+                                                    <div class="image_wrapper">
+                                                        <a href="{{ path('single_portfolio', {'slug': galery.name} ) }}">
+                                                            <div class="mask"></div>
+                                                            {% for media in galery.medias %}
+                                                                <img width="576" height="450" src="{{ media.assertPath|imagine_filter('my_thumb_article') }}" class="scale-with-grid wp-post-image" alt="{{ galery.name }}" />
+                                                            {% endfor %}
+                                                        </a>
+                                                        <div class="image_links double">
+                                                                {% for media in galery.medias %}
+                                                                    <a href="{{ media.assertPath|imagine_filter('my_thumb_profolio_full') }}" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
+                                                                {% endfor %}
+                                                               <a href="{{ path('single_portfolio', {'slug': galery.name} ) }}" class="link"><i class="icon-link"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                                <!-- One full width row-->
+                                <div class="column one pager_wrapper">
+                                    <!-- Navigation Area -->
+                                    <div class="pager">
+                                        <div class="pages">
+                                            <a href="#" class="page active">1</a><a href="#" class="page">2</a><a href="#" class="page">3</a>
+                                        </div><a class="next_page" href="#">Next page<i class="icon-right-open"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block javascripts %}{% endblock %}
