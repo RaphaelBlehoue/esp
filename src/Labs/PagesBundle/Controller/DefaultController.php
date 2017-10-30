@@ -159,14 +159,36 @@ class DefaultController extends Controller
             'speaker' => $speaker
         ]);
     }
-    
+
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/forum/{team}/speakers", name="viewspeaker")
+     */
+    public function renderArticleAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $articles = $em->getRepository('LabsBackBundle:Post')->findBy(
+            ['status' => 1], ['created' => 'Desc'], ['limit' => 3]
+        );
+        return $this->render('LabsPagesBundle:includes:footer.html.twig',[
+            'articles' => $articles
+        ]);
+    }
+
+
     /**
      * @return \Symfony\Component\HttpFoundation\Response
      * @Route("/medias/communiques_de_presse", name="blog")
      */
     public function BlogPageBundle()
     {
-        return $this->render('LabsPagesBundle:Default:blog.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $posts = $em->getRepository('LabsBackBundle:Post')->findBy([
+            'status' => 1
+        ]);
+        return $this->render('LabsPagesBundle:Default:blog.html.twig',[
+            'posts' => $posts
+        ]);
     }
 
     /**
@@ -174,10 +196,18 @@ class DefaultController extends Controller
      * @param $slug
      * @Route("/actualite/new_{id}/{slug}", name="single_blog")
      * @Route("GET")
+     * @return Response
      */
     public function getSingleBlogAction(Post $post, $slug)
     {
-        die('ok');
+        $em = $this->getDoctrine()->getManager();
+        $post = $em->getRepository('LabsBackBundle:Post')->findOneBy([
+            'id' => $post,
+            'slug' => $slug
+        ]);
+        return $this->render('LabsPagesBundle:Default:blog_single.html.twig',[
+            'post' => $post
+        ]);
     }
 
     /**
@@ -208,7 +238,7 @@ class DefaultController extends Controller
     public function downloadreportfileAction($filename)
     {
         $doc = $this->getOneDocs($filename);
-        $files = $doc->getAssertPath();
+        $files = $doc->getAssertPathDoc();
         $content = file_get_contents($files);
         $response = new Response();
         $response->headers->set('Content-Type', 'application/force-download');
@@ -292,7 +322,9 @@ class DefaultController extends Controller
     private function getOneDocs($docName)
     {
         $em = $this->getDoctrine()->getManager();
-        $docs = $em->getRepository('LabsBackBundle:Document')->findOne($docName);
+        $docs = $em->getRepository('LabsBackBundle:Post')->findOneBy([
+            'documentName' => $docName
+        ]);
         return $docs;
     }
 

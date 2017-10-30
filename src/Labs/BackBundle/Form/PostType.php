@@ -20,7 +20,8 @@ class PostType extends AbstractType
     {
         $builder
             ->add('title',TextType::class, array('label' => false, 'attr'  => array('class' => 'form-control')))
-            ->add('videoLink',TextType::class, array('label' => false, 'attr'  => array('class' => 'form-control')))
+            ->add('videoLink',TextType::class, array('label' => false, 'required' => false, 'attr'  => array('class' => 'form-control')))
+            ->add('docsName',TextType::class, array('label' => false, 'required' => false, 'attr'  => array('class' => 'form-control')))
             ->add('status',ChoiceType::class,[
                 'label' => false,
                 'choices' => array(
@@ -29,7 +30,8 @@ class PostType extends AbstractType
                 )
             ])
             ->add('content', CKEditorType::class, array(
-                'label' => false
+                'label' => false,
+                'required' => false
             ))            
             ->add('imageFile',VichImageType::class,array(
                 'label' => false,

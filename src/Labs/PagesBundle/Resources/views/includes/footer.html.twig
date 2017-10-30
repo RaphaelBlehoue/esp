@@ -31,33 +31,17 @@
                     <h4>{{ 'Articles recents' }}</h4>
                     <div class="Recent_posts">
                         <ul>
-                            <li class="post-175 post  format-standard has-post-thumbnail  category-motion category-photography category-uncategorized tag-eclipse tag-grid tag-mysql">
+                            {% for art in articles %}
+                                <li class="post-17{{ loop.index }} post  format-standard has-post-thumbnail  category-motion category-photography category-uncategorized tag-eclipse tag-grid tag-mysql">
                                 <a href="">
-                                    <div class="photo"><img width="80" height="80" src="http://via.placeholder.com/80x80" class="scale-with-grid wp-post-image" alt="beauty_portfolio_2" /><span class="c">4</span>
+                                    <div class="photo"><img width="80" height="80" src="{{ art.assertPath|imagine_filter('my_thumb_off_index_small') }}" class="scale-with-grid wp-post-image" alt="{{ art.title }}" />
                                     </div>
                                     <div class="desc">
-                                        <h6>{{ 'Titre de l\'articles' }}</h6><span class="date"><i class="icon-clock"></i>{{ 'now'|date('d M Y') }}</span>
+                                        <h6>{{ art.title}}</h6><span class="date"><i class="icon-clock"></i>{{ 'now'|date('d M, Y') }}</span>
                                     </div>
                                 </a>
                             </li>
-                            <li class="post-176 post  format-standard has-post-thumbnail  category-motion category-photography category-uncategorized tag-eclipse tag-grid tag-mysql">
-                                <a href="">
-                                    <div class="photo"><img width="80" height="80" src="http://via.placeholder.com/80x80" class="scale-with-grid wp-post-image" alt="beauty_portfolio_2" /><span class="c">4</span>
-                                    </div>
-                                    <div class="desc">
-                                        <h6>{{ 'Titre de l\'articles' }}</h6><span class="date"><i class="icon-clock"></i>{{ 'now'|date('d M Y') }}</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="post-177 post  format-standard has-post-thumbnail  category-motion category-photography category-uncategorized tag-eclipse tag-grid tag-mysql">
-                                <a href="">
-                                    <div class="photo"><img width="80" height="80" src="http://via.placeholder.com/80x80" class="scale-with-grid wp-post-image" alt="beauty_portfolio_2" /><span class="c">4</span>
-                                    </div>
-                                    <div class="desc">
-                                        <h6>{{ 'Titre de l\'articles' }}</h6><span class="date"><i class="icon-clock"></i>{{ 'now'|date('d M Y') }}</span>
-                                    </div>
-                                </a>
-                            </li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </aside>

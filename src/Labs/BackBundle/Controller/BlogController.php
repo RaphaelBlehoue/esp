@@ -66,7 +66,7 @@ class BlogController extends Controller
         $em = $this->getDoctrine()->getManager();
         $posts = $em->getRepository('LabsBackBundle:Post')->find($post);
         if(null === $posts){
-            throw new NotFoundHttpException("L'element d'id ".$post." n'existe pas");
+            throw new NotFoundHttpException("L'element n'existe pas");
         }
         $form = $this->createForm(PostType::class, $posts);
         $form->handleRequest($request);
@@ -77,7 +77,7 @@ class BlogController extends Controller
         }
         return $this->render('LabsBackBundle:Posts:edit_post.html.twig',array(
             'form' => $form->createView(),
-            'id'   => $posts->getId()
+            'post'   => $posts
         ));
     }
 

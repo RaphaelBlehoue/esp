@@ -31,45 +31,47 @@
                             <div class="blog_wrapper isotope_wrapper">
                                 <!-- Blog timeline element-->
                                 <div class="posts_group lm_wrapper timeline">
-                                    <div class="post-175 post  format-standard has-post-thumbnail  category-motion category-photography category-uncategorized tag-eclipse tag-grid tag-mysql post-item isotope-item clearfix">
+                                    {% for post in posts %}
+                                        <div class="post-175 post  format-standard has-post-thumbnail  category-motion category-photography category-uncategorized tag-eclipse tag-grid tag-mysql post-item isotope-item clearfix">
                                         <div class="date_label">
-                                            May 13, 2014
+                                            {{ post.created|date('d m, Y') }}
                                         </div>
                                         <div class="image_frame post-photo-wrapper scale-with-grid">
                                             <div class="image_wrapper">
                                                 <a href="#">
                                                     <div class="mask"></div>
-                                                    <img width="576" height="450" src="{{ asset('global/images/logo/logo-esp.jpg') }}" class="scale-with-grid wp-post-image" alt="beauty_portfolio_2" />
+                                                    <img width="576" height="450" src="{{ post.assertPath|imagine_filter('my_thumb_article') }}" class="scale-with-grid wp-post-image" alt="{{ post.title }}" />
                                                 </a>
                                                 <div class="image_links double">
-                                                    <a href="{{ asset('global/images/logo/logo-esp.jpg') }}" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a href="#" class="link"><i class="icon-link"></i></a>
+                                                    <a href="{{ asset(post.assertPath) }}" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a href="{{ path('single_blog', {'id' : post.id, 'slug': post.slug}) }}" class="link"><i class="icon-link"></i></a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="post-desc-wrapper">
                                             <div class="post-desc">
                                                 <div class="post-title">
-                                                    <h2 class="entry-title"><a href="#">{{ 'Lancement du Forum la Finance S\'engage Edition 2016' }}</a></h2>
+                                                    <h2 class="entry-title"><a href="{{ path('single_blog', {'id' : post.id, 'slug': post.slug}) }}">{{ post.title }}</a></h2>
                                                 </div>
                                                 <div class="post-excerpt">
-                                                    <span class="big">Vitae adipiscing turpis. Aenean ligula nibh, molestie id viverra a, dapibus at dolor. In iaculis viverra neque, ac ele molestie id viverra aifend ante lobortis id. In viverra ipsum stie id viverra a.</span>
+                                                    <span class="big">{{ post.content|truncate(350, false, '...')|raw }}</span>
                                                 </div>
                                                 <div class="post-footer">
                                                     <div class="post-links">
                                                         <i class="icon-comment-empty-fa"></i>
-                                                        <a href="#" class="post-more">{{ 'lire la suite'|capitalize }}</a>
+                                                        <a href="{{ path('single_blog', {'id' : post.id, 'slug': post.slug}) }}" class="post-more">{{ 'lire la suite'|capitalize }}</a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    {% endfor %}
                                 </div>
                                 <!-- One full width row-->
-                                <div class="column one pager_wrapper">
+                                <!--<div class="column one pager_wrapper">
                                     <!-- Navigation Area -->
-                                    <div class="pager">
+                                    <!--<div class="pager">
                                         <div class="pages">
-                                            <a href="blog-full-timeline.html" class="active">1</a>
+                                            <a href="#" class="active">1</a>
                                             <a href="#" >2</a>
                                             <a href="#" >3</a>
                                             <a href="#" >4</a>
@@ -77,7 +79,7 @@
                                             <a href="#" >6</a>
                                         </div><a class="next_page" href="#">Next page<i class="icon-right-open"></i></a>
                                     </div>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
                     </div>

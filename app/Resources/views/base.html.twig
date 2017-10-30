@@ -119,7 +119,7 @@
     </div>
     <!-- Main Content -->
     {% block body %}{% endblock %}
-    {% include 'LabsPagesBundle:includes:footer.html.twig' %}
+    {{ render(controller('LabsPagesBundle:Default:renderArticle')) }}
 </div>
 
 <!-- JS -->

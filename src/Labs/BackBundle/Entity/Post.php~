@@ -30,7 +30,11 @@ class Post
     /**
      *
      * @Vich\UploadableField(mapping="blog_image", fileNameProperty="imageName")
-     *
+     * @Assert\File(
+     *     maxSize = "1M",
+     *     mimeTypes = {"image/jpeg"},
+     *     mimeTypesMessage = "le type de fichier ({{ type }}) est invalide"
+     * )
      * @var File $imageFile
      */
     protected $imageFile;
@@ -43,9 +47,19 @@ class Post
     protected $imageName;
 
     /**
+     * @var
+     * @ORM\Column(name="docs_name", type="string", length=225)
+     */
+    protected $docsName;
+
+    /**
      *
      * @Vich\UploadableField(mapping="blog_doc", fileNameProperty="documentName")
-     *
+     * @Assert\File(
+     *     maxSize="1M",
+     *     mimeTypes={"application/pdf", "application/x-pdf"},
+     *     mimeTypesMessage="Uplodez un fichier PDF valide"
+     * )
      * @var File $documentFile
      */
     protected $documentFile;
@@ -53,7 +67,7 @@ class Post
     /**
      * @var string $documentName
      *
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     protected $documentName;
 
@@ -63,13 +77,15 @@ class Post
      * @var string
      *
      * @ORM\Column(name="title", type="string", length=255)
+     * @Assert\NotNull(message="Veuiilez renseignez le titre")
+     * @Assert\NotBlank(message="Ce champs ne peut être vide")
      */
     protected $title;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="video_link", type="string", length=255)
+     * @ORM\Column(name="video_link", type="string", length=255, nullable=true)
      */
     protected $videoLink;
 
@@ -200,11 +216,23 @@ class Post
         return 'uploads/posts';
     }
 
+    public function getUploadDocDir()
+    {
+        // On retourne le chemin relatif vers l'image pour un navigateur
+        return 'uploads/docs';
+    }
+
 
     protected function getUploadRootDir()
     {
         // On retourne le chemin relatif vers l'image pour notre code PHP
         return __DIR__.'/../../../../web/'.$this->getUploadDir();
+    }
+
+    protected function getUploadRootDocDir()
+    {
+        // On retourne le chemin relatif du docment pour notre code PHP
+        return __DIR__.'/../../../../web/'.$this->getUploadDocDir();
     }
 
 
@@ -214,6 +242,14 @@ class Post
     public function getAssertPath()
     {
         return $this->getUploadDir().'/'.$this->imageName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAssertPathDoc()
+    {
+        return $this->getUploadDir().'/'.$this->documentName;
     }
 
     /**
@@ -285,5 +321,102 @@ class Post
         return $this->slug;
     }
 
-}
 
+    /**
+     *
+     * @param File|\Symfony\Component\HttpFoundation\File\UploadedFile $doc
+     *
+     * @return Post
+     */
+    public function setDocumentFile(File $doc = null)
+    {
+        $this->documentFile = $doc;
+        if ($doc) {
+            // It is required that at least one field changes if you are using doctrine
+            // otherwise the event listeners won't be called and the file is lost
+            $this->created = new \DateTime('now');
+        }
+        return $this;
+    }
+
+    /**
+     * @return File
+     */
+    public function getDocumentFile()
+    {
+        return $this->documentFile;
+    }
+
+
+    /**
+     * Set documentName
+     *
+     * @param string $documentName
+     *
+     * @return Post
+     */
+    public function setDocumentName($documentName)
+    {
+        $this->documentName = $documentName;
+
+        return $this;
+    }
+
+    /**
+     * Get documentName
+     *
+     * @return string
+     */
+    public function getDocumentName()
+    {
+        return $this->documentName;
+    }
+
+    /**
+     * Set videoLink
+     *
+     * @param string $videoLink
+     *
+     * @return Post
+     */
+    public function setVideoLink($videoLink)
+    {
+        $this->videoLink = $videoLink;
+
+        return $this;
+    }
+
+    /**
+     * Get videoLink
+     *
+     * @return string
+     */
+    public function getVideoLink()
+    {
+        return $this->videoLink;
+    }
+
+    /**
+     * Set status
+     *
+     * @param boolean $status
+     *
+     * @return Post
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+
+        return $this;
+    }
+
+    /**
+     * Get status
+     *
+     * @return boolean
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
+}

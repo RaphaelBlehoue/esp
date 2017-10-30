@@ -91,7 +91,14 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-md-3 control-label">{{ 'Lien d\'une video' }} <small>(Si disponible)</small></label>
+                                    <label class="col-md-3 control-label">{{ 'Nom du documents' }} <small>(Si disponible)</small></label>
+                                    <div class="col-md-9">
+                                        {{ form_row(form.docsName) }}
+                                        {{ form_errors(form.docsName) }}
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">{{ 'Identifiant de la video' }} <small>(Si disponible)</small></label>
                                     <div class="col-md-9">
                                         {{ form_row(form.videoLink) }}
                                         {{ form_errors(form.videoLink) }}

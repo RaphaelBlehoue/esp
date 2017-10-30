@@ -30,7 +30,11 @@ class Post
     /**
      *
      * @Vich\UploadableField(mapping="blog_image", fileNameProperty="imageName")
-     *
+     * @Assert\File(
+     *     maxSize = "1M",
+     *     mimeTypes = {"image/jpeg"},
+     *     mimeTypesMessage = "le type de fichier ({{ type }}) est invalide"
+     * )
      * @var File $imageFile
      */
     protected $imageFile;
@@ -43,9 +47,19 @@ class Post
     protected $imageName;
 
     /**
+     * @var
+     * @ORM\Column(name="docs_name", type="string", length=225)
+     */
+    protected $docsName;
+
+    /**
      *
      * @Vich\UploadableField(mapping="blog_doc", fileNameProperty="documentName")
-     *
+     * @Assert\File(
+     *     maxSize="1M",
+     *     mimeTypes={"application/pdf", "application/x-pdf"},
+     *     mimeTypesMessage="Uplodez un fichier PDF valide"
+     * )
      * @var File $documentFile
      */
     protected $documentFile;
@@ -63,6 +77,8 @@ class Post
      * @var string
      *
      * @ORM\Column(name="title", type="string", length=255)
+     * @Assert\NotNull(message="Veuiilez renseignez le titre")
+     * @Assert\NotBlank(message="Ce champs ne peut être vide")
      */
     protected $title;
 
@@ -233,7 +249,7 @@ class Post
      */
     public function getAssertPathDoc()
     {
-        return $this->getUploadDir().'/'.$this->documentName;
+        return $this->getUploadDocDir().'/'.$this->documentName;
     }
 
     /**
@@ -402,5 +418,29 @@ class Post
     public function getStatus()
     {
         return $this->status;
+    }
+
+    /**
+     * Set docsName
+     *
+     * @param string $docsName
+     *
+     * @return Post
+     */
+    public function setDocsName($docsName)
+    {
+        $this->docsName = $docsName;
+
+        return $this;
+    }
+
+    /**
+     * Get docsName
+     *
+     * @return string
+     */
+    public function getDocsName()
+    {
+        return $this->docsName;
     }
 }
