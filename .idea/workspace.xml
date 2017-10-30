@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5361487-e47d-4cfc-99ae-051457e332c8" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20171030012406.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Controller/BlogController.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Controller/BlogController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Post.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Post.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Form/PostType.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Form/PostType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Posts/create_post.html.twig" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Posts/create_post.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Posts/edit_post.html.twig" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Posts/edit_post.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Posts/list_post.html.twig" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Posts/list_post.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/blog.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/Default/blog.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/footer.html.twig" afterPath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/footer.html.twig" />
     </list>
     <ignored path="lafinancesengage.dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,12 +60,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="footer.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/footer.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="365">
               <caret line="34" column="63" lean-forward="false" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Version20171030061558.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20171030061558.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-447">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1509344158000" expanded="true" signature="585:637" ph="ALTER TABLE post... " />
+                <marker date="1509344158000" expanded="true" signature="991:1022" ph="ALTER TABLE post... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Version20171024100725.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20171024100725.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-517">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1508839697000" expanded="true" signature="585:632" ph="ALTER TABLE team... " />
+                <marker date="1508839697000" expanded="true" signature="659:777" ph="ALTER TABLE users... " />
+                <marker date="1508839697000" expanded="true" signature="1131:1161" ph="ALTER TABLE team... " />
+                <marker date="1508839697000" expanded="true" signature="1188:1387" ph="ALTER TABLE users... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -263,6 +281,12 @@
               <item name="lafinancesengage.dev" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lafinancesengage.dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lafinancesengage.dev" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="DoctrineMigrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lafinancesengage.dev" type="b2602c69:ProjectViewProjectNode" />
@@ -482,12 +506,12 @@
       <workItem from="1508861117431" duration="955000" />
       <workItem from="1509015383457" duration="1342000" />
       <workItem from="1509285476653" duration="20854000" />
-      <workItem from="1509324593292" duration="11781000" />
+      <workItem from="1509324593292" duration="13719000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="414099000" />
+    <option name="totallyTimeSpent" value="416037000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="0" />
@@ -573,25 +597,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../touslesjr/touslesjours.dev/src/Labs/LimitlessTplBundle/Resources/views/loyout_limitless.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../adminTheme-Metronic/admin_2/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="4866" column="34" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="5198" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/favicon/favicon.ico">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Partner/list_partner.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -979,6 +984,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
           <caret line="34" column="63" lean-forward="false" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20171024100725.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-517">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1508839697000" expanded="true" signature="585:632" ph="ALTER TABLE team... " />
+            <marker date="1508839697000" expanded="true" signature="659:777" ph="ALTER TABLE users... " />
+            <marker date="1508839697000" expanded="true" signature="1131:1161" ph="ALTER TABLE team... " />
+            <marker date="1508839697000" expanded="true" signature="1188:1387" ph="ALTER TABLE users... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20171030061558.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-447">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1509344158000" expanded="true" signature="585:637" ph="ALTER TABLE post... " />
+            <marker date="1509344158000" expanded="true" signature="991:1022" ph="ALTER TABLE post... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20171030012406.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-195">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
