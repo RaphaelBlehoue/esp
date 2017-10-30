@@ -2,86 +2,80 @@
 
 namespace Labs\BackBundle\Controller;
 
+use Labs\BackBundle\Entity\Gallery;
 use Labs\BackBundle\Entity\Media;
-use Labs\BackBundle\Entity\Project;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
+use Labs\BackBundle\Entity\Post;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 /**
- * Class MediaController
+ * Class MediasController
  * @package Labs\BackBundle\Controller
- * @Route("/Media/gallery")
+ * @Route("/media")
  */
-class MediaController extends Controller
+Class MediaController extends Controller
 {
     /**
-     * @Route("/", name="media_index")
-     */
-    public function indexAction()
-    {
-        $em = $this->getDoctrine()->getManager();
-        $medias = $em->getRepository('LabsBackBundle:Media')->findAll();
-        return $this->render('LabsBackBundle:Medias:index.html.twig', array(
-            'medias' => $medias
-        ));
-    }
-    
-    /**
      * @param Request $request
-     * @param Project $project
-     * @return JsonResponse|\Symfony\Component\HttpFoundation\Response
-     * @Route("/add/{project}/upload", name="media_create")
+     * @param $id
+     * @return JsonResponse
+     * @Route("/set/{id}/{name}/status", options={"expose"=true},  name="set_media_status")
+     * @Method("GET")
+     * @throws \Exception
      */
-    public function AddAction(Request $request, Project $project)
+    public function addStatusMediaActivedOrNotActived(Request $request, $id, $name)
     {
-
         $em = $this->getDoctrine()->getManager();
-        $media = new Media();
-        $projects = $em->getRepository('LabsBackBundle:Project')->getOne($project);
-
-        if($request->isXmlHttpRequest()){
-            /** @var Symfony\Component\HttpFoundation\File\UploadedFile $file */
-            $file = $request->files->get('file');
-            $fileName = $project->getSlug().'_'.md5(uniqid()).'.'.$file->guessExtension();
-            $file->move(
-                $this->container->getParameter('gallery_directory'),
-                $fileName
-            );
-            $media->setUrl($fileName);
-            $media->setProject($projects);
-            $em->persist($media);
-            $em->flush($media);
-            $response = ['success' => 'true'];
-            return new JsonResponse($response);
+        if($request->isXmlHttpRequest() && $request->isMethod('GET'))
+        {
+            $media = $em->getRepository('LabsBackBundle:Media')->findOneMedia($id);
+            $entity = null;
+            if($name == 'Gallery'){
+                $entity = $media->getGallery()->getId();
+            }else{
+                $entity = $media->getPost()->getId();
+            }
+            if($this->clearActivedMedia($entity, $name)){
+                $media->setActived(1);
+                $em->flush();
+                $data = [
+                    'response_post'  => $entity,
+                    'response_media' => $media->getId(),
+                    'status'         => 200,
+                    'text_href'      => 'Détacher de la une',
+                    'message'        => 'Le media a été mis en avant',
+                    'className'      => 'btn-primary actived'
+                ];
+            }
         }
-
-        return $this->render(
-            'LabsBackBundle:Medias:upload_project.html.twig', array(
-            'projects' => $projects
-        ));
+        return new JsonResponse($data, 200);
     }
-    
 
     /**
-     * @param Media $media
-     * @return \Symfony\Component\HttpFoundation\RedirectResponse
-     * @Route("/{id}/delete_project/{project}", name="media_delete_project")
-     * @Method("GET")
+     * @param $entity_name
+     * @param $name
+     * @return mixed
+     * @throws \Exception
+     * Clear Toutes les valeurs actived de l'entity media à 0
      */
-    public function deleteMediaProjectAction(Media $media, $project)
+    private function clearActivedMedia($entity_name, $name)
     {
         $em = $this->getDoctrine()->getManager();
-        $projects = $em->getRepository('LabsBackBundle:Project')->getOne($project);
-        if(null === $media)
-            throw new NotFoundHttpException('Page Introuvable',null, 404);
-        else
-            $em->remove($media);
+        $entity = null;
+        if($name == 'Gallery'){
+            $entity = $em->getRepository('LabsBackBundle:Gallery')->getMediaByGalleryId($entity_name);
+        }
+        $media_post = $entity;
+        foreach ($media_post->getMedias() as $media){
+            $media->setActived(0);
+        }
         $em->flush();
-        $this->addFlash('success', 'La suppression a été fait avec succès');
-        return $this->redirectToRoute('dossier_view', ['id' => $projects->getId()], 302);
+        return true;
     }
 }

@@ -10,4 +10,51 @@ namespace Labs\BackBundle\Repository;
  */
 class MediaRepository extends \Doctrine\ORM\EntityRepository
 {
+    /**
+     * @param $gallery
+     * @return array
+     */
+    public function findForGaleryMedia($gallery)
+    {
+        $qb = $this->createQueryBuilder('m');
+        $qb->where(
+            $qb->expr()->eq('m.gallery', ':gallery')
+        );
+        $qb->setParameter('gallery', $gallery);
+        return $qb->getQuery()->getResult();
+    }
+
+    /**
+     * @param $media
+     * @return mixed
+     * @throws \Doctrine\ORM\NonUniqueResultException
+     */
+    public function findOneMedia($media)
+    {
+        $qb = $this->createQueryBuilder('m');
+        $qb->where(
+            $qb->expr()->eq('m.id', ':media')
+        );
+        $qb->setParameter('media', $media);
+        return $qb->getQuery()->getOneOrNullResult();
+    }
+
+    /**
+     * @param $id
+     * @param $foreignKey
+     * @return array
+     */
+    public function findMediaIsNotMedia($id, $foreignKey)
+    {
+        $qb = $this->createQueryBuilder('m');
+        $qb->where(
+            $qb->expr()->eq('m.gallery', ':foreignKey'),
+            $qb->expr()->neq('m.id', ':id')
+        );
+        $qb->setParameter('foreignKey', $foreignKey);
+        $qb->setParameter('id', $id);
+        return $qb->getQuery()->getResult();
+    }
+
+    /********* version 2 ***********/
 }

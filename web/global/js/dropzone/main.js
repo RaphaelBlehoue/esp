@@ -11,6 +11,8 @@ $(document).ready(function(){
         dictDefaultMessage: 'Faites glisser des fichiers ici <span>ou Sélectionnez des fichiers sur l\'ordinateur</span>',
         maxFilesize: 2, // MB
         maxFiles: 30,
+        thumbnailWidth  : 160,      // Thumbnail width
+        thumbnailHeight : 210,      // Thumbnail height
         maxThumbnailFilesize: 1,
         addRemoveLinks: false,
         acceptedFiles : "image/jpeg,image/png,image/gif",
@@ -21,7 +23,7 @@ $(document).ready(function(){
             this.on('success', function(file, responseText, e){
                 var defaultButton = Dropzone.createElement('<div class="default_pic_container"><a id="'+responseText.media+'" class="btn btn-success btn-labeled link"><b><i class="icon-pushpin"></i></b>Mettre en avant</a></div>');
                 file.previewElement.appendChild(defaultButton);
-                console.log(_entity);
+                console.log(file.previewElement);
                 defaultButton.addEventListener('click', function (evt) {
                     evt.preventDefault();
                     evt.stopPropagation();

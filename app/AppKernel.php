@@ -24,6 +24,7 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Vich\UploaderBundle\VichUploaderBundle(),
             new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
+            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
             new Liip\ImagineBundle\LiipImagineBundle(),

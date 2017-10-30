@@ -66,19 +66,20 @@ class GalleryController extends Controller
         {
             throw new AccessDeniedException("Vous n'êtes pas autorisé à modifier la galerie d'un utilisateur");
         }
+
         // Upload Medias
         if($request->isXmlHttpRequest()){
-            $response = [];
+            $result = [];
             $media = $this->uploadMedia($request, $datas);
             if(null !== $media){
-                $response = [
+                $result = [
                     'results' => 'true',
                     'media'   => $media
                 ];
-                return new JsonResponse($response);
+                return new JsonResponse($result);
             }
-            $response = ['results' => 'false'];
-            return new JsonResponse($response);
+            $result = ['results' => 'false'];
+            return new JsonResponse($result);
         }
 
         $form = $this->createForm(GalleryType::class, $datas);
@@ -91,7 +92,7 @@ class GalleryController extends Controller
         }
         return $this->render('LabsBackBundle:Gallery:edit_page.html.twig', [
             'form' => $form->createView(),
-            'format' => $datas
+            'dossier' => $datas
         ]);
 
     }
@@ -120,17 +121,17 @@ class GalleryController extends Controller
         }
         // Upload Medias
         if($request->isXmlHttpRequest()){
-            $response = [];
+            $result = [];
             $media = $this->uploadMedia($request, $datas);
             if(null !== $media){
-                $response = [
+                $result = [
                     'results' => 'true',
                     'media'   => $media
                 ];
-                return new JsonResponse($response);
+                return new JsonResponse($result);
             }
-            $response = ['results' => 'false'];
-            return new JsonResponse($response);
+            $result = ['results' => 'false'];
+            return new JsonResponse($result);
         }
 
         $form = $this->createForm(GalleryType::class, $datas);

@@ -1,82 +1,121 @@
-{% extends 'LabsUboldBundle::loyout_ubold.html.twig' %}
-{% block Title %}  {{ 'Gestion des Gallery - Brouillon Edition'|capitalize }} {% endblock %}
+{% extends 'LabsBackBundle::admin.html.twig' %}
+{% block title %}{{ 'Gestion de Galerie | La financesengage.com ' }}{% endblock %}
 {% block stylesheets %}
-    <style type="text/css" media="all">
-        .link {
-            cursor: pointer !important;
-        }
-    </style>
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <link href="{{ asset('adminLayout/assets/global/plugins/dropzone/dropzone.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('adminLayout/assets/global/plugins/dropzone/basic.min.css') }}" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL PLUGINS -->
 {% endblock %}
 {% block body %}
-    <!-- Main content -->
-    <!-- Form horizontal -->
-    <div class="panel panel-flat">
-        <div class="panel-heading">
-            <h5 class="panel-title">{{ 'Gestion des Gallery -  Brouillon Edition' }}</h5>
-            <div class="heading-elements">
-                <div class="icons-list">
-                    <a href="{{ path('dossier_index') }}" class="btn btn-primary btn-labeled"><b><i class="icon-menu7"></i></b> Liste des dossiers</a>
-                </div>
-            </div>
+    <!-- BEGIN CONTENT BODY -->
+    <div class="page-content">
+        <!-- BEGIN PAGE HEADER-->
+        <h1 class="page-title"> {{'Gestion des Galeries'}}
+            <small>{{ '| Creation de galerie photos' }}</small>
+        </h1>
+        <div class="page-bar">
+            <ul class="page-breadcrumb">
+                <li>
+                    <i class="icon-home"></i>
+                    <a href="{{ path('admin_homepage') }}">{{ 'Dashboard'|capitalize }}</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <a href="{{ path('dossier_index') }}">{{ 'Photos'|capitalize }}</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <span>{{ 'Brouillons'|capitalize }}</span>
+                </li>
+            </ul>
         </div>
-        <div class="panel-body">
-            {{ form_start(form, { 'action': path('dossier_draft', {'id' : dossier.id , 'user_id': app.user.id}), attr : { 'class':'form-horizontal', 'novalidate': 'novalidate'}}) }}
-            <fieldset class="content-group col-lg-12">
-
-                <legend class="text-bold">Brouillon Edition du dossier - {% if dossier.name|length > 0 %}{{ dossier.name }}{% endif %}</legend>
-
-                <div class="form-group">
-                    <label class="control-label col-lg-3">Titre de la galerie</label>
-                    <div class="col-lg-9">
-                        {{ form_row(form.name) }}
+        <!-- BEGIN PAGE LIST-->
+        <div class="row">
+            <div class="col-md-12">
+                {% if app.session.flashBag.has('success') %}
+                    <div class="alert alert-success" role="alert">
+                        {% for msg in app.session.flashBag.get('success') %}
+                            <strong> Succès </strong>{{ msg }}.
+                        {% endfor %}
                     </div>
-                </div>
-
-
-                <div class="form-group">
-                    <label class="control-label col-lg-3">Status du dossier</label>
-                    <div class="col-lg-3">
-                        {{ form_row(form.online) }}
+                {% endif %}
+                {% if app.session.flashBag.has('error') %}
+                    <div class="alert alert-danger" role="alert">
+                        {% for msg in app.session.flashBag.get('error') %}
+                            <strong> Erreur d'ajout </strong>{{ msg }}.
+                        {% endfor %}
                     </div>
-                </div>
-
-                <!-- File limits -->
-                <div class="panel panel-flat">
-                    <div class="panel-heading">
-                        <h5 class="panel-title">Inserez des fichiers dans le gestion de Media</h5>
-                        <div class="heading-elements">
-                            <ul class="icons-list">
-                                <li><a data-action="collapse"></a></li>
-                                <li><a data-action="reload"></a></li>
-                                <li><a data-action="close"></a></li>
-                            </ul>
+                {% endif %}
+                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                <div class="portlet light ">
+                    <div class="portlet-title">
+                        <div class="caption font-dark">
+                            <i class="icon-settings font-dark"></i>
+                            <span class="caption-subject bold uppercase"> {{ 'Photos' }}</span>
+                        </div>
+                        <div class="actions">
+                            <a href="{{ path('dossier_index') }}" class="btn sbold uppercase btn-outline yellow-gold"><i class="fa fa-plus"></i> {{ 'afficher la liste'|upper }} </a>
                         </div>
                     </div>
-
-                    <div class="panel-body">
-                        <p class="text-semibold">Importez les images ou photos de l'articles</p>
-                        <div action="{{ path('dossier_draft', {'id' : dossier.id, 'user_id': app.user.id }) }}" class="dropzone" id="dropzone-upload" data-name="Format"></div>
+                </div>
+                <!-- END EXAMPLE TABLE PORTLET-->
+                <!-- BEGIN SAMPLE FORM PORTLET-->
+                <div class="portlet box yellow-gold">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="fa fa-draft"></i> {{'Brouillons Album'|capitalize}} | <small class="text-bold">Brouillon Edition de l'album - {% if dossier.name|length > 0 %}{{ dossier.name }}{% endif %}</small>
+                        </div>
+                    </div>
+                    <div class="portlet-body form">
+                        {{ form_start(form, { 'action': path('dossier_draft', {'id' : dossier.id , 'user_id': app.user.id}), attr : { 'class':'form-horizontal', 'novalidate': 'novalidate'}}) }}
+                        {{ form_errors(form) }}
+                        <div class="form-body">
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">{{ 'Status de l\'album' }}</label>
+                                <div class="col-md-9">
+                                    {{ form_row(form.online) }}
+                                    {{ form_errors(form.online) }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">{{ 'Titre de l\'album' }}</label>
+                                <div class="col-md-9">
+                                    {{ form_row(form.name) }}
+                                    {{ form_errors(form.name) }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div action="{{ path('dossier_draft', {'id' : dossier.id, 'user_id': app.user.id }) }}" class="dropzone dropzone-file-area" id="my-dropzone" data-name="Gallery" style="width: 700px; margin-top: 10px;">
+                                    <h3 class="sbold">Faites glisser des fichiers ici <span> ou Sélectionnez des fichiers sur l'ordinateur en cliquant ici</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <div class="row col-md-offset-3 ">
+                                <div class="col-md-4">
+                                    {{ form_row(form.draft) }}
+                                </div>
+                                <div class="col-md-4">
+                                     <div class="text-right">
+                                        <button type="submit" class="btn btn-primary">Enregistrer & Continuer <i class="icon-database-add position-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        {{ form_end(form) }}
                     </div>
                 </div>
-                <!-- /file limits -->
-                <div class="clear"></div>
-                <div class="col-md-6">
-                    <div class="text-left">
-                        {{ form_row(form.draft) }}
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="text-right">
-                        <button type="submit" class="btn btn-primary">Enregistrer & Continuer <i class="icon-database-add position-right"></i></button>
-                    </div>
-                </div>
-            </fieldset>
-            {{ form_end(form) }}
+                <!-- END SAMPLE FORM PORTLET-->
+            </div>
         </div>
+        <!-- END PAGE LIST-->
     </div>
+    <!-- END PAGE HEADER-->
 {% endblock %}
 {% block javascripts %}
     {{ parent() }}
-    <script type="text/javascript" src="{{ asset('global/js/uploaders/dropzone.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('global/js/dropzone/main.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('adminLayout/assets/global/plugins/dropzone/dropzone.min.js') }}"></script>
+{% endblock %}
+{% block extra %}
+    {{ parent() }}
+        <script type="text/javascript" src="{{ asset('adminLayout/assets/pages/scripts/form-dropzone.js') }}"></script>
 {% endblock %}

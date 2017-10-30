@@ -16,7 +16,7 @@ class GalleryType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('name', TextType::class,array('label' => false, 'attr' => array('placeholder'=> 'Titre du Grand Format')))
+            ->add('name', TextType::class,array('label' => false, 'attr' => array('placeholder'=> 'Titre de L\'album', 'class' => 'form-control')))
             ->add('online',ChoiceType::class, array(
                 'label' => false,
                 'choices' => array(

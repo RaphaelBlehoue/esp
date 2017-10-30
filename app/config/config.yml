@@ -199,6 +199,11 @@ liip_imagine:
             filters:
                 thumbnail: { size: [276, 250], mode: outbound }
 
+        my_thumb_off_back:
+            quality: 95
+            filters:
+                thumbnail: { size: [223, 223], mode: outbound }
+
         my_thumb_article:
             quality: 95
             filters:

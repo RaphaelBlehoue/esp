@@ -74,7 +74,7 @@ class GalleryRepository extends \Doctrine\ORM\EntityRepository
         $qb->where(
             $qb->expr()->eq('f.id', ':gallery')
         );
-        $qb->setParameter('Gallery', $gallery);
+        $qb->setParameter('gallery', $gallery);
         return $qb->getQuery()->getOneOrNullResult();
     }
 
