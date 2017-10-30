@@ -2,6 +2,7 @@
 
 namespace Labs\PagesBundle\Controller;
 
+use Labs\BackBundle\Entity\Post;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
@@ -166,6 +167,17 @@ class DefaultController extends Controller
     public function BlogPageBundle()
     {
         return $this->render('LabsPagesBundle:Default:blog.html.twig');
+    }
+
+    /**
+     * @param Post $post
+     * @param $slug
+     * @Route("/actualite/new_{id}/{slug}", name="single_blog")
+     * @Route("GET")
+     */
+    public function getSingleBlogAction(Post $post, $slug)
+    {
+        die('ok');
     }
 
     /**

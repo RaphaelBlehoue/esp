@@ -1,79 +1,128 @@
-{% extends 'LabsUboldBundle::loyout_ubold.html.twig' %}
-{% block title %}{{ 'Page Blog - Page | AGR' }}{% endblock %}
+{% extends 'LabsBackBundle::admin.html.twig' %}
+{% block title %}{{ 'Gestion des Actualités | La financesengage.com ' }}{% endblock %}
+{% block stylesheets %}
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <link href="{{ asset('adminLayout/assets/global/plugins/datatables/datatables.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('adminLayout/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css') }}" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL PLUGINS -->
+{% endblock %}
 {% block body %}
-    <div class="content">
-        <div class="container">
-            <!-- Page-Title -->
-            <div class="row">
-                <div class="col-sm-12">
-                    {% if app.session.flashBag.has('success') %}
-                        <div class="alert alert-success" role="alert">
-                            {% for msg in app.session.flashBag.get('success') %}
-                                <strong> Succès </strong>{{ msg }}.
-                            {% endfor %}
+    <!-- BEGIN CONTENT BODY -->
+    <div class="page-content">
+        <!-- BEGIN PAGE HEADER-->
+        <h1 class="page-title"> {{'Gestion des Actualités'}}
+            <small>{{ '| Liste des actualités du Blog' }}</small>
+        </h1>
+        <div class="page-bar">
+            <ul class="page-breadcrumb">
+                <li>
+                    <i class="icon-home"></i>
+                    <a href="{{ path('admin_homepage') }}">{{ 'Dashboard'|capitalize }}</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <a href="{{ path('post_list') }}">{{ 'Actualités'|capitalize }}</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <span>{{ 'liste'|capitalize }}</span>
+                </li>
+            </ul>
+        </div>
+        <!-- BEGIN PAGE LIST-->
+        <div class="row">
+            <div class="col-md-12">
+                {% if app.session.flashBag.has('success') %}
+                    <div class="alert alert-success" role="alert">
+                        {% for msg in app.session.flashBag.get('success') %}
+                            <strong> Succès </strong>{{ msg }}.
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                <div class="portlet light ">
+                    <div class="portlet-title">
+                        <div class="caption font-dark">
+                            <i class="icon-settings font-dark"></i>
+                            <span class="caption-subject bold uppercase"> {{ 'Actualités' }}</span>
                         </div>
-                    {% endif %}
-
-                    <h4 class="page-title">{{  'Page About' }}</h4>
-                    <ol class="breadcrumb">
-                        <li>
-                            <a href="{{ path('homepage') }}">{{ 'AGR' }}</a>
-                        </li>
-                        <li class="active">
-                            {{ 'Page Blog ' }}
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <!-- end Page Title -->
-            <!-- page content -->
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="card-box">
-                        <h4 class="m-t-0 header-title"><b>{{ 'Page Blog ' }}</b></h4>
-                        <p class="text-muted font-13">
-                            <span class="pull-left">Liste du contenu des pages</span>
-                            <span class="pull-right"> <a href="{{ path('post_create') }}" class="btn btn-primary btn-block">{{ 'Créer blog' }}</a> </span>
-                        </p>
-                        <div class="clearfix"></div>
-
-                        <table data-toggle="table"
-                               data-show-columns="false"
-                               data-page-list="[5, 10, 20]"
-                               data-page-size="5"
-                               data-pagination="true" data-show-pagination-switch="true" class="table-bordered " class="padding-top-sm">
+                        <div class="actions">
+                            <a href="{{ path('post_create') }}" class="btn sbold uppercase btn-outline yellow-gold"><i class="fa fa-plus"></i> {{ 'Créer un articles'|upper }} </a>
+                        </div>
+                    </div>
+                    <div class="portlet-body">
+                        <table class="table table-striped table-bordered table-hover table-checkable order-column" id="sample_1">
                             <thead>
                             <tr>
-                                <th data-field="tite" data-switchable="false">{{ 'Titre' }}</th>
-                                <th data-field="subtite" data-switchable="false">{{ 'slug' }}</th>
-                                <th data-field="name">{{ 'date' }}</th>
-                                <th data-field="user-status" class="text-center">Edit</th>
-                                <th data-field="user-del" class="text-center">Del</th>
+                                <th> {{ '#ID' }} </th>
+                                <th> {{ 'Titre de l\'articles' }} </th>
+                                <th> {{ 'Date de création' }} </th>
+                                <th> {{ 'Status' }} </th>
+                                <th> Actions </th>
                             </tr>
                             </thead>
-
                             <tbody>
                             {% for post in posts %}
-                                <tr>
-                                    <td>{{ post.title }}</td>
-                                    <td>{{ post.slug }}</td>
-                                    <td>{{ post.created|date('Y-m-d') }}</td>
-                                    <td><a class="btn btn-block btn-primary" href="{{ path('post_edit', {'id' : post.id }) }}">{{ "Modifier" }}</a></td>
-                                    <td><a class="btn btn-block btn-danger" href="{{ path('post_delete', {'id' : post.id }) }}">{{ "Delete" }}</a></td>
+                                <tr class="odd gradeX">
+                                    <td>
+                                        <span>
+                                            {{ post.id }}
+                                        </span>
+                                    </td>
+                                    <td>
+                                        {{ post.title }}
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm {{ (true == post.status) ? 'label-success' : 'label-danger' }}">
+                                            {{ (true == post.status) ? 'En Ligne' : 'Hors ligne' }}
+                                        </span>
+                                    </td>
+                                    <td class="center"> {{ post.created|date('d , m Y') }}</td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu pull-left" role="menu">
+                                                <li>
+                                                    <a href="{{ path('post_edit', {'id': post.id}) }}">
+                                                        <i class="icon-docs"></i> {{ 'Modifier Articles' }}
+                                                    </a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li>
+                                                    <a href="{{ path('post_delete', {'id': post.id}) }}">
+                                                        <i class="icon-tag"></i> {{ 'supprimer articles' }}
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
                                 </tr>
                             {% endfor %}
                             </tbody>
                         </table>
                     </div>
                 </div>
+                <!-- END EXAMPLE TABLE PORTLET-->
             </div>
-            <!-- end page content -->
         </div>
+        <!-- END PAGE LIST-->
+
+
     </div>
+    <!-- END PAGE HEADER-->
 {% endblock %}
 
 {% block javascripts %}
     {{ parent() }}
-    <script src="{{ asset('bundles/labsubold/assets/plugins/bootstrap-table/js/bootstrap-table.min.js') }}"></script>
-    <script src="{{ asset('bundles/labsubold/assets/pages/jquery.bs-table.js') }}"></script>
+    <script src="{{ asset('adminLayout/assets/global/scripts/datatable.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('adminLayout/assets/global/plugins/datatables/datatables.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('adminLayout/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js') }}" type="text/javascript"></script>
+{% endblock %}
+{% block extra %}
+  {{ parent() }}
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script src="{{ asset('adminLayout/assets/pages/scripts/table-datatables-managed.min.js') }}" type="text/javascript"></script>
+    <!-- END PAGE LEVEL SCRIPTS -->
 {% endblock %}

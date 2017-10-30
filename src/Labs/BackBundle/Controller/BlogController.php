@@ -68,7 +68,7 @@ class BlogController extends Controller
         if(null === $posts){
             throw new NotFoundHttpException("L'element d'id ".$post." n'existe pas");
         }
-        $form = $this->createForm(PostEditType::class, $posts);
+        $form = $this->createForm(PostType::class, $posts);
         $form->handleRequest($request);
         if($form->isValid())
         {
@@ -93,7 +93,7 @@ class BlogController extends Controller
         $em = $this->getDoctrine()->getManager();
         $posts = $em->getRepository('LabsBackBundle:Post')->find($post);
         if( null === $posts)
-            throw new NotFoundHttpException('Le poste '.$post.' n\'existe pas');
+            throw new NotFoundHttpException('Article n\'existe pas');
         else
             $em->remove($posts);
         $em->flush();

@@ -3,6 +3,7 @@
 namespace Labs\BackBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Vich\UploaderBundle\Form\Type\VichImageType;
@@ -19,10 +20,23 @@ class PostType extends AbstractType
     {
         $builder
             ->add('title',TextType::class, array('label' => false, 'attr'  => array('class' => 'form-control')))
+            ->add('videoLink',TextType::class, array('label' => false, 'attr'  => array('class' => 'form-control')))
+            ->add('status',ChoiceType::class,[
+                'label' => false,
+                'choices' => array(
+                    'Mettre en Ligne' => true,
+                    'Garder Hors ligne' => false
+                )
+            ])
             ->add('content', CKEditorType::class, array(
                 'label' => false
             ))            
             ->add('imageFile',VichImageType::class,array(
+                'label' => false,
+                'required' => false,
+                'allow_delete' => true
+            ))
+            ->add('documentFile',VichImageType::class,array(
                 'label' => false,
                 'required' => false,
                 'allow_delete' => true

@@ -1,37 +1,26 @@
 {% extends 'LabsBackBundle::admin.html.twig' %}
 {% block stylesheets %}{% endblock %}
 {% block body %}
-    <!-- BEGIN CONTAINER -->
-    <div class="page-container">
-        <!-- BEGIN SIDEBAR -->
-        {{ include('LabsBackBundle:Includes:sidebar.html.twig') }}
-        <!-- END SIDEBAR -->
-        <!-- BEGIN CONTENT -->
-        <div class="page-content-wrapper">
-            <!-- BEGIN CONTENT BODY -->
-            <div class="page-content">
-                <!-- BEGIN PAGE HEADER-->
-                <h1 class="page-title"> {{ 'Dashboard |' }}
-                    <small>{{ 'La Finance s\'engage' }}</small>
-                </h1>
-                <div class="page-bar">
-                    <ul class="page-breadcrumb">
-                        <li>
-                            <i class="icon-home"></i>
-                            <a href="{{ path('admin_homepage') }}">{{ 'Dashboard' }}</a>
-                            <i class="fa fa-angle-right"></i>
-                        </li>
-                    </ul>
-                </div>
-                <!-- END PAGE HEADER-->
-                <div class="note note-info">
-                    <p> {{ 'Administration Dashboard' }} </p>
-                </div>
-            </div>
-            <!-- END CONTENT BODY -->
+    <!-- BEGIN CONTENT BODY -->
+    <div class="page-content">
+        <!-- BEGIN PAGE HEADER-->
+        <h1 class="page-title"> {{ 'Dashboard |' }}
+            <small>{{ 'La Finance s\'engage' }}</small>
+        </h1>
+        <div class="page-bar">
+            <ul class="page-breadcrumb">
+                <li>
+                    <i class="icon-home"></i>
+                    <a href="{{ path('admin_homepage') }}">{{ 'Dashboard' }}</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+            </ul>
         </div>
-        <!-- END CONTENT -->
+        <!-- END PAGE HEADER-->
+        <div class="note note-info">
+            <p> {{ 'Administration Dashboard | cliquez sur les menus de gauche pour ajouter les informations au site web' }} </p>
+        </div>
     </div>
-    <!-- END CONTAINER -->
+    <!-- END CONTENT BODY -->
 {% endblock %}
 {% block javascripts %}{% endblock %}
