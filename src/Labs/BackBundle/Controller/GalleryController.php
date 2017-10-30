@@ -64,7 +64,7 @@ class GalleryController extends Controller
         $datas = $em->getRepository('LabsBackBundle:Gallery')->getGallerysArticles($gallery, $user);
         if( null === $datas)
         {
-            throw new AccessDeniedException("Vous n'êtes pas autorisé à modifier le dossier d'un utilisateur");
+            throw new AccessDeniedException("Vous n'êtes pas autorisé à modifier la galerie d'un utilisateur");
         }
         // Upload Medias
         if($request->isXmlHttpRequest()){
