@@ -230,7 +230,7 @@ class DefaultController extends Controller
      */
     public function portfolioSingleAction($slug)
     {
-        $albums = $this->getDoctrine()->getRepository('LabsBackBundle:Gallery')->getAllGalleryWithMediaActived();
+        $albums = $this->getDoctrine()->getRepository('LabsBackBundle:Gallery')->getOneGalleryBySlug($slug);
         return $this->render('LabsPagesBundle:Default:portfolio_single.html.twig',[
             'albums' => $albums
         ]);

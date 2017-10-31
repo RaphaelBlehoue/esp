@@ -43,6 +43,14 @@ class Gallery
     protected $name;
 
     /**
+     * @var string
+     *
+     * @Assert\NotNull(message="Entrez la description de la céromonie")
+     * @ORM\Column(name="libelle", type="text", nullable=true)
+     */
+    protected $libelle;
+
+    /**
      * @var
      *
      * @ORM\Column(name="created", type="datetime")
@@ -325,5 +333,29 @@ class Gallery
         $this->updated = $updated;
 
         return $this;
+    }
+
+    /**
+     * Set libelle
+     *
+     * @param string $libelle
+     *
+     * @return Gallery
+     */
+    public function setLibelle($libelle)
+    {
+        $this->libelle = $libelle;
+
+        return $this;
+    }
+
+    /**
+     * Get libelle
+     *
+     * @return string
+     */
+    public function getLibelle()
+    {
+        return $this->libelle;
     }
 }

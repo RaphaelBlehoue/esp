@@ -85,6 +85,13 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label class="col-md-3 control-label">{{ 'Resumé de l\'évenement' }}</label>
+                                <div class="col-md-9">
+                                    {{ form_row(form.libelle) }}
+                                    {{ form_errors(form.libelle) }}
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <div action="{{ path('dossier_draft', {'id' : dossier.id, 'user_id': app.user.id }) }}" class="dropzone dropzone-file-area" id="my-dropzone" data-name="Gallery" style="width: 700px; margin-top: 10px;">
                                     <h3 class="sbold">Faites glisser des fichiers ici <span> ou Sélectionnez des fichiers sur l'ordinateur en cliquant ici</span></h3>
                                 </div>

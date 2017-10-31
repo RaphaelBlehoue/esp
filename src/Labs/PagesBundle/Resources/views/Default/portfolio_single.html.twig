@@ -1,0 +1,92 @@
+{% extends '::base.html.twig' %}
+{% block title %} {{ 'FORUM POUR LE FINANCEMENT DU SECTEUR PRIVÉ'|capitalize }}{% endblock %}
+{% block cssClass %}
+    layout-full-width header-transparent header-menu-right sticky-header sticky-white subheader-both-center no-content-padding
+{% endblock %}
+{% block stylesheets %}
+    <link rel='stylesheet' href="{{ asset('baseLayout/css/structure.css') }}">
+    <link rel='stylesheet' href="{{ asset('baseLayout/css/finances.css') }}">
+    <link rel='stylesheet' href="{{ asset('global/css/app-page.css') }}">
+    <link rel='stylesheet' href="{{ asset('baseLayout/css/custom.css') }}">
+{% endblock %}
+{% block subHeader %}
+    <div id="Subheader">
+        <div class="container">
+            <div class="column one">
+                <h1 class="title">{{ 'Documents & photos'|upper }}</h1>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block body %}
+    <div id="Content">
+        <div class="content_wrapper clearfix">
+            <div class="sections_group">
+                <div class="entry-content">
+                    <div class="section flv_sections_29" style="padding-top:40px; padding-bottom:40px;">
+                        <div class="section_wrapper clearfix">
+                            <div class="items_group clearfix">
+                                <div class="column one column_column">
+                                    <div class="column_attr ">
+                                        <div class="flv_style_39">
+                                            <h2 class="themecolor">{{ albums.name|upper }}</h2>
+                                            <p>
+                                                <span class="big">{{ albums.libelle }}</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- One full width row-->
+                                <div class="column one column_column">
+                                    <div class="column_attr ">
+                                        <!-- Image Gallery-->
+                                        <div id='gallery-1' class='gallery galleryid-622 gallery-columns-4 gallery-size-thumbnail '>
+                                            <!-- Gallery item -->
+                                            {% for media in albums.medias %}
+                                                <dl class='gallery-item'>
+                                                    <dt class='gallery-icon landscape'>
+                                                        <a href='{{ media.assertPath|imagine_filter('my_thumb_profolio_full') }}'>
+                                                            <img width="300" height="300" src="{{ media.assertPath|imagine_filter('my_thumb_galerie') }}" class="attachment-thumbnail" alt="{{ albums.name }} | {{ media.assertPath }}" />
+                                                        </a>
+                                                    </dt>
+                                                    <dd></dd>
+                                                </dl>
+                                            {% endfor %}
+                                            <br class="flv_style_25" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section" style="padding-top:80px; padding-bottom:40px; background-color:#fff">
+                    <div class="section_wrapper clearfix">
+                        <div class="items_group clearfix">
+                            <!-- Page Title-->
+                            <!-- One full width row-->
+                            <div class="column one column_fancy_heading">
+                                <div class="fancy_heading fancy_heading_icon">
+                                    <h4 class="title">{{ 'Rejoignez'|upper }} <strong>{{ 'la finance s\'engage'|upper }}</strong> {{ 'sur les reseaux'|upper }}</h4>
+                                </div>
+                            </div>
+                            <!-- One full width row-->
+                            <div class="column one column_column">
+                                <div class="column_attr animate" data-anim-type="bounceIn">
+                                    <div class="aligncenter">
+                                        <a href="#" class="icon_bar icon_bar_facebook icon_bar_large"><span class="t"><i class="icon-facebook"></i></span><span class="b"><i class="icon-facebook"></i></span></a>
+                                        <a href="#" class="icon_bar icon_bar_google icon_bar_large"><span class="t"><i class="icon-gplus"></i></span><span class="b"><i class="icon-gplus"></i></span></a>
+                                        <a href="#" class="icon_bar icon_bar_twitter icon_bar_large"><span class="t"><i class="icon-twitter"></i></span><span class="b"><i class="icon-twitter"></i></span></a>
+                                        <a href="#" class="icon_bar icon_bar_vimeo icon_bar_large"><span class="t"><i class="icon-vimeo"></i></span><span class="b"><i class="icon-vimeo"></i></span></a>
+                                        <a href="#" class="icon_bar icon_bar_youtube icon_bar_large"><span class="t"><i class="icon-play"></i></span><span class="b"><i class="icon-play"></i></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block javascripts %}{% endblock %}

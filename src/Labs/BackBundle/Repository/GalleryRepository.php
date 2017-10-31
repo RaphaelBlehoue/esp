@@ -199,4 +199,16 @@ class GalleryRepository extends \Doctrine\ORM\EntityRepository
         );
         return $qb->getQuery()->getResult();
     }
+
+    public function getOneGalleryBySlug($slug)
+    {
+        $qb = $this->createQueryBuilder('g');
+        $qb->leftJoin('g.medias', 'm')
+            ->addSelect('m');
+        $qb->where(
+            $qb->expr()->eq('g.slug', ':slug')
+        );
+        $qb->setParameter('slug', $slug);
+        return $qb->getQuery()->getOneOrNullResult();
+    }
 }

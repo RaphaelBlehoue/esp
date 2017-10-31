@@ -12,7 +12,7 @@
     <div id="Subheader">
         <div class="container">
             <div class="column one">
-                <h1 class="title">{{ 'Galerie photos'|upper }}</h1>
+                <h1 class="title">{{ 'Documents & photos'|upper }}</h1>
             </div>
         </div>
     </div>
@@ -20,11 +20,20 @@
 {% block body %}
     <div id="Content">
         <div class="content_wrapper clearfix">
-            <div class="sections_group">
-                <div class="extra_content">
-                </div>
-                <!-- Portfolio filters -->
-                <div class="section">
+            <!-- Portfolio filters -->
+                <div class="section" style="padding-top:80px; padding-bottom:5px;">
+                    <div class="section_wrapper clearfix">
+                        <div class="items_group clearfix">
+                            <!-- Page Title-->
+                            <!-- One full width row-->
+                            <div class="column one column_fancy_heading">
+                                <div class="fancy_heading fancy_heading_icon">
+                                    <h2 class="title">{{ 'Galeries photos'|upper }}</h2>
+                                </div>
+                            </div>
+                            <!-- One full width row-->
+                        </div>
+                    </div>
                     <div class="section_wrapper clearfix">
                         <!-- One full width row-->
                         <div class="column one column_portfolio">
@@ -36,7 +45,7 @@
                                             <div class="portfolio-item-fw-wrapper">
                                                 <div class="image_frame scale-with-grid">
                                                     <div class="image_wrapper">
-                                                        <a href="{{ path('single_portfolio', {'slug': galery.name} ) }}">
+                                                        <a href="{{ path('single_portfolio', {'slug': galery.slug} ) }}">
                                                             <div class="mask"></div>
                                                             {% for media in galery.medias %}
                                                                 <img width="576" height="450" src="{{ media.assertPath|imagine_filter('my_thumb_article') }}" class="scale-with-grid wp-post-image" alt="{{ galery.name }}" />
@@ -46,8 +55,13 @@
                                                                 {% for media in galery.medias %}
                                                                     <a href="{{ media.assertPath|imagine_filter('my_thumb_profolio_full') }}" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
                                                                 {% endfor %}
-                                                               <a href="{{ path('single_portfolio', {'slug': galery.name} ) }}" class="link"><i class="icon-link"></i></a>
+                                                               <a href="{{ path('single_portfolio', {'slug': galery.slug} ) }}" class="link"><i class="icon-link"></i></a>
                                                         </div>
+                                                    </div>
+                                                </div>
+                                                <div class="desc">
+                                                    <div class="title_wrapper">
+                                                        <h5 class="entry-title"><a href="{{ path('single_portfolio', {'slug': galery.slug} ) }}">{{ galery.name|upper }}</a></h5>
                                                     </div>
                                                 </div>
                                             </div>
@@ -56,15 +70,39 @@
                                     {% endfor %}
                                 </ul>
                                 <!-- One full width row-->
-                                <div class="column one pager_wrapper">
+                                <!--<div class="column one pager_wrapper">
                                     <!-- Navigation Area -->
-                                    <div class="pager">
+                                   <!-- <div class="pager">
                                         <div class="pages">
                                             <a href="#" class="page active">1</a><a href="#" class="page">2</a><a href="#" class="page">3</a>
                                         </div><a class="next_page" href="#">Next page<i class="icon-right-open"></i></a>
                                     </div>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section" style="padding-top:80px; padding-bottom:40px; background-color:#fff">
+                        <div class="section_wrapper clearfix">
+                            <div class="items_group clearfix">
+                                <!-- Page Title-->
+                                <!-- One full width row-->
+                                <div class="column one column_fancy_heading">
+                                    <div class="fancy_heading fancy_heading_icon">
+                                        <h4 class="title">{{ 'Rejoignez'|upper }} <strong>{{ 'la finance s\'engage'|upper }}</strong> {{ 'sur les reseaux'|upper }}</h4>
+                                    </div>
                                 </div>
-
+                                <!-- One full width row-->
+                                <div class="column one column_column">
+                                    <div class="column_attr animate" data-anim-type="bounceIn">
+                                        <div class="aligncenter">
+                                            <a href="#" class="icon_bar icon_bar_facebook icon_bar_large"><span class="t"><i class="icon-facebook"></i></span><span class="b"><i class="icon-facebook"></i></span></a>
+                                            <a href="#" class="icon_bar icon_bar_google icon_bar_large"><span class="t"><i class="icon-gplus"></i></span><span class="b"><i class="icon-gplus"></i></span></a>
+                                            <a href="#" class="icon_bar icon_bar_twitter icon_bar_large"><span class="t"><i class="icon-twitter"></i></span><span class="b"><i class="icon-twitter"></i></span></a>
+                                            <a href="#" class="icon_bar icon_bar_vimeo icon_bar_large"><span class="t"><i class="icon-vimeo"></i></span><span class="b"><i class="icon-vimeo"></i></span></a>
+                                            <a href="#" class="icon_bar icon_bar_youtube icon_bar_large"><span class="t"><i class="icon-play"></i></span><span class="b"><i class="icon-play"></i></span></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

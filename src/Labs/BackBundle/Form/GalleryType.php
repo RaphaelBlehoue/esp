@@ -4,6 +4,7 @@ namespace Labs\BackBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -17,6 +18,7 @@ class GalleryType extends AbstractType
     {
         $builder
             ->add('name', TextType::class,array('label' => false, 'attr' => array('placeholder'=> 'Titre de L\'album', 'class' => 'form-control')))
+            ->add('libelle', TextareaType::class,array('label' => false, 'attr' => array('placeholder'=> 'Resumé de l\'evenement', 'class' => 'form-control')))
             ->add('online',ChoiceType::class, array(
                 'label' => false,
                 'choices' => array(
