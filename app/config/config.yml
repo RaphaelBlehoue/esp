@@ -214,6 +214,11 @@ liip_imagine:
             filters:
                 thumbnail: { size: [300, 300], mode: outbound }
 
+        my_thumb_sponsors:
+            quality: 100
+            filters:
+                thumbnail: { size: [211, 150], mode: outbound }
+
         my_thumb_article_single:
             quality: 95
             filters:

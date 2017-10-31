@@ -1,0 +1,46 @@
+<?php
+
+namespace Labs\BackBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+
+
+/**
+ * Category
+ *
+ * @ORM\Table(name="category")
+ * @ORM\Entity(repositoryClass="Labs\BackBundle\Repository\CategoryRepository")
+ */
+class Category
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+
+    /**
+     * @var string
+     * @Assert\NotBlank(message="Veuillez saisir un nom pour la catégorie")
+     * @ORM\Column(name="name", type="string", length=255)
+     */
+    protected $name;
+
+    /**
+     * @var integer
+     * @Assert\NotBlank(message="Veuillez saisir  la position")
+     * @ORM\Column(name="position", type="integer")
+     */
+    protected $position;
+
+    /**
+     * @var
+     * @ORM\OneToMany(targetEntity="Sponsors", mappedBy="category", cascade={"remove"})
+     */
+    protected $sponsors;
+
+}

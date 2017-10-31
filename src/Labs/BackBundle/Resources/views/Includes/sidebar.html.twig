@@ -5,28 +5,21 @@
             <li class="nav-item start">
                 <a href="javascript:;" class="nav-link nav-toggle">
                     <i class="icon-users"></i>
-                    <span class="title">{{ 'Intervenants'|capitalize }}</span>
+                    <span class="title">{{ 'Gestion des Intervenants'|capitalize }}</span>
                     <span class="arrow"></span>
                 </a>
             </li>
             <li class="nav-item start">
                 <a href="javascript:;" class="nav-link nav-toggle">
                     <i class="icon-book-open"></i>
-                    <span class="title">{{ 'Cv intervenants'|capitalize }}</span>
-                    <span class="arrow"></span>
-                </a>
-            </li>
-            <li class="nav-item start">
-                <a href="javascript:;" class="nav-link nav-toggle">
-                    <i class="icon-like"></i>
-                    <span class="title">{{ 'Partenaires'|capitalize }}</span>
+                    <span class="title">{{ 'Gestion Cv intervenants'|capitalize }}</span>
                     <span class="arrow"></span>
                 </a>
             </li>
             <li class="nav-item start">
                 <a href="javascript:;" class="nav-link nav-toggle">
                     <i class="icon-list"></i>
-                    <span class="title">{{ 'Description Partenaires'|capitalize }}</span>
+                    <span class="title">{{ 'Gestions des organisateurs'|capitalize }}</span>
                     <span class="arrow"></span>
                 </a>
             </li>
@@ -45,9 +38,16 @@
                 </a>
             </li>
             <li class="nav-item start">
-                <a href="javascript:;" class="nav-link nav-toggle">
+                <a href="{{ path('category_index') }}" class="nav-link nav-toggle">
+                    <i class="icon-book-open"></i>
+                    <span class="title">{{ 'Catégories de sponsors'|capitalize }}</span>
+                    <span class="arrow"></span>
+                </a>
+            </li>
+            <li class="nav-item start">
+                <a href="{{ path('sponsors_list') }}" class="nav-link nav-toggle">
                     <i class="icon-star"></i>
-                    <span class="title">{{ 'Partenaires'|capitalize }}</span>
+                    <span class="title">{{ 'Gestion des sponsors'|capitalize }}</span>
                     <span class="arrow"></span>
                 </a>
             </li>

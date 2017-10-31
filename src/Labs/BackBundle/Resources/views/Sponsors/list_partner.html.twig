@@ -1,0 +1,122 @@
+{% extends 'LabsBackBundle::admin.html.twig' %}
+{% block title %}{{ 'Gestion des Sponsors | La financesengage.com ' }}{% endblock %}
+{% block stylesheets %}
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <link href="{{ asset('adminLayout/assets/global/plugins/datatables/datatables.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('adminLayout/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css') }}" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL PLUGINS -->
+{% endblock %}
+{% block body %}
+    <!-- BEGIN CONTENT BODY -->
+    <div class="page-content">
+        <!-- BEGIN PAGE HEADER-->
+        <h1 class="page-title"> {{'Gestion des Sponsors'}}
+            <small>{{ '| Liste des Sponsors' }}</small>
+        </h1>
+        <div class="page-bar">
+            <ul class="page-breadcrumb">
+                <li>
+                    <i class="icon-home"></i>
+                    <a href="{{ path('admin_homepage') }}">{{ 'Dashboard'|capitalize }}</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <a href="{{ path('sponsors_list') }}">{{ 'Sponsors'|capitalize }}</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <span>{{ 'liste'|capitalize }}</span>
+                </li>
+            </ul>
+        </div>
+        <!-- BEGIN PAGE LIST-->
+        <div class="row">
+            <div class="col-md-12">
+                {% if app.session.flashBag.has('success') %}
+                    <div class="alert alert-success" role="alert">
+                        {% for msg in app.session.flashBag.get('success') %}
+                            <strong> Succès </strong>{{ msg }}.
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                <div class="portlet light ">
+                    <div class="portlet-title">
+                        <div class="caption font-dark">
+                            <i class="icon-settings font-dark"></i>
+                            <span class="caption-subject bold uppercase"> {{ 'Sponsors' }}</span>
+                        </div>
+                        <div class="actions">
+                            <a href="{{ path('sponsors_create') }}" class="btn sbold uppercase btn-outline yellow-gold"><i class="fa fa-plus"></i> {{ 'Créer un Sponsors'|upper }} </a>
+                        </div>
+                    </div>
+                    <div class="portlet-body">
+                        <table class="table table-striped table-bordered table-hover table-checkable order-column" id="sample_1">
+                            <thead>
+                            <tr>
+                                <th> {{ '#ID' }} </th>
+                                <th> {{ 'nom du sponsors' }} </th>
+                                <th> {{ 'categories' }} </th>
+                                <th> Actions </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for partner in partners %}
+                                <tr class="odd gradeX">
+                                    <td>
+                                        <span>
+                                            {{ partner.id }}
+                                        </span>
+                                    </td>
+                                    <td>
+                                        {{ partner.name }}
+                                    </td>
+                                    <td class="center"> {{ partner.category.name }}</td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs yellow-gold dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu pull-left" role="menu">
+                                                <li>
+                                                    <a href="{{ path('sponsors_edit', {'id': partner.id}) }}">
+                                                        <i class="icon-docs"></i> {{ 'Modifier' }}
+                                                    </a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li>
+                                                    <a href="{{ path('sponsors_edit', {'id': partner.id}) }}">
+                                                        <i class="icon-tag"></i> {{ 'supprimer' }}
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- END EXAMPLE TABLE PORTLET-->
+            </div>
+        </div>
+        <!-- END PAGE LIST-->
+
+
+    </div>
+    <!-- END PAGE HEADER-->
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('adminLayout/assets/global/scripts/datatable.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('adminLayout/assets/global/plugins/datatables/datatables.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('adminLayout/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js') }}" type="text/javascript"></script>
+{% endblock %}
+{% block extra %}
+    {{ parent() }}
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script src="{{ asset('adminLayout/assets/pages/scripts/table-datatables-managed.min.js') }}" type="text/javascript"></script>
+    <!-- END PAGE LEVEL SCRIPTS -->
+{% endblock %}

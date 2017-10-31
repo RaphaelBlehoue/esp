@@ -76,7 +76,10 @@ class DefaultController extends Controller
      */
     public function PartnerPageBundle()
     {
-        return $this->render('LabsPagesBundle:Default:partners.html.twig');
+        $sponsors = $this->getDoctrine()->getRepository('LabsBackBundle:Category')->getSponsorByCategory();
+        return $this->render('LabsPagesBundle:Default:partners.html.twig',[
+            'categories' => $sponsors
+        ]);
     }
 
     /**
