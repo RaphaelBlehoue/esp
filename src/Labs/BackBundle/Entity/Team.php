@@ -54,6 +54,13 @@ class Team
 
     /**
      * @var string
+     * @Assert\NotBlank(message="Entrez la position")
+     * @ORM\Column(name="position", type="integer",nullable=true)
+     */
+    protected $position;
+
+    /**
+     * @var string
      *
      * @ORM\Column(name="poste", type="string", length=255, nullable=true)
      */
@@ -353,5 +360,29 @@ class Team
     public function getUpdated()
     {
         return $this->updated;
+    }
+
+    /**
+     * Set position
+     *
+     * @param integer $position
+     *
+     * @return Team
+     */
+    public function setPosition($position)
+    {
+        $this->position = $position;
+
+        return $this;
+    }
+
+    /**
+     * Get position
+     *
+     * @return integer
+     */
+    public function getPosition()
+    {
+        return $this->position;
     }
 }

@@ -8,7 +8,6 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Labs\BackBundle\Entity\Team;
 use Labs\BackBundle\Form\TeamType;
-use Labs\BackBundle\Form\TeamEditType;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 
@@ -68,9 +67,9 @@ class TeamController extends Controller
         // On recupere l'id du market
         $teams = $em->getRepository('LabsBackBundle:Team')->findOne($team);
         if(null === $teams){
-            throw new NotFoundHttpException("L'element d'id ".$teams." n'existe pas");
+            throw new NotFoundHttpException("L'element n'existe pas");
         }
-        $form = $this->createForm(TeamEditType::class, $teams);
+        $form = $this->createForm(TeamType::class, $teams);
         $form->handleRequest($request);
         if($form->isValid())
         {
@@ -79,7 +78,7 @@ class TeamController extends Controller
         }
         return $this->render('LabsBackBundle:Team:edit_team.html.twig',array(
             'form' => $form->createView(),
-            'id'   => $teams->getId()
+            'team'   => $teams
         ));
     }
 
@@ -95,7 +94,7 @@ class TeamController extends Controller
         $em = $this->getDoctrine()->getManager();
         $teams = $em->getRepository('LabsBackBundle:Team')->find($team);
         if( null === $teams)
-            throw new NotFoundHttpException('equipe '.$teams.' n\'existe pas');
+            throw new NotFoundHttpException('intervenants  n\'existe pas');
         else
             $em->remove($teams);
         $em->flush();

@@ -3,6 +3,7 @@
 namespace Labs\BackBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Vich\UploaderBundle\Form\Type\VichImageType;
@@ -22,7 +23,9 @@ class TeamType extends AbstractType
             ->add('name',TextType::class, array('label' => false, 'attr'  => array('class' => 'form-control')))
             ->add('poste',TextType::class, array('label' => false, 'attr'  => array('class' => 'form-control')))
             ->add('link',TextType::class, array('label' => false, 'attr'  => array('class' => 'form-control')))
+            ->add('position',NumberType::class, array('label' => false))
             ->add('types',ChoiceType::class, array(
+                'label' => false,
                 'choices' => array('Officiel' => 1, 'Speakers' => 0),
             ))
             ->add('imageFile', VichImageType::class,array(

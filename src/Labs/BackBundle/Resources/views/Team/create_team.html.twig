@@ -1,90 +1,122 @@
-{% extends 'LabsUboldBundle::loyout_ubold.html.twig' %}
-{% block title %}{{ 'Team - Page | LFS' }}{% endblock %}
+{% extends 'LabsBackBundle::admin.html.twig' %}
+{% block title %}{{ 'Gestion des Intervenants | La financesengage.com ' }}{% endblock %}
 {% block body %}
-    <div class="content">
-        <div class="container">
-            <!-- Page-Title -->
-            <div class="row">
-                <div class="col-sm-12">
-                    {% if app.session.flashBag.has('success') %}
-                        <div class="alert alert-success" role="alert">
-                            {% for msg in app.session.flashBag.get('success') %}
-                                <strong> Succès </strong>{{ msg }}.
-                            {% endfor %}
+    <div class="page-content">
+        <!-- BEGIN PAGE HEADER-->
+        <h1 class="page-title"> {{'Gestion des Intervenants'}}
+            <small>{{ '| Creation de Intervenants | Intervenants' }}</small>
+        </h1>
+        <div class="page-bar">
+            <ul class="page-breadcrumb">
+                <li>
+                    <i class="icon-home"></i>
+                    <a href="{{ path('admin_homepage') }}">{{ 'Dashboard'|capitalize }}</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <a href="{{ path('team_list') }}">{{ 'Intervenants'|capitalize }}</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <span>{{ 'Edition'|capitalize }}</span>
+                </li>
+            </ul>
+        </div>
+        <!-- BEGIN PAGE LIST-->
+        <div class="row">
+            <div class="col-md-12">
+                {% if app.session.flashBag.has('success') %}
+                    <div class="alert alert-success" role="alert">
+                        {% for msg in app.session.flashBag.get('success') %}
+                            <strong> Succès </strong>{{ msg }}.
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                {% if app.session.flashBag.has('error') %}
+                    <div class="alert alert-danger" role="alert">
+                        {% for msg in app.session.flashBag.get('error') %}
+                            <strong> Erreur d'ajout </strong>{{ msg }}.
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                <div class="portlet light ">
+                    <div class="portlet-title">
+                        <div class="caption font-dark">
+                            <i class="icon-settings font-dark"></i>
+                            <span class="caption-subject bold uppercase"> {{ 'Intervenants' }}</span>
                         </div>
-                    {% endif %}
-
-                    <h4 class="page-title">{{ 'Creation de la team' }}</h4>
-                    <ol class="breadcrumb">
-                        <li>
-                            <a href="{{ path('homepage') }}">{{ 'LFS' }}</a>
-                        </li>
-                        <li class="active">
-                            {{ 'Page Team' }}
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <!-- end Page Title -->
-            <!-- page content -->
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="card-box">
-                        <h4 class="m-t-0 header-title"><b>{{ 'Formulaire de creation de Team' }}</b></h4>
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-2">
-                                {{ form_start(form, {'role': 'form', 'action': path('team_create'), 'attr': {'class': 'form-horizontal'}}) }}
-                                <div class="form-group">
-                                    <label class="col-md-2 control-label">{{ 'Type d\'intervants' }}</label>
-                                    <div class="col-md-10">
-                                        {{ form_row(form.types) }}
-                                        {{ form_errors(form.types) }}
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-md-2 control-label">{{ 'Nom' }}</label>
-                                    <div class="col-md-10">
-                                        {{ form_row(form.name) }}
-                                        {{ form_errors(form.name) }}
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-md-2 control-label">{{ 'poste' }}</label>
-                                    <div class="col-md-10">
-                                        {{ form_row(form.poste) }}
-                                        {{ form_errors(form.poste) }}
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-md-2 control-label">{{ 'photo' }}</label>
-                                    <div class="col-md-10">
-                                        {{ form_row(form.imageFile) }}
-                                        {{ form_errors(form.imageFile) }}
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-md-2 control-label">{{ 'Lien du site' }}</label>
-                                    <div class="col-md-10">
-                                        {{ form_row(form.link) }}
-                                        {{ form_errors(form.link) }}
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-md-8 col-md-offset-2">
-                                        <button type="submit" class="btn btn-primary" formnovalidate>{{ 'Créer l\'intervenant' }}</button>
-                                    </div>
-                                </div>
-                                {{ form_end(form) }}
-                            </div>
+                        <div class="actions">
+                            <a href="{{ path('team_list') }}" class="btn sbold uppercase btn-outline yellow-gold"><i class="fa fa-plus"></i> {{ 'afficher la liste'|upper }} </a>
                         </div>
                     </div>
                 </div>
+                <!-- END EXAMPLE TABLE PORTLET-->
+                <!-- BEGIN SAMPLE FORM PORTLET-->
+                <div class="portlet box yellow-gold">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="fa fa-pencl"></i> {{'Modification Intervenants'|capitalize}} </div>
+                    </div>
+                    <div class="portlet-body form">
+                        {{ form_start(form, {'role': 'form', 'action': path('team_create'), 'attr': {'class': 'form-horizontal'}}) }}
+                        {{ form_errors(form) }}
+                        <div class="form-body">
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">{{ 'Position d\'affichage' }}</label>
+                                <div class="col-md-9">
+                                    {{ form_row(form.position) }}
+                                    {{ form_errors(form.position) }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">{{ 'Type d\'intervants' }}</label>
+                                <div class="col-md-9">
+                                    {{ form_row(form.types) }}
+                                    {{ form_errors(form.types) }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">{{ 'Nom Intervenant' }}</label>
+                                <div class="col-md-9">
+                                    {{ form_row(form.name) }}
+                                    {{ form_errors(form.name) }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">{{ 'Fonction de l\'intervenants' }}</label>
+                                <div class="col-md-9">
+                                    {{ form_row(form.poste) }}
+                                    {{ form_errors(form.poste) }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">{{ 'Joindre une photo' }}</label>
+                                <div class="col-md-9">
+                                    {{ form_row(form.imageFile) }}
+                                    {{ form_errors(form.imageFile) }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">{{'Lien du site (si possible)' }}</label>
+                                <div class="col-md-9">
+                                    {{ form_row(form.link) }}
+                                    {{ form_errors(form.link) }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-actions right1">
+                            <button type="submit" class="btn yellow-gold">{{ 'Enregistrer' }}</button>
+                        </div>
+                        {{ form_end(form) }}
+                    </div>
+                </div>
+                <!-- END SAMPLE FORM PORTLET-->
             </div>
-            <!-- end page content -->
         </div>
+        <!-- END PAGE LIST-->
+
+
     </div>
 {% endblock %}
 
