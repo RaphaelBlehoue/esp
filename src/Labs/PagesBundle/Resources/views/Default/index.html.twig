@@ -355,12 +355,12 @@
                                             <a class="button button_js slider_prev" href="#"><span class="button_icon"><i class="icon-left-open-big"></i></span></a><a class="button button_js slider_next" href="#"><span class="button_icon"><i class="icon-right-open-big"></i></span></a>
                                         </div>
                                         <ul class="clients clients_slider_ul">
-                                            {% for i in 1..18 %}
+                                            {% for sponsor in sponsors %}
                                             <li>
                                                 <div class="article_box">
-                                                    <a href="#">
+                                                    <a href="{{ (sponsor.link|length > 0) ? sponsor.link : '#' }}" target="_blank">
                                                         <div class="photo_wrapper">
-                                                            <img class="scale-with-grid" src="{{ asset('baseLayout/images/partners/'~ i ~ '.jpg') }}" alt="{{ loop.index }}" width="188" height="138"/>
+                                                            <img class="scale-with-grid" src="{{ sponsor.assertPath|imagine_filter('my_thumb_sponsors_home') }}" alt="{{ loop.index }}" width="188" height="138"/>
                                                         </div>
                                                     </a>
                                                 </div>
