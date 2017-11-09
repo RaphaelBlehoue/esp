@@ -29,7 +29,6 @@ class DefaultController extends Controller
         $organisateurs = $this->getAllOrganisateur();
         $intervenant = $this->getTeamContent();
         $sponsors = $this->getPartnerImportanceOrder();
-        dump($sponsors);
         return $this->render('LabsPagesBundle:Default:index.html.twig',[
                 'sponsors'      => $sponsors,
                 'organisateurs' => $organisateurs,
