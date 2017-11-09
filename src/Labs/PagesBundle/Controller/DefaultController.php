@@ -29,6 +29,7 @@ class DefaultController extends Controller
         $organisateurs = $this->getAllOrganisateur();
         $intervenant = $this->getTeamContent();
         $sponsors = $this->getPartnerImportanceOrder();
+        dump($sponsors);
         return $this->render('LabsPagesBundle:Default:index.html.twig',[
                 'sponsors'      => $sponsors,
                 'organisateurs' => $organisateurs,
@@ -364,7 +365,7 @@ class DefaultController extends Controller
         $sponsors = $this->getDoctrine()->getRepository('LabsBackBundle:Category')->getSponsorByCategory();
         $sponsors_tab = [];
         foreach ($sponsors as $key => $sponsor) {
-            $sponsors_tab[$key] = $sponsor->getSponsors();
+            $sponsors_tab[] = $sponsor->getSponsors();
         }
         return $sponsors_tab;
     }

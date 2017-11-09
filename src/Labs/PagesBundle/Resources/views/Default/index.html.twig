@@ -354,7 +354,21 @@
                                         <div class="clients_slider_header">
                                             <a class="button button_js slider_prev" href="#"><span class="button_icon"><i class="icon-left-open-big"></i></span></a><a class="button button_js slider_next" href="#"><span class="button_icon"><i class="icon-right-open-big"></i></span></a>
                                         </div>
-
+                                        <ul class="clients clients_slider_ul">
+                                            {% for sponsor in sponsors %}
+                                                {% for logo in sponsor  %}
+                                                    <li>
+                                                        <div class="article_box">
+                                                            <a href="{{ (logo.link|length > 0) ? logo.link : '#' }}" target="_blank">
+                                                                <div class="photo_wrapper">
+                                                                    <img class="scale-with-grid" src="{{ logo.assertPath|imagine_filter('my_thumb_sponsors_home') }}" alt="{{ loop.index }}" width="188" height="138"/>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                {% endfor %}
+                                            {% endfor %}
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
