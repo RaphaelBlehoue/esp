@@ -18,3 +18,8 @@ services:
         class: Labs\BackBundle\Services\Draft
         arguments:
             - "@doctrine.orm.entity_manager"
+
+    app.form.registration:
+        class: Labs\BackBundle\Form\RegistrationType
+        tags:
+            - { name: form.type, alias: tab }

@@ -41,14 +41,14 @@ class Users extends BaseUser
     /**
      * @var string
      * @ORM\Column(name="firstname", type="string", length=255, nullable=true)
-     * @Assert\NotNull(message="Veuillez entrez le nom")
+     * @Assert\NotNull(message="Entrer votre nom s'il vous plait.")
      */
     protected $firstname;
 
     /**
      * @var string
      * @ORM\Column(name="lastname", type="string", length=255, nullable=true)
-     * @Assert\NotNull(message="Veuillez entrez le prénom")
+     * @Assert\NotNull(message="Entrer votre prénom s'il vous plait.")
      */
     protected $lastname;
 
@@ -56,7 +56,7 @@ class Users extends BaseUser
     /**
      * @var string
      * @ORM\Column(name="compagny", type="string", length=255, nullable=true)
-     * @Assert\NotNull(message="Veuillez entrez le nom de votre entreprise")
+     * @Assert\NotNull(message="Entrer le nom de votre entreprise s'il vous plait.")
      */
     protected $compagny;
 

@@ -50,7 +50,6 @@ class RegistrationController extends BaseController
         $form->handleRequest($request);
 
         if ($form->isSubmitted()){
-
             if ($form->isValid()) {
                 // Saving when have no error
 
