@@ -19,7 +19,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Entity
  * @ORM\Table(name="users")
  * @ORM\Entity(repositoryClass="Labs\BackBundle\Repository\UsersRepository")
- * @UniqueEntity(fields={"email","phone"})
+ * @UniqueEntity(fields={"email"}, message="L'adresse email existe déjà ")
  */
 
 class Users extends BaseUser

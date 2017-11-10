@@ -18,7 +18,3 @@ services:
         class: Labs\BackBundle\Services\Draft
         arguments:
             - "@doctrine.orm.entity_manager"
-
-    labs_auth.app.generate_code:
-        class: Labs\BackBundle\Services\GenerateService
-        autowire: true
