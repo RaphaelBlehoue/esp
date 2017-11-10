@@ -1,8 +1,74 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
-{{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
-    {{ form_widget(form) }}
-    <div>
-        <input type="submit" value="{{ 'registration.submit'|trans }}" />
+<div class="logo">
+    <a href="">
+        <img src="{{ asset('global/images/logo/logo_final.png') }}" alt="La finance s'engage" />
+    </a>
+</div>
+
+<div class="content">
+    <!-- BEGIN REGISTRATION FORM -->
+    {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register login-form'}}) }}
+
+        <h3 class="font-green">{{ 'La Bourse aux Projets | Inscription' }}</h3>
+        <div class="col-md-6 col-sm-6">
+            <p class="hint"> {{ 'Détail de vos informations personnelles' }}: </p>
+            <div class="form-group">
+                <label class="control-label visible-ie8 visible-ie9">Nom de votre entreprise</label>
+                {{ form_row(form.compagny, {'label': false, 'attr': {'placeholder' : 'Nom de votre entreprise', 'class': 'form-control placeholder-no-fix'}}) }}
+            </div>
+            <div class="form-group">
+                <label class="control-label visible-ie8 visible-ie9">Nom de famille</label>
+                {{ form_row(form.firstname, {'label': false, 'attr': {'placeholder' : 'Nom de famille', 'class': 'form-control placeholder-no-fix'}}) }}
+            </div>
+            <div class="form-group">
+                <label class="control-label visible-ie8 visible-ie9">Votre Prénom</label>
+                {{ form_row(form.lastname, {'label': false, 'attr': {'placeholder' : 'Prénom', 'class': 'form-control placeholder-no-fix'}}) }}
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+            <p class="hint"> {{ 'Information de connexion' }}: </p>
+            <div class="form-group">
+                <label class="control-label visible-ie8 visible-ie9">Adresse Email</label>
+                {{ form_row(form.email, {'label': false, 'attr': {'placeholder' : 'Adresse email', 'class': 'form-control placeholder-no-fix'}}) }}
+            </div>
+            <div class="form-group">
+                <label class="control-label visible-ie8 visible-ie9">Mot de passe</label>
+                {{ form_row(form.plainPassword.first, {'label': false, 'attr': {'placeholder' : 'Mot de passe', 'class': 'form-control placeholder-no-fix'}}) }}
+            </div>
+            <div class="form-group">
+                <label class="control-label visible-ie8 visible-ie9">Vérifier le mot de passe</label>
+                {{ form_row(form.plainPassword.second, {'label': false, 'attr': {'placeholder' : 'Vérifier le mot de passe', 'class': 'form-control placeholder-no-fix'}}) }}
+            </div>
+        </div>
+        <div class="form-actions">
+            <a href="{{ path('homepage') }}" id="register-back-btn" class="btn uppercase yellow-gold btn-outline">{{ 'Retour au site' }}</a>
+            <button type="submit" id="register-submit-btn" class="btn uppercase pull-right yellow-gold">{{ 'S\'inscrire' }}</button>
+        </div>
+    {{ form_end(form) }}
+    <!-- END REGISTRATION FORM -->
+    <div class="login-options">
+        <h4>{{ 'Rejoignez la Finance s\'engage sur les reseaux' }}</h4>
+        <ul class="social-icons">
+            <li>
+                <a class="facebook" data-original-title="facebook" href="javascript:;"> </a>
+            </li>
+            <li>
+                <a class="twitter" data-original-title="Twitter" href="javascript:;"> </a>
+            </li>
+            <li>
+                <a class="youtube" data-original-title="Twitter" href="javascript:;"> </a>
+            </li>
+            <li>
+                <a class="googleplus" data-original-title="Goole Plus" href="javascript:;"> </a>
+            </li>
+            <li>
+                <a class="linkedin" data-original-title="Linkedin" href="javascript:;"> </a>
+            </li>
+        </ul>
     </div>
-{{ form_end(form) }}
+
+</div>
+
+
+

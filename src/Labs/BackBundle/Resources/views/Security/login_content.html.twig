@@ -1,62 +1,70 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
-<div class="col-md-6 login-container bs-reset mt-login-5-bsfix">
-    <div class="login-content">
-        <h1>{{ 'La Finance S\'engage | Compte Admin' }}</h1>
-        <p>{{ 'entrez vos identifiants pour vous connecter à votre compte d\'administration'|capitalize }}</p>
-        <form action="{{ path("fos_user_security_check") }}" class="login-form" method="post">
-
-            {% if csrf_token %}
-                <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
-            {% endif %}
-            {% if error %}
-                <div class="alert alert-danger">
-                    <button class="close" data-close="alert"></button>
-                    <span>{{ error.messageKey|trans(error.messageData, 'security') }} </span>
-                </div>
-            {% endif %}
-
-            <div class="row">
-                <div class="col-xs-6">
-                    <input class="form-control form-control-solid placeholder-no-fix form-group" type="text" autocomplete="off" placeholder="Adresse Email" name="_username" value="{{ last_username }}" required/>
-                </div>
-                <div class="col-xs-6">
-                    <input class="form-control form-control-solid placeholder-no-fix form-group" type="password" autocomplete="off" placeholder="Mot de passe" name="_password" required/>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 text-right">
-                    <button class="btn green-sharp btn-outline sbold uppercase" type="submit">{{ 'Se connecter'|capitalize }}</button>
-                </div>
-            </div>
-        </form>
+<div class="row bs-reset">
+    <div class="col-md-6 bs-reset mt-login-5-bsfix">
+        <div class="login-bg" style="background-image:url('{{ asset('adminLayout/assets/pages/img/login/bg1.jpg')}}')">
+            <img class="login-logo" src="{{ asset('global/images/logo/logo_final.png') }}" />
+        </div>
     </div>
-    <div class="login-footer">
-        <div class="row bs-reset">
-            <div class="col-xs-5 bs-reset">
-                <ul class="login-social">
-                    <li>
-                        <a href="javascript:;">
-                            <i class="icon-social-facebook"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <i class="icon-social-youtube"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <i class="icon-social-google"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-xs-7 bs-reset">
-                <div class="login-copyright text-right">
-                    <p>Copyright &copy; Lafinancesengage.com {{ 'now'|date('Y') }}</p>
+    <div class="col-md-6 login-container bs-reset mt-login-5-bsfix">
+        <div class="login-content">
+            <h1>{{ 'La Finance S\'engage | Compte Admin' }}</h1>
+            <p>{{ 'entrez vos identifiants pour vous connecter à votre compte d\'administration'|capitalize }}</p>
+            <form action="{{ path("fos_user_security_check") }}" class="login-form" method="post">
+
+                {% if csrf_token %}
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+                {% endif %}
+                {% if error %}
+                    <div class="alert alert-danger">
+                        <button class="close" data-close="alert"></button>
+                        <span>{{ error.messageKey|trans(error.messageData, 'security') }} </span>
+                    </div>
+                {% endif %}
+
+                <div class="row">
+                    <div class="col-xs-6">
+                        <input class="form-control form-control-solid placeholder-no-fix form-group" type="text" autocomplete="off" placeholder="Adresse Email" name="_username" value="{{ last_username }}" required/>
+                    </div>
+                    <div class="col-xs-6">
+                        <input class="form-control form-control-solid placeholder-no-fix form-group" type="password" autocomplete="off" placeholder="Mot de passe" name="_password" required/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 text-right">
+                        <button class="btn green-sharp btn-outline sbold uppercase" type="submit">{{ 'Se connecter'|capitalize }}</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="login-footer">
+            <div class="row bs-reset">
+                <div class="col-xs-5 bs-reset">
+                    <ul class="login-social">
+                        <li>
+                            <a href="javascript:;">
+                                <i class="icon-social-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="icon-social-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="icon-social-google"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-7 bs-reset">
+                    <div class="login-copyright text-right">
+                        <p>Copyright &copy; Lafinancesengage.com {{ 'now'|date('Y') }}</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 </div>

@@ -1,7 +1,5 @@
-/* Cubic Bezier Transition */
-/***
-Login page
-***/
+/* Lafinancesenagege website Transition */
+/** Login css **/
 /* bg color */
 .login {
   background-color: #364150 !important; }
@@ -19,7 +17,7 @@ Login page
   -ms-border-radius: 7px;
   -o-border-radius: 7px;
   border-radius: 7px;
-  width: 400px;
+  width: 850px;
   margin: 40px auto 10px auto;
   padding: 30px;
   padding-top: 10px;
@@ -27,7 +25,7 @@ Login page
   position: relative; }
 
 .login .content h3 {
-  color: #4db3a5;
+  color: #A2292B !important;
   text-align: center;
   font-size: 28px;
   font-weight: 400 !important; }
@@ -94,7 +92,7 @@ Login page
   float: left;
   font-weight: 600;
   font-size: 15px;
-  color: #7d91aa !important; }
+  color: #A2292B !important; }
 
 .login-options .social-icons {
   float: right;
@@ -135,7 +133,7 @@ Login page
 
 .login .content .form-actions .btn-default:hover {
   background-color: #fafaff;
-  color: #45b6af; }
+  color: #A2292B; }
 
 .login .content .forget-password {
   font-size: 14px;
@@ -176,7 +174,7 @@ Login page
   text-align: center;
   margin: 0 auto 30px 0;
   padding: 10px;
-  color: #7a8ca5;
+  color: #F48900;
   font-size: 13px; }
 
 @media (max-width: 440px) {

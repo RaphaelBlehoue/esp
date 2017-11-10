@@ -41,13 +41,15 @@ twig:
 # Doctrine Configuration
 doctrine:
     dbal:
-        driver:   pdo_mysql
-        host:     "%database_host%"
-        port:     "%database_port%"
-        dbname:   "%database_name%"
-        user:     "%database_user%"
-        password: "%database_password%"
-        charset:  UTF8
+        driver: pdo_mysql
+        host: '%database_host%'
+        port: '%database_port%'
+        dbname: '%database_name%'
+        user: '%database_user%'
+        password: '%database_password%'
+        charset: UTF8
+        types:
+            phone_number: Misd\PhoneNumberBundle\Doctrine\DBAL\Types\PhoneNumberType
         # if using pdo_sqlite as your database driver:
         #   1. add the path in parameters.yml
         #     e.g. database_path: "%kernel.root_dir%/data/data.db3"
@@ -149,6 +151,9 @@ fos_user:
     from_email:
         address:        "%mailer_user%"
         sender_name:    "%mailer_sender%"
+    registration:
+        form:
+            type: Labs\BackBundle\Form\RegistrationType
 
 ivory_ck_editor:
     default_config: my_custom_config
@@ -237,3 +242,8 @@ liip_imagine:
                     image: Resources/data/logo_final.png
                     size: 0.2
                     position: bottomright
+
+# JMS Serializer
+jms_serializer:
+    metadata:
+        auto_detection: true

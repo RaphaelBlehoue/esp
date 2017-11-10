@@ -18,3 +18,11 @@ services:
         class: Labs\BackBundle\Services\Draft
         arguments:
             - "@doctrine.orm.entity_manager"
+
+    labs_auth.check.error.phonenumber:
+        class: Labs\BackBundle\Services\CheckErrorPhoneNumber
+        arguments: ["@session","@doctrine.orm.entity_manager","@libphonenumber.phone_number_util"]
+
+    labs_auth.app.generate_code:
+        class: Labs\BackBundle\Services\GenerateService
+        autowire: true
