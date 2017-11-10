@@ -30,7 +30,6 @@ class AppKernel extends Kernel
             new Liip\ImagineBundle\LiipImagineBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle(),
-            new Misd\PhoneNumberBundle\MisdPhoneNumberBundle(),
             new Labs\BackBundle\LabsBackBundle(),
             new Labs\PagesBundle\LabsPagesBundle(),
         ];

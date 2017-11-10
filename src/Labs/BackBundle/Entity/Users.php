@@ -13,8 +13,6 @@ use Doctrine\Common\Collections\ArrayCollection;
 use FOS\UserBundle\Model\User as BaseUser;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Validator\Constraints as Assert;
-use JMS\Serializer\Annotation\Type;
-use Misd\PhoneNumberBundle\Validator\Constraints\PhoneNumber as AssertPhoneNumber;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -54,13 +52,6 @@ class Users extends BaseUser
      */
     protected $lastname;
 
-    /**
-     * @var string
-     * @AssertPhoneNumber(type="mobile", message="Numero de téléphone incorrect")
-     *
-     * @ORM\Column(name="phone", type="phone_number", unique=true, nullable=true)
-     */
-    protected $phone;
 
     /**
      * @var string
@@ -100,7 +91,7 @@ class Users extends BaseUser
      * Set the canonical email.
      *
      * @param string $emailCanonical
-     * @return User
+     * @return Users
      */
     public function setEmailCanonical($emailCanonical)
     {
@@ -239,27 +230,4 @@ class Users extends BaseUser
         return $this->compagny;
     }
 
-    /**
-     * Set phone
-     *
-     * @param phone_number $phone
-     *
-     * @return Users
-     */
-    public function setPhone($phone)
-    {
-        $this->phone = $phone;
-
-        return $this;
-    }
-
-    /**
-     * Get phone
-     *
-     * @return phone_number
-     */
-    public function getPhone()
-    {
-        return $this->phone;
-    }
 }
