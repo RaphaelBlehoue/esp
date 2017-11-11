@@ -9,6 +9,7 @@
 namespace Labs\BackBundle\Form;
 
 
+use libphonenumber\PhoneNumberFormat;
 use Misd\PhoneNumberBundle\Form\Type\PhoneNumberType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -31,6 +32,13 @@ class RegistrationType extends AbstractType
             ])
             ->add('lastname',TextType::class,[
                 'label' => false
+            ])
+            ->add('number_phone',PhoneNumberType::class,[
+                'label' => false,
+                'default_region' => 'CI',
+                'format' => PhoneNumberFormat::NATIONAL,
+                'widget' => PhoneNumberType::WIDGET_COUNTRY_CHOICE,
+                'preferred_country_choices' => ['CI', 'GN', 'Bj', 'NG', 'TG', 'FR']
             ])
         ;
     }

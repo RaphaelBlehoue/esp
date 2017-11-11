@@ -25,6 +25,31 @@
                 <label class="control-label visible-ie8 visible-ie9">Nom de votre entreprise</label>
                 {{ form_row(form.compagny, {'label': false, 'attr': {'placeholder' : 'Nom de votre entreprise', 'class': 'form-control placeholder-no-fix'}}) }}
             </div>
+            <div class="row">
+                <div class="form-group">
+                    <label class="control-label visible-ie8 visible-ie9">Numéro de téléphone</label>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            {{ form_row(form.number_phone.country, {'label': false}) }}
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="form-group {% if app.session.get('Error.code') %} has-error has-feedback {% endif %} has-feedback-left">
+                            {{ form_row(form.number_phone.number, {'label': false, 'attr': {'placeholder' : 'Numéro de téléphone', 'class': 'form-control placeholder-no-fix'}}) }}
+                            <div class="form-control-feedback">
+                                <i class="icon-mobile text-muted"></i>
+                            </div>
+                            {% if app.session.get('Error.code') %}
+                                <div class="form-control-feedback">
+                                    <i class="icon-cancel-circle2"></i>
+                                </div>
+                                <span class="help-block">{{ app.session.get('Error.message') }}</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="col-md-6 col-sm-6">
             <p class="hint"> {{ 'Information de connexion' }}: </p>

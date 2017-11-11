@@ -271,7 +271,7 @@ class Partner
      *
      * @param string $content
      *
-     * @return Item
+     * @return Partner
      */
     public function setContent($content)
     {
@@ -293,11 +293,11 @@ class Partner
     /**
      * Add part
      *
-     * @param \Labs\BackBundle\Entity\Parts $part
+     * @param Parts $part
      *
      * @return Partner
      */
-    public function addPart(\Labs\BackBundle\Entity\Parts $part)
+    public function addPart(Parts $part)
     {
         $this->part[] = $part;
 
@@ -307,9 +307,9 @@ class Partner
     /**
      * Remove part
      *
-     * @param \Labs\BackBundle\Entity\Parts $part
+     * @param Parts $part
      */
-    public function removePart(\Labs\BackBundle\Entity\Parts $part)
+    public function removePart(Parts $part)
     {
         $this->part->removeElement($part);
     }

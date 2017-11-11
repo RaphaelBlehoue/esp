@@ -22,4 +22,14 @@ services:
     app.form.registration:
         class: Labs\BackBundle\Form\RegistrationType
         tags:
-            - { name: form.type, alias: tab }
+            - { name: form.type, alias: app_user_registration }
+
+    labs_auth.event.registration.success:
+        class: Labs\BackBundle\Event\RegistrationEventDispatcher
+        arguments: ["@router"]
+        tags:
+            - { name: kernel.event_subscriber }
+
+    labs_auth.check.error.phonenumber:
+        class: Labs\BackBundle\Services\CheckErrorPhoneNumber
+        arguments: ["@session","@doctrine.orm.entity_manager","@libphonenumber.phone_number_util"]

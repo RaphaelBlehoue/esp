@@ -36,6 +36,8 @@ class RegistrationController extends BaseController
         /** @var  $dispatcher EventDispatcherInterface */
         $dispatcher = $this->get('event_dispatcher');
 
+        $phoneCheck = $this->get('labs_auth.check.error.phonenumber');
+
         $user = $userManager->createUser();
         $user->setEnabled(true);
         $event = new GetResponseUserEvent($user, $request);
@@ -50,8 +52,12 @@ class RegistrationController extends BaseController
         $form->handleRequest($request);
 
         if ($form->isSubmitted()){
-            if ($form->isValid()) {
+
+            $isValidation = $phoneCheck->checkError($form->getData()->getNumberPhone());
+
+            if ($form->isValid() && $isValidation) {
                 // Saving when have no error
+                //dump($form->getData()); die;
 
                 $user->setRoles(['ROLE_MEMBER']);
                 $userManager->updateUser($user);

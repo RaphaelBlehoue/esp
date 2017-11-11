@@ -101,28 +101,5 @@ class Parts
         return $this->content;
     }
     
-
-    /**
-     * Set partner
-     *
-     * @param Partner $partner
-     *
-     * @return Parts
-     */
-    public function setPartner(Partner $partner = null)
-    {
-        $this->partner = $partner;
-
-        return $this;
-    }
-
-    /**
-     * Get partner
-     *
-     * @return Partner
-     */
-    public function getPartner()
-    {
-        return $this->partner;
-    }
 }
+

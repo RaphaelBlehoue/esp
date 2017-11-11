@@ -13,14 +13,13 @@ use Doctrine\Common\Collections\ArrayCollection;
 use FOS\UserBundle\Model\User as BaseUser;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Validator\Constraints as Assert;
-use Misd\PhoneNumberBundle\Validator\Constraints\PhoneNumber as AssertPhoneNumber;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity
  * @ORM\Table(name="users")
  * @ORM\Entity(repositoryClass="Labs\BackBundle\Repository\UsersRepository")
- * @UniqueEntity(fields={"email","phone"})
+ * @UniqueEntity(fields={"email"}, message="L'adresse email existe déjà ")
  */
 
 class Users extends BaseUser
@@ -42,30 +41,30 @@ class Users extends BaseUser
     /**
      * @var string
      * @ORM\Column(name="firstname", type="string", length=255, nullable=true)
-     * @Assert\NotNull(message="Veuillez entrez le nom")
+     * @Assert\NotNull(message="Entrer votre nom s'il vous plait.")
      */
     protected $firstname;
 
     /**
      * @var string
      * @ORM\Column(name="lastname", type="string", length=255, nullable=true)
-     * @Assert\NotNull(message="Veuillez entrez le prénom")
+     * @Assert\NotNull(message="Entrer votre prénom s'il vous plait.")
      */
     protected $lastname;
 
-    /**
-     * @var string
-     * @AssertPhoneNumber(type="mobile", message="Numero de téléphone incorrect")
-     * @ORM\Column(name="phone", type="phone_number", unique=true)
-     */
-    protected $phone;
 
     /**
      * @var string
      * @ORM\Column(name="compagny", type="string", length=255, nullable=true)
-     * @Assert\NotNull(message="Veuillez entrez le nom de votre entreprise")
+     * @Assert\NotNull(message="Entrer le nom de votre entreprise s'il vous plait.")
      */
     protected $compagny;
+
+    /**
+     * @var
+     * @ORM\Column(type="phone_number", unique=true, nullable=true, name="number_phone")
+     */
+    protected $numberPhone;
 
     /**
      * @var \DateTime
@@ -98,7 +97,7 @@ class Users extends BaseUser
      * Set the canonical email.
      *
      * @param string $emailCanonical
-     * @return User
+     * @return Users
      */
     public function setEmailCanonical($emailCanonical)
     {
@@ -236,4 +235,5 @@ class Users extends BaseUser
     {
         return $this->compagny;
     }
+
 }

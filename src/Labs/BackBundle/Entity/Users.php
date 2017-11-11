@@ -12,14 +12,16 @@ namespace Labs\BackBundle\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use FOS\UserBundle\Model\User as BaseUser;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
-use Symfony\Component\Validator\Constraints as Assert;
+use libphonenumber\PhoneNumber;
+use Symfony\Component\Validator\Constraints AS Assert;
+use Misd\PhoneNumberBundle\Validator\Constraints\PhoneNumber as AssertPhoneNumber;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity
  * @ORM\Table(name="users")
  * @ORM\Entity(repositoryClass="Labs\BackBundle\Repository\UsersRepository")
- * @UniqueEntity(fields={"email"}, message="L'adresse email existe déjà ")
+ * @UniqueEntity(fields={"email","numberPhone"})
  */
 
 class Users extends BaseUser
@@ -59,6 +61,13 @@ class Users extends BaseUser
      * @Assert\NotNull(message="Entrer le nom de votre entreprise s'il vous plait.")
      */
     protected $compagny;
+
+    /**
+     * @var
+     * @ORM\Column(type="phone_number", unique=true, nullable=true, name="number_phone")
+     * @AssertPhoneNumber(type="mobile", message="Numero de téléphone incorrect")
+     */
+    protected $numberPhone;
 
     /**
      * @var \DateTime
@@ -230,4 +239,28 @@ class Users extends BaseUser
         return $this->compagny;
     }
 
+
+    /**
+     * Set numberPhone
+     *
+     * @param phone_number $numberPhone
+     *
+     * @return Users
+     */
+    public function setNumberPhone($numberPhone)
+    {
+        $this->numberPhone = $numberPhone;
+
+        return $this;
+    }
+
+    /**
+     * Get numberPhone
+     *
+     * @return phone_number
+     */
+    public function getNumberPhone()
+    {
+        return $this->numberPhone;
+    }
 }
