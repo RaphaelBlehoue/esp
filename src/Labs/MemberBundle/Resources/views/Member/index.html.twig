@@ -1,0 +1,75 @@
+{% extends 'LabsMemberBundle::member_space.html.twig' %}
+{% block title %}{{ 'FSE - Bourses aux projets' }}{% endblock %}
+{% block stylesheets %}
+    <link href="{{ asset('adminLayout/assets/global/plugins/dropzone/dropzone.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('adminLayout/assets/global/plugins/dropzone/basic.min.css') }}" rel="stylesheet" type="text/css" />
+{% endblock %}
+{% block body %}
+    <!-- BEGIN CONTENT BODY -->
+    <!-- BEGIN PAGE HEAD-->
+    <div class="page-head">
+     <div class="container">
+      <!-- BEGIN PAGE TITLE -->
+      <div class="page-title">
+            <h1>{{ 'Bourse aux projets' }} <small> | Ajoutez vos fichiers</small> </h1>
+      </div>
+      <!-- END PAGE TITLE -->
+     </div>
+    </div>
+    <!-- END PAGE HEAD-->
+    <!-- BEGIN PAGE CONTENT BODY -->
+    <div class="page-content">
+     <div class="container">
+      <!-- BEGIN PAGE BREADCRUMBS -->
+      <ul class="page-breadcrumb breadcrumb">
+       <li>
+        <a href="{{ path('member_index') }}">{{ 'Accueil' }}</a>
+        <i class="fa fa-circle"></i>
+       </li>
+       <li>
+        <span>{{ 'Projets' }}</span>
+       </li>
+      </ul>
+      <!-- END PAGE BREADCRUMBS -->
+      <!-- BEGIN PAGE CONTENT INNER -->
+         <div class="page-content-inner">
+             <div class="portlet light bordered">
+                 <div class="portlet-title">
+                     <div class="caption">
+                         <i class="icon-docs font-yellow-gold"></i>
+                         <span class="caption-subject font-yellow-gold bold uppercase">{{ 'insérez des fichiers avec notre Gestion de Fichier FSE' }}</span>
+                     </div>
+                     <div class="actions">
+                         <div class="btn-group">
+                             <a href="{{ path('member_file_list') }}" class="btn yellow-gold">{{'Cliquez ici pour Importer'}}</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="portlet-body">
+                     <div class="row">
+                         <div class="col-md-12">
+                             <div action="{{ path('member_index') }}" class="dropzone dropzone-file-area" id="my-dropzone-zone" style="width: 700px; margin-top: 50px; height:350px;">
+                                 <h3 class="sbold">{{ 'Faites glisser des fichiers ici' }}</h3>
+                                 <h5 class="sbold"><span>{{ '--ou--' }}</span></h5>
+                                 <h5 class="sbold"><span>{{ 'Cliquez pour selectionner des fichiers sur l\'ordinateur' }}</span></h5>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+      <!-- END PAGE CONTENT INNER -->
+     </div>
+    </div>
+    <!-- END PAGE CONTENT BODY -->
+    <!-- END CONTENT BODY -->
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('adminLayout/assets/global/plugins/dropzone/dropzone.min.js') }}"></script>
+{% endblock %}
+{% block extra %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('adminLayout/assets/pages/scripts/main-apps.js') }}"></script>
+{% endblock %}

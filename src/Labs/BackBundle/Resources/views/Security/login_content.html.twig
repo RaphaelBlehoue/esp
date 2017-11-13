@@ -8,8 +8,8 @@
     </div>
     <div class="col-md-6 login-container bs-reset mt-login-5-bsfix">
         <div class="login-content">
-            <h1>{{ 'La Finance S\'engage | Compte Admin' }}</h1>
-            <p>{{ 'entrez vos identifiants pour vous connecter à votre compte d\'administration'|capitalize }}</p>
+            <h1>{{ 'La Finance S\'engage | Connexion' }}</h1>
+            <p>{{ 'Utiliser votre compte FSE pour accéder à vos informations sécurisé' }}</p>
             <form action="{{ path("fos_user_security_check") }}" class="login-form" method="post">
 
                 {% if csrf_token %}
@@ -31,8 +31,11 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12 text-right">
-                        <button class="btn green-sharp btn-outline sbold uppercase" type="submit">{{ 'Se connecter'|capitalize }}</button>
+                    <div class="col-xs-6">
+                        <h4><a href="{{ path('fos_user_registration_register') }}" style="color:#A6241C; text-decoration:none; font-weight: 500;">{{ 'Créer mon compte FSE' }}</a></h4>
+                    </div>
+                    <div class="col-xs-6">
+                        <button type="submit" class="btn pull-right yellow-gold btn-outline sbold uppercase">{{ 'Se connecter' }}</button>
                     </div>
                 </div>
             </form>
@@ -53,14 +56,14 @@
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <i class="icon-social-google"></i>
+                                <i class="fa fa-google-plus"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-xs-7 bs-reset">
                     <div class="login-copyright text-right">
-                        <p>Copyright &copy; Lafinancesengage.com {{ 'now'|date('Y') }}</p>
+                        <p>Copyright &copy; <a href="mailto:raphaelsampan@gmail.com">Raphael Blehoue</a> |Lafinancesengage.com {{ 'now'|date('Y') }}</p>
                     </div>
                 </div>
             </div>

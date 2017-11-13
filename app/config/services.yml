@@ -33,3 +33,9 @@ services:
     labs_auth.check.error.phonenumber:
         class: Labs\BackBundle\Services\CheckErrorPhoneNumber
         arguments: ["@session","@doctrine.orm.entity_manager","@libphonenumber.phone_number_util"]
+
+    labs_user.logged_action_redirect:
+        class: Labs\BackBundle\EventListener\RedirectUserLoggedListener
+        arguments: ['@security.token_storage', '@router']
+        tags:
+            - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest }

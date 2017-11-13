@@ -8,6 +8,7 @@ imports:
 parameters:
     locale: fr
     gallery_directory: '%kernel.root_dir%/../web/uploads/gallery'
+    docfile_directory: '%kernel.root_dir%/../web/uploads/filedocs'
 
 framework:
     #esi:             ~

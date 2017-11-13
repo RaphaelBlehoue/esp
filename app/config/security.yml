@@ -5,7 +5,7 @@ security:
 
     role_hierarchy:
         ROLE_MEMBER: ROLE_USER
-        ROLE_ADMIN: ROLE_USER
+        ROLE_ADMIN: ROLE_MEMBER
         ROLE_SUPER_ADMIN: [ROLE_ADMIN, ROLE_MEMBER, ROLE_ALLOWED_TO_SWITCH]
 
     providers:
@@ -27,7 +27,8 @@ security:
             anonymous:    true
 
     access_control:
-        - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/login$,    role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/register,  role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/codepit/, role: ROLE_ADMIN }
+        - { path: ^/codepit/,  role: ROLE_ADMIN }
+        - { path: ^/accounts,  role: ROLE_MEMBER }

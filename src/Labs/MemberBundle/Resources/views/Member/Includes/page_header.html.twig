@@ -1,0 +1,101 @@
+<div class="page-wrapper-row">
+    <div class="page-wrapper-top">
+        <!-- BEGIN HEADER -->
+        <div class="page-header">
+            <!-- BEGIN HEADER TOP -->
+            <div class="page-header-top">
+                <div class="container">
+                    <!-- BEGIN LOGO -->
+                    <div class="page-logo">
+                        <a href="#">
+                            <img src="{{ asset('global/images/logo/logo-web-admin.jpg') }}" class="logo-default" alt="La finance s'engage" />
+                        </a>
+                    </div>
+                    <!-- END LOGO -->
+                    <!-- BEGIN RESPONSIVE MENU TOGGLE -->
+                    <a href="javascript:;" class="menu-toggler"></a>
+                    <!-- END RESPONSIVE MENU TOGGLE -->
+                    <!-- BEGIN TOP NAVIGATION MENU -->
+                    <div class="top-menu">
+                        <ul class="nav navbar-nav pull-right">
+                            <li class="droddown dropdown-separator">
+                                <span class="separator"></span>
+                            </li>
+                            <!-- BEGIN INBOX DROPDOWN -->
+                            <li class="dropdown dropdown-extended dropdown-inbox dropdown-dark" id="header_inbox_bar">
+                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <span class="circle">0</span>
+                                    <span class="corner"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="external">
+                                        <h3>{{ 'vous avez'|capitalize }}
+                                            <strong>0 {{ 'nouveau(x)'|capitalize }}</strong> Messages</h3>
+                                        <!--<a href="#">view all</a>-->
+                                    </li>
+                                    <li>
+                                        <ul class="dropdown-menu-list scroller" style="height: 275px;" data-handle-color="#637283">
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- END INBOX DROPDOWN -->
+                            <!-- BEGIN USER LOGIN DROPDOWN -->
+                            <li class="dropdown dropdown-user dropdown-dark">
+                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <img alt="" class="img-circle" src="{{ asset('global/images/logo/logo_icon.png') }}">
+                                    <span class="username username-hide-mobile">{{ app.user.firstname|capitalize }} <i class="fa fa-sign-out"></i></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-default">
+                                    <li>
+                                        <a href="#">
+                                            <i class="icon-user"></i> {{ 'A propos' }}
+                                        </a>
+                                    </li>
+                                    <li class="divider"> </li>
+                                    <li>
+                                        <a href="{{ path('fos_user_security_logout') }}">
+                                            <i class="icon-key"></i> {{ 'Deconnexion' }}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- END USER LOGIN DROPDOWN -->
+                        </ul>
+                    </div>
+                    <!-- END TOP NAVIGATION MENU -->
+                </div>
+            </div>
+            <!-- END HEADER TOP -->
+
+            <!-- BEGIN HEADER MENU -->
+            <div class="page-header-menu">
+                <div class="container">
+                    <!-- BEGIN  MENU -->
+                    <div class="hor-menu">
+                        <ul class="nav navbar-nav">
+                            <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                                <a href="{{ path('homepage') }}"> {{ 'Retounez au site' }}
+                                    <span class="arrow"></span>
+                                </a>
+                            </li>
+                            <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                                <a href="{{ path('member_index') }}"> {{ 'Bourses aux projets' }}
+                                    <span class="arrow"></span>
+                                </a>
+                            </li>
+                            <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                                <a href="{{ path('member_file_list') }}"> {{ 'Mes fichiers' }}
+                                    <span class="arrow"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- END  MENU -->
+                </div>
+            </div>
+            <!-- END HEADER MENU -->
+        </div>
+        <!-- END HEADER -->
+    </div>
+</div>

@@ -25,4 +25,12 @@ class DocumentRepository extends \Doctrine\ORM\EntityRepository
         $qb->setParameter(':id', $id);
         return $qb->getQuery()->getOneOrNullResult();
     }
+
+    public function findUserDoc($users){
+        $qb = $this->createQueryBuilder('d');
+        $qb->where($qb->expr()->eq('d.user', ':users'));
+        $qb->orderBy('d.created', 'DESC');
+        $qb->setParameter(':users', $users);
+        return $qb->getQuery()->getResult();
+    }
 }

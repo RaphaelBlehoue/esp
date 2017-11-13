@@ -171,30 +171,4 @@ class Document
     {
         return $this->user;
     }
-
-    /**
-     * Set nameFile
-     *
-     * @param string $nameFile
-     *
-     * @return Document
-     */
-    public function setNameFile($nameFile)
-    {
-        $this->name_file = $nameFile;
-
-        return $this;
-    }
-
-    /**
-     * Get nameFile
-     *
-     * @return string
-     */
-    public function getNameFile()
-    {
-        return $this->name_file;
-    }
-
-
 }

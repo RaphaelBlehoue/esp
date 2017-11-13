@@ -12,7 +12,6 @@ namespace Labs\BackBundle\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use FOS\UserBundle\Model\User as BaseUser;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
-use libphonenumber\PhoneNumber;
 use Symfony\Component\Validator\Constraints AS Assert;
 use Misd\PhoneNumberBundle\Validator\Constraints\PhoneNumber as AssertPhoneNumber;
 use Doctrine\ORM\Mapping as ORM;
@@ -75,6 +74,12 @@ class Users extends BaseUser
      * @ORM\Column(name="created", type="datetime")
      */
     protected $created;
+
+    /**
+     * @var
+     * @ORM\OneToMany(targetEntity="Document", mappedBy="user")
+     */
+    protected $documents;
 
 
     public function __construct()
@@ -262,5 +267,39 @@ class Users extends BaseUser
     public function getNumberPhone()
     {
         return $this->numberPhone;
+    }
+
+    /**
+     * Add document
+     *
+     * @param Document $document
+     *
+     * @return Users
+     */
+    public function addDocument(Document $document)
+    {
+        $this->documents[] = $document;
+
+        return $this;
+    }
+
+    /**
+     * Remove document
+     *
+     * @param Document $document
+     */
+    public function removeDocument(Document $document)
+    {
+        $this->documents->removeElement($document);
+    }
+
+    /**
+     * Get documents
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getDocuments()
+    {
+        return $this->documents;
     }
 }

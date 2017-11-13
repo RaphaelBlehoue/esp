@@ -33,6 +33,7 @@ class AppKernel extends Kernel
             new Misd\PhoneNumberBundle\MisdPhoneNumberBundle(),
             new Labs\BackBundle\LabsBackBundle(),
             new Labs\PagesBundle\LabsPagesBundle(),
+            new Labs\MemberBundle\LabsMemberBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
