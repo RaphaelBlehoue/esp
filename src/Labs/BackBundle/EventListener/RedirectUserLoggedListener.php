@@ -37,11 +37,6 @@ class RedirectUserLoggedListener
         if ($this->isUserLogged() && $event->isMasterRequest()) {
             $currentRoute = $event->getRequest()->attributes->get('_route');
             if ($this->isAuthenticatedUserOnAnonymousPage($currentRoute)) {
-                $referer = $event->getRequest()->headers->get('referer');
-                if (null ==! $referer && !$this->isAuthenticatedUserOnAnonymousPage($referer)) {
-                    $response = new RedirectResponse($this->router->generate($referer));
-                    $event->setResponse($response);
-                }
                 $response = new RedirectResponse($this->router->generate('homepage'));
                 $event->setResponse($response);
             }

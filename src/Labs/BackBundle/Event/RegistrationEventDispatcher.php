@@ -34,7 +34,7 @@ class RegistrationEventDispatcher implements EventSubscriberInterface
 
     public function onRegisterSuccess(FormEvent $event)
     {
-        $url = $this->router->generate('homepage');
+        $url = $this->router->generate('member_index');
         $event->setResponse(new RedirectResponse($url));
     }
 

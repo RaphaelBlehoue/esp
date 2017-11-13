@@ -8,8 +8,15 @@
     </div>
     <div class="col-md-6 login-container bs-reset mt-login-5-bsfix">
         <div class="login-content">
-            <h1>{{ 'La Finance S\'engage | Connexion' }}</h1>
-            <p>{{ 'Utiliser votre compte FSE pour accéder à vos informations sécurisé' }}</p>
+            <h1>{{ 'La Finance S\'engage | Connexion FSE' }}</h1>
+            <p class="text-center">
+                {{ 'Vous n\'avez pas de compte pour participer à la bourse aux projets, cliquez ci-dessous pour en créer un' }}
+            </p>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <a href="{{ path('fos_user_registration_register') }}" class="btn yellow-gold"><i class="fa fa-user"></i> {{ 'S\'inscrire pour la bourse aux projets' }}</a>
+                </div>
+            </div>
             <form action="{{ path("fos_user_security_check") }}" class="login-form" method="post">
 
                 {% if csrf_token %}
@@ -31,12 +38,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-6">
-                        <h4><a href="{{ path('fos_user_registration_register') }}" style="color:#A6241C; text-decoration:none; font-weight: 500;">{{ 'Créer mon compte FSE' }}</a></h4>
-                    </div>
-                    <div class="col-xs-6">
-                        <button type="submit" class="btn pull-right yellow-gold btn-outline sbold uppercase">{{ 'Se connecter' }}</button>
-                    </div>
+                    <button type="submit" class="btn pull-right yellow-gold btn-outline sbold uppercase">{{ 'Se connecter' }}</button>
                 </div>
             </form>
         </div>
