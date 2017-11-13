@@ -10,4 +10,13 @@ namespace Labs\BackBundle\Repository;
  */
 class UsersRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function findUserDocment($users)
+    {
+        $qb = $this->createQueryBuilder('u');
+        $qb->leftJoin('u.documents', 'documents');
+        $qb->addSelect('documents');
+        $qb->where($qb->expr()->eq('u.id', ':users'));
+        $qb->setParameter(':users', $users);
+        return $qb->getQuery()->getOneOrNullResult();
+    }
 }

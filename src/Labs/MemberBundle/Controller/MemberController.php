@@ -54,7 +54,7 @@ class MemberController extends Controller
     }
 
     /**
-     * @Route("file/{filename}/download", name="file_show")
+     * @Route("/file/{filename}/download", name="file_show")
      * @param $filename
      * @return Response
      * @internal param Document $document
