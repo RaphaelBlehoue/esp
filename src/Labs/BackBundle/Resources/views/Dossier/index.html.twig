@@ -59,25 +59,27 @@
                             </tr>
                             </thead>
                             <tbody>
-                            {% for userfile in userfiles %}
-                                <tr class="odd gradeX">
-                                    <td>
-                                        <span>
-                                            {{ loop.index }}
-                                        </span>
-                                    </td>
-                                    <td>
-                                        {{ userfile.user.firstname }} {{ userfile.user.lastname }}
-                                    </td>
-                                    <td class="center"> {{ userfile.user.numberPhone|phone_number_format('INTERNATIONAL') }}</td>
-                                    <td class="center"> {{ userfile.user.email }}</td>
-                                    <td>
-                                        <a href="{{ path('dossier_show_file', {'user_id': userfile.user.id }) }}" class="btn yellow-gold">
-                                            <i class="icon-tag"></i> {{ 'Affichez' }}
-                                        </a>
-                                    </td>
-                                </tr>
-                            {% endfor %}
+                            {% if userfiles|length > 0 %}
+                                {% for userfile in userfiles %}
+                                    <tr class="odd gradeX">
+                                        <td>
+                                            <span>
+                                                {{ loop.index }}
+                                            </span>
+                                        </td>
+                                        <td>
+                                            {{ userfile.user.firstname }} {{ userfile.user.lastname }}
+                                        </td>
+                                        <td class="center"> {{ userfile.user.numberPhone|phone_number_format('INTERNATIONAL') }}</td>
+                                        <td class="center"> {{ userfile.user.email }}</td>
+                                        <td>
+                                            <a href="{{ path('dossier_show_file', {'user_id': userfile.user.id }) }}" class="btn yellow-gold">
+                                                <i class="icon-tag"></i> {{ 'Affichez' }}
+                                            </a>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            {% endif %}
                             </tbody>
                         </table>
                     </div>

@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a8d5a125-2e6d-45b1-8a75-1cd38d1cca63" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Repository/UsersRepository.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Repository/UsersRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Includes/sidebar.html.twig" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Includes/sidebar.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/MemberBundle/Controller/MemberController.php" afterPath="$PROJECT_DIR$/src/Labs/MemberBundle/Controller/MemberController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/MemberBundle/Resources/views/Member/file_list.html.twig" afterPath="$PROJECT_DIR$/src/Labs/MemberBundle/Resources/views/Member/file_list.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossier/index.html.twig" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossier/index.html.twig" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,8 +25,8 @@
       <file leaf-file-name="DossierController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Controller/DossierController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="50" column="7" lean-forward="true" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
+            <state relative-caret-position="42">
+              <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
               <folding>
                 <element signature="e#46#105#0#PHP" expanded="true" />
                 <element signature="e#570#595#1#PHP" expanded="true" />
@@ -37,6 +34,16 @@
                 <element signature="e#1299#1338#0#PHP" expanded="true" />
                 <element signature="e#2124#2149#1#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DocumentRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Repository/DocumentRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,6 +56,18 @@
               <folding>
                 <element signature="e#12#43#0#Twig" expanded="true" />
                 <element signature="e#8007#8020#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossier/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="68" column="45" lean-forward="true" selection-start-line="68" selection-start-column="45" selection-end-line="68" selection-end-column="45" />
+              <folding>
+                <element signature="e#12#43#0#Twig" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,13 +151,13 @@
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Partner/create_partner.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Partner/edit_partner.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Includes/sidebar.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossier/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Repository/UsersRepository.php" />
         <option value="$PROJECT_DIR$/src/Labs/MemberBundle/Resources/views/Member/file_list.html.twig" />
         <option value="$PROJECT_DIR$/../adminTheme-Metronic/admin_2/page_user_profile_2.html" />
         <option value="$PROJECT_DIR$/src/Labs/MemberBundle/Controller/MemberController.php" />
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Controller/DossierController.php" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossier/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Controller/DossierController.php" />
+        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossier/index.html.twig" />
       </list>
     </option>
   </component>
@@ -208,6 +227,25 @@
               <item name="Labs" type="462c0819:PsiDirectoryNode" />
               <item name="BackBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lafinancesengage.dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lafinancesengage.dev" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Labs" type="462c0819:PsiDirectoryNode" />
+              <item name="BackBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lafinancesengage.dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lafinancesengage.dev" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Labs" type="462c0819:PsiDirectoryNode" />
+              <item name="BackBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="Dossier" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lafinancesengage.dev" type="b2602c69:ProjectViewProjectNode" />
@@ -394,12 +432,12 @@
       <workItem from="1510232128641" duration="19191000" />
       <workItem from="1510316414353" duration="63267000" />
       <workItem from="1510579326790" duration="7474000" />
-      <workItem from="1510593740244" duration="6171000" />
+      <workItem from="1510593740244" duration="6982000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108869000" />
+    <option name="totallyTimeSpent" value="109680000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="6" />
@@ -561,13 +599,6 @@
         <state relative-caret-position="253">
           <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Repository/DocumentRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="32" column="44" lean-forward="false" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -859,13 +890,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossier/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Labs/MemberBundle/Controller/MemberController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding>
-            <element signature="e#12#43#0#Twig" expanded="true" />
-          </folding>
+        <state relative-caret-position="100">
+          <caret line="58" column="23" lean-forward="false" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -880,18 +909,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/MemberBundle/Controller/MemberController.php">
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossier/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="58" column="23" lean-forward="false" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
+        <state relative-caret-position="278">
+          <caret line="68" column="45" lean-forward="true" selection-start-line="68" selection-start-column="45" selection-end-line="68" selection-end-column="45" />
+          <folding>
+            <element signature="e#12#43#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Repository/DocumentRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Controller/DossierController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="50" column="7" lean-forward="true" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
+        <state relative-caret-position="42">
+          <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
           <folding>
             <element signature="e#46#105#0#PHP" expanded="true" />
             <element signature="e#570#595#1#PHP" expanded="true" />
