@@ -48,10 +48,14 @@
                  <div class="portlet-body">
                      <div class="row">
                          <div class="col-md-12">
-                             <div action="{{ path('member_index') }}" class="dropzone dropzone-file-area" id="my-dropzone-zone" style="width: 700px; margin-top: 50px; height:350px;">
-                                 <h3 class="sbold">{{ 'Faites glisser des fichiers ici' }}</h3>
-                                 <h5 class="sbold"><span>{{ '--ou--' }}</span></h5>
-                                 <h5 class="sbold"><span>{{ 'Cliquez pour selectionner des fichiers sur l\'ordinateur' }}</span></h5>
+                             <div action="{{ path('member_index') }}" class="dropzone dropzone-file-area" id="my-dropzone-zone" style="width: 700px; margin-top: 50px; height:250px;">
+                                 <div class="dz-message" data-dz-message>
+                                     <span>
+                                         <h3 class="sbold">{{ 'Faites glisser des fichiers ici' }}</h3>
+                                         <h5 class="sbold"><span>{{ '--ou--' }}</span></h5>
+                                         <a href="javascript:;" class="btn yellow-gold">{{ 'Selectionnez des fichiers depuis l\'ordinateur' }}</a>
+                                     </span>
+                                 </div>
                              </div>
                          </div>
                      </div>

@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8d5a125-2e6d-45b1-8a75-1cd38d1cca63" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Labs/MemberBundle/Resources/views/Default/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/config/config.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/config/config_dev.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/config/config_prod.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/config/config_test.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/config/parameters.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/config/parameters.yml.dist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/config/routing.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/config/routing_dev.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/config/security.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Labs/PagesBundle/Resources/views/includes/config/services.yml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Controller/DossierController.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Controller/DossierController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/MemberBundle/Resources/views/Member/Includes/page_header.html.twig" afterPath="$PROJECT_DIR$/src/Labs/MemberBundle/Resources/views/Member/Includes/page_header.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/MemberBundle/Resources/views/Member/index.html.twig" afterPath="$PROJECT_DIR$/src/Labs/MemberBundle/Resources/views/Member/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/adminLayout/assets/pages/scripts/main-apps.js" afterPath="$PROJECT_DIR$/web/adminLayout/assets/pages/scripts/main-apps.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,28 +26,30 @@
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Labs/MemberBundle/Resources/views/Member/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+            <state relative-caret-position="373">
+              <caret line="77" column="50" lean-forward="false" selection-start-line="77" selection-start-column="50" selection-end-line="77" selection-end-column="95" />
+              <folding>
+                <element signature="e#2246#2299#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedirectUserLoggedListener.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/EventListener/RedirectUserLoggedListener.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="42" column="9" lean-forward="false" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="member_space.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Labs/MemberBundle/Resources/views/member_space.html.twig">
+      <file leaf-file-name="main-apps.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/adminLayout/assets/pages/scripts/main-apps.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="46" column="35" lean-forward="false" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page_header.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Labs/MemberBundle/Resources/views/Member/Includes/page_header.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1001">
-              <caret line="82" column="66" lean-forward="false" selection-start-line="82" selection-start-column="66" selection-end-line="82" selection-end-column="66" />
+            <state relative-caret-position="168">
+              <caret line="60" column="78" lean-forward="false" selection-start-line="60" selection-start-column="78" selection-end-line="60" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -129,7 +118,6 @@
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Users.php" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Controller/DocumentController.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/web/adminLayout/assets/pages/scripts/main-apps.js" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Document.php" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Repository/DocumentRepository.php" />
         <option value="$PROJECT_DIR$/app/config/services.yml" />
@@ -149,8 +137,9 @@
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossier/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Controller/DossierController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/MemberBundle/Resources/views/Member/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/MemberBundle/Resources/views/Member/Includes/page_header.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/MemberBundle/Resources/views/Member/index.html.twig" />
+        <option value="$PROJECT_DIR$/web/adminLayout/assets/pages/scripts/main-apps.js" />
       </list>
     </option>
   </component>
@@ -224,34 +213,50 @@
               <item name="lafinancesengage.dev" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Labs" type="462c0819:PsiDirectoryNode" />
-              <item name="MemberBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="BackBundle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lafinancesengage.dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="lafinancesengage.dev" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Labs" type="462c0819:PsiDirectoryNode" />
-              <item name="MemberBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="BackBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="EventListener" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lafinancesengage.dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="lafinancesengage.dev" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Labs" type="462c0819:PsiDirectoryNode" />
-              <item name="MemberBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lafinancesengage.dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="lafinancesengage.dev" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Labs" type="462c0819:PsiDirectoryNode" />
-              <item name="MemberBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Member" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="adminLayout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lafinancesengage.dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lafinancesengage.dev" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="adminLayout" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lafinancesengage.dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lafinancesengage.dev" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="adminLayout" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lafinancesengage.dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lafinancesengage.dev" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="adminLayout" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -396,12 +401,12 @@
       <workItem from="1510232128641" duration="19191000" />
       <workItem from="1510316414353" duration="63267000" />
       <workItem from="1510579326790" duration="7474000" />
-      <workItem from="1510593740244" duration="7748000" />
+      <workItem from="1510593740244" duration="11272000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110446000" />
+    <option name="totallyTimeSpent" value="113970000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="6" />
@@ -476,28 +481,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Gallery/draft_page.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="94" column="200" lean-forward="false" selection-start-line="94" selection-start-column="200" selection-end-line="94" selection-end-column="200" />
-          <folding>
-            <element signature="e#12#43#0#Twig" expanded="false" />
-            <element signature="e#5270#5309#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../adminTheme-Metronic/admin_3/form_dropzone.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-12522">
           <caret line="1333" column="26" lean-forward="true" selection-start-line="1333" selection-start-column="26" selection-end-line="1333" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/adminLayout/assets/pages/scripts/main-apps.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="67" column="145" lean-forward="false" selection-start-line="67" selection-start-column="145" selection-end-line="67" selection-end-column="145" />
         </state>
       </provider>
     </entry>
@@ -546,6 +533,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+          <folding>
+            <element signature="e#12#49#0#Twig" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -560,6 +550,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
           <caret line="82" column="43" lean-forward="false" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -567,13 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="37" column="47" lean-forward="false" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/EventListener/RedirectUserLoggedListener.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="42" column="9" lean-forward="false" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -589,13 +573,6 @@
         <state relative-caret-position="230">
           <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Registration/register_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -824,7 +801,7 @@
         <state relative-caret-position="278">
           <caret line="68" column="45" lean-forward="false" selection-start-line="68" selection-start-column="45" selection-end-line="68" selection-end-column="45" />
           <folding>
-            <element signature="e#12#43#0#Twig" expanded="true" />
+            <element signature="e#12#43#0#Twig" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -834,12 +811,12 @@
         <state relative-caret-position="219">
           <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
           <folding>
-            <element signature="e#46#105#0#PHP" expanded="true" />
-            <element signature="e#566#591#1#PHP" expanded="true" />
-            <element signature="e#634#674#0#PHP" expanded="true" />
-            <element signature="e#1215#1237#1#PHP" expanded="true" />
-            <element signature="e#1296#1335#0#PHP" expanded="true" />
-            <element signature="e#2121#2146#1#PHP" expanded="true" />
+            <element signature="e#46#105#0#PHP" expanded="false" />
+            <element signature="e#566#591#1#PHP" expanded="false" />
+            <element signature="e#634#674#0#PHP" expanded="false" />
+            <element signature="e#1215#1237#1#PHP" expanded="false" />
+            <element signature="e#1296#1335#0#PHP" expanded="false" />
+            <element signature="e#2121#2146#1#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -857,8 +834,8 @@
         <state relative-caret-position="952">
           <caret line="132" column="167" lean-forward="false" selection-start-line="132" selection-start-column="167" selection-end-line="132" selection-end-column="167" />
           <folding>
-            <element signature="e#12#43#0#Twig" expanded="true" />
-            <element signature="e#8007#8020#0#Twig" expanded="true" />
+            <element signature="e#12#43#0#Twig" expanded="false" />
+            <element signature="e#8007#8020#0#Twig" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -868,7 +845,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#12#43#0#Twig" expanded="true" />
+            <element signature="e#12#43#0#Twig" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -899,10 +876,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/MemberBundle/Resources/views/Member/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Labs/MemberBundle/Resources/views/Member/Includes/page_header.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="1001">
+          <caret line="82" column="66" lean-forward="false" selection-start-line="82" selection-start-column="66" selection-end-line="82" selection-end-column="66" />
           <folding />
         </state>
       </provider>
@@ -915,10 +892,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/MemberBundle/Resources/views/Member/Includes/page_header.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Registration/register_content.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1001">
-          <caret line="82" column="66" lean-forward="false" selection-start-line="82" selection-start-column="66" selection-end-line="82" selection-end-column="66" />
+        <state relative-caret-position="217">
+          <caret line="78" column="73" lean-forward="true" selection-start-line="78" selection-start-column="73" selection-end-line="78" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/adminLayout/assets/global/plugins/plupload/js/moxie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="7077" column="37" lean-forward="false" selection-start-line="7077" selection-start-column="33" selection-end-line="7077" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/MemberBundle/Resources/views/Member/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="77" column="50" lean-forward="false" selection-start-line="77" selection-start-column="50" selection-end-line="77" selection-end-column="95" />
+          <folding>
+            <element signature="e#2246#2299#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/EventListener/RedirectUserLoggedListener.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="42" column="9" lean-forward="false" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/adminLayout/assets/pages/scripts/main-apps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="60" column="78" lean-forward="false" selection-start-line="60" selection-start-column="78" selection-end-line="60" selection-end-column="78" />
           <folding />
         </state>
       </provider>
