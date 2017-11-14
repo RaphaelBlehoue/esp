@@ -10,6 +10,7 @@ namespace Labs\BackBundle\EventListener;
 
 
 use FOS\UserBundle\Model\User;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 use Symfony\Component\Routing\RouterInterface;
@@ -25,11 +26,16 @@ class RedirectUserLoggedListener
      * @var RouterInterface
      */
     private $router;
+    /**
+     * @var ContainerInterface
+     */
+    private $container;
 
-    public function __construct(TokenStorageInterface $tokenStorage, RouterInterface $router)
+    public function __construct(TokenStorageInterface $tokenStorage, RouterInterface $router, ContainerInterface $container)
     {
         $this->tokenStorage = $tokenStorage;
         $this->router = $router;
+        $this->container = $container;
     }
 
     public function onKernelRequest(GetResponseEvent $event)
@@ -44,8 +50,19 @@ class RedirectUserLoggedListener
     }
 
     private function isUserLogged(){
-        $user = $this->tokenStorage->getToken()->getUser();
-        return $user instanceof User;
+        if (!$this->container->has('security.token_storage')) {
+            throw new \LogicException('The security is not registered in your controller');
+        }
+
+        if (null === $token = $this->container->get('security.token_storage')->getToken()) {
+            return;
+        }
+
+        if (!is_object($user = $token->getUser())) {
+            return;
+        }
+
+        return $user;
     }
 
     /**
