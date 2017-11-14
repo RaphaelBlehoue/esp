@@ -13,13 +13,14 @@ class DossierController extends Controller
      * @return \Symfony\Component\HttpFoundation\Response
      * @Route("/dossiers", name="list_dossier")
      */
-    public function getFileUsersAction()
-    {
+    public function getFileUsersAction(){
+
         $em = $this->get('doctrine.orm.entity_manager');
         $usersfiles = $em->getRepository('LabsBackBundle:Document')->findAll();
         return $this->render('LabsBackBundle:Dossier:index.html.twig',
             ['userfiles' => $usersfiles]
         );
+
     }
 
     /**
