@@ -18,7 +18,6 @@ class DossierController extends Controller
         $em = $this->get('doctrine.orm.entity_manager');
         $users = $this->get('security.token_storage')->getToken()->getUser();
         $usersfiles = $em->getRepository('LabsBackBundle:Document')->findUserDoc($users);
-        dump($usersfiles);
         return $this->render('LabsBackBundle:Dossier:index.html.twig',
             ['userfiles' => $usersfiles]
         );

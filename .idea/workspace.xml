@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a8d5a125-2e6d-45b1-8a75-1cd38d1cca63" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Controller/DossierController.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Controller/DossierController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossier/index.html.twig" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossier/index.html.twig" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,14 +31,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DossierController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DossierController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Controller/DossierController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+            <state relative-caret-position="392">
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding>
                 <element signature="e#644#669#1#PHP" expanded="true" />
-                <element signature="e#749#789#0#PHP" expanded="true" />
+                <element signature="e#722#762#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,7 +78,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossier/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1179">
@@ -172,8 +171,8 @@
         <option value="$PROJECT_DIR$/src/Labs/MemberBundle/Resources/views/Member/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/MemberBundle/Controller/MemberController.php" />
         <option value="$PROJECT_DIR$/src/Labs/MemberBundle/Resources/views/Member/file_list.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Controller/DossierController.php" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossier/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Controller/DossierController.php" />
       </list>
     </option>
   </component>
@@ -443,12 +442,12 @@
       <workItem from="1510316414353" duration="63267000" />
       <workItem from="1510579326790" duration="7474000" />
       <workItem from="1510593740244" duration="14555000" />
-      <workItem from="1510830580506" duration="4654000" />
+      <workItem from="1510830580506" duration="4818000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121907000" />
+    <option name="totallyTimeSpent" value="122071000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="728" extended-state="6" />
@@ -892,22 +891,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Controller/DossierController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-          <folding>
-            <element signature="e#644#669#1#PHP" expanded="true" />
-            <element signature="e#749#789#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossier/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1179">
           <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Controller/DossierController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="e#644#669#1#PHP" expanded="true" />
+            <element signature="e#722#762#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
