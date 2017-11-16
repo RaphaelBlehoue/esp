@@ -41,7 +41,7 @@ var FormDropzone = function () {
 
     return {
         //main function to initiate the module
-        init: function () {  
+        init: function () {
 
             Dropzone.options.myDropzone = {
                 url: _actionToDropZone,
@@ -85,12 +85,12 @@ var FormDropzone = function () {
                     this.on('maxfilesexceeded', function(){
                         alert("Limite de fichier uploader simultanement attient");
                     });
-                }            
+                }
             }
         }
     };
 }();
 
-jQuery(document).ready(function() {    
+jQuery(document).ready(function() {
    FormDropzone.init();
 });

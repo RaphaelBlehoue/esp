@@ -42,8 +42,11 @@
                  </div>
                  <div class="portlet-body">
                      <div class="row">
+                         <div class="note note-danger">
+                             <h4 class="block">{{ 'Note: Vos fichiers doivent être tous au format (PDF) avant l\'ajout dans l\'espace dedié à l\'upload' }}</h4>
+                         </div>
                          <div class="col-md-12">
-                             <div action="{{ path('member_index') }}" class="dropzone dropzone-file-area" id="my-dropzone-zone" style="width: 700px; margin-top: 50px; height:250px;">
+                             <div action="{{ path('member_index') }}" class="dropzone dropzone-file-area" id="my-awesome-dropzone" style="width: 700px; margin-top: 50px; height:250px;">
                                  <div class="dz-message" data-dz-message>
                                      <span>
                                          <h3 class="sbold">{{ 'Faites glisser des fichiers ici' }}</h3>

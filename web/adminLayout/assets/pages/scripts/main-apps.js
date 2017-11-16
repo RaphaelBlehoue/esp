@@ -1,23 +1,22 @@
-var FormDropzone = function () {
-    var _that = $("#my-dropzone-zone");
+var DivDropzone = function () {
+    var _that = $("#my-dropzone-asset");
     var _actionToDropZone = _that.attr('action');
     return {
-        //main function to initiate the module
         init: function () {
-
-            Dropzone.options.myDropzone = {
+            Dropzone.options.myAwesomeDropzone = {
                 url: _actionToDropZone,
-                maxFilesize: 3, // MB
+                dictDefaultMessage: "",
+                maxFilesize: 2, // MB
                 maxFiles: 30,
                 acceptedFiles : "application/pdf, application/x-pdf",
-                createImageThumbnails: true,
-                init: function() {
-
+                init: function () {
                     this.on("addedfile", function(file) {
                         // Create the remove button
-                        var removeButton = Dropzone.createElement("<a href='javascript:;'' class='btn red btn-sm btn-block'>Remove</a>");
+                        var removeButton = Dropzone.createElement("<a href='javascript:;'' class='btn red btn-sm btn-block'>Supprimer</a>");
                         console.log(file.previewElement.querySelector("img"));
                         // Listen to the click event
+                        var _this = this;
+
                         removeButton.addEventListener("click", function(e) {
                             // Make sure the button click doesn't submit the form:
                             e.preventDefault();
@@ -31,17 +30,18 @@ var FormDropzone = function () {
                         file.previewElement.appendChild(removeButton);
                     });
                     this.on('success', function(file, responseText, e){
-                        console.log(file.previewElement.querySelector("img"));
+                        console.log(file.previewElement.querySelector('img').src = "/adminLayout/assets/pages/scripts/images/pdf.png");
                     });
-                    this.on('maxfilesexceeded', function(){
-                        alert("Limite de fichier uploader simultanement attient");
+                    this.on('error', function(file, errorMessage) {
+
                     });
                 }
             }
         }
-    };
+    }
+
 }();
 
 jQuery(document).ready(function() {
-    FormDropzone.init();
+    DivDropzone.init();
 });
