@@ -16,7 +16,7 @@ class MemberController extends Controller
     /**
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
-     * @Route("/", name="member_index")
+     * @Route("/", options={"expose"=true}, name="member_index")
      */
     public function indexAction(Request $request)
     {

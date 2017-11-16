@@ -16,7 +16,8 @@ class DossierController extends Controller
     public function getFileUsersAction(){
 
         $em = $this->get('doctrine.orm.entity_manager');
-        $usersfiles = $em->getRepository('LabsBackBundle:Document')->findAll();
+        $users = $this->get('security.token_storage')->getToken()->getUser();
+        $usersfiles = $em->getRepository('LabsBackBundle:Document')->findUserDoc($users);
         return $this->render('LabsBackBundle:Dossier:index.html.twig',
             ['userfiles' => $usersfiles]
         );

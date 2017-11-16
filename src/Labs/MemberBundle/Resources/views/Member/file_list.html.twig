@@ -72,13 +72,13 @@
                                 <tr class="odd gradeX">
                                     <td>
                                         <span>
-                                            {{ file.id }}
+                                            {{ loop.index }}
                                         </span>
                                     </td>
                                     <td>
                                         {{ file.nameFile }}
                                     </td>
-                                    <td class="center"> {{ file.created|date('d , m Y') }}</td>
+                                    <td class="center"> {{ file.created|date('d M Y') }}</td>
                                     <td>
                                         <div class="btn-group">
                                             <button class="btn btn-xs yellow-gold dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
