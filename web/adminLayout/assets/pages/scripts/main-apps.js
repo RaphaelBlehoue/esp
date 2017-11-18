@@ -35,6 +35,8 @@ var DivDropzone = function () {
                     this.on('error', function(file, errorMessage) {
 
                     });
+                },
+                accept: function (file, done) {
                 }
             }
         }
