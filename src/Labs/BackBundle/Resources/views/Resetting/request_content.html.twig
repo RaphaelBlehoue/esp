@@ -1,11 +1,48 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
-<form action="{{ path('fos_user_resetting_send_email') }}" method="POST" class="fos_user_resetting_request">
-    <div>
-        <label for="username">{{ 'resetting.request.username'|trans }}</label>
-        <input type="text" id="username" name="username" required="required" />
+<div class="logo">
+    <a href="{{ path('homepage') }}">
+        <img src="{{ asset('global/images/logo/banner.jpg') }}" alt="La finance s'engage" />
+    </a>
+</div>
+
+<div class="content">
+    <!-- BEGIN REGISTRATION FORM -->
+    <form action="{{ path('fos_user_resetting_send_email') }}" method="POST" class="fos_user_resetting_request login-form">
+        <h3 class="font-green">{{ 'La Bourse aux Projets | Réinitialisation de mot de passe' }}</h3>
+        <div class="col-md-6 col-sm-6">
+            <p class="hint"> {{ 'Entrez votre adresse email :' }} </p>
+            <div class="form-group">
+                <label class="control-label visible-ie8 visible-ie9">Nom de famille</label>
+                <input class="form-control form-control-solid placeholder-no-fix form-group" placeholder="Adresse Email"  autocomplete="off" type="text" id="username" name="username" required />
+            </div>
+            <a href="{{ path('fos_user_security_login') }}">{{ 'Se connecter' }}</a>
+            <button type="submit" class="btn uppercase  pull-right yellow-gold">{{'resetting.request.submit'|trans }}</button>
+        </div>
+    </form>
+    <!-- END REGISTRATION FORM -->
+    <div class="login-options">
+        <h4>{{ 'Rejoignez la Finance s\'engage sur les reseaux' }}</h4>
+        <ul class="social-icons">
+            <li>
+                <a class="facebook" data-original-title="facebook" href="javascript:;"> </a>
+            </li>
+            <li>
+                <a class="twitter" data-original-title="Twitter" href="javascript:;"> </a>
+            </li>
+            <li>
+                <a class="youtube" data-original-title="Twitter" href="javascript:;"> </a>
+            </li>
+            <li>
+                <a class="googleplus" data-original-title="Goole Plus" href="javascript:;"> </a>
+            </li>
+            <li>
+                <a class="linkedin" data-original-title="Linkedin" href="javascript:;"> </a>
+            </li>
+        </ul>
     </div>
-    <div>
-        <input type="submit" value="{{ 'resetting.request.submit'|trans }}" />
-    </div>
-</form>
+</div>
+
+
+
+
