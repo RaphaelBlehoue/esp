@@ -67,12 +67,12 @@
                                             </span>
                                         </td>
                                         <td>
-                                            {{ userfile.user.firstname }} {{ userfile.user.lastname }}
+                                            {{ userfile.firstname }} {{ userfile.lastname }}
                                         </td>
-                                        <td class="center"> {{ userfile.user.numberPhone|phone_number_format('INTERNATIONAL') }}</td>
-                                        <td class="center"> {{ userfile.user.email }}</td>
+                                        <td class="center"> {{ userfile.numberPhone|phone_number_format('INTERNATIONAL') }}</td>
+                                        <td class="center"> {{ userfile.email }}</td>
                                         <td>
-                                            <a href="{{ path('dossier_show_file', {'user_id': userfile.user.id }) }}" class="btn yellow-gold">
+                                            <a href="{{ path('dossier_show_file', {'user_id': userfile.id }) }}" class="btn yellow-gold">
                                                 <i class="icon-tag"></i> {{ 'Affichez' }}
                                             </a>
                                         </td>
