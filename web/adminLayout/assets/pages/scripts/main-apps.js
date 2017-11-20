@@ -1,5 +1,5 @@
 var DivDropzone = function () {
-    var _that = $("#my-dropzone-asset");
+    var _that = $("#my-awesome-dropzone");
     var _actionToDropZone = _that.attr('action');
     return {
         init: function () {
@@ -32,11 +32,6 @@ var DivDropzone = function () {
                     this.on('success', function(file, responseText, e){
                         console.log(file.previewElement.querySelector('img').src = "/adminLayout/assets/pages/scripts/images/pdf.png");
                     });
-                    this.on('error', function(file, errorMessage) {
-
-                    });
-                },
-                accept: function (file, done) {
                 }
             }
         }
