@@ -26,6 +26,7 @@ class UsersRepository extends \Doctrine\ORM\EntityRepository
         $qb->select('u')
             ->from($this->_entityName, 'u')
             ->where('u.roles LIKE :roles')
+            ->orderBy('u.created', 'DESC')
             ->setParameter('roles', '%"'.$role.'"%');
 
         return $qb->getQuery()->getResult();
