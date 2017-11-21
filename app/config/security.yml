@@ -31,5 +31,5 @@ security:
         - { path: ^/login$,    role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/register,  role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/codepit/,  role: ROLE_ADMIN }
+        - { path: ^/codepit/,  role: ROLE_MANAGER }
         - { path: ^/accounts,  role: ROLE_MEMBER }
