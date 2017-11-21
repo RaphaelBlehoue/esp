@@ -2,6 +2,7 @@
     <!-- END SIDEBAR -->
     <div class="page-sidebar navbar-collapse collapse">
         <ul class="page-sidebar-menu  page-header-fixed page-sidebar-menu-hover-submenu " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+            {% if is_granted("ROLE_ADMIN") %}
             <li class="nav-item start">
                 <a href="{{ path('team_list') }}" class="nav-link nav-toggle">
                     <i class="icon-users"></i>
@@ -9,6 +10,7 @@
                     <span class="arrow"></span>
                 </a>
             </li>
+            {% endif %}
             <li class="nav-item start">
                 <a href="{{ path('list_dossier') }}" class="nav-link nav-toggle">
                     <i class="icon-book-open"></i>
@@ -16,6 +18,7 @@
                     <span class="arrow"></span>
                 </a>
             </li>
+            {% if is_granted("ROLE_ADMIN") %}
             <li class="nav-item start">
                 <a href="javascript:;" class="nav-link nav-toggle">
                     <i class="icon-list"></i>
@@ -51,6 +54,7 @@
                     <span class="arrow"></span>
                 </a>
             </li>
+            {% endif %}
         </ul>
         <!-- END SIDEBAR MENU -->
     </div>
